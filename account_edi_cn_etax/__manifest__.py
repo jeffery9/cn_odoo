@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    "name": "EDI: china etax",
+    "name": "EDI: china etax/中国数电发票",
     "summary": """
     EDI: china etax
 

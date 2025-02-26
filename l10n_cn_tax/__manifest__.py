@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    "name": "tax",
+    "name": "China tax cllassification/中国税目",
     "summary": """
     tax base 
 
