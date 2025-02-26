@@ -26,16 +26,16 @@ class ProductProduct(models.Model):
     tax_item_id = fields.Many2one('tax.catalog.item', string='Tax Item')
 
     def get_tax_item_id(self):
-        for record in self:
-            if record.tax_item_id:
-                return record.tax_item_id
+        self.ensure_one()
+        if self.tax_item_id:
+            return self.tax_item_id
 
-            elif record.product_tmpl_id.tax_item_id:
-                return record.product_tmpl_id.tax_item_id
+        elif self.product_tmpl_id.tax_item_id:
+            return self.product_tmpl_id.tax_item_id
 
-            else:
+        else:
 
-                all_parent_categ_ids = self.env['product.category'].search(
-                    [('id', 'parent_of', record.categ_id.id)]).filtered(lambda x: x.tax_item_id)
+            all_parent_categ_ids = self.env['product.category'].search(
+                [('id', 'parent_of', self.categ_id.id)]).filtered(lambda x: x.tax_item_id)
 
-                return all_parent_categ_ids[0].tax_item_id
+            return all_parent_categ_ids[0].tax_item_id
