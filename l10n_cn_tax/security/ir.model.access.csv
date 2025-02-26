@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+l10n_cn_tax.access_tax_catalog_category,access_tax_catalog_category,l10n_cn_tax.model_tax_catalog_category,base.group_user,1,1,1,1
+l10n_cn_tax.access_tax_catalog_item,access_tax_catalog_item,l10n_cn_tax.model_tax_catalog_item,base.group_user,1,1,1,1

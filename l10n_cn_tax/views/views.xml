@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- model: tax.catalog.item  -->
+    <!-- list view  -->
+    <record id="tax_catalog_item_tree_view" model="ir.ui.view">
+        <field name="name">tax.catalog.item.view.tree</field>
+        <field name="model">tax.catalog.item</field>
+        <field name="arch" type="xml">
+            <tree string="Tax Item">
+                <field name="categ_id" />
+                <field name="code" />
+                <field name="name" />
+                <field name="rate" />
+                <field name="description" />
+
+            </tree>
+        </field>
+    </record>
+    <!-- form view  -->
+    <record id="tax_catalog_item_form_view" model="ir.ui.view">
+        <field name="name">tax.catalog.item.view.form</field>
+        <field name="model">tax.catalog.item</field>
+        <field name="arch" type="xml">
+            <form string="Tax Item">
+                <sheet>
+                    <group>
+                        <field name="categ_id" />
+                        <field name="code" />
+                        <field name="name" />
+                        <field name="rate" />
+                        <field name="description" />
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- search view  -->
+    <record id="tax_catalog_item_search_view" model="ir.ui.view">
+        <field name="name">tax.catalog.item.view.search</field>
+        <field name="model">tax.catalog.item</field>
+        <field name="arch" type="xml">
+            <search string="Tax Item">
+                <field name="code" />
+                <field name="name" />
+                <field name="description" />
+                <field name="rate" />
+                <field name="categ_id" />
+
+            </search>
+        </field>
+    </record>
+    <!-- act_window  -->
+    <record id="tax_catalog_item_action" model="ir.actions.act_window">
+        <field name="name">Tax Item</field>
+        <field name="res_model">tax.catalog.item</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+
+    <!-- model: tax.catalog.category  -->
+    <!-- list view  -->
+    <record id="tax_catalog_category_tree_view" model="ir.ui.view">
+        <field name="name">tax.catalog.category.view.tree</field>
+        <field name="model">tax.catalog.category</field>
+        <field name="arch" type="xml">
+            <tree string="Tax Category">
+                <field name="code" />
+                <field name="name" />
+                <field name="complete_name" />
+
+            </tree>
+        </field>
+    </record>
+    <!-- form view  -->
+    <record id="tax_catalog_category_form_view" model="ir.ui.view">
+        <field name="name">tax.catalog.category.view.form</field>
+        <field name="model">tax.catalog.category</field>
+        <field name="arch" type="xml">
+            <form string="Tax Category">
+                <sheet>
+                    <group>
+                        <field name="parent_id" />
+                        <field name="code" />
+                        <field name="name" />
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- search view  -->
+    <record id="tax_catalog_category_search_view" model="ir.ui.view">
+        <field name="name">tax.catalog.category.view.search</field>
+        <field name="model">tax.catalog.category</field>
+        <field name="arch" type="xml">
+            <search string="Tax Category">
+                <field name="code" />
+                <field name="complete_name" />
+
+            </search>
+        </field>
+    </record>
+    <!-- act_window  -->
+    <record id="tax_catalog_category_action" model="ir.actions.act_window">
+        <field name="name">Tax Category</field>
+        <field name="res_model">tax.catalog.category</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+
+    <!-- Menus -->
+
+    <menuitem id="menu_tax_category" name="Tax Categories" parent="account.account_account_menu"
+        action="tax_catalog_category_action" />
+
+    <menuitem id="menu_tax_catalog" name="Tax Items" parent="account.account_account_menu"
+        action="tax_catalog_item_action" />
+
+    <!-- model: account.move  -->
+    <!-- view type: form -->
+    <!-- base module: account  -->
+    <record id="view_account_move_line_form_inherit_account" model="ir.ui.view">
+        <field name="name">account.move.form.view.inherit</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form" />
+        <field name="mode">extension</field>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='name']"
+                position="after">
+                <field name="tax_item_id" />
+            </xpath>
+
+        </field>
+    </record>
+
+    <!-- model: product.template  -->
+    <!-- view type: form -->
+    <!-- base module: account  -->
+    <record id="view_product_template_form_inherit_account" model="ir.ui.view">
+        <field name="name">product.template.form.view.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="account.product_template_form_view" />
+        <field name="mode">extension</field>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='invoicing']/group" position="inside">
+                <group string="Tax">
+                    <field name="tax_item_id"
+                        groups="account.group_account_readonly" />
+                </group>
+
+            </xpath>
+        </field>
+    </record>
+
+    <!-- model: product.category  -->
+    <!-- view type: form -->
+    <!-- base module: account  -->
+    <record id="view_product_category_form_inherit_account" model="ir.ui.view">
+        <field name="name">product.category.form.view.inherit</field>
+        <field name="model">product.category</field>
+        <field name="inherit_id" ref="account.view_category_property_form" />
+        <field name="mode">extension</field>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='account_property']/group" position="inside">
+                <field name="tax_item_id" />
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>
