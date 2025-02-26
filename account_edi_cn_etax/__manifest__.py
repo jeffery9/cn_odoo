@@ -16,7 +16,7 @@
     "version": "0.1",
     "depends": ["l10n_cn_tax"],
     "external_dependencies": {
-        "python": [ ],
+        "python": ['addressparser' ],
     },
     # always loaded
     "data": [

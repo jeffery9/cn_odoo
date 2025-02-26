@@ -2,6 +2,7 @@ import re
 
 from collections import defaultdict
 from markupsafe import Markup
+from addressparser import AddressParser
 
 from odoo import fields, models, api, _, Command
 from odoo.exceptions import UserError
@@ -34,13 +35,8 @@ class AccountMove(models.Model):
         BasicInformation = tree.xpath('//BasicInformation')
 
         IssuItemInformation = tree.xpath('//IssuItemInformation')
-        # print(IssuItemInformation)
         data = []
         for IssuItem in IssuItemInformation:
-            # <ItemName>*纸制品*纸箱</ItemName>
-            #         <Amount>-2.73</Amount>
-            #         <TaxRate>0.13</TaxRate>
-            #         <ComTaxAm>-0.35</ComTaxAm>
             d = {}
             for ele in IssuItem.getchildren():
                 d.update({
@@ -67,15 +63,28 @@ class AccountMove(models.Model):
         SellerTelNum = SellerInformation[0].find('SellerTelNum').text
 
         if invoice.move_type == 'in_invoice':
-            parnter_id = self.env['res.partner'].search(
+            parnter_id = self.env['res.partner'].with_context(
+                lang='zh_CN').search(
                 [('name', '=', SellerName)], limit=1)
+
+            parser = AddressParser()
+            address_json = parser.parse(SellerAddr)
+
             if not parnter_id:
-                parnter_id = self.env['res.partner'].create({
-                    'name': SellerName,
-                    'phone': SellerTelNum,
-                    'street': SellerAddr,
-                    'vat': SellerIdNum
-                })
+                province = address_json.get('province')
+                state_id = self.env['res.country.state'].with_context(
+                    lang='zh_CN').search([('name', '=', province)], limit=1)
+
+                parnter_id = self.env['res.partner'].with_context(
+                    lang='zh_CN').create({
+                        'name': SellerName,
+                        'phone': SellerTelNum,
+                        'state': state_id.id,
+                        'city': address_json.get('city'),
+                        'street': address_json.get('district'),
+                        'street2': address_json.get('town')+address_json.get('detail'),
+                        'vat': SellerIdNum
+                    })
 
             invoice.partner_id = parnter_id.id
 
@@ -98,14 +107,16 @@ class AccountMove(models.Model):
                 tax_id = self.env['account.tax'].search(
                     [('type_tax_use', '=',  'purchase'), ('amount', '=', float(rate)*100)], limit=1)
 
-                product_id = self.env['product.product'].search(
+                product_id = self.env['product.product'].with_context(
+                    lang='zh_CN').search(
                     [('name', '=', item_name)], limit=1)
                 if not product_id:
-                    product_id = self.env['product.product'].create({
-                        'name': item_name,
-                        'uom_id': uom_id.id
+                    product_id = self.env['product.product'].with_context(
+                        lang='zh_CN').create({
+                            'name': item_name,
+                            'uom_id': uom_id.id
 
-                    })
+                        })
 
                 inv_lines_val.append(Command.create({
                     'product_id': product_id.id,
