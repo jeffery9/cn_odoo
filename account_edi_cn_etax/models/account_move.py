@@ -2,7 +2,7 @@ import re
 
 from collections import defaultdict
 from markupsafe import Markup
-from addressparser import AddressParser
+import addressparser
 
 from odoo import fields, models, api, _, Command
 from odoo.exceptions import UserError
@@ -67,10 +67,8 @@ class AccountMove(models.Model):
                 lang='zh_CN').search(
                 [('name', '=', SellerName)], limit=1)
 
-            parser = AddressParser()
-            address_json = parser.parse(SellerAddr)
-
             if not parnter_id:
+                address_json = self._parse_cn_address([SellerAddr])
                 province = address_json.get('province')
                 state_id = self.env['res.country.state'].with_context(
                     lang='zh_CN').search([('name', '=', province)], limit=1)
@@ -82,7 +80,7 @@ class AccountMove(models.Model):
                         'state': state_id.id,
                         'city': address_json.get('city'),
                         'street': address_json.get('district'),
-                        'street2': address_json.get('town')+address_json.get('detail'),
+                        'street2': address_json.get('detail'),
                         'vat': SellerIdNum
                     })
 
@@ -129,3 +127,22 @@ class AccountMove(models.Model):
             invoice.invoice_line_ids = inv_lines_val
 
         return self
+
+    def _parse_cn_address(address: list) -> dict:
+        result = []
+        df = addressparser.transform(address)
+
+        for map_key in zip(df["省"], df["市"], df["区"], df["地名"]):
+            place = map_key[3]
+            if not isinstance(place, str):
+                place = ''
+            result.append(
+                '\t'.join([map_key[0], map_key[1], map_key[2], place]))
+
+        result = result[0].split('\t')
+        return {
+            'province': result[0],
+            'city': result[1],
+            'district': result[2],
+            'detail': result[3]
+        }
