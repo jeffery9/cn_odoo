@@ -38,4 +38,7 @@ class ProductProduct(models.Model):
             all_parent_categ_ids = self.env['product.category'].search(
                 [('id', 'parent_of', self.categ_id.id)]).filtered(lambda x: x.tax_item_id)
 
-            return all_parent_categ_ids[0].tax_item_id
+            if all_parent_categ_ids :
+                return  all_parent_categ_ids[0].tax_item_id
+
+            return self.env['tax.catalog.item']
