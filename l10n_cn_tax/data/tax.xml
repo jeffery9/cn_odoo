@@ -1,0 +1,1814 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<odoo>  
+    <!-- 第一级：中国税目根分类 -->  
+    <record id="tax_catalog_category_china_root" model="tax.catalog.category">  
+        <field name="name">中国税目</field>  
+        <field name="code">CN</field>  
+    </record>  
+  
+    <!-- 第二级：增值税主分类 -->  
+    <record id="tax_catalog_category_china_vat" model="tax.catalog.category">  
+        <field name="name">增值税</field>  
+        <field name="code">1</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：增值税子分类 - 按税率分类 -->  
+    <record id="tax_catalog_category_vat_13" model="tax.catalog.category">  
+        <field name="name">增值税13%税率</field>  
+        <field name="code">1010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_vat"/>  
+    </record>  
+  
+    <!-- 第四级：13%税率下的具体分类 -->  
+    <record id="tax_catalog_category_vat_13_goods" model="tax.catalog.category">  
+        <field name="name">销售货物</field>  
+        <field name="code">10101</field>  
+        <field name="parent_id" ref="tax_catalog_category_vat_13"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_vat_13_processing" model="tax.catalog.category">  
+        <field name="name">加工修理修配劳务</field>  
+        <field name="code">10102</field>  
+        <field name="parent_id" ref="tax_catalog_category_vat_13"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_vat_13_rental" model="tax.catalog.category">  
+        <field name="name">有形动产租赁</field>  
+        <field name="code">10103</field>  
+        <field name="parent_id" ref="tax_catalog_category_vat_13"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_vat_1010101" model="tax.catalog.item">  
+        <field name="name">一般货物销售</field>  
+        <field name="code">1010101</field>  
+        <field name="description">销售或者进口的一般货物</field>  
+        <field name="rate">13.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_13_goods"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1010102" model="tax.catalog.item">  
+        <field name="name">特定货物销售</field>  
+        <field name="code">1010102</field>  
+        <field name="description">销售或者进口的特定货物</field>  
+        <field name="rate">13.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_13_goods"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1010201" model="tax.catalog.item">  
+        <field name="name">加工劳务</field>  
+        <field name="code">1010201</field>  
+        <field name="description">提供加工劳务</field>  
+        <field name="rate">13.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_13_processing"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1010202" model="tax.catalog.item">  
+        <field name="name">修理修配劳务</field>  
+        <field name="code">1010202</field>  
+        <field name="description">提供修理修配劳务</field>  
+        <field name="rate">13.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_13_processing"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1010301" model="tax.catalog.item">  
+        <field name="name">机器设备租赁</field>  
+        <field name="code">1010301</field>  
+        <field name="description">机器设备租赁服务</field>  
+        <field name="rate">13.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_13_rental"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1010302" model="tax.catalog.item">  
+        <field name="name">运输工具租赁</field>  
+        <field name="code">1010302</field>  
+        <field name="description">运输工具租赁服务</field>  
+        <field name="rate">13.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_13_rental"/>  
+    </record>  
+  
+    <!-- 第三级：9%税率分类 -->  
+    <record id="tax_catalog_category_vat_9" model="tax.catalog.category">  
+        <field name="name">增值税9%税率</field>  
+        <field name="code">1020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_vat"/>  
+    </record>  
+  
+    <!-- 第四级：9%税率下的具体分类 -->  
+    <record id="tax_catalog_category_vat_9_transport" model="tax.catalog.category">  
+        <field name="name">交通运输服务</field>  
+        <field name="code">10201</field>  
+        <field name="parent_id" ref="tax_catalog_category_vat_9"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_vat_9_construction" model="tax.catalog.category">  
+        <field name="name">建筑服务</field>  
+        <field name="code">10202</field>  
+        <field name="parent_id" ref="tax_catalog_category_vat_9"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_vat_9_real_estate" model="tax.catalog.category">  
+        <field name="name">不动产相关</field>  
+        <field name="code">10203</field>  
+        <field name="parent_id" ref="tax_catalog_category_vat_9"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_vat_1020101" model="tax.catalog.item">  
+        <field name="name">陆路运输</field>  
+        <field name="code">1020101</field>  
+        <field name="description">陆路运输服务</field>  
+        <field name="rate">9.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_9_transport"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1020102" model="tax.catalog.item">  
+        <field name="name">水路运输</field>  
+        <field name="code">1020102</field>  
+        <field name="description">水路运输服务</field>  
+        <field name="rate">9.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_9_transport"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1020103" model="tax.catalog.item">  
+        <field name="name">航空运输</field>  
+        <field name="code">1020103</field>  
+        <field name="description">航空运输服务</field>  
+        <field name="rate">9.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_9_transport"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1020104" model="tax.catalog.item">  
+        <field name="name">邮政基础服务</field>  
+        <field name="code">1020104</field>  
+        <field name="description">邮政基础服务</field>  
+        <field name="rate">9.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_9_transport"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1020201" model="tax.catalog.item">  
+        <field name="name">工程施工</field>  
+        <field name="code">1020201</field>  
+        <field name="description">工程施工服务</field>  
+        <field name="rate">9.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_9_construction"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1020202" model="tax.catalog.item">  
+        <field name="name">安装服务</field>  
+        <field name="code">1020202</field>  
+        <field name="description">安装服务</field>  
+        <field name="rate">9.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_9_construction"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1020301" model="tax.catalog.item">  
+        <field name="name">不动产租赁</field>  
+        <field name="code">1020301</field>  
+        <field name="description">不动产租赁服务</field>  
+        <field name="rate">9.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_9_real_estate"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1020302" model="tax.catalog.item">  
+        <field name="name">不动产销售</field>  
+        <field name="code">1020302</field>  
+        <field name="description">销售不动产</field>  
+        <field name="rate">9.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_9_real_estate"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1020303" model="tax.catalog.item">  
+        <field name="name">土地使用权转让</field>  
+        <field name="code">1020303</field>  
+        <field name="description">转让土地使用权</field>  
+        <field name="rate">9.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_9_real_estate"/>  
+    </record>
+
+    <!-- 第三级：6%税率分类 -->  
+    <record id="tax_catalog_category_vat_6" model="tax.catalog.category">  
+        <field name="name">增值税6%税率</field>  
+        <field name="code">1030</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_vat"/>  
+    </record>  
+  
+    <!-- 第四级：6%税率下的具体分类 -->  
+    <record id="tax_catalog_category_vat_6_financial" model="tax.catalog.category">  
+        <field name="name">金融服务</field>  
+        <field name="code">10301</field>  
+        <field name="parent_id" ref="tax_catalog_category_vat_6"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_vat_6_modern" model="tax.catalog.category">  
+        <field name="name">现代服务</field>  
+        <field name="code">10302</field>  
+        <field name="parent_id" ref="tax_catalog_category_vat_6"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_vat_6_life" model="tax.catalog.category">  
+        <field name="name">生活服务</field>  
+        <field name="code">10303</field>  
+        <field name="parent_id" ref="tax_catalog_category_vat_6"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_vat_1030101" model="tax.catalog.item">  
+        <field name="name">银行服务</field>  
+        <field name="code">1030101</field>  
+        <field name="description">银行提供的金融服务</field>  
+        <field name="rate">6.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_6_financial"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1030102" model="tax.catalog.item">  
+        <field name="name">证券服务</field>  
+        <field name="code">1030102</field>  
+        <field name="description">证券公司提供的金融服务</field>  
+        <field name="rate">6.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_6_financial"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1030201" model="tax.catalog.item">  
+        <field name="name">研发和技术服务</field>  
+        <field name="code">1030201</field>  
+        <field name="description">研发和技术服务</field>  
+        <field name="rate">6.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_6_modern"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1030202" model="tax.catalog.item">  
+        <field name="name">信息技术服务</field>  
+        <field name="code">1030202</field>  
+        <field name="description">信息技术服务</field>  
+        <field name="rate">6.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_6_modern"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1030203" model="tax.catalog.item">  
+        <field name="name">文化创意服务</field>  
+        <field name="code">1030203</field>  
+        <field name="description">文化创意服务</field>  
+        <field name="rate">6.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_6_modern"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1030301" model="tax.catalog.item">  
+        <field name="name">餐饮住宿服务</field>  
+        <field name="code">1030301</field>  
+        <field name="description">餐饮住宿服务</field>  
+        <field name="rate">6.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_6_life"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1030302" model="tax.catalog.item">  
+        <field name="name">旅游娱乐服务</field>  
+        <field name="code">1030302</field>  
+        <field name="description">旅游娱乐服务</field>  
+        <field name="rate">6.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_6_life"/>  
+    </record>  
+  
+    <!-- 第三级：3%征收率分类 -->  
+    <record id="tax_catalog_category_vat_3" model="tax.catalog.category">  
+        <field name="name">增值税3%征收率</field>  
+        <field name="code">1040</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_vat"/>  
+    </record>  
+  
+    <!-- 第四级：3%征收率下的具体分类 -->  
+    <record id="tax_catalog_category_vat_3_small" model="tax.catalog.category">  
+        <field name="name">小规模纳税人</field>  
+        <field name="code">10401</field>  
+        <field name="parent_id" ref="tax_catalog_category_vat_3"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_vat_3_agriculture" model="tax.catalog.category">  
+        <field name="name">农产品</field>  
+        <field name="code">10402</field>  
+        <field name="parent_id" ref="tax_catalog_category_vat_3"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_vat_1040101" model="tax.catalog.item">  
+        <field name="name">小规模纳税人销售货物</field>  
+        <field name="code">1040101</field>  
+        <field name="description">小规模纳税人销售货物</field>  
+        <field name="rate">3.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_3_small"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1040102" model="tax.catalog.item">  
+        <field name="name">小规模纳税人提供应税劳务</field>  
+        <field name="code">1040102</field>  
+        <field name="description">小规模纳税人提供应税劳务</field>  
+        <field name="rate">3.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_3_small"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1040201" model="tax.catalog.item">  
+        <field name="name">农产品销售</field>  
+        <field name="code">1040201</field>  
+        <field name="description">农产品销售</field>  
+        <field name="rate">3.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_3_agriculture"/>  
+    </record>  
+  
+    <!-- 第三级：零税率分类 -->  
+    <record id="tax_catalog_category_vat_0" model="tax.catalog.category">  
+        <field name="name">增值税零税率</field>  
+        <field name="code">1050</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_vat"/>  
+    </record>  
+  
+    <!-- 第四级：零税率下的具体分类 -->  
+    <record id="tax_catalog_category_vat_0_export" model="tax.catalog.category">  
+        <field name="name">出口货物和服务</field>  
+        <field name="code">10501</field>  
+        <field name="parent_id" ref="tax_catalog_category_vat_0"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_vat_0_international" model="tax.catalog.category">  
+        <field name="name">国际运输服务</field>  
+        <field name="code">10502</field>  
+        <field name="parent_id" ref="tax_catalog_category_vat_0"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_vat_1050101" model="tax.catalog.item">  
+        <field name="name">出口货物</field>  
+        <field name="code">1050101</field>  
+        <field name="description">出口货物</field>  
+        <field name="rate">0.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_0_export"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1050102" model="tax.catalog.item">  
+        <field name="name">出口服务</field>  
+        <field name="code">1050102</field>  
+        <field name="description">向境外提供的完全在境外消费的服务</field>  
+        <field name="rate">0.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_0_export"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1050201" model="tax.catalog.item">  
+        <field name="name">国际运输服务</field>  
+        <field name="code">1050201</field>  
+        <field name="description">国际运输服务</field>  
+        <field name="rate">0.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_0_international"/>  
+    </record>  
+  
+    <!-- 第三级：免税分类 -->  
+    <record id="tax_catalog_category_vat_exempt" model="tax.catalog.category">  
+        <field name="name">增值税免税</field>  
+        <field name="code">1060</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_vat"/>  
+    </record>  
+  
+    <!-- 第四级：免税下的具体分类 -->  
+    <record id="tax_catalog_category_vat_exempt_agriculture" model="tax.catalog.category">  
+        <field name="name">农业相关</field>  
+        <field name="code">10601</field>  
+        <field name="parent_id" ref="tax_catalog_category_vat_exempt"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_vat_exempt_public" model="tax.catalog.category">  
+        <field name="name">公共服务</field>  
+        <field name="code">10607</field>  
+        <field name="parent_id" ref="tax_catalog_category_vat_exempt"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_vat_1060101" model="tax.catalog.item">  
+        <field name="name">农业生产者销售的自产农业产品</field>  
+        <field name="code">1060101</field>  
+        <field name="description">农业生产者销售的自产农业产品</field>  
+        <field name="rate">0.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_exempt_agriculture"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1060701" model="tax.catalog.item">  
+        <field name="name">学校提供的教育服务</field>  
+        <field name="code">1060701</field>  
+        <field name="description">学校提供的教育服务</field>  
+        <field name="rate">0.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_exempt_public"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vat_1060702" model="tax.catalog.item">  
+        <field name="name">医疗机构提供的医疗服务</field>  
+        <field name="code">1060702</field>  
+        <field name="description">医疗机构提供的医疗服务</field>  
+        <field name="rate">0.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vat_exempt_public"/>  
+    </record>  
+  
+    <!-- 第二级：企业所得税主分类 -->  
+    <record id="tax_catalog_category_china_eit" model="tax.catalog.category">  
+        <field name="name">企业所得税</field>  
+        <field name="code">2</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：企业所得税子分类 -->  
+    <record id="tax_catalog_category_eit_general" model="tax.catalog.category">  
+        <field name="name">一般企业所得税</field>  
+        <field name="code">2010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_eit"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_eit_preferential" model="tax.catalog.category">  
+        <field name="name">优惠税率企业所得税</field>  
+        <field name="code">2020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_eit"/>  
+    </record>  
+  
+    <!-- 第四级：企业所得税具体分类 -->  
+    <record id="tax_catalog_category_eit_general_resident" model="tax.catalog.category">  
+        <field name="name">居民企业</field>  
+        <field name="code">20101</field>  
+        <field name="parent_id" ref="tax_catalog_category_eit_general"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_eit_preferential_hightech" model="tax.catalog.category">  
+        <field name="name">高新技术企业</field>  
+        <field name="code">20201</field>  
+        <field name="parent_id" ref="tax_catalog_category_eit_preferential"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_eit_preferential_small" model="tax.catalog.category">  
+        <field name="name">小型微利企业</field>  
+        <field name="code">20202</field>  
+        <field name="parent_id" ref="tax_catalog_category_eit_preferential"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_eit_2010101" model="tax.catalog.item">  
+        <field name="name">居民企业所得税</field>  
+        <field name="code">2010101</field>  
+        <field name="description">居民企业的一般企业所得税</field>  
+        <field name="rate">25.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_eit_general_resident"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_eit_2020101" model="tax.catalog.item">  
+        <field name="name">高新技术企业所得税</field>  
+        <field name="code">2020101</field>  
+        <field name="description">国家需要重点扶持的高新技术企业</field>  
+        <field name="rate">15.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_eit_preferential_hightech"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_eit_2020201" model="tax.catalog.item">  
+        <field name="name">小型微利企业所得税</field>  
+        <field name="code">2020201</field>  
+        <field name="description">符合条件的小型微利企业</field>  
+        <field name="rate">20.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_eit_preferential_small"/>  
+    </record>  
+  
+    <!-- 第二级：个人所得税主分类 -->  
+    <record id="tax_catalog_category_china_iit" model="tax.catalog.category">  
+        <field name="name">个人所得税</field>  
+        <field name="code">3</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：个人所得税子分类 -->  
+    <record id="tax_catalog_category_iit_comprehensive" model="tax.catalog.category">  
+        <field name="name">综合所得</field>  
+        <field name="code">3010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_iit"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_iit_business" model="tax.catalog.category">  
+        <field name="name">经营所得</field>  
+        <field name="code">3020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_iit"/>  
+    </record>  
+  
+    <!-- 第四级：个人所得税具体分类 -->  
+    <record id="tax_catalog_category_iit_comprehensive_salary" model="tax.catalog.category">  
+        <field name="name">工资薪金所得</field>  
+        <field name="code">30101</field>  
+        <field name="parent_id" ref="tax_catalog_category_iit_comprehensive"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_iit_comprehensive_service" model="tax.catalog.category">  
+        <field name="name">劳务报酬所得</field>  
+        <field name="code">30102</field>  
+        <field name="parent_id" ref="tax_catalog_category_iit_comprehensive"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_iit_3010101" model="tax.catalog.item">  
+        <field name="name">工资薪金所得-3%</field>  
+        <field name="code">3010101</field>  
+        <field name="description">综合所得不超过36000元的部分</field>  
+        <field name="rate">3.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_iit_comprehensive_salary"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_iit_3010102" model="tax.catalog.item">  
+        <field name="name">工资薪金所得-10%</field>  
+        <field name="code">3010102</field>  
+        <field name="description">综合所得超过36000元至144000元的部分</field>  
+        <field name="rate">10.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_iit_comprehensive_salary"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_iit_3010201" model="tax.catalog.item">  
+        <field name="name">劳务报酬所得-3%</field>  
+        <field name="code">3010201</field>  
+        <field name="description">劳务报酬所得不超过36000元的部分</field>  
+        <field name="rate">3.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_iit_comprehensive_service"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_iit_3010202" model="tax.catalog.item">  
+        <field name="name">劳务报酬所得-10%</field>  
+        <field name="code">3010202</field>  
+        <field name="description">劳务报酬所得超过36000元至144000元的部分</field>  
+        <field name="rate">10.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_iit_comprehensive_service"/>  
+    </record>  
+  
+    <!-- 第二级：消费税主分类 -->  
+    <record id="tax_catalog_category_china_ct" model="tax.catalog.category">  
+        <field name="name">消费税</field>  
+        <field name="code">4</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：消费税子分类 -->  
+    <record id="tax_catalog_category_ct_tobacco" model="tax.catalog.category">  
+        <field name="name">烟草类</field>  
+        <field name="code">4010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_ct"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_ct_alcohol" model="tax.catalog.category">  
+        <field name="name">酒类</field>  
+        <field name="code">4020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_ct"/>  
+    </record>  
+  
+    <!-- 第四级：消费税具体分类 -->  
+    <record id="tax_catalog_category_ct_tobacco_cigarette" model="tax.catalog.category">  
+        <field name="name">卷烟</field>  
+        <field name="code">40101</field>  
+        <field name="parent_id" ref="tax_catalog_category_ct_tobacco"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_ct_alcohol_white" model="tax.catalog.category">  
+        <field name="name">白酒</field>  
+        <field name="code">40201</field>  
+        <field name="parent_id" ref="tax_catalog_category_ct_alcohol"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_ct_4010101" model="tax.catalog.item">  
+        <field name="name">卷烟-一类</field>  
+        <field name="code">4010101</field>  
+        <field name="description">一类卷烟消费税</field>  
+        <field name="rate">36.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_ct_tobacco_cigarette"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_ct_4020101" model="tax.catalog.item">  
+        <field name="name">白酒-高档</field>  
+        <field name="code">4020101</field>  
+        <field name="description">高档白酒消费税</field>  
+        <field name="rate">20.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_ct_alcohol_white"/>  
+    </record>  
+  
+    <!-- 第二级：城市维护建设税主分类 -->  
+    <record id="tax_catalog_category_china_city" model="tax.catalog.category">  
+        <field name="name">城市维护建设税</field>  
+        <field name="code">5</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：城市维护建设税子分类 -->  
+    <record id="tax_catalog_category_city_urban" model="tax.catalog.category">  
+        <field name="name">市区</field>  
+        <field name="code">5010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_city"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_city_county" model="tax.catalog.category">  
+        <field name="name">县城、镇</field>  
+        <field name="code">5020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_city"/>  
+    </record>  
+  
+    <!-- 第四级：城市维护建设税具体分类 -->  
+    <record id="tax_catalog_category_city_urban_large" model="tax.catalog.category">  
+        <field name="name">大城市</field>  
+        <field name="code">50101</field>  
+        <field name="parent_id" ref="tax_catalog_category_city_urban"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_city_5010101" model="tax.catalog.item">  
+        <field name="name">大城市城建税</field>  
+        <field name="code">5010101</field>  
+        <field name="description">大城市城市维护建设税</field>  
+        <field name="rate">7.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_city_urban_large"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_city_5020101" model="tax.catalog.item">  
+        <field name="name">县城城建税</field>  
+        <field name="code">5020101</field>  
+        <field name="description">县城城市维护建设税</field>  
+        <field name="rate">5.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_city_county"/>  
+    </record>  
+
+        <!-- 第三级：城市维护建设税子分类 - 其他地区 -->  
+    <record id="tax_catalog_category_city_rural" model="tax.catalog.category">  
+        <field name="name">其他地区</field>  
+        <field name="code">5030</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_city"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 - 其他地区城建税 -->  
+    <record id="tax_catalog_item_city_5030101" model="tax.catalog.item">  
+        <field name="name">其他地区城建税</field>  
+        <field name="code">5030101</field>  
+        <field name="description">其他地区城市维护建设税</field>  
+        <field name="rate">1.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_city_rural"/>  
+    </record>  
+  
+    <!-- 第二级：教育费附加主分类 -->  
+    <record id="tax_catalog_category_china_edu" model="tax.catalog.category">  
+        <field name="name">教育费附加</field>  
+        <field name="code">6</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：教育费附加子分类 -->  
+    <record id="tax_catalog_category_edu_national" model="tax.catalog.category">  
+        <field name="name">国家教育费附加</field>  
+        <field name="code">6010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_edu"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_edu_local" model="tax.catalog.category">  
+        <field name="name">地方教育附加</field>  
+        <field name="code">6020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_edu"/>  
+    </record>  
+  
+    <!-- 第四级：教育费附加具体分类 -->  
+    <record id="tax_catalog_category_edu_national_standard" model="tax.catalog.category">  
+        <field name="name">标准教育费附加</field>  
+        <field name="code">60101</field>  
+        <field name="parent_id" ref="tax_catalog_category_edu_national"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_edu_local_standard" model="tax.catalog.category">  
+        <field name="name">标准地方教育附加</field>  
+        <field name="code">60201</field>  
+        <field name="parent_id" ref="tax_catalog_category_edu_local"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_edu_6010101" model="tax.catalog.item">  
+        <field name="name">教育费附加</field>  
+        <field name="code">6010101</field>  
+        <field name="description">以纳税人实际缴纳的增值税、消费税税额为计税依据</field>  
+        <field name="rate">3.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_edu_national_standard"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_edu_6020101" model="tax.catalog.item">  
+        <field name="name">地方教育附加</field>  
+        <field name="code">6020101</field>  
+        <field name="description">以纳税人实际缴纳的增值税、消费税税额为计税依据</field>  
+        <field name="rate">2.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_edu_local_standard"/>  
+    </record>  
+  
+    <!-- 第二级：印花税主分类 -->  
+    <record id="tax_catalog_category_china_stamp" model="tax.catalog.category">  
+        <field name="name">印花税</field>  
+        <field name="code">7</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：印花税子分类 -->  
+    <record id="tax_catalog_category_stamp_contract" model="tax.catalog.category">  
+        <field name="name">合同类印花税</field>  
+        <field name="code">7010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_stamp"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_stamp_certificate" model="tax.catalog.category">  
+        <field name="name">产权转移类印花税</field>  
+        <field name="code">7020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_stamp"/>  
+    </record>  
+  
+    <!-- 第四级：印花税具体分类 -->  
+    <record id="tax_catalog_category_stamp_contract_purchase" model="tax.catalog.category">  
+        <field name="name">购销合同</field>  
+        <field name="code">70101</field>  
+        <field name="parent_id" ref="tax_catalog_category_stamp_contract"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_stamp_contract_processing" model="tax.catalog.category">  
+        <field name="name">加工承揽合同</field>  
+        <field name="code">70102</field>  
+        <field name="parent_id" ref="tax_catalog_category_stamp_contract"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_stamp_contract_construction" model="tax.catalog.category">  
+        <field name="name">建设工程合同</field>  
+        <field name="code">70103</field>  
+        <field name="parent_id" ref="tax_catalog_category_stamp_contract"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_stamp_contract_lease" model="tax.catalog.category">  
+        <field name="name">租赁合同</field>  
+        <field name="code">70104</field>  
+        <field name="parent_id" ref="tax_catalog_category_stamp_contract"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_stamp_7010101" model="tax.catalog.item">  
+        <field name="name">购销合同印花税</field>  
+        <field name="code">7010101</field>  
+        <field name="description">购销合同印花税</field>  
+        <field name="rate">0.03</field>  
+        <field name="categ_id" ref="tax_catalog_category_stamp_contract_purchase"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_stamp_7010201" model="tax.catalog.item">  
+        <field name="name">加工承揽合同印花税</field>  
+        <field name="code">7010201</field>  
+        <field name="description">加工承揽合同印花税</field>  
+        <field name="rate">0.05</field>  
+        <field name="categ_id" ref="tax_catalog_category_stamp_contract_processing"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_stamp_7010301" model="tax.catalog.item">  
+        <field name="name">建设工程合同印花税</field>  
+        <field name="code">7010301</field>  
+        <field name="description">建设工程合同印花税</field>  
+        <field name="rate">0.03</field>  
+        <field name="categ_id" ref="tax_catalog_category_stamp_contract_construction"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_stamp_7010401" model="tax.catalog.item">  
+        <field name="name">租赁合同印花税</field>  
+        <field name="code">7010401</field>  
+        <field name="description">租赁合同印花税</field>  
+        <field name="rate">0.1</field>  
+        <field name="categ_id" ref="tax_catalog_category_stamp_contract_lease"/>  
+    </record>  
+  
+    <!-- 第二级：房产税主分类 -->  
+    <record id="tax_catalog_category_china_property" model="tax.catalog.category">  
+        <field name="name">房产税</field>  
+        <field name="code">8</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：房产税子分类 -->  
+    <record id="tax_catalog_category_property_value" model="tax.catalog.category">  
+        <field name="name">从价计征</field>  
+        <field name="code">8010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_property"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_property_rent" model="tax.catalog.category">  
+        <field name="name">从租计征</field>  
+        <field name="code">8020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_property"/>  
+    </record>  
+  
+    <!-- 第四级：房产税具体分类 -->  
+    <record id="tax_catalog_category_property_value_standard" model="tax.catalog.category">  
+        <field name="name">标准从价计征</field>  
+        <field name="code">80101</field>  
+        <field name="parent_id" ref="tax_catalog_category_property_value"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_property_rent_standard" model="tax.catalog.category">  
+        <field name="name">标准从租计征</field>  
+        <field name="code">80201</field>  
+        <field name="parent_id" ref="tax_catalog_category_property_rent"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_property_8010101" model="tax.catalog.item">  
+        <field name="name">房产税-从价计征</field>  
+        <field name="code">8010101</field>  
+        <field name="description">以房产原值一次减除10%-30%后的余值为计税依据</field>  
+        <field name="rate">1.2</field>  
+        <field name="categ_id" ref="tax_catalog_category_property_value_standard"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_property_8020101" model="tax.catalog.item">  
+        <field name="name">房产税-从租计征</field>  
+        <field name="code">8020101</field>  
+        <field name="description">以房产租金收入为计税依据</field>  
+        <field name="rate">12.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_property_rent_standard"/>  
+    </record>  
+
+        <!-- 第二级：土地增值税主分类 -->  
+    <record id="tax_catalog_category_china_land_vat" model="tax.catalog.category">  
+        <field name="name">土地增值税</field>  
+        <field name="code">9</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：土地增值税子分类 -->  
+    <record id="tax_catalog_category_land_vat_normal" model="tax.catalog.category">  
+        <field name="name">普通标准</field>  
+        <field name="code">9010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_land_vat"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_land_vat_special" model="tax.catalog.category">  
+        <field name="name">特殊情形</field>  
+        <field name="code">9020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_land_vat"/>  
+    </record>  
+  
+    <!-- 第四级：土地增值税具体分类 -->  
+    <record id="tax_catalog_category_land_vat_normal_level" model="tax.catalog.category">  
+        <field name="name">四级超率累进税率</field>  
+        <field name="code">90101</field>  
+        <field name="parent_id" ref="tax_catalog_category_land_vat_normal"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_land_vat_9010101" model="tax.catalog.item">  
+        <field name="name">土地增值税-增值额未超过扣除项目金额50%</field>  
+        <field name="code">9010101</field>  
+        <field name="description">增值额未超过扣除项目金额50%的部分</field>  
+        <field name="rate">30.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_land_vat_normal_level"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_land_vat_9010102" model="tax.catalog.item">  
+        <field name="name">土地增值税-增值额超过扣除项目金额50%</field>  
+        <field name="code">9010102</field>  
+        <field name="description">增值额超过扣除项目金额50%未超过100%的部分</field>  
+        <field name="rate">40.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_land_vat_normal_level"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_land_vat_9010103" model="tax.catalog.item">  
+        <field name="name">土地增值税-增值额超过扣除项目金额100%</field>  
+        <field name="code">9010103</field>  
+        <field name="description">增值额超过扣除项目金额100%未超过200%的部分</field>  
+        <field name="rate">50.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_land_vat_normal_level"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_land_vat_9010104" model="tax.catalog.item">  
+        <field name="name">土地增值税-增值额超过扣除项目金额200%</field>  
+        <field name="code">9010104</field>  
+        <field name="description">增值额超过扣除项目金额200%的部分</field>  
+        <field name="rate">60.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_land_vat_normal_level"/>  
+    </record>  
+  
+    <!-- 第二级：车辆购置税主分类 -->  
+    <record id="tax_catalog_category_china_vehicle_purchase" model="tax.catalog.category">  
+        <field name="name">车辆购置税</field>  
+        <field name="code">10</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：车辆购置税子分类 -->  
+    <record id="tax_catalog_category_vehicle_purchase_normal" model="tax.catalog.category">  
+        <field name="name">一般车辆</field>  
+        <field name="code">10010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_vehicle_purchase"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_vehicle_purchase_special" model="tax.catalog.category">  
+        <field name="name">特殊车辆</field>  
+        <field name="code">10020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_vehicle_purchase"/>  
+    </record>  
+  
+    <!-- 第四级：车辆购置税具体分类 -->  
+    <record id="tax_catalog_category_vehicle_purchase_normal_standard" model="tax.catalog.category">  
+        <field name="name">标准税率</field>  
+        <field name="code">100101</field>  
+        <field name="parent_id" ref="tax_catalog_category_vehicle_purchase_normal"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_vehicle_purchase_10010101" model="tax.catalog.item">  
+        <field name="name">车辆购置税-一般车辆</field>  
+        <field name="code">10010101</field>  
+        <field name="description">一般车辆购置税</field>  
+        <field name="rate">10.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vehicle_purchase_normal_standard"/>  
+    </record>  
+  
+    <!-- 第二级：契税主分类 -->  
+    <record id="tax_catalog_category_china_deed" model="tax.catalog.category">  
+        <field name="name">契税</field>  
+        <field name="code">11</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：契税子分类 -->  
+    <record id="tax_catalog_category_deed_house" model="tax.catalog.category">  
+        <field name="name">住房契税</field>  
+        <field name="code">11010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_deed"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_deed_land" model="tax.catalog.category">  
+        <field name="name">土地契税</field>  
+        <field name="code">11020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_deed"/>  
+    </record>  
+  
+    <!-- 第四级：契税具体分类 -->  
+    <record id="tax_catalog_category_deed_house_first" model="tax.catalog.category">  
+        <field name="name">首套住房</field>  
+        <field name="code">110101</field>  
+        <field name="parent_id" ref="tax_catalog_category_deed_house"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_deed_house_second" model="tax.catalog.category">  
+        <field name="name">二套住房</field>  
+        <field name="code">110102</field>  
+        <field name="parent_id" ref="tax_catalog_category_deed_house"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_deed_11010101" model="tax.catalog.item">  
+        <field name="name">契税-首套住房90平米以下</field>  
+        <field name="code">11010101</field>  
+        <field name="description">首套住房90平米以下契税</field>  
+        <field name="rate">1.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_deed_house_first"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_deed_11010201" model="tax.catalog.item">  
+        <field name="name">契税-二套住房</field>  
+        <field name="code">11010201</field>  
+        <field name="description">二套住房契税</field>  
+        <field name="rate">3.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_deed_house_second"/>  
+    </record>  
+  
+    <!-- 第二级：耕地占用税主分类 -->  
+    <record id="tax_catalog_category_china_farmland" model="tax.catalog.category">  
+        <field name="name">耕地占用税</field>  
+        <field name="code">12</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：耕地占用税子分类 -->  
+    <record id="tax_catalog_category_farmland_region" model="tax.catalog.category">  
+        <field name="name">区域分类</field>  
+        <field name="code">12010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_farmland"/>  
+    </record>  
+  
+    <!-- 第四级：耕地占用税具体分类 -->  
+    <record id="tax_catalog_category_farmland_region_developed" model="tax.catalog.category">  
+        <field name="name">经济发达地区</field>  
+        <field name="code">120101</field>  
+        <field name="parent_id" ref="tax_catalog_category_farmland_region"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_farmland_region_less_developed" model="tax.catalog.category">  
+        <field name="name">经济欠发达地区</field>  
+        <field name="code">120102</field>  
+        <field name="parent_id" ref="tax_catalog_category_farmland_region"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_farmland_12010101" model="tax.catalog.item">  
+        <field name="name">耕地占用税-经济发达地区</field>  
+        <field name="code">12010101</field>  
+        <field name="description">经济发达地区耕地占用税（每平方米）</field>  
+        <field name="rate">40.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_farmland_region_developed"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_farmland_12010201" model="tax.catalog.item">  
+        <field name="name">耕地占用税-经济欠发达地区</field>  
+        <field name="code">12010201</field>  
+        <field name="description">经济欠发达地区耕地占用税（每平方米）</field>  
+        <field name="rate">20.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_farmland_region_less_developed"/>  
+    </record>  
+
+        <!-- 第二级：车船税主分类 -->  
+    <record id="tax_catalog_category_china_vehicle_vessel" model="tax.catalog.category">  
+        <field name="name">车船税</field>  
+        <field name="code">13</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：车船税子分类 -->  
+    <record id="tax_catalog_category_vehicle_vessel_car" model="tax.catalog.category">  
+        <field name="name">车辆</field>  
+        <field name="code">13010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_vehicle_vessel"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_vehicle_vessel_ship" model="tax.catalog.category">  
+        <field name="name">船舶</field>  
+        <field name="code">13020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_vehicle_vessel"/>  
+    </record>  
+  
+    <!-- 第四级：车船税具体分类 -->  
+    <record id="tax_catalog_category_vehicle_vessel_car_passenger" model="tax.catalog.category">  
+        <field name="name">乘用车</field>  
+        <field name="code">130101</field>  
+        <field name="parent_id" ref="tax_catalog_category_vehicle_vessel_car"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_vehicle_vessel_car_commercial" model="tax.catalog.category">  
+        <field name="name">商用车</field>  
+        <field name="code">130102</field>  
+        <field name="parent_id" ref="tax_catalog_category_vehicle_vessel_car"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_vehicle_vessel_13010101" model="tax.catalog.item">  
+        <field name="name">车船税-小型乘用车</field>  
+        <field name="code">13010101</field>  
+        <field name="description">排量1.6升以下小型乘用车</field>  
+        <field name="rate">300.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vehicle_vessel_car_passenger"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vehicle_vessel_13010102" model="tax.catalog.item">  
+        <field name="name">车船税-中型乘用车</field>  
+        <field name="code">13010102</field>  
+        <field name="description">排量1.6-2.0升中型乘用车</field>  
+        <field name="rate">480.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vehicle_vessel_car_passenger"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_vehicle_vessel_13010201" model="tax.catalog.item">  
+        <field name="name">车船税-货车</field>  
+        <field name="code">13010201</field>  
+        <field name="description">载重5吨以下货车</field>  
+        <field name="rate">720.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_vehicle_vessel_car_commercial"/>  
+    </record>  
+  
+    <!-- 第二级：资源税主分类 -->  
+    <record id="tax_catalog_category_china_resource" model="tax.catalog.category">  
+        <field name="name">资源税</field>  
+        <field name="code">14</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：资源税子分类 -->  
+    <record id="tax_catalog_category_resource_mineral" model="tax.catalog.category">  
+        <field name="name">矿产资源</field>  
+        <field name="code">14010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_resource"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_resource_water" model="tax.catalog.category">  
+        <field name="name">水资源</field>  
+        <field name="code">14020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_resource"/>  
+    </record>  
+  
+    <!-- 第四级：资源税具体分类 -->  
+    <record id="tax_catalog_category_resource_mineral_oil" model="tax.catalog.category">  
+        <field name="name">原油</field>  
+        <field name="code">140101</field>  
+        <field name="parent_id" ref="tax_catalog_category_resource_mineral"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_resource_mineral_gas" model="tax.catalog.category">  
+        <field name="name">天然气</field>  
+        <field name="code">140102</field>  
+        <field name="parent_id" ref="tax_catalog_category_resource_mineral"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_resource_mineral_coal" model="tax.catalog.category">  
+        <field name="name">煤炭</field>  
+        <field name="code">140103</field>  
+        <field name="parent_id" ref="tax_catalog_category_resource_mineral"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_resource_14010101" model="tax.catalog.item">  
+        <field name="name">资源税-原油</field>  
+        <field name="code">14010101</field>  
+        <field name="description">原油资源税</field>  
+        <field name="rate">6.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_resource_mineral_oil"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_resource_14010201" model="tax.catalog.item">  
+        <field name="name">资源税-天然气</field>  
+        <field name="code">14010201</field>  
+        <field name="description">天然气资源税</field>  
+        <field name="rate">6.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_resource_mineral_gas"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_resource_14010301" model="tax.catalog.item">  
+        <field name="name">资源税-煤炭</field>  
+        <field name="code">14010301</field>  
+        <field name="description">煤炭资源税</field>  
+        <field name="rate">2.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_resource_mineral_coal"/>  
+    </record>  
+  
+    <!-- 第二级：环境保护税主分类 -->  
+    <record id="tax_catalog_category_china_environment" model="tax.catalog.category">  
+        <field name="name">环境保护税</field>  
+        <field name="code">15</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：环境保护税子分类 -->  
+    <record id="tax_catalog_category_environment_air" model="tax.catalog.category">  
+        <field name="name">大气污染物</field>  
+        <field name="code">15010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_environment"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_environment_water" model="tax.catalog.category">  
+        <field name="name">水污染物</field>  
+        <field name="code">15020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_environment"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_environment_solid" model="tax.catalog.category">  
+        <field name="name">固体废物</field>  
+        <field name="code">15030</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_environment"/>  
+    </record>  
+  
+    <!-- 第四级：环境保护税具体分类 -->  
+    <record id="tax_catalog_category_environment_air_standard" model="tax.catalog.category">  
+        <field name="name">标准大气污染物</field>  
+        <field name="code">150101</field>  
+        <field name="parent_id" ref="tax_catalog_category_environment_air"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_environment_15010101" model="tax.catalog.item">  
+        <field name="name">环境保护税-大气污染物</field>  
+        <field name="code">15010101</field>  
+        <field name="description">大气污染物环境保护税（每污染当量）</field>  
+        <field name="rate">1.2</field>  
+        <field name="categ_id" ref="tax_catalog_category_environment_air_standard"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_environment_15020101" model="tax.catalog.item">  
+        <field name="name">环境保护税-水污染物</field>  
+        <field name="code">15020101</field>  
+        <field name="description">水污染物环境保护税（每污染当量）</field>  
+        <field name="rate">1.4</field>  
+        <field name="categ_id" ref="tax_catalog_category_environment_water"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_environment_15030101" model="tax.catalog.item">  
+        <field name="name">环境保护税-固体废物</field>  
+        <field name="code">15030101</field>  
+        <field name="description">固体废物环境保护税（每吨）</field>  
+        <field name="rate">25.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_environment_solid"/>  
+    </record>  
+  
+    <!-- 第二级：烟叶税主分类 -->  
+    <record id="tax_catalog_category_china_tobacco" model="tax.catalog.category">  
+        <field name="name">烟叶税</field>  
+        <field name="code">16</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：烟叶税子分类 -->  
+    <record id="tax_catalog_category_tobacco_standard" model="tax.catalog.category">  
+        <field name="name">标准烟叶税</field>  
+        <field name="code">16010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_tobacco"/>  
+    </record>  
+  
+    <!-- 第四级：烟叶税具体分类 -->  
+    <record id="tax_catalog_category_tobacco_standard_normal" model="tax.catalog.category">  
+        <field name="name">一般烟叶</field>  
+        <field name="code">160101</field>  
+        <field name="parent_id" ref="tax_catalog_category_tobacco_standard"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_tobacco_16010101" model="tax.catalog.item">  
+        <field name="name">烟叶税-一般烟叶</field>  
+        <field name="code">16010101</field>  
+        <field name="description">烟叶税（按烟叶收购价格计算）</field>  
+        <field name="rate">20.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_tobacco_standard_normal"/>  
+    </record>  
+
+    <!-- 第二级：文化事业建设费主分类 -->  
+    <record id="tax_catalog_category_china_culture" model="tax.catalog.category">  
+        <field name="name">文化事业建设费</field>  
+        <field name="code">17</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：文化事业建设费子分类 -->  
+    <record id="tax_catalog_category_culture_entertainment" model="tax.catalog.category">  
+        <field name="name">娱乐业</field>  
+        <field name="code">17010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_culture"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_culture_advertising" model="tax.catalog.category">  
+        <field name="name">广告业</field>  
+        <field name="code">17020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_culture"/>  
+    </record>  
+  
+    <!-- 第四级：文化事业建设费具体分类 -->  
+    <record id="tax_catalog_category_culture_entertainment_standard" model="tax.catalog.category">  
+        <field name="name">标准娱乐业</field>  
+        <field name="code">170101</field>  
+        <field name="parent_id" ref="tax_catalog_category_culture_entertainment"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_culture_advertising_standard" model="tax.catalog.category">  
+        <field name="name">标准广告业</field>  
+        <field name="code">170201</field>  
+        <field name="parent_id" ref="tax_catalog_category_culture_advertising"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_culture_17010101" model="tax.catalog.item">  
+        <field name="name">文化事业建设费-娱乐业</field>  
+        <field name="code">17010101</field>  
+        <field name="description">娱乐业营业收入的文化事业建设费</field>  
+        <field name="rate">3.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_culture_entertainment_standard"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_culture_17020101" model="tax.catalog.item">  
+        <field name="name">文化事业建设费-广告业</field>  
+        <field name="code">17020101</field>  
+        <field name="description">广告业营业收入的文化事业建设费</field>  
+        <field name="rate">3.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_culture_advertising_standard"/>  
+    </record>  
+  
+    <!-- 第二级：关税主分类 -->  
+    <record id="tax_catalog_category_china_customs" model="tax.catalog.category">  
+        <field name="name">关税</field>  
+        <field name="code">18</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：关税子分类 -->  
+    <record id="tax_catalog_category_customs_import" model="tax.catalog.category">  
+        <field name="name">进口关税</field>  
+        <field name="code">18010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_customs"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_customs_export" model="tax.catalog.category">  
+        <field name="name">出口关税</field>  
+        <field name="code">18020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_customs"/>  
+    </record>  
+  
+    <!-- 第四级：关税具体分类 -->  
+    <record id="tax_catalog_category_customs_import_general" model="tax.catalog.category">  
+        <field name="name">一般进口关税</field>  
+        <field name="code">180101</field>  
+        <field name="parent_id" ref="tax_catalog_category_customs_import"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_customs_import_preferential" model="tax.catalog.category">  
+        <field name="name">优惠进口关税</field>  
+        <field name="code">180102</field>  
+        <field name="parent_id" ref="tax_catalog_category_customs_import"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_customs_18010101" model="tax.catalog.item">  
+        <field name="name">一般进口关税</field>  
+        <field name="code">18010101</field>  
+        <field name="description">适用于非最惠国待遇国家或地区的进口商品</field>  
+        <field name="rate">15.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_customs_import_general"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_customs_18010201" model="tax.catalog.item">  
+        <field name="name">最惠国进口关税</field>  
+        <field name="code">18010201</field>  
+        <field name="description">适用于与中国有最惠国待遇协定的国家或地区的进口商品</field>  
+        <field name="rate">8.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_customs_import_preferential"/>  
+    </record>  
+  
+    <!-- 第二级：城镇土地使用税主分类 -->  
+    <record id="tax_catalog_category_china_land_use" model="tax.catalog.category">  
+        <field name="name">城镇土地使用税</field>  
+        <field name="code">19</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：城镇土地使用税子分类 -->  
+    <record id="tax_catalog_category_land_use_city" model="tax.catalog.category">  
+        <field name="name">城市土地</field>  
+        <field name="code">19010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_land_use"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_land_use_town" model="tax.catalog.category">  
+        <field name="name">县城、建制镇土地</field>  
+        <field name="code">19020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_land_use"/>  
+    </record>  
+  
+    <!-- 第四级：城镇土地使用税具体分类 -->  
+    <record id="tax_catalog_category_land_use_city_large" model="tax.catalog.category">  
+        <field name="name">大城市土地</field>  
+        <field name="code">190101</field>  
+        <field name="parent_id" ref="tax_catalog_category_land_use_city"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_land_use_city_medium" model="tax.catalog.category">  
+        <field name="name">中等城市土地</field>  
+        <field name="code">190102</field>  
+        <field name="parent_id" ref="tax_catalog_category_land_use_city"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_land_use_19010101" model="tax.catalog.item">  
+        <field name="name">大城市土地使用税</field>  
+        <field name="code">19010101</field>  
+        <field name="description">大城市土地使用税（每平方米年税额）</field>  
+        <field name="rate">1.5</field>  
+        <field name="categ_id" ref="tax_catalog_category_land_use_city_large"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_land_use_19010201" model="tax.catalog.item">  
+        <field name="name">中等城市土地使用税</field>  
+        <field name="code">19010201</field>  
+        <field name="description">中等城市土地使用税（每平方米年税额）</field>  
+        <field name="rate">1.2</field>  
+        <field name="categ_id" ref="tax_catalog_category_land_use_city_medium"/>  
+    </record>  
+  
+    <!-- 第二级：水资源税主分类 -->  
+    <record id="tax_catalog_category_china_water" model="tax.catalog.category">  
+        <field name="name">水资源税</field>  
+        <field name="code">20</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：水资源税子分类 -->  
+    <record id="tax_catalog_category_water_surface" model="tax.catalog.category">  
+        <field name="name">地表水</field>  
+        <field name="code">20010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_water"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_water_underground" model="tax.catalog.category">  
+        <field name="name">地下水</field>  
+        <field name="code">20020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_water"/>  
+    </record>  
+  
+    <!-- 第四级：水资源税具体分类 -->  
+    <record id="tax_catalog_category_water_surface_industrial" model="tax.catalog.category">  
+        <field name="name">工业用水</field>  
+        <field name="code">200101</field>  
+        <field name="parent_id" ref="tax_catalog_category_water_surface"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_water_underground_industrial" model="tax.catalog.category">  
+        <field name="name">工业用水</field>  
+        <field name="code">200201</field>  
+        <field name="parent_id" ref="tax_catalog_category_water_underground"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_water_20010101" model="tax.catalog.item">  
+        <field name="name">地表水-工业用水</field>  
+        <field name="code">20010101</field>  
+        <field name="description">地表水工业用水税（每立方米）</field>  
+        <field name="rate">0.4</field>  
+        <field name="categ_id" ref="tax_catalog_category_water_surface_industrial"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_water_20020101" model="tax.catalog.item">  
+        <field name="name">地下水-工业用水</field>  
+        <field name="code">20020101</field>  
+        <field name="description">地下水工业用水税（每立方米）</field>  
+        <field name="rate">1.5</field>  
+        <field name="categ_id" ref="tax_catalog_category_water_underground_industrial"/>  
+    </record>  
+    <!-- 第二级：附加税主分类 -->  
+    <record id="tax_catalog_category_china_surtax" model="tax.catalog.category">  
+        <field name="name">附加税</field>  
+        <field name="code">21</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：附加税子分类 -->  
+    <record id="tax_catalog_category_surtax_development" model="tax.catalog.category">  
+        <field name="name">地方教育发展基金</field>  
+        <field name="code">21010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_surtax"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_surtax_flood" model="tax.catalog.category">  
+        <field name="name">防洪保安基金</field>  
+        <field name="code">21020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_surtax"/>  
+    </record>  
+  
+    <!-- 第四级：附加税具体分类 -->  
+    <record id="tax_catalog_category_surtax_development_standard" model="tax.catalog.category">  
+        <field name="name">标准地方教育发展基金</field>  
+        <field name="code">210101</field>  
+        <field name="parent_id" ref="tax_catalog_category_surtax_development"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_surtax_flood_standard" model="tax.catalog.category">  
+        <field name="name">标准防洪保安基金</field>  
+        <field name="code">210201</field>  
+        <field name="parent_id" ref="tax_catalog_category_surtax_flood"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_surtax_21010101" model="tax.catalog.item">  
+        <field name="name">地方教育发展基金</field>  
+        <field name="code">21010101</field>  
+        <field name="description">以纳税人实际缴纳的增值税、消费税税额为计税依据</field>  
+        <field name="rate">1.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_surtax_development_standard"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_surtax_21020101" model="tax.catalog.item">  
+        <field name="name">防洪保安基金</field>  
+        <field name="code">21020101</field>  
+        <field name="description">以纳税人实际缴纳的增值税、消费税税额为计税依据</field>  
+        <field name="rate">1.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_surtax_flood_standard"/>  
+    </record>  
+  
+    <!-- 第二级：残疾人就业保障金主分类 -->  
+    <record id="tax_catalog_category_china_disability" model="tax.catalog.category">  
+        <field name="name">残疾人就业保障金</field>  
+        <field name="code">22</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：残疾人就业保障金子分类 -->  
+    <record id="tax_catalog_category_disability_standard" model="tax.catalog.category">  
+        <field name="name">标准残疾人就业保障金</field>  
+        <field name="code">22010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_disability"/>  
+    </record>  
+  
+    <!-- 第四级：残疾人就业保障金具体分类 -->  
+    <record id="tax_catalog_category_disability_standard_normal" model="tax.catalog.category">  
+        <field name="name">一般企业</field>  
+        <field name="code">220101</field>  
+        <field name="parent_id" ref="tax_catalog_category_disability_standard"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_disability_22010101" model="tax.catalog.item">  
+        <field name="name">残疾人就业保障金-一般企业</field>  
+        <field name="code">22010101</field>  
+        <field name="description">按上年度用人单位在职职工工资总额的一定比例计征</field>  
+        <field name="rate">1.5</field>  
+        <field name="categ_id" ref="tax_catalog_category_disability_standard_normal"/>  
+    </record>  
+  
+    <!-- 第二级：水利建设基金主分类 -->  
+    <record id="tax_catalog_category_china_water_conservancy" model="tax.catalog.category">  
+        <field name="name">水利建设基金</field>  
+        <field name="code">23</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：水利建设基金子分类 -->  
+    <record id="tax_catalog_category_water_conservancy_standard" model="tax.catalog.category">  
+        <field name="name">标准水利建设基金</field>  
+        <field name="code">23010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_water_conservancy"/>  
+    </record>  
+  
+    <!-- 第四级：水利建设基金具体分类 -->  
+    <record id="tax_catalog_category_water_conservancy_standard_normal" model="tax.catalog.category">  
+        <field name="name">一般企业</field>  
+        <field name="code">230101</field>  
+        <field name="parent_id" ref="tax_catalog_category_water_conservancy_standard"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_water_conservancy_23010101" model="tax.catalog.item">  
+        <field name="name">水利建设基金-一般企业</field>  
+        <field name="code">23010101</field>  
+        <field name="description">按照增值税、消费税的一定比例计征</field>  
+        <field name="rate">0.5</field>  
+        <field name="categ_id" ref="tax_catalog_category_water_conservancy_standard_normal"/>  
+    </record>  
+  
+    <!-- 第二级：文化事业建设费主分类 -->  
+    <record id="tax_catalog_category_china_cultural_development" model="tax.catalog.category">  
+        <field name="name">文化事业建设费</field>  
+        <field name="code">24</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：文化事业建设费子分类 -->  
+    <record id="tax_catalog_category_cultural_development_advertising" model="tax.catalog.category">  
+        <field name="name">广告业</field>  
+        <field name="code">24010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_cultural_development"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_cultural_development_entertainment" model="tax.catalog.category">  
+        <field name="name">娱乐业</field>  
+        <field name="code">24020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_cultural_development"/>  
+    </record>  
+  
+    <!-- 第四级：文化事业建设费具体分类 -->  
+    <record id="tax_catalog_category_cultural_development_advertising_normal" model="tax.catalog.category">  
+        <field name="name">一般广告业</field>  
+        <field name="code">240101</field>  
+        <field name="parent_id" ref="tax_catalog_category_cultural_development_advertising"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_cultural_development_24010101" model="tax.catalog.item">  
+        <field name="name">文化事业建设费-广告业</field>  
+        <field name="code">24010101</field>  
+        <field name="description">按照提供广告服务取得的计费销售额的一定比例计征</field>  
+        <field name="rate">3.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_cultural_development_advertising_normal"/>  
+    </record>  
+  
+    <!-- 第二级：地方水库移民扶持基金主分类 -->  
+    <record id="tax_catalog_category_china_reservoir" model="tax.catalog.category">  
+        <field name="name">地方水库移民扶持基金</field>  
+        <field name="code">25</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：地方水库移民扶持基金子分类 -->  
+    <record id="tax_catalog_category_reservoir_standard" model="tax.catalog.category">  
+        <field name="name">标准地方水库移民扶持基金</field>  
+        <field name="code">25010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_reservoir"/>  
+    </record>  
+  
+    <!-- 第四级：地方水库移民扶持基金具体分类 -->  
+    <record id="tax_catalog_category_reservoir_standard_normal" model="tax.catalog.category">  
+        <field name="name">一般企业</field>  
+        <field name="code">250101</field>  
+        <field name="parent_id" ref="tax_catalog_category_reservoir_standard"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_reservoir_25010101" model="tax.catalog.item">  
+        <field name="name">地方水库移民扶持基金-一般企业</field>  
+        <field name="code">25010101</field>  
+        <field name="description">按照增值税、消费税的一定比例计征</field>  
+        <field name="rate">0.1</field>  
+        <field name="categ_id" ref="tax_catalog_category_reservoir_standard_normal"/>  
+    </record>  
+
+    <!-- 第二级：地方教育附加主分类 -->  
+    <record id="tax_catalog_category_china_local_edu_add" model="tax.catalog.category">  
+        <field name="name">地方教育附加</field>  
+        <field name="code">26</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：地方教育附加子分类 -->  
+    <record id="tax_catalog_category_local_edu_add_standard" model="tax.catalog.category">  
+        <field name="name">标准地方教育附加</field>  
+        <field name="code">26010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_local_edu_add"/>  
+    </record>  
+  
+    <!-- 第四级：地方教育附加具体分类 -->  
+    <record id="tax_catalog_category_local_edu_add_standard_normal" model="tax.catalog.category">  
+        <field name="name">一般企业</field>  
+        <field name="code">260101</field>  
+        <field name="parent_id" ref="tax_catalog_category_local_edu_add_standard"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_local_edu_add_26010101" model="tax.catalog.item">  
+        <field name="name">地方教育附加-一般企业</field>  
+        <field name="code">26010101</field>  
+        <field name="description">按照增值税、消费税的一定比例计征</field>  
+        <field name="rate">2.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_local_edu_add_standard_normal"/>  
+    </record>  
+  
+    <!-- 第二级：土地使用税主分类 -->  
+    <record id="tax_catalog_category_china_land_use_tax" model="tax.catalog.category">  
+        <field name="name">土地使用税</field>  
+        <field name="code">27</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：土地使用税子分类 -->  
+    <record id="tax_catalog_category_land_use_tax_urban" model="tax.catalog.category">  
+        <field name="name">城市土地使用税</field>  
+        <field name="code">27010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_land_use_tax"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_land_use_tax_rural" model="tax.catalog.category">  
+        <field name="name">农村土地使用税</field>  
+        <field name="code">27020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_land_use_tax"/>  
+    </record>  
+  
+    <!-- 第四级：土地使用税具体分类 -->  
+    <record id="tax_catalog_category_land_use_tax_urban_commercial" model="tax.catalog.category">  
+        <field name="name">商业用地</field>  
+        <field name="code">270101</field>  
+        <field name="parent_id" ref="tax_catalog_category_land_use_tax_urban"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_land_use_tax_27010101" model="tax.catalog.item">  
+        <field name="name">城市商业用地土地使用税</field>  
+        <field name="code">27010101</field>  
+        <field name="description">城市商业用地土地使用税（每平方米）</field>  
+        <field name="rate">1.8</field>  
+        <field name="categ_id" ref="tax_catalog_category_land_use_tax_urban_commercial"/>  
+    </record>  
+  
+    <!-- 第二级：社会保险费主分类 -->  
+    <record id="tax_catalog_category_china_social_insurance" model="tax.catalog.category">  
+        <field name="name">社会保险费</field>  
+        <field name="code">28</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：社会保险费子分类 -->  
+    <record id="tax_catalog_category_social_insurance_pension" model="tax.catalog.category">  
+        <field name="name">养老保险</field>  
+        <field name="code">28010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_social_insurance"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_social_insurance_medical" model="tax.catalog.category">  
+        <field name="name">医疗保险</field>  
+        <field name="code">28020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_social_insurance"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_social_insurance_unemployment" model="tax.catalog.category">  
+        <field name="name">失业保险</field>  
+        <field name="code">28030</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_social_insurance"/>  
+    </record>  
+  
+    <!-- 第四级：社会保险费具体分类 -->  
+    <record id="tax_catalog_category_social_insurance_pension_employer" model="tax.catalog.category">  
+        <field name="name">单位缴纳部分</field>  
+        <field name="code">280101</field>  
+        <field name="parent_id" ref="tax_catalog_category_social_insurance_pension"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_social_insurance_pension_employee" model="tax.catalog.category">  
+        <field name="name">个人缴纳部分</field>  
+        <field name="code">280102</field>  
+        <field name="parent_id" ref="tax_catalog_category_social_insurance_pension"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_social_insurance_28010101" model="tax.catalog.item">  
+        <field name="name">养老保险-单位缴纳</field>  
+        <field name="code">28010101</field>  
+        <field name="description">单位缴纳的基本养老保险费</field>  
+        <field name="rate">16.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_social_insurance_pension_employer"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_social_insurance_28010201" model="tax.catalog.item">  
+        <field name="name">养老保险-个人缴纳</field>  
+        <field name="code">28010201</field>  
+        <field name="description">个人缴纳的基本养老保险费</field>  
+        <field name="rate">8.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_social_insurance_pension_employee"/>  
+    </record>  
+  
+    <!-- 第二级：住房公积金主分类 -->  
+    <record id="tax_catalog_category_china_housing_fund" model="tax.catalog.category">  
+        <field name="name">住房公积金</field>  
+        <field name="code">29</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：住房公积金子分类 -->  
+    <record id="tax_catalog_category_housing_fund_basic" model="tax.catalog.category">  
+        <field name="name">基本住房公积金</field>  
+        <field name="code">29010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_housing_fund"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_housing_fund_supplementary" model="tax.catalog.category">  
+        <field name="name">补充住房公积金</field>  
+        <field name="code">29020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_housing_fund"/>  
+    </record>  
+  
+    <!-- 第四级：住房公积金具体分类 -->  
+    <record id="tax_catalog_category_housing_fund_basic_employer" model="tax.catalog.category">  
+        <field name="name">单位缴纳部分</field>  
+        <field name="code">290101</field>  
+        <field name="parent_id" ref="tax_catalog_category_housing_fund_basic"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_housing_fund_basic_employee" model="tax.catalog.category">  
+        <field name="name">个人缴纳部分</field>  
+        <field name="code">290102</field>  
+        <field name="parent_id" ref="tax_catalog_category_housing_fund_basic"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_housing_fund_29010101" model="tax.catalog.item">  
+        <field name="name">住房公积金-单位缴纳</field>  
+        <field name="code">29010101</field>  
+        <field name="description">单位缴纳的基本住房公积金</field>  
+        <field name="rate">12.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_housing_fund_basic_employer"/>  
+    </record>  
+  
+    <record id="tax_catalog_item_housing_fund_29010201" model="tax.catalog.item">  
+        <field name="name">住房公积金-个人缴纳</field>  
+        <field name="code">29010201</field>  
+        <field name="description">个人缴纳的基本住房公积金</field>  
+        <field name="rate">12.0</field>  
+        <field name="categ_id" ref="tax_catalog_category_housing_fund_basic_employee"/>  
+    </record>  
+  
+    <!-- 第二级：其他税费主分类 -->  
+    <record id="tax_catalog_category_china_other_taxes" model="tax.catalog.category">  
+        <field name="name">其他税费</field>  
+        <field name="code">30</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_root"/>  
+    </record>  
+  
+    <!-- 第三级：其他税费子分类 -->  
+    <record id="tax_catalog_category_other_taxes_local" model="tax.catalog.category">  
+        <field name="name">地方性税费</field>  
+        <field name="code">30010</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_other_taxes"/>  
+    </record>  
+  
+    <record id="tax_catalog_category_other_taxes_special" model="tax.catalog.category">  
+        <field name="name">特殊行业税费</field>  
+        <field name="code">30020</field>  
+        <field name="parent_id" ref="tax_catalog_category_china_other_taxes"/>  
+    </record>  
+  
+    <!-- 第四级：其他税费具体分类 -->  
+    <record id="tax_catalog_category_other_taxes_local_development" model="tax.catalog.category">  
+        <field name="name">地方发展基金</field>  
+        <field name="code">300101</field>  
+        <field name="parent_id" ref="tax_catalog_category_other_taxes_local"/>  
+    </record>  
+  
+    <!-- 第五级：具体税目项 -->  
+    <record id="tax_catalog_item_other_taxes_30010101" model="tax.catalog.item">  
+        <field name="name">地方发展基金</field>  
+        <field name="code">30010101</field>  
+        <field name="description">地方发展基金</field>  
+        <field name="rate">0.5</field>  
+        <field name="categ_id" ref="tax_catalog_category_other_taxes_local_development"/>  
+    </record>  
+
+    
+
+
+
+
+</odoo>

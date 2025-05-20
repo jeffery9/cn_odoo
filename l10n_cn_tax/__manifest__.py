@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    "name": "China tax cllassification/中国税目",
+    "name": "China Tax Catalog/中国税目",
     "summary": """
     tax base 
 
@@ -20,6 +20,7 @@
     },
     # always loaded
     "data": [
+        "data/tax.xml",
         "security/ir.model.access.csv",
         "views/views.xml",
         "views/templates.xml",
