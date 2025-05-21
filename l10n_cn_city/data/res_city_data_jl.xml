@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<odoo>  
+    <data noupdate="1">  
+        <!-- 吉林省长春市 -->  
+        <record id="china_city_130000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">130000</field>  
+            <field name="name">长春市</field>  
+        </record>  
+  
+        <!-- 吉林省吉林市 -->  
+        <record id="china_city_132000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">132000</field>  
+            <field name="name">吉林市</field>  
+        </record>  
+  
+        <!-- 吉林省四平市 -->  
+        <record id="china_city_136000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">136000</field>  
+            <field name="name">四平市</field>  
+        </record>  
+  
+        <!-- 吉林省辽源市 -->  
+        <record id="china_city_136200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">136200</field>  
+            <field name="name">辽源市</field>  
+        </record>  
+  
+        <!-- 吉林省通化市 -->  
+        <record id="china_city_134000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">134000</field>  
+            <field name="name">通化市</field>  
+        </record>  
+  
+        <!-- 吉林省白山市 -->  
+        <record id="china_city_134300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">134300</field>  
+            <field name="name">白山市</field>  
+        </record>  
+  
+        <!-- 吉林省松原市 -->  
+        <record id="china_city_138000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">138000</field>  
+            <field name="name">松原市</field>  
+        </record>  
+  
+        <!-- 吉林省白城市 -->  
+        <record id="china_city_137000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">137000</field>  
+            <field name="name">白城市</field>  
+        </record>  
+  
+        <!-- 吉林省延边朝鲜族自治州 -->  
+        <record id="china_city_133000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">133000</field>  
+            <field name="name">延边朝鲜族自治州</field>  
+        </record>  
+  
+        <!-- 长春市下属区县 -->  
+        <record id="china_city_130022" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">130022</field>  
+            <field name="name">长春市南关区</field>  
+        </record>  
+  
+        <record id="china_city_130021" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">130021</field>  
+            <field name="name">长春市宽城区</field>  
+        </record>  
+  
+        <record id="china_city_130051" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">130051</field>  
+            <field name="name">长春市朝阳区</field>  
+        </record>  
+  
+        <record id="china_city_130062" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">130062</field>  
+            <field name="name">长春市二道区</field>  
+        </record>  
+  
+        <record id="china_city_130103" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">130103</field>  
+            <field name="name">长春市绿园区</field>  
+        </record>  
+
+        <!-- 吉林市下属区县 -->  
+        <record id="china_city_132001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">132001</field>  
+            <field name="name">吉林市昌邑区</field>  
+        </record>  
+  
+        <record id="china_city_132002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">132002</field>  
+            <field name="name">吉林市龙潭区</field>  
+        </record>  
+  
+        <record id="china_city_132003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">132003</field>  
+            <field name="name">吉林市船营区</field>  
+        </record>  
+  
+        <record id="china_city_132004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">132004</field>  
+            <field name="name">吉林市丰满区</field>  
+        </record>  
+  
+        <record id="china_city_132005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">132005</field>  
+            <field name="name">吉林市蛟河市</field>  
+        </record>  
+  
+        <record id="china_city_132006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">132006</field>  
+            <field name="name">吉林市桦甸市</field>  
+        </record>  
+  
+        <record id="china_city_132007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">132007</field>  
+            <field name="name">吉林市舒兰市</field>  
+        </record>  
+  
+        <record id="china_city_132008" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">132008</field>  
+            <field name="name">吉林市磐石市</field>  
+        </record>  
+  
+        <record id="china_city_132009" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">132009</field>  
+            <field name="name">吉林市永吉县</field>  
+        </record>  
+  
+        <!-- 四平市下属区县 -->  
+        <record id="china_city_136001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">136001</field>  
+            <field name="name">四平市铁西区</field>  
+        </record>  
+  
+        <record id="china_city_136002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">136002</field>  
+            <field name="name">四平市铁东区</field>  
+        </record>  
+  
+        <record id="china_city_136003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">136003</field>  
+            <field name="name">四平市公主岭市</field>  
+        </record>  
+  
+        <record id="china_city_136004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">136004</field>  
+            <field name="name">四平市双辽市</field>  
+        </record>  
+  
+        <record id="china_city_136005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">136005</field>  
+            <field name="name">四平市梨树县</field>  
+        </record>  
+  
+        <record id="china_city_136006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">136006</field>  
+            <field name="name">四平市伊通满族自治县</field>  
+        </record>  
+  
+        <!-- 辽源市下属区县 -->  
+        <record id="china_city_136201" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">136201</field>  
+            <field name="name">辽源市龙山区</field>  
+        </record>  
+  
+        <record id="china_city_136202" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">136202</field>  
+            <field name="name">辽源市西安区</field>  
+        </record>  
+  
+        <record id="china_city_136203" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">136203</field>  
+            <field name="name">辽源市东丰县</field>  
+        </record>  
+  
+        <record id="china_city_136204" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">136204</field>  
+            <field name="name">辽源市东辽县</field>  
+        </record>  
+  
+        <!-- 通化市下属区县 -->  
+        <record id="china_city_134001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">134001</field>  
+            <field name="name">通化市东昌区</field>  
+        </record>  
+  
+        <record id="china_city_134002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">134002</field>  
+            <field name="name">通化市二道江区</field>  
+        </record>  
+  
+        <record id="china_city_134003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">134003</field>  
+            <field name="name">通化市梅河口市</field>  
+        </record>  
+  
+        <record id="china_city_134004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">134004</field>  
+            <field name="name">通化市集安市</field>  
+        </record>  
+  
+        <record id="china_city_134005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">134005</field>  
+            <field name="name">通化市通化县</field>  
+        </record>  
+  
+        <record id="china_city_134006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">134006</field>  
+            <field name="name">通化市辉南县</field>  
+        </record>  
+  
+        <record id="china_city_134007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">134007</field>  
+            <field name="name">通化市柳河县</field>  
+        </record>  
+
+
+        <!-- 白山市下属区县 -->  
+        <record id="china_city_134301" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">134301</field>  
+            <field name="name">白山市浑江区</field>  
+        </record>  
+  
+        <record id="china_city_134302" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">134302</field>  
+            <field name="name">白山市江源区</field>  
+        </record>  
+  
+        <record id="china_city_134303" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">134303</field>  
+            <field name="name">白山市临江市</field>  
+        </record>  
+  
+        <record id="china_city_134304" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">134304</field>  
+            <field name="name">白山市抚松县</field>  
+        </record>  
+  
+        <record id="china_city_134305" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">134305</field>  
+            <field name="name">白山市靖宇县</field>  
+        </record>  
+  
+        <record id="china_city_134306" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">134306</field>  
+            <field name="name">白山市长白朝鲜族自治县</field>  
+        </record>  
+  
+        <!-- 松原市下属区县 -->  
+        <record id="china_city_138001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">138001</field>  
+            <field name="name">松原市宁江区</field>  
+        </record>  
+  
+        <record id="china_city_138002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">138002</field>  
+            <field name="name">松原市扶余市</field>  
+        </record>  
+  
+        <record id="china_city_138003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">138003</field>  
+            <field name="name">松原市长岭县</field>  
+        </record>  
+  
+        <record id="china_city_138004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">138004</field>  
+            <field name="name">松原市乾安县</field>  
+        </record>  
+  
+        <record id="china_city_138005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">138005</field>  
+            <field name="name">松原市前郭尔罗斯蒙古族自治县</field>  
+        </record>  
+  
+        <!-- 白城市下属区县 -->  
+        <record id="china_city_137001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">137001</field>  
+            <field name="name">白城市洮北区</field>  
+        </record>  
+  
+        <record id="china_city_137002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">137002</field>  
+            <field name="name">白城市洮南市</field>  
+        </record>  
+  
+        <record id="china_city_137003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">137003</field>  
+            <field name="name">白城市大安市</field>  
+        </record>  
+  
+        <record id="china_city_137004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">137004</field>  
+            <field name="name">白城市镇赉县</field>  
+        </record>  
+  
+        <record id="china_city_137005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">137005</field>  
+            <field name="name">白城市通榆县</field>  
+        </record>  
+  
+        <!-- 延边朝鲜族自治州下属区县 -->  
+        <record id="china_city_133001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">133001</field>  
+            <field name="name">延吉市</field>  
+        </record>  
+  
+        <record id="china_city_133002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">133002</field>  
+            <field name="name">图们市</field>  
+        </record>  
+  
+        <record id="china_city_133003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">133003</field>  
+            <field name="name">敦化市</field>  
+        </record>  
+  
+        <record id="china_city_133004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">133004</field>  
+            <field name="name">珲春市</field>  
+        </record>  
+  
+        <record id="china_city_133005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">133005</field>  
+            <field name="name">龙井市</field>  
+        </record>  
+  
+        <record id="china_city_133006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">133006</field>  
+            <field name="name">和龙市</field>  
+        </record>  
+  
+        <record id="china_city_133007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">133007</field>  
+            <field name="name">汪清县</field>  
+        </record>  
+  
+        <record id="china_city_133008" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">133008</field>  
+            <field name="name">安图县</field>  
+        </record>  
+
+        <!-- 长春市下属乡镇 -->  
+        <record id="china_city_130201" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">130201</field>  
+            <field name="name">长春市双阳区</field>  
+        </record>  
+  
+        <record id="china_city_130202" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">130202</field>  
+            <field name="name">长春市九台区</field>  
+        </record>  
+  
+        <record id="china_city_130203" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">130203</field>  
+            <field name="name">长春市农安县</field>  
+        </record>  
+  
+        <!-- 长春市开发区 -->  
+        <record id="china_city_130301" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">130301</field>  
+            <field name="name">长春市经济技术开发区</field>  
+        </record>  
+  
+        <record id="china_city_130302" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">130302</field>  
+            <field name="name">长春市高新技术产业开发区</field>  
+        </record>  
+  
+        <record id="china_city_130303" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">130303</field>  
+            <field name="name">长春市净月经济开发区</field>  
+        </record>  
+  
+        <record id="china_city_130304" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">130304</field>  
+            <field name="name">长春市汽车经济技术开发区</field>  
+        </record>  
+  
+        <!-- 吉林省经济开发区 -->  
+        <record id="china_city_139001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">139001</field>  
+            <field name="name">吉林省长白山保护开发区</field>  
+        </record>  
+  
+        <record id="china_city_139002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">139002</field>  
+            <field name="name">吉林省中国新加坡食品区</field>  
+        </record>  
+  
+        <!-- 延边州下属乡镇 -->  
+        <record id="china_city_133101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">133101</field>  
+            <field name="name">延吉市依兰镇</field>  
+        </record>  
+  
+        <record id="china_city_133102" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">133102</field>  
+            <field name="name">延吉市三道湾镇</field>  
+        </record>  
+  
+        <!-- 松原市下属乡镇 -->  
+        <record id="china_city_138101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">138101</field>  
+            <field name="name">松原市查干湖旅游经济开发区</field>  
+        </record>  
+  
+        <!-- 白城市下属乡镇 -->  
+        <record id="china_city_137101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_JL" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">137101</field>  
+            <field name="name">白城市查干浩特旅游开发区</field>  
+        </record>  
+
+    </data>  
+</odoo>

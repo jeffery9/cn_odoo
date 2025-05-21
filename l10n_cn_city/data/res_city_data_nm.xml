@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<odoo>  
+    <data noupdate="1">  
+        <!-- 内蒙古自治区呼和浩特市下属区县 -->  
+        <record id="china_city_010000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">010000</field>  
+            <field name="name">呼和浩特市</field>  
+        </record>  
+          
+        <record id="china_city_010010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">010010</field>  
+            <field name="name">呼和浩特市新城区</field>  
+        </record>  
+          
+        <record id="china_city_010020" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">010020</field>  
+            <field name="name">呼和浩特市回民区</field>  
+        </record>  
+          
+        <record id="china_city_010030" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">010030</field>  
+            <field name="name">呼和浩特市玉泉区</field>  
+        </record>  
+          
+        <record id="china_city_010040" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">010040</field>  
+            <field name="name">呼和浩特市赛罕区</field>  
+        </record>  
+          
+        <record id="china_city_010100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">010100</field>  
+            <field name="name">呼和浩特市土默特左旗</field>  
+        </record>  
+          
+        <record id="china_city_011500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">011500</field>  
+            <field name="name">呼和浩特市托克托县</field>  
+        </record>  
+          
+        <record id="china_city_011700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">011700</field>  
+            <field name="name">呼和浩特市和林格尔县</field>  
+        </record>  
+          
+        <record id="china_city_011200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">011200</field>  
+            <field name="name">呼和浩特市清水河县</field>  
+        </record>  
+          
+        <record id="china_city_011100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">011100</field>  
+            <field name="name">呼和浩特市武川县</field>  
+        </record>  
+          
+        <!-- 内蒙古自治区包头市下属区县 -->  
+        <record id="china_city_014000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">014000</field>  
+            <field name="name">包头市</field>  
+        </record>  
+          
+        <record id="china_city_014010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">014010</field>  
+            <field name="name">包头市东河区</field>  
+        </record>  
+          
+        <record id="china_city_014020" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">014020</field>  
+            <field name="name">包头市昆都仑区</field>  
+        </record>  
+          
+        <record id="china_city_014030" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">014030</field>  
+            <field name="name">包头市青山区</field>  
+        </record>  
+          
+        <record id="china_city_014040" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">014040</field>  
+            <field name="name">包头市石拐区</field>  
+        </record>  
+          
+        <record id="china_city_014050" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">014050</field>  
+            <field name="name">包头市白云鄂博矿区</field>  
+        </record>  
+          
+        <record id="china_city_014060" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">014060</field>  
+            <field name="name">包头市九原区</field>  
+        </record>  
+          
+        <record id="china_city_014100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">014100</field>  
+            <field name="name">包头市土默特右旗</field>  
+        </record>  
+          
+        <record id="china_city_014200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">014200</field>  
+            <field name="name">包头市固阳县</field>  
+        </record>  
+          
+        <record id="china_city_014300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">014300</field>  
+            <field name="name">包头市达尔罕茂明安联合旗</field>  
+        </record>  
+          
+        <!-- 内蒙古自治区乌海市下属区县 -->  
+        <record id="china_city_016000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">016000</field>  
+            <field name="name">乌海市</field>  
+        </record>  
+          
+        <record id="china_city_016010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">016010</field>  
+            <field name="name">乌海市海勃湾区</field>  
+        </record>  
+          
+        <record id="china_city_016020" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">016020</field>  
+            <field name="name">乌海市海南区</field>  
+        </record>  
+          
+        <record id="china_city_016030" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">016030</field>  
+            <field name="name">乌海市乌达区</field>  
+        </record>  
+          
+        <!-- 内蒙古自治区赤峰市下属区县 -->  
+        <record id="china_city_024000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">024000</field>  
+            <field name="name">赤峰市</field>  
+        </record>  
+          
+        <record id="china_city_024010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">024010</field>  
+            <field name="name">赤峰市红山区</field>  
+        </record>  
+          
+        <record id="china_city_024020" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">024020</field>  
+            <field name="name">赤峰市元宝山区</field>  
+        </record>  
+          
+        <record id="china_city_024030" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">024030</field>  
+            <field name="name">赤峰市松山区</field>  
+        </record>  
+          
+        <record id="china_city_024100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">024100</field>  
+            <field name="name">赤峰市阿鲁科尔沁旗</field>  
+        </record>  
+          
+        <record id="china_city_024200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">024200</field>  
+            <field name="name">赤峰市巴林左旗</field>  
+        </record>  
+          
+        <record id="china_city_024300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">024300</field>  
+            <field name="name">赤峰市巴林右旗</field>  
+        </record>  
+          
+        <record id="china_city_024400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">024400</field>  
+            <field name="name">赤峰市林西县</field>  
+        </record>  
+          
+        <record id="china_city_024500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">024500</field>  
+            <field name="name">赤峰市克什克腾旗</field>  
+        </record>  
+          
+        <record id="china_city_024600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">024600</field>  
+            <field name="name">赤峰市翁牛特旗</field>  
+        </record>  
+          
+        <record id="china_city_024700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">024700</field>  
+            <field name="name">赤峰市喀喇沁旗</field>  
+        </record>  
+          
+        <record id="china_city_024800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">024800</field>  
+            <field name="name">赤峰市宁城县</field>  
+        </record>  
+          
+        <record id="china_city_024900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">024900</field>  
+            <field name="name">赤峰市敖汉旗</field>  
+        </record>  
+          
+        <!-- 内蒙古自治区通辽市下属区县 -->  
+        <record id="china_city_028000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">028000</field>  
+            <field name="name">通辽市</field>  
+        </record>  
+          
+        <record id="china_city_028010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">028010</field>  
+            <field name="name">通辽市科尔沁区</field>  
+        </record>  
+          
+        <record id="china_city_028100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">028100</field>  
+            <field name="name">通辽市科尔沁左翼中旗</field>  
+        </record>  
+          
+        <record id="china_city_028200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">028200</field>  
+            <field name="name">通辽市科尔沁左翼后旗</field>  
+        </record>  
+          
+        <record id="china_city_029300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">029300</field>  
+            <field name="name">通辽市开鲁县</field>  
+        </record>  
+          
+        <record id="china_city_028400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">028400</field>  
+            <field name="name">通辽市库伦旗</field>  
+        </record>  
+          
+        <record id="china_city_028100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">028100</field>  
+            <field name="name">通辽市奈曼旗</field>  
+        </record>  
+          
+        <record id="china_city_028300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">028300</field>  
+            <field name="name">通辽市扎鲁特旗</field>  
+        </record>  
+          
+        <record id="china_city_029400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">029400</field>  
+            <field name="name">通辽市霍林郭勒市</field>  
+        </record>  
+          
+        <!-- 内蒙古自治区鄂尔多斯市下属区县 -->  
+        <record id="china_city_017000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">017000</field>  
+            <field name="name">鄂尔多斯市</field>  
+        </record>  
+          
+        <record id="china_city_017010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">017010</field>  
+            <field name="name">鄂尔多斯市东胜区</field>  
+        </record>  
+          
+        <record id="china_city_017020" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">017020</field>  
+            <field name="name">鄂尔多斯市康巴什区</field>  
+        </record>  
+          
+        <record id="china_city_017100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">017100</field>  
+            <field name="name">鄂尔多斯市达拉特旗</field>  
+        </record>  
+          
+        <record id="china_city_017200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">017200</field>  
+            <field name="name">鄂尔多斯市准格尔旗</field>  
+        </record>  
+          
+        <record id="china_city_017300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">017300</field>  
+            <field name="name">鄂尔多斯市鄂托克前旗</field>  
+        </record>  
+          
+        <record id="china_city_017400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">017400</field>  
+            <field name="name">鄂尔多斯市鄂托克旗</field>  
+        </record>  
+          
+        <record id="china_city_017500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">017500</field>  
+            <field name="name">鄂尔多斯市杭锦旗</field>  
+        </record>  
+          
+        <record id="china_city_017600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">017600</field>  
+            <field name="name">鄂尔多斯市乌审旗</field>  
+        </record>  
+          
+        <record id="china_city_017700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">017700</field>  
+            <field name="name">鄂尔多斯市伊金霍洛旗</field>  
+        </record>  
+          
+        <!-- 内蒙古自治区呼伦贝尔市下属区县 -->  
+        <record id="china_city_021000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">021000</field>  
+            <field name="name">呼伦贝尔市</field>  
+        </record>  
+          
+        <record id="china_city_021010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">021010</field>  
+            <field name="name">呼伦贝尔市海拉尔区</field>  
+        </record>  
+          
+        <record id="china_city_021020" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">021020</field>  
+            <field name="name">呼伦贝尔市扎赉诺尔区</field>  
+        </record>  
+          
+        <record id="china_city_021100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">021100</field>  
+            <field name="name">呼伦贝尔市阿荣旗</field>  
+        </record>  
+          
+        <record id="china_city_021200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">021200</field>  
+            <field name="name">呼伦贝尔市莫力达瓦达斡尔族自治旗</field>  
+        </record>  
+          
+        <record id="china_city_021300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">021300</field>  
+            <field name="name">呼伦贝尔市鄂伦春自治旗</field>  
+        </record>  
+          
+        <record id="china_city_021400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">021400</field>  
+            <field name="name">呼伦贝尔市鄂温克族自治旗</field>  
+        </record>  
+          
+        <record id="china_city_021500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">021500</field>  
+            <field name="name">呼伦贝尔市陈巴尔虎旗</field>  
+        </record>  
+          
+        <record id="china_city_021600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">021600</field>  
+            <field name="name">呼伦贝尔市新巴尔虎左旗</field>  
+        </record>  
+          
+        <record id="china_city_021700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">021700</field>  
+            <field name="name">呼伦贝尔市新巴尔虎右旗</field>  
+        </record>  
+          
+        <record id="china_city_021800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">021800</field>  
+            <field name="name">呼伦贝尔市满洲里市</field>  
+        </record>  
+          
+        <record id="china_city_021900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">021900</field>  
+            <field name="name">呼伦贝尔市牙克石市</field>  
+        </record>  
+          
+        <record id="china_city_022000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">022000</field>  
+            <field name="name">呼伦贝尔市扎兰屯市</field>  
+        </record>  
+          
+        <record id="china_city_022100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">022100</field>  
+            <field name="name">呼伦贝尔市额尔古纳市</field>  
+        </record>  
+          
+        <record id="china_city_022200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">022200</field>  
+            <field name="name">呼伦贝尔市根河市</field>  
+        </record>  
+          
+        <!-- 内蒙古自治区巴彦淖尔市下属区县 -->  
+        <record id="china_city_015000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">015000</field>  
+            <field name="name">巴彦淖尔市</field>  
+        </record>  
+          
+        <record id="china_city_015010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">015010</field>  
+            <field name="name">巴彦淖尔市临河区</field>  
+        </record>  
+          
+        <record id="china_city_015100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">015100</field>  
+            <field name="name">巴彦淖尔市五原县</field>  
+        </record>  
+          
+        <record id="china_city_015200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">015200</field>  
+            <field name="name">巴彦淖尔市磴口县</field>  
+        </record>  
+          
+        <record id="china_city_015300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">015300</field>  
+            <field name="name">巴彦淖尔市乌拉特前旗</field>  
+        </record>  
+          
+        <record id="china_city_015400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">015400</field>  
+            <field name="name">巴彦淖尔市乌拉特中旗</field>  
+        </record>  
+          
+        <record id="china_city_015500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">015500</field>  
+            <field name="name">巴彦淖尔市乌拉特后旗</field>  
+        </record>  
+          
+        <record id="china_city_015600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">015600</field>  
+            <field name="name">巴彦淖尔市杭锦后旗</field>  
+        </record>  
+          
+        <!-- 内蒙古自治区乌兰察布市下属区县 -->  
+        <record id="china_city_012000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">012000</field>  
+            <field name="name">乌兰察布市</field>  
+        </record>  
+          
+        <record id="china_city_012000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">012000</field>  
+            <field name="name">乌兰察布市集宁区</field>  
+        </record>  
+          
+        <record id="china_city_012100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">012100</field>  
+            <field name="name">乌兰察布市卓资县</field>  
+        </record>  
+          
+        <record id="china_city_012200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">012200</field>  
+            <field name="name">乌兰察布市化德县</field>  
+        </record>  
+          
+        <record id="china_city_012300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">012300</field>  
+            <field name="name">乌兰察布市商都县</field>  
+        </record>  
+          
+        <record id="china_city_012400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">012400</field>  
+            <field name="name">乌兰察布市兴和县</field>  
+        </record>  
+          
+        <record id="china_city_012500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">012500</field>  
+            <field name="name">乌兰察布市凉城县</field>  
+        </record>  
+          
+        <record id="china_city_012600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">012600</field>  
+            <field name="name">乌兰察布市察哈尔右翼前旗</field>  
+        </record>  
+          
+        <record id="china_city_012700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">012700</field>  
+            <field name="name">乌兰察布市察哈尔右翼中旗</field>  
+        </record>  
+          
+        <record id="china_city_012800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">012800</field>  
+            <field name="name">乌兰察布市察哈尔右翼后旗</field>  
+        </record>  
+          
+        <record id="china_city_012900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">012900</field>  
+            <field name="name">乌兰察布市四子王旗</field>  
+        </record>  
+          
+        <record id="china_city_013700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">013700</field>  
+            <field name="name">乌兰察布市丰镇市</field>  
+        </record>  
+          
+        <!-- 内蒙古自治区兴安盟下属市县 -->  
+        <record id="china_city_137400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">137400</field>  
+            <field name="name">兴安盟</field>  
+        </record>  
+          
+        <record id="china_city_137400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">137400</field>  
+            <field name="name">兴安盟乌兰浩特市</field>  
+        </record>  
+          
+        <record id="china_city_137500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">137500</field>  
+            <field name="name">兴安盟阿尔山市</field>  
+        </record>  
+          
+        <record id="china_city_137600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">137600</field>  
+            <field name="name">兴安盟科尔沁右翼前旗</field>  
+        </record>  
+          
+        <record id="china_city_137700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">137700</field>  
+            <field name="name">兴安盟科尔沁右翼中旗</field>  
+        </record>  
+          
+        <record id="china_city_137800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">137800</field>  
+            <field name="name">兴安盟扎赉特旗</field>  
+        </record>  
+          
+        <record id="china_city_137900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">137900</field>  
+            <field name="name">兴安盟突泉县</field>  
+        </record>  
+          
+        <!-- 内蒙古自治区锡林郭勒盟下属市县 -->  
+        <record id="china_city_026000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">026000</field>  
+            <field name="name">锡林郭勒盟</field>  
+        </record>  
+          
+        <record id="china_city_026000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">026000</field>  
+            <field name="name">锡林郭勒盟锡林浩特市</field>  
+        </record>  
+          
+        <record id="china_city_026100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">026100</field>  
+            <field name="name">锡林郭勒盟二连浩特市</field>  
+        </record>  
+          
+        <record id="china_city_026200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">026200</field>  
+            <field name="name">锡林郭勒盟阿巴嘎旗</field>  
+        </record>  
+          
+        <record id="china_city_026300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">026300</field>  
+            <field name="name">锡林郭勒盟苏尼特左旗</field>  
+        </record>  
+          
+        <record id="china_city_026400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">026400</field>  
+            <field name="name">锡林郭勒盟苏尼特右旗</field>  
+        </record>  
+          
+        <record id="china_city_026500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">026500</field>  
+            <field name="name">锡林郭勒盟东乌珠穆沁旗</field>  
+        </record>  
+          
+        <record id="china_city_026600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">026600</field>  
+            <field name="name">锡林郭勒盟西乌珠穆沁旗</field>  
+        </record>  
+          
+        <record id="china_city_026700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">026700</field>  
+            <field name="name">锡林郭勒盟太仆寺旗</field>  
+        </record>  
+          
+        <record id="china_city_026800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">026800</field>  
+            <field name="name">锡林郭勒盟镶黄旗</field>  
+        </record>  
+          
+        <record id="china_city_026900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">026900</field>  
+            <field name="name">锡林郭勒盟正镶白旗</field>  
+        </record>  
+          
+        <record id="china_city_027000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">027000</field>  
+            <field name="name">锡林郭勒盟正蓝旗</field>  
+        </record>  
+          
+        <record id="china_city_027100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">027100</field>  
+            <field name="name">锡林郭勒盟多伦县</field>  
+        </record>  
+          
+        <!-- 内蒙古自治区阿拉善盟下属市县 -->  
+        <record id="china_city_750300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">750300</field>  
+            <field name="name">阿拉善盟</field>  
+        </record>  
+          
+        <record id="china_city_750300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">750300</field>  
+            <field name="name">阿拉善盟阿拉善左旗</field>  
+        </record>  
+          
+        <record id="china_city_737300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">737300</field>  
+            <field name="name">阿拉善盟阿拉善右旗</field>  
+        </record>  
+          
+        <record id="china_city_735400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NM" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">735400</field>  
+            <field name="name">阿拉善盟额济纳旗</field>  
+        </record>  
+    </data>  
+</odoo>

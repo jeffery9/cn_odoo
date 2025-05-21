@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<odoo>  
+    <data noupdate="1">  
+        <!-- 西藏自治区拉萨市下属县区 -->  
+        <record id="china_city_850000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">850000</field>  
+            <field name="name">拉萨市</field>  
+        </record>  
+          
+        <record id="china_city_850100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">850100</field>  
+            <field name="name">拉萨市城关区</field>  
+        </record>  
+          
+        <record id="china_city_850200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">850200</field>  
+            <field name="name">拉萨市堆龙德庆区</field>  
+        </record>  
+          
+        <record id="china_city_850300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">850300</field>  
+            <field name="name">拉萨市达孜区</field>  
+        </record>  
+          
+        <record id="china_city_851400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">851400</field>  
+            <field name="name">拉萨市林周县</field>  
+        </record>  
+          
+        <record id="china_city_851500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">851500</field>  
+            <field name="name">拉萨市当雄县</field>  
+        </record>  
+          
+        <record id="china_city_851600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">851600</field>  
+            <field name="name">拉萨市尼木县</field>  
+        </record>  
+          
+        <record id="china_city_851700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">851700</field>  
+            <field name="name">拉萨市曲水县</field>  
+        </record>  
+          
+        <record id="china_city_852000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">852000</field>  
+            <field name="name">拉萨市墨竹工卡县</field>  
+        </record>  
+          
+        <!-- 西藏自治区日喀则市下属县区 -->  
+        <record id="china_city_857000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">857000</field>  
+            <field name="name">日喀则市</field>  
+        </record>  
+          
+        <record id="china_city_857100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">857100</field>  
+            <field name="name">日喀则市桑珠孜区</field>  
+        </record>  
+          
+        <record id="china_city_857200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">857200</field>  
+            <field name="name">日喀则市南木林县</field>  
+        </record>  
+          
+        <record id="china_city_857300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">857300</field>  
+            <field name="name">日喀则市江孜县</field>  
+        </record>  
+          
+        <record id="china_city_857400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">857400</field>  
+            <field name="name">日喀则市定日县</field>  
+        </record>  
+          
+        <record id="china_city_857500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">857500</field>  
+            <field name="name">日喀则市萨迦县</field>  
+        </record>  
+          
+        <record id="china_city_857600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">857600</field>  
+            <field name="name">日喀则市拉孜县</field>  
+        </record>  
+          
+        <record id="china_city_857700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">857700</field>  
+            <field name="name">日喀则市昂仁县</field>  
+        </record>  
+          
+        <record id="china_city_857800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">857800</field>  
+            <field name="name">日喀则市谢通门县</field>  
+        </record>  
+          
+        <record id="china_city_857900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">857900</field>  
+            <field name="name">日喀则市白朗县</field>  
+        </record>  
+          
+        <record id="china_city_858000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">858000</field>  
+            <field name="name">日喀则市仁布县</field>  
+        </record>  
+          
+        <record id="china_city_858100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">858100</field>  
+            <field name="name">日喀则市康马县</field>  
+        </record>  
+          
+        <record id="china_city_858200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">858200</field>  
+            <field name="name">日喀则市定结县</field>  
+        </record>  
+          
+        <record id="china_city_858300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">858300</field>  
+            <field name="name">日喀则市仲巴县</field>  
+        </record>  
+          
+        <record id="china_city_858400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">858400</field>  
+            <field name="name">日喀则市亚东县</field>  
+        </record>  
+          
+        <record id="china_city_858500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">858500</field>  
+            <field name="name">日喀则市吉隆县</field>  
+        </record>  
+          
+        <record id="china_city_858600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">858600</field>  
+            <field name="name">日喀则市聂拉木县</field>  
+        </record>  
+          
+        <record id="china_city_858700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">858700</field>  
+            <field name="name">日喀则市萨嘎县</field>  
+        </record>  
+          
+        <record id="china_city_858800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">858800</field>  
+            <field name="name">日喀则市岗巴县</field>  
+        </record>  
+          
+        <!-- 西藏自治区山南市下属县区 -->  
+        <record id="china_city_856000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">856000</field>  
+            <field name="name">山南市</field>  
+        </record>  
+          
+        <record id="china_city_856100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">856100</field>  
+            <field name="name">山南市乃东区</field>  
+        </record>  
+          
+        <record id="china_city_856200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">856200</field>  
+            <field name="name">山南市扎囊县</field>  
+        </record>  
+          
+        <record id="china_city_856300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">856300</field>  
+            <field name="name">山南市贡嘎县</field>  
+        </record>  
+          
+        <record id="china_city_856400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">856400</field>  
+            <field name="name">山南市桑日县</field>  
+        </record>  
+          
+        <record id="china_city_856500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">856500</field>  
+            <field name="name">山南市琼结县</field>  
+        </record>  
+          
+        <record id="china_city_856600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">856600</field>  
+            <field name="name">山南市曲松县</field>  
+        </record>  
+          
+        <record id="china_city_856700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">856700</field>  
+            <field name="name">山南市措美县</field>  
+        </record>  
+          
+        <record id="china_city_856800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">856800</field>  
+            <field name="name">山南市洛扎县</field>  
+        </record>  
+          
+        <record id="china_city_856900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">856900</field>  
+            <field name="name">山南市加查县</field>  
+        </record>  
+          
+        <record id="china_city_857000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">857000</field>  
+            <field name="name">山南市隆子县</field>  
+        </record>  
+          
+        <record id="china_city_857100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">857100</field>  
+            <field name="name">山南市错那县</field>  
+        </record>  
+          
+        <record id="china_city_857200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">857200</field>  
+            <field name="name">山南市浪卡子县</field>  
+        </record>  
+          
+        <!-- 西藏自治区林芝市下属县区 -->  
+        <record id="china_city_860000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">860000</field>  
+            <field name="name">林芝市</field>  
+        </record>  
+          
+        <record id="china_city_860100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">860100</field>  
+            <field name="name">林芝市巴宜区</field>  
+        </record>  
+          
+        <record id="china_city_860200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">860200</field>  
+            <field name="name">林芝地区工布江达县</field>  
+        </record>  
+          
+        <record id="china_city_860300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">860300</field>  
+            <field name="name">林芝地区波密县</field>  
+        </record>  
+          
+        <record id="china_city_860400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">860400</field>  
+            <field name="name">林芝地区朗县</field>  
+        </record>  
+          
+        <record id="china_city_860500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">860500</field>  
+            <field name="name">林芝地区米林县</field>  
+        </record>  
+          
+        <record id="china_city_860600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">860600</field>  
+            <field name="name">林芝地区察隅县</field>  
+        </record>  
+          
+        <record id="china_city_860700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">860700</field>  
+            <field name="name">林芝地区墨脱县</field>  
+        </record>  
+          
+        <!-- 西藏自治区昌都市下属县区 -->  
+        <record id="china_city_854000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">854000</field>  
+            <field name="name">昌都市</field>  
+        </record>  
+          
+        <record id="china_city_854100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">854100</field>  
+            <field name="name">昌都市卡若区</field>  
+        </record>  
+          
+        <record id="china_city_854200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">854200</field>  
+            <field name="name">昌都市江达县</field>  
+        </record>  
+          
+        <record id="china_city_854300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">854300</field>  
+            <field name="name">昌都市贡觉县</field>  
+        </record>  
+          
+        <record id="china_city_854400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">854400</field>  
+            <field name="name">昌都市类乌齐县</field>  
+        </record>  
+          
+        <record id="china_city_854500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">854500</field>  
+            <field name="name">昌都市丁青县</field>  
+        </record>  
+          
+        <record id="china_city_854600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">854600</field>  
+            <field name="name">昌都市察雅县</field>  
+        </record>  
+          
+        <record id="china_city_854700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">854700</field>  
+            <field name="name">昌都市八宿县</field>  
+        </record>  
+          
+        <record id="china_city_854800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">854800</field>  
+            <field name="name">昌都市左贡县</field>  
+        </record>  
+          
+        <record id="china_city_854900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">854900</field>  
+            <field name="name">昌都市芒康县</field>  
+        </record>  
+          
+        <record id="china_city_855000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">855000</field>  
+            <field name="name">昌都市洛隆县</field>  
+        </record>  
+          
+        <record id="china_city_855100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">855100</field>  
+            <field name="name">昌都市边坝县</field>  
+        </record>  
+          
+        <!-- 西藏自治区那曲市下属县区 -->  
+        <record id="china_city_852000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">852000</field>  
+            <field name="name">那曲市</field>  
+        </record>  
+          
+        <record id="china_city_852100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">852100</field>  
+            <field name="name">那曲市色尼区</field>  
+        </record>  
+          
+        <record id="china_city_852200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">852200</field>  
+            <field name="name">那曲市嘉黎县</field>  
+        </record>  
+          
+        <record id="china_city_852300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">852300</field>  
+            <field name="name">那曲市比如县</field>  
+        </record>  
+          
+        <record id="china_city_852400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">852400</field>  
+            <field name="name">那曲市聂荣县</field>  
+        </record>  
+          
+        <record id="china_city_852500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">852500</field>  
+            <field name="name">那曲市安多县</field>  
+        </record>  
+          
+        <record id="china_city_852600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">852600</field>  
+            <field name="name">那曲市申扎县</field>  
+        </record>  
+          
+        <record id="china_city_852700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">852700</field>  
+            <field name="name">那曲市索县</field>  
+        </record>  
+          
+        <record id="china_city_852800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">852800</field>  
+            <field name="name">那曲市班戈县</field>  
+        </record>  
+          
+        <record id="china_city_852900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">852900</field>  
+            <field name="name">那曲市巴青县</field>  
+        </record>  
+          
+        <record id="china_city_853000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">853000</field>  
+            <field name="name">那曲市尼玛县</field>  
+        </record>  
+          
+        <record id="china_city_853100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">853100</field>  
+            <field name="name">那曲市双湖县</field>  
+        </record>  
+          
+        <!-- 西藏自治区阿里地区下属县区 -->  
+        <record id="china_city_859000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">859000</field>  
+            <field name="name">阿里地区</field>  
+        </record>  
+          
+        <record id="china_city_859100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">859100</field>  
+            <field name="name">阿里地区噶尔县</field>  
+        </record>  
+          
+        <record id="china_city_859200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">859200</field>  
+            <field name="name">阿里地区普兰县</field>  
+        </record>  
+          
+        <record id="china_city_859300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">859300</field>  
+            <field name="name">阿里地区札达县</field>  
+        </record>  
+          
+        <record id="china_city_859400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">859400</field>  
+            <field name="name">阿里地区日土县</field>  
+        </record>  
+          
+        <record id="china_city_859500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">859500</field>  
+            <field name="name">阿里地区革吉县</field>  
+        </record>  
+          
+        <record id="china_city_859600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">859600</field>  
+            <field name="name">阿里地区改则县</field>  
+        </record>  
+          
+        <record id="china_city_859700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_XZ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">859700</field>  
+            <field name="name">阿里地区措勤县</field>  
+        </record>  
+    </data>  
+</odoo>

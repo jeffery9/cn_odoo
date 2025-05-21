@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<odoo>  
+    <data noupdate="1">  
+        <!-- 青海省西宁市 -->  
+        <record id="china_city_810000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810000</field>  
+            <field name="name">西宁市</field>  
+        </record>  
+          
+        <!-- 西宁市下属区县 -->  
+        <record id="china_city_810001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810001</field>  
+            <field name="name">城东区</field>  
+        </record>  
+          
+        <record id="china_city_810002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810002</field>  
+            <field name="name">城中区</field>  
+        </record>  
+          
+        <record id="china_city_810003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810003</field>  
+            <field name="name">城西区</field>  
+        </record>  
+          
+        <record id="china_city_810004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810004</field>  
+            <field name="name">城北区</field>  
+        </record>  
+          
+        <record id="china_city_810005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810005</field>  
+            <field name="name">湟中区</field>  
+        </record>  
+          
+        <record id="china_city_810006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810006</field>  
+            <field name="name">大通回族土族自治县</field>  
+        </record>  
+          
+        <record id="china_city_810007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810007</field>  
+            <field name="name">湟源县</field>  
+        </record>  
+          
+        <!-- 海东市 -->  
+        <record id="china_city_810100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810100</field>  
+            <field name="name">海东市</field>  
+        </record>  
+          
+        <!-- 海东市下属区县 -->  
+        <record id="china_city_810101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810101</field>  
+            <field name="name">乐都区</field>  
+        </record>  
+          
+        <record id="china_city_810102" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810102</field>  
+            <field name="name">平安区</field>  
+        </record>  
+          
+        <record id="china_city_810103" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810103</field>  
+            <field name="name">民和回族土族自治县</field>  
+        </record>  
+          
+        <record id="china_city_810104" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810104</field>  
+            <field name="name">互助土族自治县</field>  
+        </record>  
+          
+        <record id="china_city_810105" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810105</field>  
+            <field name="name">化隆回族自治县</field>  
+        </record>  
+          
+        <record id="china_city_810106" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810106</field>  
+            <field name="name">循化撒拉族自治县</field>  
+        </record>  
+          
+        <!-- 其他地级市 -->  
+        <record id="china_city_810200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810200</field>  
+            <field name="name">海北藏族自治州</field>  
+        </record>  
+          
+        <record id="china_city_810300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810300</field>  
+            <field name="name">黄南藏族自治州</field>  
+        </record>  
+          
+        <record id="china_city_810400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810400</field>  
+            <field name="name">海南藏族自治州</field>  
+        </record>  
+          
+        <record id="china_city_810500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810500</field>  
+            <field name="name">果洛藏族自治州</field>  
+        </record>  
+          
+        <record id="china_city_810600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810600</field>  
+            <field name="name">玉树藏族自治州</field>  
+        </record>  
+          
+        <record id="china_city_810700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_QH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">810700</field>  
+            <field name="name">海西蒙古族藏族自治州</field>  
+        </record>  
+    </data>  
+</odoo>

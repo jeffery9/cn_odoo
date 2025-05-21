@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<odoo>  
+    <data noupdate="1">  
+        <!-- 四川省成都市 -->  
+        <record id="china_city_610000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610000</field>  
+            <field name="name">成都市</field>  
+        </record>  
+          
+        <!-- 成都市下属区县 -->  
+        <record id="china_city_610001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610001</field>  
+            <field name="name">锦江区</field>  
+        </record>  
+          
+        <record id="china_city_610002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610002</field>  
+            <field name="name">青羊区</field>  
+        </record>  
+          
+        <record id="china_city_610003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610003</field>  
+            <field name="name">金牛区</field>  
+        </record>  
+          
+        <record id="china_city_610004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610004</field>  
+            <field name="name">武侯区</field>  
+        </record>  
+          
+        <record id="china_city_610005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610005</field>  
+            <field name="name">成华区</field>  
+        </record>  
+          
+        <record id="china_city_610006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610006</field>  
+            <field name="name">龙泉驿区</field>  
+        </record>  
+          
+        <record id="china_city_610007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610007</field>  
+            <field name="name">青白江区</field>  
+        </record>  
+          
+        <record id="china_city_610008" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610008</field>  
+            <field name="name">新都区</field>  
+        </record>  
+          
+        <record id="china_city_610009" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610009</field>  
+            <field name="name">温江区</field>  
+        </record>  
+          
+        <record id="china_city_610010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610010</field>  
+            <field name="name">双流区</field>  
+        </record>  
+          
+        <record id="china_city_610011" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610011</field>  
+            <field name="name">郫都区</field>  
+        </record>  
+          
+        <record id="china_city_610012" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610012</field>  
+            <field name="name">新津区</field>  
+        </record>  
+          
+        <record id="china_city_610013" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610013</field>  
+            <field name="name">简阳市</field>  
+        </record>  
+          
+        <record id="china_city_610014" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610014</field>  
+            <field name="name">都江堰市</field>  
+        </record>  
+          
+        <record id="china_city_610015" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610015</field>  
+            <field name="name">彭州市</field>  
+        </record>  
+          
+        <record id="china_city_610016" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610016</field>  
+            <field name="name">邛崃市</field>  
+        </record>  
+          
+        <record id="china_city_610017" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610017</field>  
+            <field name="name">崇州市</field>  
+        </record>  
+          
+        <record id="china_city_610018" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610018</field>  
+            <field name="name">金堂县</field>  
+        </record>  
+          
+        <record id="china_city_610019" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610019</field>  
+            <field name="name">大邑县</field>  
+        </record>  
+          
+        <record id="china_city_610020" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610020</field>  
+            <field name="name">蒲江县</field>  
+        </record>  
+          
+        <!-- 自贡市 -->  
+        <record id="china_city_610100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610100</field>  
+            <field name="name">自贡市</field>  
+        </record>  
+          
+        <!-- 攀枝花市 -->  
+        <record id="china_city_610200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610200</field>  
+            <field name="name">攀枝花市</field>  
+        </record>  
+          
+        <!-- 泸州市 -->  
+        <record id="china_city_610300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610300</field>  
+            <field name="name">泸州市</field>  
+        </record>  
+          
+        <!-- 德阳市 -->  
+        <record id="china_city_610400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610400</field>  
+            <field name="name">德阳市</field>  
+        </record>  
+          
+        <!-- 绵阳市 -->  
+        <record id="china_city_610500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610500</field>  
+            <field name="name">绵阳市</field>  
+        </record>  
+          
+        <!-- 广元市 -->  
+        <record id="china_city_610600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610600</field>  
+            <field name="name">广元市</field>  
+        </record>  
+          
+        <!-- 遂宁市 -->  
+        <record id="china_city_610700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610700</field>  
+            <field name="name">遂宁市</field>  
+        </record>  
+          
+        <!-- 内江市 -->  
+        <record id="china_city_610800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610800</field>  
+            <field name="name">内江市</field>  
+        </record>  
+          
+        <!-- 乐山市 -->  
+        <record id="china_city_610900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610900</field>  
+            <field name="name">乐山市</field>  
+        </record>  
+          
+        <!-- 南充市 -->  
+        <record id="china_city_611000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">611000</field>  
+            <field name="name">南充市</field>  
+        </record>  
+          
+        <!-- 眉山市 -->  
+        <record id="china_city_611100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">611100</field>  
+            <field name="name">眉山市</field>  
+        </record>  
+          
+        <!-- 宜宾市 -->  
+        <record id="china_city_611200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">611200</field>  
+            <field name="name">宜宾市</field>  
+        </record>  
+          
+        <!-- 广安市 -->  
+        <record id="china_city_611300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">611300</field>  
+            <field name="name">广安市</field>  
+        </record>  
+          
+        <!-- 达州市 -->  
+        <record id="china_city_611400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">611400</field>  
+            <field name="name">达州市</field>  
+        </record>  
+          
+        <!-- 雅安市 -->  
+        <record id="china_city_611500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">611500</field>  
+            <field name="name">雅安市</field>  
+        </record>  
+          
+        <!-- 巴中市 -->  
+        <record id="china_city_611600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">611600</field>  
+            <field name="name">巴中市</field>  
+        </record>  
+          
+        <!-- 资阳市 -->  
+        <record id="china_city_611700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">611700</field>  
+            <field name="name">资阳市</field>  
+        </record>  
+          
+        <!-- 阿坝藏族羌族自治州 -->  
+        <record id="china_city_611800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">611800</field>  
+            <field name="name">阿坝藏族羌族自治州</field>  
+        </record>  
+          
+        <!-- 甘孜藏族自治州 -->  
+        <record id="china_city_611900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">611900</field>  
+            <field name="name">甘孜藏族自治州</field>  
+        </record>  
+          
+        <!-- 凉山彝族自治州 -->  
+        <record id="china_city_612000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">612000</field>  
+            <field name="name">凉山彝族自治州</field>  
+        </record>  
+          
+        <!-- 自贡市下属区县 -->  
+        <record id="china_city_610101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610101</field>  
+            <field name="name">自流井区</field>  
+        </record>  
+          
+        <record id="china_city_610102" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610102</field>  
+            <field name="name">贡井区</field>  
+        </record>  
+          
+        <record id="china_city_610103" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610103</field>  
+            <field name="name">大安区</field>  
+        </record>  
+          
+        <record id="china_city_610104" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610104</field>  
+            <field name="name">沿滩区</field>  
+        </record>  
+          
+        <record id="china_city_610105" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610105</field>  
+            <field name="name">荣县</field>  
+        </record>  
+          
+        <record id="china_city_610106" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610106</field>  
+            <field name="name">富顺县</field>  
+        </record>  
+          
+        <!-- 攀枝花市下属区县 -->  
+        <record id="china_city_610201" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610201</field>  
+            <field name="name">东区</field>  
+        </record>  
+          
+        <record id="china_city_610202" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610202</field>  
+            <field name="name">西区</field>  
+        </record>  
+          
+        <record id="china_city_610203" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610203</field>  
+            <field name="name">仁和区</field>  
+        </record>  
+          
+        <record id="china_city_610204" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610204</field>  
+            <field name="name">米易县</field>  
+        </record>  
+          
+        <record id="china_city_610205" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610205</field>  
+            <field name="name">盐边县</field>  
+        </record>  
+          
+        <!-- 泸州市下属区县 -->  
+        <record id="china_city_610301" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610301</field>  
+            <field name="name">江阳区</field>  
+        </record>  
+          
+        <record id="china_city_610302" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610302</field>  
+            <field name="name">纳溪区</field>  
+        </record>  
+          
+        <record id="china_city_610303" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610303</field>  
+            <field name="name">龙马潭区</field>  
+        </record>  
+          
+        <record id="china_city_610304" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610304</field>  
+            <field name="name">泸县</field>  
+        </record>  
+          
+        <record id="china_city_610305" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610305</field>  
+            <field name="name">合江县</field>  
+        </record>  
+          
+        <record id="china_city_610306" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610306</field>  
+            <field name="name">叙永县</field>  
+        </record>  
+          
+        <record id="china_city_610307" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SC" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">610307</field>  
+            <field name="name">古蔺县</field>  
+        </record>  
+    </data>  
+</odoo>

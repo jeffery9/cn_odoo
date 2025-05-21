@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<odoo>  
+    <data noupdate="1">  
+        <!-- 宁夏回族自治区银川市下属区县 -->  
+        <record id="china_city_750000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">750000</field>  
+            <field name="name">银川市</field>  
+        </record>  
+          
+        <record id="china_city_750001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">750001</field>  
+            <field name="name">银川市兴庆区</field>  
+        </record>  
+          
+        <record id="china_city_750002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">750002</field>  
+            <field name="name">银川市西夏区</field>  
+        </record>  
+          
+        <record id="china_city_750003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">750003</field>  
+            <field name="name">银川市金凤区</field>  
+        </record>  
+          
+        <record id="china_city_750100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">750100</field>  
+            <field name="name">银川市永宁县</field>  
+        </record>  
+          
+        <record id="china_city_750200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">750200</field>  
+            <field name="name">银川市贺兰县</field>  
+        </record>  
+          
+        <record id="china_city_750600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">750600</field>  
+            <field name="name">银川市灵武市</field>  
+        </record>  
+          
+        <!-- 宁夏回族自治区石嘴山市下属区县 -->  
+        <record id="china_city_753000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">753000</field>  
+            <field name="name">石嘴山市</field>  
+        </record>  
+          
+        <record id="china_city_753000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">753000</field>  
+            <field name="name">石嘴山市大武口区</field>  
+        </record>  
+          
+        <record id="china_city_753200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">753200</field>  
+            <field name="name">石嘴山市惠农区</field>  
+        </record>  
+          
+        <record id="china_city_753400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">753400</field>  
+            <field name="name">石嘴山市平罗县</field>  
+        </record>  
+          
+        <!-- 宁夏回族自治区吴忠市下属区县 -->  
+        <record id="china_city_751100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">751100</field>  
+            <field name="name">吴忠市</field>  
+        </record>  
+          
+        <record id="china_city_751100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">751100</field>  
+            <field name="name">吴忠市利通区</field>  
+        </record>  
+          
+        <record id="china_city_751500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">751500</field>  
+            <field name="name">吴忠市红寺堡区</field>  
+        </record>  
+          
+        <record id="china_city_751600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">751600</field>  
+            <field name="name">吴忠市盐池县</field>  
+        </record>  
+          
+        <record id="china_city_751700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">751700</field>  
+            <field name="name">吴忠市同心县</field>  
+        </record>  
+          
+        <record id="china_city_751900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">751900</field>  
+            <field name="name">吴忠市青铜峡市</field>  
+        </record>  
+          
+        <!-- 宁夏回族自治区固原市下属区县 -->  
+        <record id="china_city_756000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">756000</field>  
+            <field name="name">固原市</field>  
+        </record>  
+          
+        <record id="china_city_756000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">756000</field>  
+            <field name="name">固原市原州区</field>  
+        </record>  
+          
+        <record id="china_city_756100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">756100</field>  
+            <field name="name">固原市西吉县</field>  
+        </record>  
+          
+        <record id="china_city_756200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">756200</field>  
+            <field name="name">固原市隆德县</field>  
+        </record>  
+          
+        <record id="china_city_756300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">756300</field>  
+            <field name="name">固原市泾源县</field>  
+        </record>  
+          
+        <record id="china_city_756400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">756400</field>  
+            <field name="name">固原市彭阳县</field>  
+        </record>  
+          
+        <!-- 宁夏回族自治区中卫市下属区县 -->  
+        <record id="china_city_755000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">755000</field>  
+            <field name="name">中卫市</field>  
+        </record>  
+          
+        <record id="china_city_755000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">755000</field>  
+            <field name="name">中卫市沙坡头区</field>  
+        </record>  
+          
+        <record id="china_city_755100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">755100</field>  
+            <field name="name">中卫市中宁县</field>  
+        </record>  
+          
+        <record id="china_city_755200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_NX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">755200</field>  
+            <field name="name">中卫市海原县</field>  
+        </record>  
+    </data>  
+</odoo>

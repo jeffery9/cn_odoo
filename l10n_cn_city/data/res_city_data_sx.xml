@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<odoo>  
+    <data noupdate="1">  
+        <!-- 山西省太原市 -->  
+        <record id="china_city_030000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030000</field>  
+            <field name="name">太原市</field>  
+        </record>  
+          
+        <!-- 太原市下属区县 -->  
+        <record id="china_city_030001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030001</field>  
+            <field name="name">小店区</field>  
+        </record>  
+          
+        <record id="china_city_030002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030002</field>  
+            <field name="name">迎泽区</field>  
+        </record>  
+          
+        <record id="china_city_030003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030003</field>  
+            <field name="name">杏花岭区</field>  
+        </record>  
+          
+        <record id="china_city_030004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030004</field>  
+            <field name="name">尖草坪区</field>  
+        </record>  
+          
+        <record id="china_city_030005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030005</field>  
+            <field name="name">万柏林区</field>  
+        </record>  
+          
+        <record id="china_city_030006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030006</field>  
+            <field name="name">晋源区</field>  
+        </record>  
+          
+        <record id="china_city_030007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030007</field>  
+            <field name="name">清徐县</field>  
+        </record>  
+          
+        <record id="china_city_030008" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030008</field>  
+            <field name="name">阳曲县</field>  
+        </record>  
+          
+        <record id="china_city_030009" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030009</field>  
+            <field name="name">娄烦县</field>  
+        </record>  
+          
+        <record id="china_city_030010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030010</field>  
+            <field name="name">古交市</field>  
+        </record>  
+          
+        <!-- 大同市 -->  
+        <record id="china_city_030100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030100</field>  
+            <field name="name">大同市</field>  
+        </record>  
+          
+        <!-- 大同市下属区县 -->  
+        <record id="china_city_030101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030101</field>  
+            <field name="name">平城区</field>  
+        </record>  
+          
+        <record id="china_city_030102" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030102</field>  
+            <field name="name">云冈区</field>  
+        </record>  
+          
+        <record id="china_city_030103" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030103</field>  
+            <field name="name">云州区</field>  
+        </record>  
+          
+        <record id="china_city_030104" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030104</field>  
+            <field name="name">阳高县</field>  
+        </record>  
+          
+        <record id="china_city_030105" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030105</field>  
+            <field name="name">天镇县</field>  
+        </record>  
+          
+        <record id="china_city_030106" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030106</field>  
+            <field name="name">广灵县</field>  
+        </record>  
+          
+        <record id="china_city_030107" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030107</field>  
+            <field name="name">灵丘县</field>  
+        </record>  
+          
+        <record id="china_city_030108" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030108</field>  
+            <field name="name">浑源县</field>  
+        </record>  
+          
+        <record id="china_city_030109" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030109</field>  
+            <field name="name">左云县</field>  
+        </record>  
+          
+        <!-- 阳泉市 -->  
+        <record id="china_city_030200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030200</field>  
+            <field name="name">阳泉市</field>  
+        </record>  
+          
+        <!-- 阳泉市下属区县 -->  
+        <record id="china_city_030201" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030201</field>  
+            <field name="name">城区</field>  
+        </record>  
+          
+        <record id="china_city_030202" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030202</field>  
+            <field name="name">矿区</field>  
+        </record>  
+          
+        <record id="china_city_030203" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030203</field>  
+            <field name="name">郊区</field>  
+        </record>  
+          
+        <record id="china_city_030204" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030204</field>  
+            <field name="name">平定县</field>  
+        </record>  
+          
+        <record id="china_city_030205" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030205</field>  
+            <field name="name">盂县</field>  
+        </record>  
+          
+        <!-- 长治市 -->  
+        <record id="china_city_030300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030300</field>  
+            <field name="name">长治市</field>  
+        </record>  
+          
+        <!-- 长治市下属区县 -->  
+        <record id="china_city_030301" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030301</field>  
+            <field name="name">潞州区</field>  
+        </record>  
+          
+        <record id="china_city_030302" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030302</field>  
+            <field name="name">上党区</field>  
+        </record>  
+          
+        <record id="china_city_030303" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030303</field>  
+            <field name="name">屯留区</field>  
+        </record>  
+          
+        <record id="china_city_030304" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030304</field>  
+            <field name="name">潞城区</field>  
+        </record>  
+          
+        <record id="china_city_030305" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030305</field>  
+            <field name="name">襄垣县</field>  
+        </record>  
+          
+        <record id="china_city_030306" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030306</field>  
+            <field name="name">平顺县</field>  
+        </record>  
+          
+        <record id="china_city_030307" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030307</field>  
+            <field name="name">黎城县</field>  
+        </record>  
+          
+        <record id="china_city_030308" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030308</field>  
+            <field name="name">壶关县</field>  
+        </record>  
+          
+        <record id="china_city_030309" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030309</field>  
+            <field name="name">长子县</field>  
+        </record>  
+          
+        <record id="china_city_030310" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030310</field>  
+            <field name="name">武乡县</field>  
+        </record>  
+          
+        <record id="china_city_030311" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030311</field>  
+            <field name="name">沁县</field>  
+        </record>  
+          
+        <record id="china_city_030312" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030312</field>  
+            <field name="name">沁源县</field>  
+        </record>  
+          
+        <!-- 晋城市 -->  
+        <record id="china_city_030400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030400</field>  
+            <field name="name">晋城市</field>  
+        </record>  
+          
+        <!-- 晋城市下属区县 -->  
+        <record id="china_city_030401" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030401</field>  
+            <field name="name">城区</field>  
+        </record>  
+          
+        <record id="china_city_030402" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030402</field>  
+            <field name="name">沁水县</field>  
+        </record>  
+          
+        <record id="china_city_030403" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030403</field>  
+            <field name="name">阳城县</field>  
+        </record>  
+          
+        <record id="china_city_030404" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030404</field>  
+            <field name="name">陵川县</field>  
+        </record>  
+          
+        <record id="china_city_030405" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030405</field>  
+            <field name="name">泽州县</field>  
+        </record>  
+          
+        <record id="china_city_030406" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030406</field>  
+            <field name="name">高平市</field>  
+        </record>  
+          
+        <!-- 朔州市 -->  
+        <record id="china_city_030500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030500</field>  
+            <field name="name">朔州市</field>  
+        </record>  
+          
+        <!-- 朔州市下属区县 -->  
+        <record id="china_city_030501" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030501</field>  
+            <field name="name">朔城区</field>  
+        </record>  
+          
+        <record id="china_city_030502" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030502</field>  
+            <field name="name">平鲁区</field>  
+        </record>  
+          
+        <record id="china_city_030503" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030503</field>  
+            <field name="name">山阴县</field>  
+        </record>  
+          
+        <record id="china_city_030504" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030504</field>  
+            <field name="name">应县</field>  
+        </record>  
+          
+        <record id="china_city_030505" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030505</field>  
+            <field name="name">右玉县</field>  
+        </record>  
+          
+        <record id="china_city_030506" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030506</field>  
+            <field name="name">怀仁市</field>  
+        </record>  
+          
+        <!-- 晋中市 -->  
+        <record id="china_city_030600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030600</field>  
+            <field name="name">晋中市</field>  
+        </record>  
+          
+        <!-- 晋中市下属区县 -->  
+        <record id="china_city_030601" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030601</field>  
+            <field name="name">榆次区</field>  
+        </record>  
+          
+        <record id="china_city_030602" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030602</field>  
+            <field name="name">太谷区</field>  
+        </record>  
+          
+        <record id="china_city_030603" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030603</field>  
+            <field name="name">榆社县</field>  
+        </record>  
+          
+        <record id="china_city_030604" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030604</field>  
+            <field name="name">左权县</field>  
+        </record>  
+          
+        <record id="china_city_030605" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030605</field>  
+            <field name="name">和顺县</field>  
+        </record>  
+          
+        <record id="china_city_030606" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030606</field>  
+            <field name="name">昔阳县</field>  
+        </record>  
+          
+        <record id="china_city_030607" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030607</field>  
+            <field name="name">寿阳县</field>  
+        </record>  
+          
+        <record id="china_city_030608" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030608</field>  
+            <field name="name">祁县</field>  
+        </record>  
+          
+        <record id="china_city_030609" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030609</field>  
+            <field name="name">平遥县</field>  
+        </record>  
+          
+        <record id="china_city_030610" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030610</field>  
+            <field name="name">灵石县</field>  
+        </record>  
+          
+        <record id="china_city_030611" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030611</field>  
+            <field name="name">介休市</field>  
+        </record>  
+          
+        <!-- 运城市 -->  
+        <record id="china_city_030700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030700</field>  
+            <field name="name">运城市</field>  
+        </record>  
+          
+        <!-- 运城市下属区县 -->  
+        <record id="china_city_030701" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030701</field>  
+            <field name="name">盐湖区</field>  
+        </record>  
+          
+        <record id="china_city_030702" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030702</field>  
+            <field name="name">临猗县</field>  
+        </record>  
+          
+        <record id="china_city_030703" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030703</field>  
+            <field name="name">万荣县</field>  
+        </record>  
+          
+        <record id="china_city_030704" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030704</field>  
+            <field name="name">闻喜县</field>  
+        </record>  
+          
+        <record id="china_city_030705" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030705</field>  
+            <field name="name">稷山县</field>  
+        </record>  
+          
+        <record id="china_city_030706" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030706</field>  
+            <field name="name">新绛县</field>  
+        </record>  
+          
+        <record id="china_city_030707" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030707</field>  
+            <field name="name">绛县</field>  
+        </record>  
+          
+        <record id="china_city_030708" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030708</field>  
+            <field name="name">垣曲县</field>  
+        </record>  
+          
+        <record id="china_city_030709" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030709</field>  
+            <field name="name">夏县</field>  
+        </record>  
+          
+        <record id="china_city_030710" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030710</field>  
+            <field name="name">平陆县</field>  
+        </record>  
+          
+        <record id="china_city_030711" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030711</field>  
+            <field name="name">芮城县</field>  
+        </record>  
+          
+        <record id="china_city_030712" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030712</field>  
+            <field name="name">永济市</field>  
+        </record>  
+          
+        <record id="china_city_030713" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030713</field>  
+            <field name="name">河津市</field>  
+        </record>  
+          
+        <!-- 忻州市 -->  
+        <record id="china_city_030800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030800</field>  
+            <field name="name">忻州市</field>  
+        </record>  
+          
+        <!-- 忻州市下属区县 -->  
+        <record id="china_city_030801" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030801</field>  
+            <field name="name">忻府区</field>  
+        </record>  
+          
+        <record id="china_city_030802" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030802</field>  
+            <field name="name">定襄县</field>  
+        </record>  
+          
+        <record id="china_city_030803" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030803</field>  
+            <field name="name">五台县</field>  
+        </record>  
+          
+        <record id="china_city_030804" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030804</field>  
+            <field name="name">代县</field>  
+        </record>  
+          
+        <record id="china_city_030805" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030805</field>  
+            <field name="name">繁峙县</field>  
+        </record>  
+          
+        <record id="china_city_030806" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030806</field>  
+            <field name="name">宁武县</field>  
+        </record>  
+          
+        <record id="china_city_030807" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030807</field>  
+            <field name="name">静乐县</field>  
+        </record>  
+          
+        <record id="china_city_030808" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030808</field>  
+            <field name="name">神池县</field>  
+        </record>  
+          
+        <record id="china_city_030809" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030809</field>  
+            <field name="name">五寨县</field>  
+        </record>  
+          
+        <record id="china_city_030810" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030810</field>  
+            <field name="name">岢岚县</field>  
+        </record>  
+          
+        <record id="china_city_030811" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030811</field>  
+            <field name="name">河曲县</field>  
+        </record>  
+          
+        <record id="china_city_030812" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030812</field>  
+            <field name="name">保德县</field>  
+        </record>  
+          
+        <record id="china_city_030813" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030813</field>  
+            <field name="name">偏关县</field>  
+        </record>  
+          
+        <record id="china_city_030814" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030814</field>  
+            <field name="name">原平市</field>  
+        </record>  
+          
+        <!-- 临汾市 -->  
+        <record id="china_city_030900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030900</field>  
+            <field name="name">临汾市</field>  
+        </record>  
+          
+        <!-- 临汾市下属区县 -->  
+        <record id="china_city_030901" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030901</field>  
+            <field name="name">尧都区</field>  
+        </record>  
+          
+        <record id="china_city_030902" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030902</field>  
+            <field name="name">曲沃县</field>  
+        </record>  
+          
+        <record id="china_city_030903" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030903</field>  
+            <field name="name">翼城县</field>  
+        </record>  
+          
+        <record id="china_city_030904" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030904</field>  
+            <field name="name">襄汾县</field>  
+        </record>  
+          
+        <record id="china_city_030905" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030905</field>  
+            <field name="name">洪洞县</field>  
+        </record>  
+          
+        <record id="china_city_030906" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030906</field>  
+            <field name="name">古县</field>  
+        </record>  
+          
+        <record id="china_city_030907" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030907</field>  
+            <field name="name">安泽县</field>  
+        </record>  
+          
+        <record id="china_city_030908" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030908</field>  
+            <field name="name">浮山县</field>  
+        </record>  
+          
+        <record id="china_city_030909" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030909</field>  
+            <field name="name">吉县</field>  
+        </record>  
+          
+        <record id="china_city_030910" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030910</field>  
+            <field name="name">乡宁县</field>  
+        </record>  
+          
+        <record id="china_city_030911" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030911</field>  
+            <field name="name">大宁县</field>  
+        </record>  
+          
+        <record id="china_city_030912" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030912</field>  
+            <field name="name">隰县</field>  
+        </record>  
+          
+        <record id="china_city_030913" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030913</field>  
+            <field name="name">永和县</field>  
+        </record>  
+          
+        <record id="china_city_030914" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030914</field>  
+            <field name="name">蒲县</field>  
+        </record>  
+          
+        <record id="china_city_030915" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030915</field>  
+            <field name="name">汾西县</field>  
+        </record>  
+          
+        <record id="china_city_030916" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030916</field>  
+            <field name="name">侯马市</field>  
+        </record>  
+          
+        <record id="china_city_030917" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">030917</field>  
+            <field name="name">霍州市</field>  
+        </record>  
+          
+        <!-- 吕梁市 -->  
+        <record id="china_city_031000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">031000</field>  
+            <field name="name">吕梁市</field>  
+        </record>  
+          
+        <!-- 吕梁市下属区县 -->  
+        <record id="china_city_031001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">031001</field>  
+            <field name="name">离石区</field>  
+        </record>  
+          
+        <record id="china_city_031002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">031002</field>  
+            <field name="name">文水县</field>  
+        </record>  
+          
+        <record id="china_city_031003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">031003</field>  
+            <field name="name">交城县</field>  
+        </record>  
+          
+        <record id="china_city_031004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">031004</field>  
+            <field name="name">兴县</field>  
+        </record>  
+          
+        <record id="china_city_031005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">031005</field>  
+            <field name="name">临县</field>  
+        </record>  
+          
+        <record id="china_city_031006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">031006</field>  
+            <field name="name">柳林县</field>  
+        </record>  
+          
+        <record id="china_city_031007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">031007</field>  
+            <field name="name">石楼县</field>  
+        </record>  
+          
+        <record id="china_city_031008" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">031008</field>  
+            <field name="name">岚县</field>  
+        </record>  
+          
+        <record id="china_city_031009" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">031009</field>  
+            <field name="name">方山县</field>  
+        </record>  
+          
+        <record id="china_city_031010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">031010</field>  
+            <field name="name">中阳县</field>  
+        </record>  
+          
+        <record id="china_city_031011" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">031011</field>  
+            <field name="name">交口县</field>  
+        </record>  
+          
+        <record id="china_city_031012" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">031012</field>  
+            <field name="name">孝义市</field>  
+        </record>  
+          
+        <record id="china_city_031013" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SX" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">031013</field>  
+            <field name="name">汾阳市</field>  
+        </record>  
+    </data>  
+</odoo>

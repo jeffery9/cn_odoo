@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<odoo>  
+    <data noupdate="1">  
+        <!-- 天津市 -->  
+        <record id="china_city_300000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_TJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">300000</field>  
+            <field name="name">天津市</field>  
+        </record>  
+          
+        <!-- 天津市下属区县 -->  
+        <record id="china_city_300100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_TJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">300100</field>  
+            <field name="name">天津市和平区</field>  
+        </record>  
+          
+        <record id="china_city_300200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_TJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">300200</field>  
+            <field name="name">天津市河东区</field>  
+        </record>  
+          
+        <record id="china_city_300300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_TJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">300300</field>  
+            <field name="name">天津市河西区</field>  
+        </record>  
+          
+        <record id="china_city_300400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_TJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">300400</field>  
+            <field name="name">天津市南开区</field>  
+        </record>  
+          
+        <record id="china_city_300500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_TJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">300500</field>  
+            <field name="name">天津市河北区</field>  
+        </record>  
+          
+        <record id="china_city_300600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_TJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">300600</field>  
+            <field name="name">天津市红桥区</field>  
+        </record>  
+          
+        <record id="china_city_300700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_TJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">300700</field>  
+            <field name="name">天津市东丽区</field>  
+        </record>  
+          
+        <record id="china_city_300800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_TJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">300800</field>  
+            <field name="name">天津市西青区</field>  
+        </record>  
+          
+        <record id="china_city_300900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_TJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">300900</field>  
+            <field name="name">天津市津南区</field>  
+        </record>  
+          
+        <record id="china_city_301000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_TJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">301000</field>  
+            <field name="name">天津市北辰区</field>  
+        </record>  
+          
+        <record id="china_city_301100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_TJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">301100</field>  
+            <field name="name">天津市武清区</field>  
+        </record>  
+          
+        <record id="china_city_301200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_TJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">301200</field>  
+            <field name="name">天津市宝坻区</field>  
+        </record>  
+          
+        <record id="china_city_301300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_TJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">301300</field>  
+            <field name="name">天津市滨海新区</field>  
+        </record>  
+          
+        <record id="china_city_301400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_TJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">301400</field>  
+            <field name="name">天津市宁河区</field>  
+        </record>  
+          
+        <record id="china_city_301500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_TJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">301500</field>  
+            <field name="name">天津市静海区</field>  
+        </record>  
+          
+        <record id="china_city_301600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_TJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">301600</field>  
+            <field name="name">天津市蓟州区</field>  
+        </record>  
+    </data>  
+</odoo>

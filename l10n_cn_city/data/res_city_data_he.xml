@@ -1,0 +1,1267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- 石家庄市 -->
+        <record id="china_city_050000" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">050000</field>
+            <field name="name">石家庄市</field>
+        </record>
+
+        <!-- 石家庄市下属区县 -->
+        <record id="china_city_050011" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">050011</field>
+            <field name="name">石家庄市长安区</field>
+        </record>
+
+        <record id="china_city_050051" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">050051</field>
+            <field name="name">石家庄市桥西区</field>
+        </record>
+
+        <!-- 唐山市 -->
+        <record id="china_city_063000" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">063000</field>
+            <field name="name">唐山市</field>
+        </record>
+
+        <!-- 唐山市下属区县 -->
+        <record id="china_city_063100" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">063100</field>
+            <field name="name">唐山市路南区</field>
+        </record>
+
+        <record id="china_city_063000" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">063000</field>
+            <field name="name">唐山市路北区</field>
+        </record>
+
+        <!-- 保定市 -->
+        <record id="china_city_071000" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">071000</field>
+            <field name="name">保定市</field>
+        </record>
+
+        <!-- 保定市下属区县 -->
+        <record id="china_city_071051" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">071051</field>
+            <field name="name">保定市竞秀区</field>
+        </record>
+
+        <record id="china_city_071052" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">071052</field>
+            <field name="name">保定市莲池区</field>
+        </record>
+
+        <!-- 邯郸市 -->
+        <record id="china_city_056000" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">056000</field>
+            <field name="name">邯郸市</field>
+        </record>
+
+        <!-- 邯郸市下属区县 -->
+        <record id="china_city_056001" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">056001</field>
+            <field name="name">邯郸市丛台区</field>
+        </record>
+
+        <record id="china_city_056002" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">056002</field>
+            <field name="name">邯郸市复兴区</field>
+        </record>
+
+        <!-- 邢台市 -->
+        <record id="china_city_054000" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">054000</field>
+            <field name="name">邢台市</field>
+        </record>
+
+        <!-- 邢台市下属区县 -->
+        <record id="china_city_054001" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">054001</field>
+            <field name="name">邢台市桥东区</field>
+        </record>
+
+        <record id="china_city_054002" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">054002</field>
+            <field name="name">邢台市桥西区</field>
+        </record>
+
+        <!-- 沧州市 -->
+        <record id="china_city_061000" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">061000</field>
+            <field name="name">沧州市</field>
+        </record>
+
+        <!-- 沧州市下属区县 -->
+        <record id="china_city_061001" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">061001</field>
+            <field name="name">沧州市新华区</field>
+        </record>
+
+        <record id="china_city_061002" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">061002</field>
+            <field name="name">沧州市运河区</field>
+        </record>
+
+        <!-- 廊坊市 -->
+        <record id="china_city_065000" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">065000</field>
+            <field name="name">廊坊市</field>
+        </record>
+
+        <!-- 廊坊市下属区县 -->
+        <record id="china_city_065001" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">065001</field>
+            <field name="name">廊坊市安次区</field>
+        </record>
+
+        <record id="china_city_065002" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">065002</field>
+            <field name="name">廊坊市广阳区</field>
+        </record>
+
+        <!-- 衡水市 -->
+        <record id="china_city_053000" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">053000</field>
+            <field name="name">衡水市</field>
+        </record>
+
+        <!-- 衡水市下属区县 -->
+        <record id="china_city_053001" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">053001</field>
+            <field name="name">衡水市桃城区</field>
+        </record>
+
+        <record id="china_city_053002" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">053002</field>
+            <field name="name">衡水市冀州区</field>
+        </record>
+
+        <!-- 张家口市 -->
+        <record id="china_city_075000" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">075000</field>
+            <field name="name">张家口市</field>
+        </record>
+
+        <!-- 张家口市下属区县 -->
+        <record id="china_city_075001" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">075001</field>
+            <field name="name">张家口市桥东区</field>
+        </record>
+
+        <record id="china_city_075002" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">075002</field>
+            <field name="name">张家口市桥西区</field>
+        </record>
+
+        <!-- 承德市 -->
+        <record id="china_city_067000" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">067000</field>
+            <field name="name">承德市</field>
+        </record>
+
+        <!-- 承德市下属区县 -->
+        <record id="china_city_067001" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">067001</field>
+            <field name="name">承德市双桥区</field>
+        </record>
+
+        <record id="china_city_067002" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">067002</field>
+            <field name="name">承德市双滦区</field>
+        </record>
+
+        <!-- 秦皇岛市 -->
+        <record id="china_city_066000" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">066000</field>
+            <field name="name">秦皇岛市</field>
+        </record>
+
+        <!-- 秦皇岛市下属区县 -->
+        <record id="china_city_066001" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">066001</field>
+            <field name="name">秦皇岛市海港区</field>
+        </record>
+
+        <record id="china_city_066002" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">066002</field>
+            <field name="name">秦皇岛市山海关区</field>
+        </record>
+
+        <record id="china_city_066003" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">066003</field>
+            <field name="name">秦皇岛市北戴河区</field>
+        </record>
+
+        <!-- 石家庄市下属县 -->
+        <record id="china_city_050800" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">050800</field>
+            <field name="name">石家庄市正定县</field>
+        </record>
+
+        <record id="china_city_051130" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">051130</field>
+            <field name="name">石家庄市栾城县</field>
+        </record>
+
+        <record id="china_city_051330" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">051330</field>
+            <field name="name">石家庄市平山县</field>
+        </record>
+
+        <record id="china_city_052160" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">052160</field>
+            <field name="name">石家庄市赞皇县</field>
+        </record>
+
+        <!-- 唐山市下属县 -->
+        <record id="china_city_063700" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">063700</field>
+            <field name="name">唐山市迁西县</field>
+        </record>
+
+        <record id="china_city_063500" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">063500</field>
+            <field name="name">唐山市滦南县</field>
+        </record>
+
+        <record id="china_city_063600" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">063600</field>
+            <field name="name">唐山市乐亭县</field>
+        </record>
+
+        <!-- 保定市下属县 -->
+        <record id="china_city_071700" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">071700</field>
+            <field name="name">保定市满城县</field>
+        </record>
+
+        <record id="china_city_071600" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">071600</field>
+            <field name="name">保定市清苑县</field>
+        </record>
+
+        <record id="china_city_072150" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">072150</field>
+            <field name="name">保定市涞水县</field>
+        </record>
+
+        <!-- 邯郸市下属县 -->
+        <record id="china_city_056500" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">056500</field>
+            <field name="name">邯郸市临漳县</field>
+        </record>
+
+        <record id="china_city_056600" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">056600</field>
+            <field name="name">邯郸市成安县</field>
+        </record>
+
+        <record id="china_city_057550" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">057550</field>
+            <field name="name">邯郸市大名县</field>
+        </record>
+
+        <!-- 邢台市下属县 -->
+        <record id="china_city_054300" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">054300</field>
+            <field name="name">邢台市临城县</field>
+        </record>
+
+        <record id="china_city_054400" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">054400</field>
+            <field name="name">邢台市内丘县</field>
+        </record>
+
+        <record id="china_city_055550" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">055550</field>
+            <field name="name">邢台市南和县</field>
+        </record>
+
+        <!-- 沧州市下属县 -->
+        <record id="china_city_061600" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">061600</field>
+            <field name="name">沧州市沧县</field>
+        </record>
+
+        <record id="china_city_062150" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">062150</field>
+            <field name="name">沧州市青县</field>
+        </record>
+
+        <record id="china_city_061300" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">061300</field>
+            <field name="name">沧州市肃宁县</field>
+        </record>
+
+        <!-- 廊坊市下属县 -->
+        <record id="china_city_065100" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">065100</field>
+            <field name="name">廊坊市固安县</field>
+        </record>
+
+        <record id="china_city_065200" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">065200</field>
+            <field name="name">廊坊市永清县</field>
+        </record>
+
+        <record id="china_city_065400" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">065400</field>
+            <field name="name">廊坊市香河县</field>
+        </record>
+
+        <record id="china_city_065500" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">065500</field>
+            <field name="name">廊坊市大城县</field>
+        </record>
+
+        <record id="china_city_065600" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">065600</field>
+            <field name="name">廊坊市文安县</field>
+        </record>
+
+        <!-- 衡水市下属县 -->
+        <record id="china_city_053100" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">053100</field>
+            <field name="name">衡水市枣强县</field>
+        </record>
+
+        <record id="china_city_053200" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">053200</field>
+            <field name="name">衡水市武邑县</field>
+        </record>
+
+        <record id="china_city_053300" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">053300</field>
+            <field name="name">衡水市武强县</field>
+        </record>
+
+        <record id="china_city_053400" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">053400</field>
+            <field name="name">衡水市饶阳县</field>
+        </record>
+
+        <record id="china_city_053500" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">053500</field>
+            <field name="name">衡水市安平县</field>
+        </record>
+
+        <record id="china_city_053600" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">053600</field>
+            <field name="name">衡水市故城县</field>
+        </record>
+
+        <record id="china_city_053700" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">053700</field>
+            <field name="name">衡水市景县</field>
+        </record>
+
+        <record id="china_city_053800" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">053800</field>
+            <field name="name">衡水市阜城县</field>
+        </record>
+
+        <!-- 张家口市下属县 -->
+        <record id="china_city_075100" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">075100</field>
+            <field name="name">张家口市宣化县</field>
+        </record>
+
+        <record id="china_city_075700" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">075700</field>
+            <field name="name">张家口市张北县</field>
+        </record>
+
+        <record id="china_city_075800" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">075800</field>
+            <field name="name">张家口市康保县</field>
+        </record>
+
+        <record id="china_city_076450" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">076450</field>
+            <field name="name">张家口市沽源县</field>
+        </record>
+
+        <record id="china_city_076550" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">076550</field>
+            <field name="name">张家口市尚义县</field>
+        </record>
+
+        <!-- 承德市下属县 -->
+        <record id="china_city_067400" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">067400</field>
+            <field name="name">承德市承德县</field>
+        </record>
+
+        <record id="china_city_067500" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">067500</field>
+            <field name="name">承德市兴隆县</field>
+        </record>
+
+        <record id="china_city_068150" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">068150</field>
+            <field name="name">承德市平泉县</field>
+        </record>
+
+        <record id="china_city_068250" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">068250</field>
+            <field name="name">承德市滦平县</field>
+        </record>
+
+        <record id="china_city_068350" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">068350</field>
+            <field name="name">承德市隆化县</field>
+        </record>
+
+        <!-- 秦皇岛市下属县 -->
+        <record id="china_city_066100" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">066100</field>
+            <field name="name">秦皇岛市昌黎县</field>
+        </record>
+
+        <record id="china_city_066200" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">066200</field>
+            <field name="name">秦皇岛市抚宁县</field>
+        </record>
+
+        <record id="china_city_066300" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">066300</field>
+            <field name="name">秦皇岛市卢龙县</field>
+        </record>
+
+        <!-- 石家庄市下属县 -->
+        <record id="china_city_051100" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">051100</field>
+            <field name="name">石家庄市井陉县</field>
+        </record>
+
+        <record id="china_city_051200" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">051200</field>
+            <field name="name">石家庄市行唐县</field>
+        </record>
+
+        <record id="china_city_052300" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">052300</field>
+            <field name="name">石家庄市无极县</field>
+        </record>
+
+        <record id="china_city_052400" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">052400</field>
+            <field name="name">石家庄市深泽县</field>
+        </record>
+
+        <!-- 张家口市下属县 -->
+        <record id="china_city_076650" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">076650</field>
+            <field name="name">张家口市蔚县</field>
+        </record>
+
+        <record id="china_city_076750" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">076750</field>
+            <field name="name">张家口市阳原县</field>
+        </record>
+
+        <record id="china_city_076150" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">076150</field>
+            <field name="name">张家口市怀安县</field>
+        </record>
+
+        <record id="china_city_076250" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">076250</field>
+            <field name="name">张家口市万全县</field>
+        </record>
+
+        <record id="china_city_076350" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">076350</field>
+            <field name="name">张家口市怀来县</field>
+        </record>
+
+        <!-- 承德市下属县 -->
+        <record id="china_city_068450" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">068450</field>
+            <field name="name">承德市丰宁满族自治县</field>
+        </record>
+
+        <record id="china_city_068550" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">068550</field>
+            <field name="name">承德市宽城满族自治县</field>
+        </record>
+
+        <record id="china_city_068650" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">068650</field>
+            <field name="name">承德市围场满族蒙古族自治县</field>
+        </record>
+
+        <!-- 保定市下属县 -->
+        <record id="china_city_072250" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">072250</field>
+            <field name="name">保定市阜平县</field>
+        </record>
+
+        <record id="china_city_072350" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">072350</field>
+            <field name="name">保定市徐水县</field>
+        </record>
+
+        <record id="china_city_072450" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">072450</field>
+            <field name="name">保定市定兴县</field>
+        </record>
+
+        <record id="china_city_072550" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">072550</field>
+            <field name="name">保定市唐县</field>
+        </record>
+
+        <record id="china_city_072650" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">072650</field>
+            <field name="name">保定市高阳县</field>
+        </record>
+
+        <!-- 保定市下属县 -->
+        <record id="china_city_072750" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">072750</field>
+            <field name="name">保定市容城县</field>
+        </record>
+
+        <record id="china_city_072850" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">072850</field>
+            <field name="name">保定市安新县</field>
+        </record>
+
+        <record id="china_city_073200" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">073200</field>
+            <field name="name">保定市易县</field>
+        </record>
+
+        <record id="china_city_073100" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">073100</field>
+            <field name="name">保定市曲阳县</field>
+        </record>
+
+        <!-- 石家庄市下属县 -->
+        <record id="china_city_052500" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">052500</field>
+            <field name="name">石家庄市灵寿县</field>
+        </record>
+
+        <record id="china_city_051530" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">051530</field>
+            <field name="name">石家庄市新乐市</field>
+        </record>
+
+        <record id="china_city_051430" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">051430</field>
+            <field name="name">石家庄市辛集市</field>
+        </record>
+
+        <record id="china_city_050300" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">050300</field>
+            <field name="name">石家庄市鹿泉区</field>
+        </record>
+
+        <!-- 邯郸市下属县 -->
+        <record id="china_city_056700" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">056700</field>
+            <field name="name">邯郸市磁县</field>
+        </record>
+
+        <record id="china_city_056900" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">056900</field>
+            <field name="name">邯郸市涉县</field>
+        </record>
+
+        <record id="china_city_057150" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">057150</field>
+            <field name="name">邯郸市永年县</field>
+        </record>
+
+        <record id="china_city_057450" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">057450</field>
+            <field name="name">邯郸市鸡泽县</field>
+        </record>
+
+        <!-- 邢台市下属县 -->
+        <record id="china_city_054600" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">054600</field>
+            <field name="name">邢台市柏乡县</field>
+        </record>
+
+        <record id="china_city_054700" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">054700</field>
+            <field name="name">邢台市隆尧县</field>
+        </record>
+
+        <record id="china_city_055150" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">055150</field>
+            <field name="name">邢台市任县</field>
+        </record>
+
+        <!-- 沧州市下属县 -->
+        <record id="china_city_061800" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">061800</field>
+            <field name="name">沧州市献县</field>
+        </record>
+
+        <record id="china_city_062350" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">062350</field>
+            <field name="name">沧州市孟村回族自治县</field>
+        </record>
+
+        <record id="china_city_062250" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">062250</field>
+            <field name="name">沧州市海兴县</field>
+        </record>
+        <!-- 保定市下属县 -->
+        <record id="china_city_073300" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">073300</field>
+            <field name="name">保定市蠡县</field>
+        </record>
+
+        <record id="china_city_073200" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">073200</field>
+            <field name="name">保定市博野县</field>
+        </record>
+
+        <record id="china_city_074100" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">074100</field>
+            <field name="name">保定市顺平县</field>
+        </record>
+
+        <!-- 邯郸市下属县 -->
+        <record id="china_city_057350" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">057350</field>
+            <field name="name">邯郸市广平县</field>
+        </record>
+
+        <record id="china_city_057650" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">057650</field>
+            <field name="name">邯郸市馆陶县</field>
+        </record>
+
+        <record id="china_city_057750" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">057750</field>
+            <field name="name">邯郸市魏县</field>
+        </record>
+
+        <record id="china_city_057850" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">057850</field>
+            <field name="name">邯郸市曲周县</field>
+        </record>
+
+        <!-- 邢台市下属县 -->
+        <record id="china_city_055150" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">055150</field>
+            <field name="name">邢台市宁晋县</field>
+        </record>
+
+        <record id="china_city_055350" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">055350</field>
+            <field name="name">邢台市巨鹿县</field>
+        </record>
+
+        <record id="china_city_055450" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">055450</field>
+            <field name="name">邢台市新河县</field>
+        </record>
+
+        <record id="china_city_055650" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">055650</field>
+            <field name="name">邢台市广宗县</field>
+        </record>
+
+        <record id="china_city_055750" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">055750</field>
+            <field name="name">邢台市平乡县</field>
+        </record>
+
+        <record id="china_city_055850" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">055850</field>
+            <field name="name">邢台市威县</field>
+        </record>
+
+        <record id="china_city_055950" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">055950</field>
+            <field name="name">邢台市清河县</field>
+        </record>
+
+        <record id="china_city_054300" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">054300</field>
+            <field name="name">邢台市临西县</field>
+        </record>
+
+        <!-- 沧州市下属县 -->
+        <record id="china_city_061400" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">061400</field>
+            <field name="name">沧州市东光县</field>
+        </record>
+
+        <record id="china_city_061500" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">061500</field>
+            <field name="name">沧州市南皮县</field>
+        </record>
+
+        <record id="china_city_061700" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">061700</field>
+            <field name="name">沧州市吴桥县</field>
+        </record>
+
+        <!-- 廊坊市下属县市 -->
+        <record id="china_city_065700" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">065700</field>
+            <field name="name">廊坊市霸州市</field>
+        </record>
+
+        <record id="china_city_065900" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">065900</field>
+            <field name="name">廊坊市三河市</field>
+        </record>
+
+        <!-- 唐山市下属县市 -->
+        <record id="china_city_064000" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">064000</field>
+            <field name="name">唐山市遵化市</field>
+        </record>
+
+        <record id="china_city_064100" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">064100</field>
+            <field name="name">唐山市迁安市</field>
+        </record>
+
+        <record id="china_city_063200" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">063200</field>
+            <field name="name">唐山市丰南区</field>
+        </record>
+
+        <record id="china_city_063300" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">063300</field>
+            <field name="name">唐山市丰润区</field>
+        </record>
+
+        <!-- 石家庄市下属县市 -->
+        <record id="china_city_052600" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">052600</field>
+            <field name="name">石家庄市高邑县</field>
+        </record>
+
+        <record id="china_city_051730" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">051730</field>
+            <field name="name">石家庄市元氏县</field>
+        </record>
+
+        <record id="china_city_051830" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">051830</field>
+            <field name="name">石家庄市赵县</field>
+        </record>
+
+        <record id="china_city_050200" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">050200</field>
+            <field name="name">石家庄市裕华区</field>
+        </record>
+
+        <record id="china_city_050100" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">050100</field>
+            <field name="name">石家庄市新华区</field>
+        </record>
+
+        <!-- 邯郸市下属县市 -->
+        <record id="china_city_056300" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">056300</field>
+            <field name="name">邯郸市武安市</field>
+        </record>
+
+        <record id="china_city_056200" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">056200</field>
+            <field name="name">邯郸市峰峰矿区</field>
+        </record>
+
+        <record id="china_city_056100" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">056100</field>
+            <field name="name">邯郸市邯山区</field>
+        </record>
+
+        <!-- 邢台市下属县市 -->
+        <record id="china_city_055350" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">055350</field>
+            <field name="name">邢台市南宫市</field>
+        </record>
+
+        <record id="china_city_055150" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">055150</field>
+            <field name="name">邢台市沙河市</field>
+        </record>
+
+        <!-- 沧州市下属县市 -->
+        <record id="china_city_062150" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">062150</field>
+            <field name="name">沧州市泊头市</field>
+        </record>
+
+        <record id="china_city_062450" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">062450</field>
+            <field name="name">沧州市任丘市</field>
+        </record>
+
+        <record id="china_city_061550" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">061550</field>
+            <field name="name">沧州市黄骅市</field>
+        </record>
+
+        <record id="china_city_062650" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">062650</field>
+            <field name="name">沧州市河间市</field>
+        </record>
+        <!-- 衡水市下属县市 -->
+        <record id="china_city_053900" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">053900</field>
+            <field name="name">衡水市深州市</field>
+        </record>
+
+        <!-- 张家口市下属县市 -->
+        <record id="china_city_075800" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">075800</field>
+            <field name="name">张家口市崇礼区</field>
+        </record>
+
+        <record id="china_city_075400" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">075400</field>
+            <field name="name">张家口市宣化区</field>
+        </record>
+
+        <record id="china_city_076550" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">076550</field>
+            <field name="name">张家口市赤城县</field>
+        </record>
+
+        <!-- 保定市下属县市 -->
+        <record id="china_city_073000" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">073000</field>
+            <field name="name">保定市涿州市</field>
+        </record>
+
+        <record id="china_city_074200" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">074200</field>
+            <field name="name">保定市安国市</field>
+        </record>
+
+        <record id="china_city_072750" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">072750</field>
+            <field name="name">保定市高碑店市</field>
+        </record>
+
+        <record id="china_city_073200" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">073200</field>
+            <field name="name">保定市定州市</field>
+        </record>
+
+        <!-- 石家庄市下属县市 -->
+        <record id="china_city_052560" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">052560</field>
+            <field name="name">石家庄市晋州市</field>
+        </record>
+
+        <record id="china_city_052360" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">052360</field>
+            <field name="name">石家庄市藁城区</field>
+        </record>
+
+        <record id="china_city_050800" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">050800</field>
+            <field name="name">石家庄市正定新区</field>
+        </record>
+
+        <!-- 承德市下属县市 -->
+        <record id="china_city_067300" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">067300</field>
+            <field name="name">承德市鹰手营子矿区</field>
+        </record>
+
+        <record id="china_city_067400" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">067400</field>
+            <field name="name">承德市平泉市</field>
+        </record>
+
+        <!-- 沧州市下属县市 -->
+        <record id="china_city_062250" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">062250</field>
+            <field name="name">沧州市盐山县</field>
+        </record>
+
+        <record id="china_city_061900" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">061900</field>
+            <field name="name">沧州市肃宁县</field>
+        </record>
+
+        <record id="china_city_062350" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">062350</field>
+            <field name="name">沧州市孟村回族自治县</field>
+        </record>
+
+        <!-- 邢台市下属县市 -->
+        <record id="china_city_055550" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">055550</field>
+            <field name="name">邢台市临西县</field>
+        </record>
+
+        <record id="china_city_055450" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">055450</field>
+            <field name="name">邢台市清河县</field>
+        </record>
+
+        <!-- 邯郸市下属县市 -->
+        <record id="china_city_056900" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">056900</field>
+            <field name="name">邯郸市肥乡区</field>
+        </record>
+
+        <record id="china_city_057550" model="res.city">
+            <field name="state_id" ref="base.state_cn_HE" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">057550</field>
+            <field name="name">邯郸市永年区</field>
+        </record>
+
+    </data>
+</odoo>

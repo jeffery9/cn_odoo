@@ -1,0 +1,1020 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<odoo>  
+    <data noupdate="1">  
+        <!-- 辽宁省沈阳市 -->  
+        <record id="china_city_110000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">110000</field>  
+            <field name="name">沈阳市</field>  
+        </record>  
+  
+        <!-- 辽宁省大连市 -->  
+        <record id="china_city_116000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">116000</field>  
+            <field name="name">大连市</field>  
+        </record>  
+  
+        <!-- 辽宁省鞍山市 -->  
+        <record id="china_city_114000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">114000</field>  
+            <field name="name">鞍山市</field>  
+        </record>  
+  
+        <!-- 辽宁省抚顺市 -->  
+        <record id="china_city_113000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">113000</field>  
+            <field name="name">抚顺市</field>  
+        </record>  
+  
+        <!-- 辽宁省本溪市 -->  
+        <record id="china_city_117000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">117000</field>  
+            <field name="name">本溪市</field>  
+        </record>  
+  
+        <!-- 辽宁省丹东市 -->  
+        <record id="china_city_118000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">118000</field>  
+            <field name="name">丹东市</field>  
+        </record>  
+  
+        <!-- 辽宁省锦州市 -->  
+        <record id="china_city_121000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">121000</field>  
+            <field name="name">锦州市</field>  
+        </record>  
+  
+        <!-- 辽宁省营口市 -->  
+        <record id="china_city_115000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">115000</field>  
+            <field name="name">营口市</field>  
+        </record>  
+  
+        <!-- 辽宁省阜新市 -->  
+        <record id="china_city_123000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">123000</field>  
+            <field name="name">阜新市</field>  
+        </record>  
+  
+        <!-- 辽宁省辽阳市 -->  
+        <record id="china_city_111000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">111000</field>  
+            <field name="name">辽阳市</field>  
+        </record>  
+  
+        <!-- 辽宁省盘锦市 -->  
+        <record id="china_city_124000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">124000</field>  
+            <field name="name">盘锦市</field>  
+        </record>  
+  
+        <!-- 辽宁省铁岭市 -->  
+        <record id="china_city_112000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">112000</field>  
+            <field name="name">铁岭市</field>  
+        </record>  
+  
+        <!-- 辽宁省朝阳市 -->  
+        <record id="china_city_122000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">122000</field>  
+            <field name="name">朝阳市</field>  
+        </record>  
+  
+        <!-- 辽宁省葫芦岛市 -->  
+        <record id="china_city_125000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">125000</field>  
+            <field name="name">葫芦岛市</field>  
+        </record>  
+  
+        <!-- 沈阳市下属区县 -->  
+        <record id="china_city_110001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">110001</field>  
+            <field name="name">沈阳市和平区</field>  
+        </record>  
+  
+        <record id="china_city_110002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">110002</field>  
+            <field name="name">沈阳市沈河区</field>  
+        </record>  
+  
+        <record id="china_city_110003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">110003</field>  
+            <field name="name">沈阳市大东区</field>  
+        </record>  
+  
+        <record id="china_city_110004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">110004</field>  
+            <field name="name">沈阳市皇姑区</field>  
+        </record>  
+  
+        <record id="china_city_110005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">110005</field>  
+            <field name="name">沈阳市铁西区</field>  
+        </record>  
+  
+        <record id="china_city_110006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">110006</field>  
+            <field name="name">沈阳市苏家屯区</field>  
+        </record>  
+  
+        <record id="china_city_110007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">110007</field>  
+            <field name="name">沈阳市浑南区</field>  
+        </record>  
+  
+        <record id="china_city_110008" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">110008</field>  
+            <field name="name">沈阳市沈北新区</field>  
+        </record>  
+  
+        <record id="china_city_110009" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">110009</field>  
+            <field name="name">沈阳市于洪区</field>  
+        </record>  
+  
+        <record id="china_city_110010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">110010</field>  
+            <field name="name">沈阳市辽中区</field>  
+        </record>  
+  
+        <record id="china_city_110011" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">110011</field>  
+            <field name="name">沈阳市康平县</field>  
+        </record>  
+  
+        <record id="china_city_110012" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">110012</field>  
+            <field name="name">沈阳市法库县</field>  
+        </record>  
+  
+        <record id="china_city_110013" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">110013</field>  
+            <field name="name">沈阳市新民市</field>  
+        </record>  
+
+        <!-- 大连市下属区县 -->  
+        <record id="china_city_116001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">116001</field>  
+            <field name="name">大连市中山区</field>  
+        </record>  
+  
+        <record id="china_city_116002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">116002</field>  
+            <field name="name">大连市西岗区</field>  
+        </record>  
+  
+        <record id="china_city_116003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">116003</field>  
+            <field name="name">大连市沙河口区</field>  
+        </record>  
+  
+        <record id="china_city_116004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">116004</field>  
+            <field name="name">大连市甘井子区</field>  
+        </record>  
+  
+        <record id="china_city_116005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">116005</field>  
+            <field name="name">大连市旅顺口区</field>  
+        </record>  
+  
+        <record id="china_city_116006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">116006</field>  
+            <field name="name">大连市金州区</field>  
+        </record>  
+  
+        <record id="china_city_116007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">116007</field>  
+            <field name="name">大连市普兰店区</field>  
+        </record>  
+  
+        <record id="china_city_116008" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">116008</field>  
+            <field name="name">大连市瓦房店市</field>  
+        </record>  
+  
+        <record id="china_city_116009" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">116009</field>  
+            <field name="name">大连市庄河市</field>  
+        </record>  
+  
+        <record id="china_city_116010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">116010</field>  
+            <field name="name">大连市长海县</field>  
+        </record>  
+  
+        <!-- 鞍山市下属区县 -->  
+        <record id="china_city_114001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">114001</field>  
+            <field name="name">鞍山市铁东区</field>  
+        </record>  
+  
+        <record id="china_city_114002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">114002</field>  
+            <field name="name">鞍山市铁西区</field>  
+        </record>  
+  
+        <record id="china_city_114003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">114003</field>  
+            <field name="name">鞍山市立山区</field>  
+        </record>  
+  
+        <record id="china_city_114004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">114004</field>  
+            <field name="name">鞍山市千山区</field>  
+        </record>  
+  
+        <record id="china_city_114005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">114005</field>  
+            <field name="name">鞍山市海城市</field>  
+        </record>  
+  
+        <record id="china_city_114006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">114006</field>  
+            <field name="name">鞍山市台安县</field>  
+        </record>  
+  
+        <record id="china_city_114007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">114007</field>  
+            <field name="name">鞍山市岫岩满族自治县</field>  
+        </record>  
+  
+        <!-- 抚顺市下属区县 -->  
+        <record id="china_city_113001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">113001</field>  
+            <field name="name">抚顺市顺城区</field>  
+        </record>  
+  
+        <record id="china_city_113002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">113002</field>  
+            <field name="name">抚顺市新抚区</field>  
+        </record>  
+  
+        <record id="china_city_113003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">113003</field>  
+            <field name="name">抚顺市东洲区</field>  
+        </record>  
+  
+        <record id="china_city_113004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">113004</field>  
+            <field name="name">抚顺市望花区</field>  
+        </record>  
+  
+        <record id="china_city_113005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">113005</field>  
+            <field name="name">抚顺市抚顺县</field>  
+        </record>  
+  
+        <record id="china_city_113006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">113006</field>  
+            <field name="name">抚顺市新宾满族自治县</field>  
+        </record>  
+  
+        <record id="china_city_113007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">113007</field>  
+            <field name="name">抚顺市清原满族自治县</field>  
+        </record>  
+        
+        <!-- 本溪市下属区县 -->  
+        <record id="china_city_117001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">117001</field>  
+            <field name="name">本溪市平山区</field>  
+        </record>  
+  
+        <record id="china_city_117002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">117002</field>  
+            <field name="name">本溪市溪湖区</field>  
+        </record>  
+  
+        <record id="china_city_117003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">117003</field>  
+            <field name="name">本溪市明山区</field>  
+        </record>  
+  
+        <record id="china_city_117004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">117004</field>  
+            <field name="name">本溪市南芬区</field>  
+        </record>  
+  
+        <record id="china_city_117005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">117005</field>  
+            <field name="name">本溪市本溪满族自治县</field>  
+        </record>  
+  
+        <record id="china_city_117006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">117006</field>  
+            <field name="name">本溪市桓仁满族自治县</field>  
+        </record>  
+  
+        <!-- 丹东市下属区县 -->  
+        <record id="china_city_118001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">118001</field>  
+            <field name="name">丹东市元宝区</field>  
+        </record>  
+  
+        <record id="china_city_118002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">118002</field>  
+            <field name="name">丹东市振兴区</field>  
+        </record>  
+  
+        <record id="china_city_118003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">118003</field>  
+            <field name="name">丹东市振安区</field>  
+        </record>  
+  
+        <record id="china_city_118004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">118004</field>  
+            <field name="name">丹东市东港市</field>  
+        </record>  
+  
+        <record id="china_city_118005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">118005</field>  
+            <field name="name">丹东市凤城市</field>  
+        </record>  
+  
+        <record id="china_city_118006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">118006</field>  
+            <field name="name">丹东市宽甸满族自治县</field>  
+        </record>  
+  
+        <!-- 锦州市下属区县 -->  
+        <record id="china_city_121001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">121001</field>  
+            <field name="name">锦州市古塔区</field>  
+        </record>  
+  
+        <record id="china_city_121002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">121002</field>  
+            <field name="name">锦州市凌河区</field>  
+        </record>  
+  
+        <record id="china_city_121003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">121003</field>  
+            <field name="name">锦州市太和区</field>  
+        </record>  
+  
+        <record id="china_city_121004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">121004</field>  
+            <field name="name">锦州市松山新区</field>  
+        </record>  
+  
+        <record id="china_city_121005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">121005</field>  
+            <field name="name">锦州市凌海市</field>  
+        </record>  
+  
+        <record id="china_city_121006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">121006</field>  
+            <field name="name">锦州市北镇市</field>  
+        </record>  
+  
+        <record id="china_city_121007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">121007</field>  
+            <field name="name">锦州市黑山县</field>  
+        </record>  
+  
+        <record id="china_city_121008" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">121008</field>  
+            <field name="name">锦州市义县</field>  
+        </record>  
+  
+        <!-- 营口市下属区县 -->  
+        <record id="china_city_115001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">115001</field>  
+            <field name="name">营口市站前区</field>  
+        </record>  
+  
+        <record id="china_city_115002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">115002</field>  
+            <field name="name">营口市西市区</field>  
+        </record>  
+  
+        <record id="china_city_115003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">115003</field>  
+            <field name="name">营口市鲅鱼圈区</field>  
+        </record>  
+  
+        <record id="china_city_115004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">115004</field>  
+            <field name="name">营口市老边区</field>  
+        </record>  
+  
+        <record id="china_city_115005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">115005</field>  
+            <field name="name">营口市盖州市</field>  
+        </record>  
+  
+        <record id="china_city_115006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">115006</field>  
+            <field name="name">营口市大石桥市</field>  
+        </record>  
+
+        <!-- 阜新市下属区县 -->  
+        <record id="china_city_123001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">123001</field>  
+            <field name="name">阜新市海州区</field>  
+        </record>  
+  
+        <record id="china_city_123002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">123002</field>  
+            <field name="name">阜新市新邱区</field>  
+        </record>  
+  
+        <record id="china_city_123003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">123003</field>  
+            <field name="name">阜新市太平区</field>  
+        </record>  
+  
+        <record id="china_city_123004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">123004</field>  
+            <field name="name">阜新市清河门区</field>  
+        </record>  
+  
+        <record id="china_city_123005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">123005</field>  
+            <field name="name">阜新市细河区</field>  
+        </record>  
+  
+        <record id="china_city_123006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">123006</field>  
+            <field name="name">阜新市阜新蒙古族自治县</field>  
+        </record>  
+  
+        <record id="china_city_123007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">123007</field>  
+            <field name="name">阜新市彰武县</field>  
+        </record>  
+  
+        <!-- 辽阳市下属区县 -->  
+        <record id="china_city_111001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">111001</field>  
+            <field name="name">辽阳市白塔区</field>  
+        </record>  
+  
+        <record id="china_city_111002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">111002</field>  
+            <field name="name">辽阳市文圣区</field>  
+        </record>  
+  
+        <record id="china_city_111003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">111003</field>  
+            <field name="name">辽阳市宏伟区</field>  
+        </record>  
+  
+        <record id="china_city_111004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">111004</field>  
+            <field name="name">辽阳市弓长岭区</field>  
+        </record>  
+  
+        <record id="china_city_111005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">111005</field>  
+            <field name="name">辽阳市太子河区</field>  
+        </record>  
+  
+        <record id="china_city_111006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">111006</field>  
+            <field name="name">辽阳市灯塔市</field>  
+        </record>  
+  
+        <record id="china_city_111007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">111007</field>  
+            <field name="name">辽阳市辽阳县</field>  
+        </record>  
+  
+        <!-- 盘锦市下属区县 -->  
+        <record id="china_city_124001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">124001</field>  
+            <field name="name">盘锦市双台子区</field>  
+        </record>  
+  
+        <record id="china_city_124002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">124002</field>  
+            <field name="name">盘锦市兴隆台区</field>  
+        </record>  
+  
+        <record id="china_city_124003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">124003</field>  
+            <field name="name">盘锦市大洼区</field>  
+        </record>  
+  
+        <record id="china_city_124004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">124004</field>  
+            <field name="name">盘锦市盘山县</field>  
+        </record>  
+  
+        <!-- 铁岭市下属区县 -->  
+        <record id="china_city_112001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">112001</field>  
+            <field name="name">铁岭市银州区</field>  
+        </record>  
+  
+        <record id="china_city_112002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">112002</field>  
+            <field name="name">铁岭市清河区</field>  
+        </record>  
+  
+        <record id="china_city_112003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">112003</field>  
+            <field name="name">铁岭市调兵山市</field>  
+        </record>  
+  
+        <record id="china_city_112004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">112004</field>  
+            <field name="name">铁岭市开原市</field>  
+        </record>  
+  
+        <record id="china_city_112005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">112005</field>  
+            <field name="name">铁岭市铁岭县</field>  
+        </record>  
+  
+        <record id="china_city_112006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">112006</field>  
+            <field name="name">铁岭市西丰县</field>  
+        </record>  
+  
+        <record id="china_city_112007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">112007</field>  
+            <field name="name">铁岭市昌图县</field>  
+        </record>  
+
+        <!-- 朝阳市下属区县 -->  
+        <record id="china_city_122001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">122001</field>  
+            <field name="name">朝阳市双塔区</field>  
+        </record>  
+  
+        <record id="china_city_122002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">122002</field>  
+            <field name="name">朝阳市龙城区</field>  
+        </record>  
+  
+        <record id="china_city_122003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">122003</field>  
+            <field name="name">朝阳市北票市</field>  
+        </record>  
+  
+        <record id="china_city_122004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">122004</field>  
+            <field name="name">朝阳市凌源市</field>  
+        </record>  
+  
+        <record id="china_city_122005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">122005</field>  
+            <field name="name">朝阳市朝阳县</field>  
+        </record>  
+  
+        <record id="china_city_122006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">122006</field>  
+            <field name="name">朝阳市建平县</field>  
+        </record>  
+  
+        <record id="china_city_122007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">122007</field>  
+            <field name="name">朝阳市喀喇沁左翼蒙古族自治县</field>  
+        </record>  
+  
+        <!-- 葫芦岛市下属区县 -->  
+        <record id="china_city_125001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">125001</field>  
+            <field name="name">葫芦岛市连山区</field>  
+        </record>  
+  
+        <record id="china_city_125002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">125002</field>  
+            <field name="name">葫芦岛市龙港区</field>  
+        </record>  
+  
+        <record id="china_city_125003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">125003</field>  
+            <field name="name">葫芦岛市南票区</field>  
+        </record>  
+  
+        <record id="china_city_125004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">125004</field>  
+            <field name="name">葫芦岛市兴城市</field>  
+        </record>  
+  
+        <record id="china_city_125005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">125005</field>  
+            <field name="name">葫芦岛市绥中县</field>  
+        </record>  
+  
+        <record id="china_city_125006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">125006</field>  
+            <field name="name">葫芦岛市建昌县</field>  
+        </record>  
+  
+        <!-- 辽宁省经济开发区 -->  
+        <record id="china_city_119001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">119001</field>  
+            <field name="name">辽宁省沈抚新区</field>  
+        </record>  
+  
+        <record id="china_city_119002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">119002</field>  
+            <field name="name">辽宁省大连金普新区</field>  
+        </record>  
+  
+        <record id="china_city_119003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">119003</field>  
+            <field name="name">辽宁省营口沿海产业基地</field>  
+        </record>  
+  
+        <record id="china_city_119004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">119004</field>  
+            <field name="name">辽宁省辽东湾新区</field>  
+        </record>  
+
+        <!-- 沈阳市开发区和新区 -->  
+        <record id="china_city_110101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">110101</field>  
+            <field name="name">沈阳市经济技术开发区</field>  
+        </record>  
+  
+        <record id="china_city_110102" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">110102</field>  
+            <field name="name">沈阳市高新技术产业开发区</field>  
+        </record>  
+  
+        <!-- 大连市开发区和新区 -->  
+        <record id="china_city_116101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">116101</field>  
+            <field name="name">大连市经济技术开发区</field>  
+        </record>  
+  
+        <record id="china_city_116102" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">116102</field>  
+            <field name="name">大连市高新技术产业园区</field>  
+        </record>  
+  
+        <record id="china_city_116103" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">116103</field>  
+            <field name="name">大连市保税区</field>  
+        </record>  
+  
+        <!-- 鞍山市下属乡镇 -->  
+        <record id="china_city_114101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">114101</field>  
+            <field name="name">鞍山市千山风景区</field>  
+        </record>  
+  
+        <record id="china_city_114102" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">114102</field>  
+            <field name="name">鞍山市高新区</field>  
+        </record>  
+  
+        <!-- 抚顺市下属乡镇 -->  
+        <record id="china_city_113101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">113101</field>  
+            <field name="name">抚顺市经济开发区</field>  
+        </record>  
+  
+        <!-- 本溪市下属乡镇 -->  
+        <record id="china_city_117101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">117101</field>  
+            <field name="name">本溪市高新技术开发区</field>  
+        </record>  
+  
+        <!-- 丹东市下属乡镇 -->  
+        <record id="china_city_118101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">118101</field>  
+            <field name="name">丹东市边境经济合作区</field>  
+        </record>  
+  
+        <!-- 锦州市下属乡镇 -->  
+        <record id="china_city_121101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">121101</field>  
+            <field name="name">锦州市经济技术开发区</field>  
+        </record>  
+  
+        <!-- 营口市下属乡镇 -->  
+        <record id="china_city_115101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">115101</field>  
+            <field name="name">营口市经济技术开发区</field>  
+        </record>  
+  
+        <!-- 阜新市下属乡镇 -->  
+        <record id="china_city_123101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">123101</field>  
+            <field name="name">阜新市经济开发区</field>  
+        </record>  
+  
+        <!-- 辽阳市下属乡镇 -->  
+        <record id="china_city_111101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">111101</field>  
+            <field name="name">辽阳市经济开发区</field>  
+        </record>  
+  
+        <!-- 盘锦市下属乡镇 -->  
+        <record id="china_city_124101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">124101</field>  
+            <field name="name">盘锦市辽东湾新区</field>  
+        </record>  
+  
+        <record id="china_city_124102" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">124102</field>  
+            <field name="name">盘锦市高新技术产业开发区</field>  
+        </record>  
+  
+        <!-- 铁岭市下属乡镇 -->  
+        <record id="china_city_112101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">112101</field>  
+            <field name="name">铁岭市经济开发区</field>  
+        </record>  
+  
+        <!-- 朝阳市下属乡镇 -->  
+        <record id="china_city_122101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">122101</field>  
+            <field name="name">朝阳市龙城区经济开发区</field>  
+        </record>  
+  
+        <!-- 葫芦岛市下属乡镇 -->  
+        <record id="china_city_125101" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">125101</field>  
+            <field name="name">葫芦岛市经济开发区</field>  
+        </record>  
+  
+        <record id="china_city_125102" model="res.city">  
+            <field name="state_id" ref="base.state_cn_LN" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">125102</field>  
+            <field name="name">葫芦岛市杨家杖子经济开发区</field>  
+        </record>  
+    </data>  
+</odoo>

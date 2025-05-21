@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<odoo>  
+    <data noupdate="1">  
+        <!-- 河南省郑州市 -->  
+        <record id="china_city_450000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">450000</field>  
+            <field name="name">郑州市</field>  
+        </record>  
+          
+        <!-- 郑州市下属区县 -->  
+        <record id="china_city_450001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">450001</field>  
+            <field name="name">郑州市中原区</field>  
+        </record>  
+        <record id="china_city_450002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">450002</field>  
+            <field name="name">郑州市金水区</field>  
+        </record>  
+        <record id="china_city_450003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">450003</field>  
+            <field name="name">郑州市二七区</field>  
+        </record>  
+        <record id="china_city_450004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">450004</field>  
+            <field name="name">郑州市管城回族区</field>  
+        </record>  
+        <record id="china_city_450005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">450005</field>  
+            <field name="name">郑州市惠济区</field>  
+        </record>  
+        <record id="china_city_450006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">450006</field>  
+            <field name="name">郑州市上街区</field>  
+        </record>  
+        <record id="china_city_450007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">450007</field>  
+            <field name="name">郑州市巩义市</field>  
+        </record>  
+          
+        <!-- 河南省开封市 -->  
+        <record id="china_city_475000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">475000</field>  
+            <field name="name">开封市</field>  
+        </record>  
+          
+        <!-- 开封市下属区县 -->  
+        <record id="china_city_475001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">475001</field>  
+            <field name="name">开封市龙亭区</field>  
+        </record>  
+        <record id="china_city_475002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">475002</field>  
+            <field name="name">开封市顺河回族区</field>  
+        </record>  
+        <record id="china_city_475003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">475003</field>  
+            <field name="name">开封市鼓楼区</field>  
+        </record>  
+          
+        <!-- 河南省洛阳市 -->  
+        <record id="china_city_471000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">471000</field>  
+            <field name="name">洛阳市</field>  
+        </record>  
+          
+        <!-- 洛阳市下属区县 -->  
+        <record id="china_city_471001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">471001</field>  
+            <field name="name">洛阳市老城区</field>  
+        </record>  
+        <record id="china_city_471002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">471002</field>  
+            <field name="name">洛阳市西工区</field>  
+        </record>  
+        <record id="china_city_471003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">471003</field>  
+            <field name="name">洛阳市瀍河回族区</field>  
+        </record>  
+          
+        <!-- 河南省南阳市 -->  
+        <record id="china_city_473000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">473000</field>  
+            <field name="name">南阳市</field>  
+        </record>  
+          
+        <!-- 南阳市下属区县 -->  
+        <record id="china_city_473001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">473001</field>  
+            <field name="name">南阳市宛城区</field>  
+        </record>  
+        <record id="china_city_473002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">473002</field>  
+            <field name="name">南阳市卧龙区</field>  
+        </record>  
+
+        <!-- 河南省平顶山市 -->  
+        <record id="china_city_467000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">467000</field>  
+            <field name="name">平顶山市</field>  
+        </record>  
+          
+        <!-- 平顶山市下属区县 -->  
+        <record id="china_city_467001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">467001</field>  
+            <field name="name">平顶山市新华区</field>  
+        </record>  
+        <record id="china_city_467002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">467002</field>  
+            <field name="name">平顶山市卫东区</field>  
+        </record>  
+        <record id="china_city_467003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">467003</field>  
+            <field name="name">平顶山市石龙区</field>  
+        </record>  
+        <record id="china_city_467004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">467004</field>  
+            <field name="name">平顶山市湛河区</field>  
+        </record>  
+          
+        <!-- 河南省安阳市 -->  
+        <record id="china_city_455000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">455000</field>  
+            <field name="name">安阳市</field>  
+        </record>  
+          
+        <!-- 安阳市下属区县 -->  
+        <record id="china_city_455001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">455001</field>  
+            <field name="name">安阳市文峰区</field>  
+        </record>  
+        <record id="china_city_455002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">455002</field>  
+            <field name="name">安阳市北关区</field>  
+        </record>  
+        <record id="china_city_455003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">455003</field>  
+            <field name="name">安阳市殷都区</field>  
+        </record>  
+        <record id="china_city_455004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">455004</field>  
+            <field name="name">安阳市龙安区</field>  
+        </record>  
+          
+        <!-- 河南省鹤壁市 -->  
+        <record id="china_city_458000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">458000</field>  
+            <field name="name">鹤壁市</field>  
+        </record>  
+          
+        <!-- 鹤壁市下属区县 -->  
+        <record id="china_city_458001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">458001</field>  
+            <field name="name">鹤壁市淇滨区</field>  
+        </record>  
+        <record id="china_city_458002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">458002</field>  
+            <field name="name">鹤壁市山城区</field>  
+        </record>  
+        <record id="china_city_458003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">458003</field>  
+            <field name="name">鹤壁市鹤山区</field>  
+        </record>  
+          
+        <!-- 河南省新乡市 -->  
+        <record id="china_city_453000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">453000</field>  
+            <field name="name">新乡市</field>  
+        </record>  
+          
+        <!-- 新乡市下属区县 -->  
+        <record id="china_city_453001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">453001</field>  
+            <field name="name">新乡市红旗区</field>  
+        </record>  
+        <record id="china_city_453002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">453002</field>  
+            <field name="name">新乡市卫滨区</field>  
+        </record>  
+        <record id="china_city_453003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">453003</field>  
+            <field name="name">新乡市凤泉区</field>  
+        </record>  
+        <record id="china_city_453004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">453004</field>  
+            <field name="name">新乡市牧野区</field>  
+        </record>  
+          
+        <!-- 河南省焦作市 -->  
+        <record id="china_city_454000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">454000</field>  
+            <field name="name">焦作市</field>  
+        </record>  
+          
+        <!-- 焦作市下属区县 -->  
+        <record id="china_city_454001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">454001</field>  
+            <field name="name">焦作市解放区</field>  
+        </record>  
+        <record id="china_city_454002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">454002</field>  
+            <field name="name">焦作市中站区</field>  
+        </record>  
+        <record id="china_city_454003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">454003</field>  
+            <field name="name">焦作市马村区</field>  
+        </record>  
+        <record id="china_city_454004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">454004</field>  
+            <field name="name">焦作市山阳区</field>  
+        </record>  
+
+        <!-- 河南省许昌市 -->  
+        <record id="china_city_461000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">461000</field>  
+            <field name="name">许昌市</field>  
+        </record>  
+          
+        <!-- 许昌市下属区县 -->  
+        <record id="china_city_461001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">461001</field>  
+            <field name="name">许昌市魏都区</field>  
+        </record>  
+        <record id="china_city_461002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">461002</field>  
+            <field name="name">许昌市建安区</field>  
+        </record>  
+        <record id="china_city_461003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">461003</field>  
+            <field name="name">许昌市禹州市</field>  
+        </record>  
+        <record id="china_city_461004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">461004</field>  
+            <field name="name">许昌市长葛市</field>  
+        </record>  
+          
+        <!-- 河南省漯河市 -->  
+        <record id="china_city_462000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">462000</field>  
+            <field name="name">漯河市</field>  
+        </record>  
+          
+        <!-- 漯河市下属区县 -->  
+        <record id="china_city_462001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">462001</field>  
+            <field name="name">漯河市源汇区</field>  
+        </record>  
+        <record id="china_city_462002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">462002</field>  
+            <field name="name">漯河市郾城区</field>  
+        </record>  
+        <record id="china_city_462003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">462003</field>  
+            <field name="name">漯河市召陵区</field>  
+        </record>  
+          
+        <!-- 河南省三门峡市 -->  
+        <record id="china_city_472000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">472000</field>  
+            <field name="name">三门峡市</field>  
+        </record>  
+          
+        <!-- 三门峡市下属区县 -->  
+        <record id="china_city_472001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">472001</field>  
+            <field name="name">三门峡市湖滨区</field>  
+        </record>  
+        <record id="china_city_472002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">472002</field>  
+            <field name="name">三门峡市陕州区</field>  
+        </record>  
+        <record id="china_city_472003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">472003</field>  
+            <field name="name">三门峡市义马市</field>  
+        </record>  
+          
+        <!-- 河南省商丘市 -->  
+        <record id="china_city_476000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">476000</field>  
+            <field name="name">商丘市</field>  
+        </record>  
+          
+        <!-- 商丘市下属区县 -->  
+        <record id="china_city_476001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">476001</field>  
+            <field name="name">商丘市梁园区</field>  
+        </record>  
+        <record id="china_city_476002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">476002</field>  
+            <field name="name">商丘市睢阳区</field>  
+        </record>  
+        <record id="china_city_476003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">476003</field>  
+            <field name="name">商丘市永城市</field>  
+        </record>  
+          
+        <!-- 河南省周口市 -->  
+        <record id="china_city_466000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">466000</field>  
+            <field name="name">周口市</field>  
+        </record>  
+          
+        <!-- 周口市下属区县 -->  
+        <record id="china_city_466001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">466001</field>  
+            <field name="name">周口市川汇区</field>  
+        </record>  
+        <record id="china_city_466002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">466002</field>  
+            <field name="name">周口市淮阳区</field>  
+        </record>  
+        <record id="china_city_466003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">466003</field>  
+            <field name="name">周口市项城市</field>  
+        </record>  
+
+        <!-- 河南省驻马店市 -->  
+        <record id="china_city_463000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">463000</field>  
+            <field name="name">驻马店市</field>  
+        </record>  
+          
+        <!-- 驻马店市下属区县 -->  
+        <record id="china_city_463001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">463001</field>  
+            <field name="name">驻马店市驿城区</field>  
+        </record>  
+        <record id="china_city_463002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">463002</field>  
+            <field name="name">驻马店市西平县</field>  
+        </record>  
+        <record id="china_city_463003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">463003</field>  
+            <field name="name">驻马店市上蔡县</field>  
+        </record>  
+        <record id="china_city_463004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">463004</field>  
+            <field name="name">驻马店市汝南县</field>  
+        </record>  
+          
+        <!-- 河南省信阳市 -->  
+        <record id="china_city_464000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">464000</field>  
+            <field name="name">信阳市</field>  
+        </record>  
+          
+        <!-- 信阳市下属区县 -->  
+        <record id="china_city_464001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">464001</field>  
+            <field name="name">信阳市浉河区</field>  
+        </record>  
+        <record id="china_city_464002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">464002</field>  
+            <field name="name">信阳市平桥区</field>  
+        </record>  
+        <record id="china_city_464003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">464003</field>  
+            <field name="name">信阳市罗山县</field>  
+        </record>  
+        <record id="china_city_464004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">464004</field>  
+            <field name="name">信阳市光山县</field>  
+        </record>  
+          
+        <!-- 河南省濮阳市 -->  
+        <record id="china_city_457000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">457000</field>  
+            <field name="name">濮阳市</field>  
+        </record>  
+          
+        <!-- 濮阳市下属区县 -->  
+        <record id="china_city_457001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">457001</field>  
+            <field name="name">濮阳市华龙区</field>  
+        </record>  
+        <record id="china_city_457002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">457002</field>  
+            <field name="name">濮阳市清丰县</field>  
+        </record>  
+        <record id="china_city_457003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">457003</field>  
+            <field name="name">濮阳市南乐县</field>  
+        </record>  
+          
+        <!-- 河南省济源市 -->  
+        <record id="china_city_459000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">459000</field>  
+            <field name="name">济源市</field>  
+        </record>  
+          
+        <!-- 济源市下属区县 -->  
+        <record id="china_city_459001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">459001</field>  
+            <field name="name">济源市沁园街道</field>  
+        </record>  
+        <record id="china_city_459002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">459002</field>  
+            <field name="name">济源市济水街道</field>  
+        </record>  
+        <record id="china_city_459003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">459003</field>  
+            <field name="name">济源市北海街道</field>  
+        </record>  
+          
+        <!-- 河南省巩义市 -->  
+        <record id="china_city_451200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">451200</field>  
+            <field name="name">巩义市</field>  
+        </record>  
+          
+        <!-- 巩义市下属区县 -->  
+        <record id="china_city_451201" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">451201</field>  
+            <field name="name">巩义市回郭镇</field>  
+        </record>  
+        <record id="china_city_451202" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">451202</field>  
+            <field name="name">巩义市新中镇</field>  
+        </record>  
+
+        <!-- 河南省南阳市其他县区 -->  
+        <record id="china_city_473003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">473003</field>  
+            <field name="name">南阳市南召县</field>  
+        </record>  
+        <record id="china_city_473004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">473004</field>  
+            <field name="name">南阳市方城县</field>  
+        </record>  
+        <record id="china_city_473005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">473005</field>  
+            <field name="name">南阳市西峡县</field>  
+        </record>  
+        <record id="china_city_473006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">473006</field>  
+            <field name="name">南阳市镇平县</field>  
+        </record>  
+          
+        <!-- 河南省驻马店市其他县区 -->  
+        <record id="china_city_463005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">463005</field>  
+            <field name="name">驻马店市平舆县</field>  
+        </record>  
+        <record id="china_city_463006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">463006</field>  
+            <field name="name">驻马店市新蔡县</field>  
+        </record>  
+        <record id="china_city_463007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">463007</field>  
+            <field name="name">驻马店市遂平县</field>  
+        </record>  
+        <record id="china_city_463008" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">463008</field>  
+            <field name="name">驻马店市确山县</field>  
+        </record>  
+        <record id="china_city_463009" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">463009</field>  
+            <field name="name">驻马店市泌阳县</field>  
+        </record>  
+          
+        <!-- 河南省信阳市其他县区 -->  
+        <record id="china_city_464005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">464005</field>  
+            <field name="name">信阳市新县</field>  
+        </record>  
+        <record id="china_city_464006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">464006</field>  
+            <field name="name">信阳市商城县</field>  
+        </record>  
+        <record id="china_city_464007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">464007</field>  
+            <field name="name">信阳市固始县</field>  
+        </record>  
+        <record id="china_city_464008" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">464008</field>  
+            <field name="name">信阳市潢川县</field>  
+        </record>  
+        <record id="china_city_464009" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">464009</field>  
+            <field name="name">信阳市淮滨县</field>  
+        </record>  
+        <record id="china_city_464010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">464010</field>  
+            <field name="name">信阳市息县</field>  
+        </record>  
+          
+        <!-- 河南省濮阳市其他县区 -->  
+        <record id="china_city_457004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">457004</field>  
+            <field name="name">濮阳市范县</field>  
+        </record>  
+        <record id="china_city_457005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">457005</field>  
+            <field name="name">濮阳市台前县</field>  
+        </record>  
+        <record id="china_city_457006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">457006</field>  
+            <field name="name">濮阳市濮阳县</field>  
+        </record>  
+          
+        <!-- 河南省商丘市其他县区 -->  
+        <record id="china_city_476004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">476004</field>  
+            <field name="name">商丘市民权县</field>  
+        </record>  
+        <record id="china_city_476005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">476005</field>  
+            <field name="name">商丘市睢县</field>  
+        </record>  
+        <record id="china_city_476006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">476006</field>  
+            <field name="name">商丘市宁陵县</field>  
+        </record>  
+        <record id="china_city_476007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">476007</field>  
+            <field name="name">商丘市柘城县</field>  
+        </record>  
+        <record id="china_city_476008" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">476008</field>  
+            <field name="name">商丘市虞城县</field>  
+        </record>  
+        <record id="china_city_476009" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">476009</field>  
+            <field name="name">商丘市夏邑县</field>  
+        </record>  
+
+        <!-- 河南省周口市其他县区 -->  
+        <record id="china_city_466004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">466004</field>  
+            <field name="name">周口市沈丘县</field>  
+        </record>  
+        <record id="china_city_466005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">466005</field>  
+            <field name="name">周口市郸城县</field>  
+        </record>  
+        <record id="china_city_466006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">466006</field>  
+            <field name="name">周口市太康县</field>  
+        </record>  
+        <record id="china_city_466007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">466007</field>  
+            <field name="name">周口市鹿邑县</field>  
+        </record>  
+        <record id="china_city_466008" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">466008</field>  
+            <field name="name">周口市西华县</field>  
+        </record>  
+        <record id="china_city_466009" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">466009</field>  
+            <field name="name">周口市扶沟县</field>  
+        </record>  
+          
+        <!-- 河南省三门峡市其他县区 -->  
+        <record id="china_city_472004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">472004</field>  
+            <field name="name">三门峡市灵宝市</field>  
+        </record>  
+        <record id="china_city_472005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">472005</field>  
+            <field name="name">三门峡市渑池县</field>  
+        </record>  
+        <record id="china_city_472006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">472006</field>  
+            <field name="name">三门峡市卢氏县</field>  
+        </record>  
+          
+        <!-- 河南省洛阳市其他县区 -->  
+        <record id="china_city_471004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">471004</field>  
+            <field name="name">洛阳市涧西区</field>  
+        </record>  
+        <record id="china_city_471005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">471005</field>  
+            <field name="name">洛阳市吉利区</field>  
+        </record>  
+        <record id="china_city_471006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">471006</field>  
+            <field name="name">洛阳市洛龙区</field>  
+        </record>  
+        <record id="china_city_471007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">471007</field>  
+            <field name="name">洛阳市孟津县</field>  
+        </record>  
+        <record id="china_city_471008" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">471008</field>  
+            <field name="name">洛阳市新安县</field>  
+        </record>  
+        <record id="china_city_471009" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">471009</field>  
+            <field name="name">洛阳市栾川县</field>  
+        </record>  
+        <record id="china_city_471010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">471010</field>  
+            <field name="name">洛阳市嵩县</field>  
+        </record>  
+        <record id="china_city_471011" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">471011</field>  
+            <field name="name">洛阳市汝阳县</field>  
+        </record>  
+        <record id="china_city_471012" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">471012</field>  
+            <field name="name">洛阳市宜阳县</field>  
+        </record>  
+        <record id="china_city_471013" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">471013</field>  
+            <field name="name">洛阳市洛宁县</field>  
+        </record>  
+        <record id="china_city_471014" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">471014</field>  
+            <field name="name">洛阳市伊川县</field>  
+        </record>  
+          
+        <!-- 河南省开封市其他县区 -->  
+        <record id="china_city_475004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">475004</field>  
+            <field name="name">开封市禹王台区</field>  
+        </record>  
+        <record id="china_city_475005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">475005</field>  
+            <field name="name">开封市祥符区</field>  
+        </record>  
+        <record id="china_city_475006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">475006</field>  
+            <field name="name">开封市尉氏县</field>  
+        </record>  
+        <record id="china_city_475007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">475007</field>  
+            <field name="name">开封市兰考县</field>  
+        </record>  
+
+        <!-- 河南省郑州市其他县区 -->  
+        <record id="china_city_450008" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">450008</field>  
+            <field name="name">郑州市荥阳市</field>  
+        </record>  
+        <record id="china_city_450009" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">450009</field>  
+            <field name="name">郑州市新密市</field>  
+        </record>  
+        <record id="china_city_450010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">450010</field>  
+            <field name="name">郑州市新郑市</field>  
+        </record>  
+        <record id="china_city_450011" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">450011</field>  
+            <field name="name">郑州市登封市</field>  
+        </record>  
+        <record id="china_city_450012" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">450012</field>  
+            <field name="name">郑州市中牟县</field>  
+        </record>  
+          
+        <!-- 河南省许昌市其他县区 -->  
+        <record id="china_city_461005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">461005</field>  
+            <field name="name">许昌市鄢陵县</field>  
+        </record>  
+        <record id="china_city_461006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">461006</field>  
+            <field name="name">许昌市襄城县</field>  
+        </record>  
+          
+        <!-- 河南省安阳市其他县区 -->  
+        <record id="china_city_455005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">455005</field>  
+            <field name="name">安阳市林州市</field>  
+        </record>  
+        <record id="china_city_455006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">455006</field>  
+            <field name="name">安阳市安阳县</field>  
+        </record>  
+        <record id="china_city_455007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">455007</field>  
+            <field name="name">安阳市汤阴县</field>  
+        </record>  
+        <record id="china_city_455008" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">455008</field>  
+            <field name="name">安阳市滑县</field>  
+        </record>  
+        <record id="china_city_455009" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">455009</field>  
+            <field name="name">安阳市内黄县</field>  
+        </record>  
+          
+        <!-- 河南省新乡市其他县区 -->  
+        <record id="china_city_453005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">453005</field>  
+            <field name="name">新乡市卫辉市</field>  
+        </record>  
+        <record id="china_city_453006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">453006</field>  
+            <field name="name">新乡市辉县市</field>  
+        </record>  
+        <record id="china_city_453007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">453007</field>  
+            <field name="name">新乡市新乡县</field>  
+        </record>  
+        <record id="china_city_453008" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">453008</field>  
+            <field name="name">新乡市获嘉县</field>  
+        </record>  
+        <record id="china_city_453009" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">453009</field>  
+            <field name="name">新乡市原阳县</field>  
+        </record>  
+        <record id="china_city_453010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">453010</field>  
+            <field name="name">新乡市延津县</field>  
+        </record>  
+        <record id="china_city_453011" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">453011</field>  
+            <field name="name">新乡市封丘县</field>  
+        </record>  
+        <record id="china_city_453012" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">453012</field>  
+            <field name="name">新乡市长垣市</field>  
+        </record>  
+          
+        <!-- 河南省焦作市其他县区 -->  
+        <record id="china_city_454005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">454005</field>  
+            <field name="name">焦作市沁阳市</field>  
+        </record>  
+        <record id="china_city_454006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">454006</field>  
+            <field name="name">焦作市孟州市</field>  
+        </record>  
+        <record id="china_city_454007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">454007</field>  
+            <field name="name">焦作市修武县</field>  
+        </record>  
+        <record id="china_city_454008" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">454008</field>  
+            <field name="name">焦作市博爱县</field>  
+        </record>  
+        <record id="china_city_454009" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">454009</field>  
+            <field name="name">焦作市武陟县</field>  
+        </record>  
+        <record id="china_city_454010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">454010</field>  
+            <field name="name">焦作市温县</field>  
+        </record>  
+
+        <!-- 河南省漯河市其他县区 -->  
+        <record id="china_city_462004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">462004</field>  
+            <field name="name">漯河市舞阳县</field>  
+        </record>  
+        <record id="china_city_462005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">462005</field>  
+            <field name="name">漯河市临颍县</field>  
+        </record>  
+          
+        <!-- 河南省鹤壁市其他县区 -->  
+        <record id="china_city_458004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">458004</field>  
+            <field name="name">鹤壁市浚县</field>  
+        </record>  
+        <record id="china_city_458005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">458005</field>  
+            <field name="name">鹤壁市淇县</field>  
+        </record>  
+          
+        <!-- 河南省平顶山市其他县区 -->  
+        <record id="china_city_467005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">467005</field>  
+            <field name="name">平顶山市宝丰县</field>  
+        </record>  
+        <record id="china_city_467006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">467006</field>  
+            <field name="name">平顶山市叶县</field>  
+        </record>  
+        <record id="china_city_467007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">467007</field>  
+            <field name="name">平顶山市鲁山县</field>  
+        </record>  
+        <record id="china_city_467008" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">467008</field>  
+            <field name="name">平顶山市郏县</field>  
+        </record>  
+        <record id="china_city_467009" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">467009</field>  
+            <field name="name">平顶山市舞钢市</field>  
+        </record>  
+        <record id="china_city_467010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">467010</field>  
+            <field name="name">平顶山市汝州市</field>  
+        </record>  
+          
+        <!-- 河南省南阳市其他县区 -->  
+        <record id="china_city_473007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">473007</field>  
+            <field name="name">南阳市内乡县</field>  
+        </record>  
+        <record id="china_city_473008" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">473008</field>  
+            <field name="name">南阳市淅川县</field>  
+        </record>  
+        <record id="china_city_473009" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">473009</field>  
+            <field name="name">南阳市社旗县</field>  
+        </record>  
+        <record id="china_city_473010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">473010</field>  
+            <field name="name">南阳市唐河县</field>  
+        </record>  
+        <record id="china_city_473011" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">473011</field>  
+            <field name="name">南阳市新野县</field>  
+        </record>  
+        <record id="china_city_473012" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">473012</field>  
+            <field name="name">南阳市桐柏县</field>  
+        </record>  
+        <record id="china_city_473013" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HA" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">473013</field>  
+            <field name="name">南阳市邓州市</field>  
+        </record>  
+          
+    </data>  
+</odoo>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<odoo>  
+    <data noupdate="1">  
+        <!-- 海口市 -->  
+        <record id="china_city_570000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">570000</field>  
+            <field name="name">海口市</field>  
+        </record>  
+          
+        <!-- 海口市下属区县 -->  
+        <record id="china_city_570100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">570100</field>  
+            <field name="name">海口市秀英区</field>  
+        </record>  
+          
+        <record id="china_city_570200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">570200</field>  
+            <field name="name">海口市龙华区</field>  
+        </record>  
+          
+        <record id="china_city_570300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">570300</field>  
+            <field name="name">海口市琼山区</field>  
+        </record>  
+          
+        <record id="china_city_570400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">570400</field>  
+            <field name="name">海口市美兰区</field>  
+        </record>  
+          
+        <!-- 三亚市 -->  
+        <record id="china_city_572000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">572000</field>  
+            <field name="name">三亚市</field>  
+        </record>  
+          
+        <!-- 三亚市下属区 -->  
+        <record id="china_city_572100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">572100</field>  
+            <field name="name">三亚市海棠区</field>  
+        </record>  
+          
+        <record id="china_city_572200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">572200</field>  
+            <field name="name">三亚市吉阳区</field>  
+        </record>  
+          
+        <record id="china_city_572300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">572300</field>  
+            <field name="name">三亚市天涯区</field>  
+        </record>  
+          
+        <record id="china_city_572400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">572400</field>  
+            <field name="name">三亚市崖州区</field>  
+        </record>  
+          
+        <!-- 三沙市 -->  
+        <record id="china_city_573000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">573000</field>  
+            <field name="name">三沙市</field>  
+        </record>  
+          
+        <!-- 儋州市 -->  
+        <record id="china_city_571700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">571700</field>  
+            <field name="name">儋州市</field>  
+        </record>  
+          
+        <!-- 五指山市 -->  
+        <record id="china_city_572200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">572200</field>  
+            <field name="name">五指山市</field>  
+        </record>  
+          
+        <!-- 文昌市 -->  
+        <record id="china_city_571300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">571300</field>  
+            <field name="name">文昌市</field>  
+        </record>  
+          
+        <!-- 琼海市 -->  
+        <record id="china_city_571400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">571400</field>  
+            <field name="name">琼海市</field>  
+        </record>  
+          
+        <!-- 万宁市 -->  
+        <record id="china_city_571500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">571500</field>  
+            <field name="name">万宁市</field>  
+        </record>  
+          
+        <!-- 东方市 -->  
+        <record id="china_city_572600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">572600</field>  
+            <field name="name">东方市</field>  
+        </record>  
+          
+        <!-- 定安县 -->  
+        <record id="china_city_571200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">571200</field>  
+            <field name="name">定安县</field>  
+        </record>  
+          
+        <!-- 屯昌县 -->  
+        <record id="china_city_571600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">571600</field>  
+            <field name="name">屯昌县</field>  
+        </record>  
+          
+        <!-- 澄迈县 -->  
+        <record id="china_city_571900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">571900</field>  
+            <field name="name">澄迈县</field>  
+        </record>  
+          
+        <!-- 临高县 -->  
+        <record id="china_city_571800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">571800</field>  
+            <field name="name">临高县</field>  
+        </record>  
+          
+        <!-- 白沙黎族自治县 -->  
+        <record id="china_city_572800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">572800</field>  
+            <field name="name">白沙黎族自治县</field>  
+        </record>  
+          
+        <!-- 昌江黎族自治县 -->  
+        <record id="china_city_572700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">572700</field>  
+            <field name="name">昌江黎族自治县</field>  
+        </record>  
+          
+        <!-- 乐东黎族自治县 -->  
+        <record id="china_city_572500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">572500</field>  
+            <field name="name">乐东黎族自治县</field>  
+        </record>  
+          
+        <!-- 陵水黎族自治县 -->  
+        <record id="china_city_572400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">572400</field>  
+            <field name="name">陵水黎族自治县</field>  
+        </record>  
+          
+        <!-- 保亭黎族苗族自治县 -->  
+        <record id="china_city_572300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">572300</field>  
+            <field name="name">保亭黎族苗族自治县</field>  
+        </record>  
+          
+        <!-- 琼中黎族苗族自治县 -->  
+        <record id="china_city_572900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_HI" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">572900</field>  
+            <field name="name">琼中黎族苗族自治县</field>  
+        </record>  
+    </data>  
+</odoo>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<odoo>  
+    <data noupdate="1">  
+        <!-- 上海市 -->  
+        <record id="china_city_200000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">200000</field>  
+            <field name="name">上海市</field>  
+        </record>  
+          
+        <!-- 上海市下属区县 -->  
+        <record id="china_city_200001" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">200001</field>  
+            <field name="name">上海市黄浦区</field>  
+        </record>  
+          
+        <record id="china_city_200002" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">200002</field>  
+            <field name="name">上海市徐汇区</field>  
+        </record>  
+          
+        <record id="china_city_200003" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">200003</field>  
+            <field name="name">上海市长宁区</field>  
+        </record>  
+          
+        <record id="china_city_200004" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">200004</field>  
+            <field name="name">上海市静安区</field>  
+        </record>  
+          
+        <record id="china_city_200005" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">200005</field>  
+            <field name="name">上海市普陀区</field>  
+        </record>  
+          
+        <record id="china_city_200006" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">200006</field>  
+            <field name="name">上海市虹口区</field>  
+        </record>  
+          
+        <record id="china_city_200007" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">200007</field>  
+            <field name="name">上海市杨浦区</field>  
+        </record>  
+          
+        <record id="china_city_201100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">201100</field>  
+            <field name="name">上海市闵行区</field>  
+        </record>  
+          
+        <record id="china_city_201200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">201200</field>  
+            <field name="name">上海市宝山区</field>  
+        </record>  
+          
+        <record id="china_city_201300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">201300</field>  
+            <field name="name">上海市嘉定区</field>  
+        </record>  
+          
+        <record id="china_city_201400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">201400</field>  
+            <field name="name">上海市浦东新区</field>  
+        </record>  
+          
+        <record id="china_city_201500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">201500</field>  
+            <field name="name">上海市金山区</field>  
+        </record>  
+          
+        <record id="china_city_201600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">201600</field>  
+            <field name="name">上海市松江区</field>  
+        </record>  
+          
+        <record id="china_city_201700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">201700</field>  
+            <field name="name">上海市青浦区</field>  
+        </record>  
+          
+        <record id="china_city_201800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">201800</field>  
+            <field name="name">上海市奉贤区</field>  
+        </record>  
+          
+        <record id="china_city_202100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_SH" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">202100</field>  
+            <field name="name">上海市崇明区</field>  
+        </record>  
+    </data>  
+</odoo>

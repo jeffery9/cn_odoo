@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<odoo>  
+    <data noupdate="1">  
+        <!-- 重庆市 -->  
+        <record id="china_city_400000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">400000</field>  
+            <field name="name">重庆市</field>  
+        </record>  
+          
+        <!-- 重庆市下属区县 - 主城区 -->  
+        <record id="china_city_400010" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">400010</field>  
+            <field name="name">重庆市渝中区</field>  
+        </record>  
+          
+        <record id="china_city_400020" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">400020</field>  
+            <field name="name">重庆市大渡口区</field>  
+        </record>  
+          
+        <record id="china_city_400030" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">400030</field>  
+            <field name="name">重庆市江北区</field>  
+        </record>  
+          
+        <record id="china_city_400040" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">400040</field>  
+            <field name="name">重庆市沙坪坝区</field>  
+        </record>  
+          
+        <record id="china_city_400050" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">400050</field>  
+            <field name="name">重庆市九龙坡区</field>  
+        </record>  
+          
+        <record id="china_city_400060" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">400060</field>  
+            <field name="name">重庆市南岸区</field>  
+        </record>  
+          
+        <record id="china_city_400070" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">400070</field>  
+            <field name="name">重庆市北碚区</field>  
+        </record>  
+          
+        <record id="china_city_401120" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">401120</field>  
+            <field name="name">重庆市渝北区</field>  
+        </record>  
+          
+        <record id="china_city_401320" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">401320</field>  
+            <field name="name">重庆市巴南区</field>  
+        </record>  
+          
+        <!-- 重庆市下属区县 - 其他区 -->  
+        <record id="china_city_402260" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">402260</field>  
+            <field name="name">重庆市黔江区</field>  
+        </record>  
+          
+        <record id="china_city_400100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">400100</field>  
+            <field name="name">重庆市万州区</field>  
+        </record>  
+          
+        <record id="china_city_404000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">404000</field>  
+            <field name="name">重庆市涪陵区</field>  
+        </record>  
+          
+        <record id="china_city_408000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">408000</field>  
+            <field name="name">重庆市南川区</field>  
+        </record>  
+          
+        <record id="china_city_402100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">402100</field>  
+            <field name="name">重庆市綦江区</field>  
+        </record>  
+          
+        <record id="china_city_402200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">402200</field>  
+            <field name="name">重庆市大足区</field>  
+        </record>  
+          
+        <record id="china_city_402300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">402300</field>  
+            <field name="name">重庆市渝西区</field>  
+        </record>  
+          
+        <record id="china_city_402400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">402400</field>  
+            <field name="name">重庆市铜梁区</field>  
+        </record>  
+          
+        <record id="china_city_402500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">402500</field>  
+            <field name="name">重庆市长寿区</field>  
+        </record>  
+          
+        <record id="china_city_402600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">402600</field>  
+            <field name="name">重庆市江津区</field>  
+        </record>  
+          
+        <record id="china_city_402700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">402700</field>  
+            <field name="name">重庆市合川区</field>  
+        </record>  
+          
+        <record id="china_city_402800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">402800</field>  
+            <field name="name">重庆市永川区</field>  
+        </record>  
+          
+        <record id="china_city_402900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">402900</field>  
+            <field name="name">重庆市南川区</field>  
+        </record>  
+          
+        <!-- 重庆市下属县 -->  
+        <record id="china_city_405200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">405200</field>  
+            <field name="name">重庆市潼南县</field>  
+        </record>  
+          
+        <record id="china_city_405300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">405300</field>  
+            <field name="name">重庆市荣昌县</field>  
+        </record>  
+          
+        <record id="china_city_405400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">405400</field>  
+            <field name="name">重庆市璧山县</field>  
+        </record>  
+          
+        <record id="china_city_405900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">405900</field>  
+            <field name="name">重庆市大足县</field>  
+        </record>  
+          
+        <record id="china_city_404300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">404300</field>  
+            <field name="name">重庆市垫江县</field>  
+        </record>  
+          
+        <record id="china_city_404400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">404400</field>  
+            <field name="name">重庆市武隆县</field>  
+        </record>  
+          
+        <record id="china_city_404500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">404500</field>  
+            <field name="name">重庆市丰都县</field>  
+        </record>  
+          
+        <record id="china_city_404600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">404600</field>  
+            <field name="name">重庆市城口县</field>  
+        </record>  
+          
+        <record id="china_city_404700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">404700</field>  
+            <field name="name">重庆市梁平县</field>  
+        </record>  
+          
+        <record id="china_city_404800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">404800</field>  
+            <field name="name">重庆市开县</field>  
+        </record>  
+          
+        <record id="china_city_404900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">404900</field>  
+            <field name="name">重庆市巫溪县</field>  
+        </record>  
+          
+        <record id="china_city_405000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">405000</field>  
+            <field name="name">重庆市巫山县</field>  
+        </record>  
+          
+        <record id="china_city_405100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">405100</field>  
+            <field name="name">重庆市奉节县</field>  
+        </record>  
+          
+        <record id="china_city_405500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">405500</field>  
+            <field name="name">重庆市云阳县</field>  
+        </record>  
+          
+        <record id="china_city_405600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">405600</field>  
+            <field name="name">重庆市忠县</field>  
+        </record>  
+          
+        <record id="china_city_405700" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">405700</field>  
+            <field name="name">重庆市石柱土家族自治县</field>  
+        </record>  
+          
+        <record id="china_city_405800" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">405800</field>  
+            <field name="name">重庆市秀山土家族苗族自治县</field>  
+        </record>  
+          
+        <record id="china_city_405900" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">405900</field>  
+            <field name="name">重庆市酉阳土家族苗族自治县</field>  
+        </record>  
+          
+        <record id="china_city_406000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_CQ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">406000</field>  
+            <field name="name">重庆市彭水苗族土家族自治县</field>  
+        </record>  
+          
+    </data>
+</odoo>

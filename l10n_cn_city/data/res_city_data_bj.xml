@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<odoo>  
+    <data noupdate="1">  
+        <!-- 北京市 -->  
+        <record id="china_city_100000" model="res.city">  
+            <field name="state_id" ref="base.state_cn_BJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">100000</field>  
+            <field name="name">北京市</field>  
+        </record>  
+          
+        <!-- 北京市下属区县 -->  
+        <record id="china_city_100022" model="res.city">  
+            <field name="state_id" ref="base.state_cn_BJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">100022</field>  
+            <field name="name">北京市东城区</field>  
+        </record>  
+          
+        <record id="china_city_100032" model="res.city">  
+            <field name="state_id" ref="base.state_cn_BJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">100032</field>  
+            <field name="name">北京市西城区</field>  
+        </record>  
+          
+        <record id="china_city_100071" model="res.city">  
+            <field name="state_id" ref="base.state_cn_BJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">100071</field>  
+            <field name="name">北京市朝阳区</field>  
+        </record>  
+          
+        <record id="china_city_100081" model="res.city">  
+            <field name="state_id" ref="base.state_cn_BJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">100081</field>  
+            <field name="name">北京市海淀区</field>  
+        </record>  
+          
+        <record id="china_city_100041" model="res.city">  
+            <field name="state_id" ref="base.state_cn_BJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">100041</field>  
+            <field name="name">北京市石景山区</field>  
+        </record>  
+          
+        <record id="china_city_100043" model="res.city">  
+            <field name="state_id" ref="base.state_cn_BJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">100043</field>  
+            <field name="name">北京市丰台区</field>  
+        </record>  
+          
+        <record id="china_city_102300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_BJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">102300</field>  
+            <field name="name">北京市房山区</field>  
+        </record>  
+          
+        <record id="china_city_102200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_BJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">102200</field>  
+            <field name="name">北京市通州区</field>  
+        </record>  
+          
+        <record id="china_city_101100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_BJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">101100</field>  
+            <field name="name">北京市顺义区</field>  
+        </record>  
+          
+        <record id="china_city_101300" model="res.city">  
+            <field name="state_id" ref="base.state_cn_BJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">101300</field>  
+            <field name="name">北京市昌平区</field>  
+        </record>  
+          
+        <record id="china_city_102600" model="res.city">  
+            <field name="state_id" ref="base.state_cn_BJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">102600</field>  
+            <field name="name">北京市大兴区</field>  
+        </record>  
+          
+        <record id="china_city_101400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_BJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">101400</field>  
+            <field name="name">北京市怀柔区</field>  
+        </record>  
+          
+        <record id="china_city_101200" model="res.city">  
+            <field name="state_id" ref="base.state_cn_BJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">101200</field>  
+            <field name="name">北京市平谷区</field>  
+        </record>  
+          
+        <record id="china_city_102100" model="res.city">  
+            <field name="state_id" ref="base.state_cn_BJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">102100</field>  
+            <field name="name">北京市门头沟区</field>  
+        </record>  
+          
+        <record id="china_city_102400" model="res.city">  
+            <field name="state_id" ref="base.state_cn_BJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">102400</field>  
+            <field name="name">北京市密云区</field>  
+        </record>  
+          
+        <record id="china_city_102500" model="res.city">  
+            <field name="state_id" ref="base.state_cn_BJ" />  
+            <field name="country_id" ref="base.cn" />  
+            <field name="zipcode">102500</field>  
+            <field name="name">北京市延庆区</field>  
+        </record>  
+    </data>  
+</odoo>

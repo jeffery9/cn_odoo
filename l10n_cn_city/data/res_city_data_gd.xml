@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- 广东省 -->
+        <record id="china_city_510000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">510000</field>
+            <field name="name">广州市</field>
+        </record>
+
+        <!-- 广州市下属区县 -->
+        <record id="china_city_510100" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">510100</field>
+            <field name="name">广州市越秀区</field>
+        </record>
+
+        <record id="china_city_510200" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">510200</field>
+            <field name="name">广州市海珠区</field>
+        </record>
+
+        <record id="china_city_510300" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">510300</field>
+            <field name="name">广州市荔湾区</field>
+        </record>
+
+        <record id="china_city_510400" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">510400</field>
+            <field name="name">广州市天河区</field>
+        </record>
+
+        <record id="china_city_510500" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">510500</field>
+            <field name="name">广州市白云区</field>
+        </record>
+
+        <!-- 深圳市 -->
+        <record id="china_city_518000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">518000</field>
+            <field name="name">深圳市</field>
+        </record>
+
+        <!-- 深圳市下属区县 -->
+        <record id="china_city_518100" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">518100</field>
+            <field name="name">深圳市福田区</field>
+        </record>
+
+        <record id="china_city_518200" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">518200</field>
+            <field name="name">深圳市罗湖区</field>
+        </record>
+
+        <record id="china_city_518300" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">518300</field>
+            <field name="name">深圳市南山区</field>
+        </record>
+
+        <!-- 珠海市 -->
+        <record id="china_city_519000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">519000</field>
+            <field name="name">珠海市</field>
+        </record>
+
+        <!-- 珠海市下属区县 -->
+        <record id="china_city_519100" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">519100</field>
+            <field name="name">珠海市香洲区</field>
+        </record>
+
+        <record id="china_city_519200" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">519200</field>
+            <field name="name">珠海市斗门区</field>
+        </record>
+
+        <!-- 汕头市 -->
+        <record id="china_city_515000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">515000</field>
+            <field name="name">汕头市</field>
+        </record>
+
+        <!-- 汕头市下属区县 -->
+        <record id="china_city_515100" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">515100</field>
+            <field name="name">汕头市金平区</field>
+        </record>
+
+        <record id="china_city_515200" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">515200</field>
+            <field name="name">汕头市龙湖区</field>
+        </record>
+
+        <!-- 佛山市 -->
+        <record id="china_city_528000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">528000</field>
+            <field name="name">佛山市</field>
+        </record>
+
+        <!-- 佛山市下属区县 -->
+        <record id="china_city_528100" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">528100</field>
+            <field name="name">佛山市禅城区</field>
+        </record>
+
+        <record id="china_city_528200" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">528200</field>
+            <field name="name">佛山市南海区</field>
+        </record>
+
+        <!-- 惠州市 -->
+        <record id="china_city_516000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">516000</field>
+            <field name="name">惠州市</field>
+        </record>
+
+        <!-- 惠州市下属区县 -->
+        <record id="china_city_516100" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">516100</field>
+            <field name="name">惠州市惠城区</field>
+        </record>
+
+        <record id="china_city_516200" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">516200</field>
+            <field name="name">惠州市惠阳区</field>
+        </record>
+
+        <record id="china_city_516300" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">516300</field>
+            <field name="name">惠州市博罗县</field>
+        </record>
+
+        <!-- 东莞市 -->
+        <record id="china_city_523000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">523000</field>
+            <field name="name">东莞市</field>
+        </record>
+
+        <!-- 中山市 -->
+        <record id="china_city_528400" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">528400</field>
+            <field name="name">中山市</field>
+        </record>
+
+        <!-- 江门市 -->
+        <record id="china_city_529000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">529000</field>
+            <field name="name">江门市</field>
+        </record>
+
+        <!-- 江门市下属区县 -->
+        <record id="china_city_529100" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">529100</field>
+            <field name="name">江门市蓬江区</field>
+        </record>
+
+        <record id="china_city_529200" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">529200</field>
+            <field name="name">江门市江海区</field>
+        </record>
+
+        <record id="china_city_529300" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">529300</field>
+            <field name="name">江门市新会区</field>
+        </record>
+
+        <!-- 湛江市 -->
+        <record id="china_city_524000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">524000</field>
+            <field name="name">湛江市</field>
+        </record>
+
+        <!-- 湛江市下属区县 -->
+        <record id="china_city_524100" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">524100</field>
+            <field name="name">湛江市赤坎区</field>
+        </record>
+
+        <record id="china_city_524200" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">524200</field>
+            <field name="name">湛江市霞山区</field>
+        </record>
+
+        <!-- 茂名市 -->
+        <record id="china_city_525000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">525000</field>
+            <field name="name">茂名市</field>
+        </record>
+
+        <!-- 茂名市下属区县 -->
+        <record id="china_city_525100" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">525100</field>
+            <field name="name">茂名市茂南区</field>
+        </record>
+
+        <record id="china_city_525200" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">525200</field>
+            <field name="name">茂名市电白区</field>
+        </record>
+
+        <!-- 肇庆市 -->
+        <record id="china_city_526000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">526000</field>
+            <field name="name">肇庆市</field>
+        </record>
+
+        <!-- 肇庆市下属区县 -->
+        <record id="china_city_526100" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">526100</field>
+            <field name="name">肇庆市端州区</field>
+        </record>
+
+        <record id="china_city_526200" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">526200</field>
+            <field name="name">肇庆市鼎湖区</field>
+        </record>
+
+        <!-- 清远市 -->
+        <record id="china_city_511500" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">511500</field>
+            <field name="name">清远市</field>
+        </record>
+
+        <!-- 清远市下属区县 -->
+        <record id="china_city_511501" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">511501</field>
+            <field name="name">清远市清城区</field>
+        </record>
+
+        <record id="china_city_511502" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">511502</field>
+            <field name="name">清远市清新区</field>
+        </record>
+
+        <!-- 韶关市 -->
+        <record id="china_city_512000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">512000</field>
+            <field name="name">韶关市</field>
+        </record>
+
+        <!-- 韶关市下属区县 -->
+        <record id="china_city_512100" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">512100</field>
+            <field name="name">韶关市武江区</field>
+        </record>
+
+        <record id="china_city_512200" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">512200</field>
+            <field name="name">韶关市浈江区</field>
+        </record>
+
+        <record id="china_city_512300" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">512300</field>
+            <field name="name">韶关市曲江区</field>
+        </record>
+
+        <!-- 梅州市 -->
+        <record id="china_city_514000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">514000</field>
+            <field name="name">梅州市</field>
+        </record>
+
+        <!-- 梅州市下属区县 -->
+        <record id="china_city_514100" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">514100</field>
+            <field name="name">梅州市梅江区</field>
+        </record>
+
+        <record id="china_city_514200" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">514200</field>
+            <field name="name">梅州市梅县区</field>
+        </record>
+
+        <!-- 汕尾市 -->
+        <record id="china_city_516600" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">516600</field>
+            <field name="name">汕尾市</field>
+        </record>
+
+        <!-- 汕尾市下属区县 -->
+        <record id="china_city_516601" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">516601</field>
+            <field name="name">汕尾市城区</field>
+        </record>
+
+        <record id="china_city_516602" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">516602</field>
+            <field name="name">汕尾市海丰县</field>
+        </record>
+
+        <!-- 河源市 -->
+        <record id="china_city_517000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">517000</field>
+            <field name="name">河源市</field>
+        </record>
+
+        <!-- 河源市下属区县 -->
+        <record id="china_city_517100" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">517100</field>
+            <field name="name">河源市源城区</field>
+        </record>
+
+        <record id="china_city_517200" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">517200</field>
+            <field name="name">河源市紫金县</field>
+        </record>
+
+        <!-- 阳江市 -->
+        <record id="china_city_529500" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">529500</field>
+            <field name="name">阳江市</field>
+        </record>
+
+        <!-- 阳江市下属区县 -->
+        <record id="china_city_529501" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">529501</field>
+            <field name="name">阳江市江城区</field>
+        </record>
+
+        <record id="china_city_529502" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">529502</field>
+            <field name="name">阳江市阳东区</field>
+        </record>
+
+        <!-- 云浮市 -->
+        <record id="china_city_527300" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">527300</field>
+            <field name="name">云浮市</field>
+        </record>
+
+        <!-- 云浮市下属区县 -->
+        <record id="china_city_527301" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">527301</field>
+            <field name="name">云浮市云城区</field>
+        </record>
+
+        <record id="china_city_527302" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">527302</field>
+            <field name="name">云浮市云安区</field>
+        </record>
+
+        <!-- 潮州市 -->
+        <record id="china_city_521000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">521000</field>
+            <field name="name">潮州市</field>
+        </record>
+
+        <!-- 潮州市下属区县 -->
+        <record id="china_city_521100" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">521100</field>
+            <field name="name">潮州市湘桥区</field>
+        </record>
+
+        <record id="china_city_521200" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">521200</field>
+            <field name="name">潮州市潮安区</field>
+        </record>
+
+        <!-- 揭阳市 -->
+        <record id="china_city_522000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">522000</field>
+            <field name="name">揭阳市</field>
+        </record>
+
+        <!-- 揭阳市下属区县 -->
+        <record id="china_city_522001" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">522001</field>
+            <field name="name">揭阳市榕城区</field>
+        </record>
+
+        <record id="china_city_522002" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">522002</field>
+            <field name="name">揭阳市揭东区</field>
+        </record>
+
+        <record id="china_city_522003" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">522003</field>
+            <field name="name">揭阳市揭西县</field>
+        </record>
+
+        <record id="china_city_522004" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">522004</field>
+            <field name="name">揭阳市惠来县</field>
+        </record>
+
+        <!-- 广东省其他县级市 -->
+        <record id="china_city_516500" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">516500</field>
+            <field name="name">惠东县</field>
+        </record>
+
+        <record id="china_city_516400" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">516400</field>
+            <field name="name">龙门县</field>
+        </record>
+
+        <record id="china_city_529700" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">529700</field>
+            <field name="name">阳春市</field>
+        </record>
+
+        <record id="china_city_529600" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">529600</field>
+            <field name="name">阳西县</field>
+        </record>
+
+        <record id="china_city_526500" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">526500</field>
+            <field name="name">高要市</field>
+        </record>
+
+        <record id="china_city_526400" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">526400</field>
+            <field name="name">四会市</field>
+        </record>
+
+        <record id="china_city_526300" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">526300</field>
+            <field name="name">德庆县</field>
+        </record>
+
+        <record id="china_city_526600" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">526600</field>
+            <field name="name">广宁县</field>
+        </record>
+
+        <record id="china_city_526700" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">526700</field>
+            <field name="name">怀集县</field>
+        </record>
+
+        <record id="china_city_527400" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">527400</field>
+            <field name="name">罗定市</field>
+        </record>
+
+        <record id="china_city_527500" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">527500</field>
+            <field name="name">新兴县</field>
+        </record>
+
+        <record id="china_city_527600" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">527600</field>
+            <field name="name">郁南县</field>
+        </record>
+
+        <!-- 广东省经济特区 -->
+        <record id="china_city_519100" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">519100</field>
+            <field name="name">珠海经济特区</field>
+        </record>
+
+        <record id="china_city_518100" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">518100</field>
+            <field name="name">深圳经济特区</field>
+        </record>
+
+        <!-- 广东省其他县级行政区 -->
+        <record id="china_city_514300" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">514300</field>
+            <field name="name">梅州市丰顺县</field>
+        </record>
+
+        <record id="china_city_514400" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">514400</field>
+            <field name="name">梅州市五华县</field>
+        </record>
+
+        <record id="china_city_514500" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">514500</field>
+            <field name="name">梅州市平远县</field>
+        </record>
+
+        <record id="china_city_514600" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">514600</field>
+            <field name="name">梅州市蕉岭县</field>
+        </record>
+
+        <record id="china_city_514700" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">514700</field>
+            <field name="name">梅州市兴宁市</field>
+        </record>
+
+        <!-- 韶关市其他县级行政区 -->
+        <record id="china_city_512500" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">512500</field>
+            <field name="name">韶关市始兴县</field>
+        </record>
+
+        <record id="china_city_512600" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">512600</field>
+            <field name="name">韶关市仁化县</field>
+        </record>
+
+        <record id="china_city_512700" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">512700</field>
+            <field name="name">韶关市翁源县</field>
+        </record>
+
+        <record id="china_city_512800" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">512800</field>
+            <field name="name">韶关市乳源瑶族自治县</field>
+        </record>
+
+        <record id="china_city_512900" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">512900</field>
+            <field name="name">韶关市新丰县</field>
+        </record>
+
+        <record id="china_city_513000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">513000</field>
+            <field name="name">韶关市乐昌市</field>
+        </record>
+
+        <record id="china_city_513100" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">513100</field>
+            <field name="name">韶关市南雄市</field>
+        </record>
+
+        <!-- 河源市其他县级行政区 -->
+        <record id="china_city_517300" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">517300</field>
+            <field name="name">河源市龙川县</field>
+        </record>
+
+        <record id="china_city_517400" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">517400</field>
+            <field name="name">河源市连平县</field>
+        </record>
+
+        <record id="china_city_517500" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">517500</field>
+            <field name="name">河源市和平县</field>
+        </record>
+
+        <record id="china_city_517600" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">517600</field>
+            <field name="name">河源市东源县</field>
+        </record>
+
+        <!-- 汕尾市其他县级行政区 -->
+        <record id="china_city_516700" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">516700</field>
+            <field name="name">汕尾市陆河县</field>
+        </record>
+
+        <record id="china_city_516800" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">516800</field>
+            <field name="name">汕尾市陆丰市</field>
+        </record>
+
+        <!-- 佛山市其他区县 -->
+        <record id="china_city_528300" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">528300</field>
+            <field name="name">佛山市顺德区</field>
+        </record>
+
+        <record id="china_city_528500" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">528500</field>
+            <field name="name">佛山市三水区</field>
+        </record>
+
+        <record id="china_city_528600" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">528600</field>
+            <field name="name">佛山市高明区</field>
+        </record>
+
+        <!-- 广州市其他区县 -->
+        <record id="china_city_510600" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">510600</field>
+            <field name="name">广州市黄埔区</field>
+        </record>
+
+        <record id="china_city_510700" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">510700</field>
+            <field name="name">广州市番禺区</field>
+        </record>
+
+        <record id="china_city_510800" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">510800</field>
+            <field name="name">广州市花都区</field>
+        </record>
+
+        <record id="china_city_511100" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">511100</field>
+            <field name="name">广州市增城区</field>
+        </record>
+
+        <record id="china_city_511300" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">511300</field>
+            <field name="name">广州市从化区</field>
+        </record>
+
+        <!-- 深圳市其他区县 -->
+        <record id="china_city_518400" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">518400</field>
+            <field name="name">深圳市宝安区</field>
+        </record>
+
+        <record id="china_city_518500" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">518500</field>
+            <field name="name">深圳市龙岗区</field>
+        </record>
+
+        <record id="china_city_518600" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">518600</field>
+            <field name="name">深圳市盐田区</field>
+        </record>
+
+        <record id="china_city_518700" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">518700</field>
+            <field name="name">深圳市龙华区</field>
+        </record>
+
+        <record id="china_city_518800" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">518800</field>
+            <field name="name">深圳市坪山区</field>
+        </record>
+
+        <record id="china_city_518900" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">518900</field>
+            <field name="name">深圳市光明区</field>
+        </record>
+
+        <!-- 珠海市其他区县 -->
+        <record id="china_city_519300" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">519300</field>
+            <field name="name">珠海市金湾区</field>
+        </record>
+
+        <record id="china_city_519400" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">519400</field>
+            <field name="name">珠海市横琴新区</field>
+        </record>
+
+        <!-- 江门市其他县级行政区 -->
+        <record id="china_city_529400" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">529400</field>
+            <field name="name">江门市台山市</field>
+        </record>
+
+        <record id="china_city_529500" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">529500</field>
+            <field name="name">江门市开平市</field>
+        </record>
+
+        <record id="china_city_529600" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">529600</field>
+            <field name="name">江门市鹤山市</field>
+        </record>
+
+        <record id="china_city_529700" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">529700</field>
+            <field name="name">江门市恩平市</field>
+        </record>
+
+        <!-- 湛江市其他区县 -->
+        <record id="china_city_524300" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">524300</field>
+            <field name="name">湛江市坡头区</field>
+        </record>
+
+        <record id="china_city_524400" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">524400</field>
+            <field name="name">湛江市麻章区</field>
+        </record>
+
+        <record id="china_city_524500" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">524500</field>
+            <field name="name">湛江市遂溪县</field>
+        </record>
+
+        <record id="china_city_524600" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">524600</field>
+            <field name="name">湛江市徐闻县</field>
+        </record>
+
+        <!-- 茂名市其他区县 -->
+        <record id="china_city_525300" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">525300</field>
+            <field name="name">茂名市高州市</field>
+        </record>
+
+        <record id="china_city_525400" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">525400</field>
+            <field name="name">茂名市化州市</field>
+        </record>
+
+        <record id="china_city_525500" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">525500</field>
+            <field name="name">茂名市信宜市</field>
+        </record>
+
+        <!-- 潮州市其他县级行政区 -->
+        <record id="china_city_521300" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">521300</field>
+            <field name="name">潮州市饶平县</field>
+        </record>
+
+        <!-- 汕头市其他区县 -->
+        <record id="china_city_515300" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">515300</field>
+            <field name="name">汕头市潮阳区</field>
+        </record>
+
+        <record id="china_city_515400" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">515400</field>
+            <field name="name">汕头市潮南区</field>
+        </record>
+
+        <record id="china_city_515500" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">515500</field>
+            <field name="name">汕头市澄海区</field>
+        </record>
+
+        <record id="china_city_515600" model="res.city">
+            <field name="state_id" ref="base.state_cn_GD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">515600</field>
+            <field name="name">汕头市南澳县</field>
+        </record>
+
+    </data>
+</odoo>

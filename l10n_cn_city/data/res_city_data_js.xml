@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- 江苏省南京市 -->
+        <record id="china_city_210000" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">210000</field>
+            <field name="name">南京市</field>
+        </record>
+
+        <!-- 南京市下属区县 -->
+        <record id="china_city_210001" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">210001</field>
+            <field name="name">南京市玄武区</field>
+        </record>
+        <record id="china_city_210002" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">210002</field>
+            <field name="name">南京市秦淮区</field>
+        </record>
+        <record id="china_city_210003" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">210003</field>
+            <field name="name">南京市建邺区</field>
+        </record>
+
+        <!-- 江苏省苏州市 -->
+        <record id="china_city_215000" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">215000</field>
+            <field name="name">苏州市</field>
+        </record>
+
+        <!-- 苏州市下属区县 -->
+        <record id="china_city_215001" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">215001</field>
+            <field name="name">苏州市姑苏区</field>
+        </record>
+        <record id="china_city_215002" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">215002</field>
+            <field name="name">苏州市虎丘区</field>
+        </record>
+        <record id="china_city_215003" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">215003</field>
+            <field name="name">苏州市吴中区</field>
+        </record>
+
+        <!-- 江苏省无锡市 -->
+        <record id="china_city_214000" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">214000</field>
+            <field name="name">无锡市</field>
+        </record>
+
+        <!-- 无锡市下属区县 -->
+        <record id="china_city_214001" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">214001</field>
+            <field name="name">无锡市梁溪区</field>
+        </record>
+        <record id="china_city_214002" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">214002</field>
+            <field name="name">无锡市锡山区</field>
+        </record>
+        <record id="china_city_214003" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">214003</field>
+            <field name="name">无锡市惠山区</field>
+        </record>
+
+        <!-- 江苏省徐州市 -->
+        <record id="china_city_221000" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">221000</field>
+            <field name="name">徐州市</field>
+        </record>
+
+        <!-- 徐州市下属区县 -->
+        <record id="china_city_221001" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">221001</field>
+            <field name="name">徐州市云龙区</field>
+        </record>
+        <record id="china_city_221002" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">221002</field>
+            <field name="name">徐州市鼓楼区</field>
+        </record>
+        <record id="china_city_221003" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">221003</field>
+            <field name="name">徐州市贾汪区</field>
+        </record>
+
+        <!-- 江苏省常州市 -->
+        <record id="china_city_213000" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">213000</field>
+            <field name="name">常州市</field>
+        </record>
+
+        <!-- 常州市下属区县 -->
+        <record id="china_city_213001" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">213001</field>
+            <field name="name">常州市天宁区</field>
+        </record>
+        <record id="china_city_213002" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">213002</field>
+            <field name="name">常州市钟楼区</field>
+        </record>
+        <record id="china_city_213003" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">213003</field>
+            <field name="name">常州市新北区</field>
+        </record>
+
+        <!-- 江苏省南通市 -->
+        <record id="china_city_226000" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">226000</field>
+            <field name="name">南通市</field>
+        </record>
+
+        <!-- 南通市下属区县 -->
+        <record id="china_city_226001" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">226001</field>
+            <field name="name">南通市崇川区</field>
+        </record>
+        <record id="china_city_226002" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">226002</field>
+            <field name="name">南通市港闸区</field>
+        </record>
+        <record id="china_city_226003" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">226003</field>
+            <field name="name">南通市通州区</field>
+        </record>
+
+        <!-- 江苏省扬州市 -->
+        <record id="china_city_225000" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225000</field>
+            <field name="name">扬州市</field>
+        </record>
+
+        <!-- 扬州市下属区县 -->
+        <record id="china_city_225001" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225001</field>
+            <field name="name">扬州市广陵区</field>
+        </record>
+        <record id="china_city_225002" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225002</field>
+            <field name="name">扬州市邗江区</field>
+        </record>
+        <record id="china_city_225003" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225003</field>
+            <field name="name">扬州市江都区</field>
+        </record>
+
+        <!-- 江苏省镇江市 -->
+        <record id="china_city_212000" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">212000</field>
+            <field name="name">镇江市</field>
+        </record>
+
+        <!-- 镇江市下属区县 -->
+        <record id="china_city_212001" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">212001</field>
+            <field name="name">镇江市京口区</field>
+        </record>
+        <record id="china_city_212002" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">212002</field>
+            <field name="name">镇江市润州区</field>
+        </record>
+        <record id="china_city_212003" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">212003</field>
+            <field name="name">镇江市丹徒区</field>
+        </record>
+
+        <!-- 江苏省泰州市 -->
+        <record id="china_city_225300" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225300</field>
+            <field name="name">泰州市</field>
+        </record>
+
+        <!-- 泰州市下属区县 -->
+        <record id="china_city_225301" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225301</field>
+            <field name="name">泰州市海陵区</field>
+        </record>
+        <record id="china_city_225302" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225302</field>
+            <field name="name">泰州市高港区</field>
+        </record>
+        <record id="china_city_225303" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225303</field>
+            <field name="name">泰州市姜堰区</field>
+        </record>
+
+        <!-- 江苏省盐城市 -->
+        <record id="china_city_224000" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">224000</field>
+            <field name="name">盐城市</field>
+        </record>
+
+        <!-- 盐城市下属区县 -->
+        <record id="china_city_224001" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">224001</field>
+            <field name="name">盐城市亭湖区</field>
+        </record>
+        <record id="china_city_224002" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">224002</field>
+            <field name="name">盐城市盐都区</field>
+        </record>
+        <record id="china_city_224003" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">224003</field>
+            <field name="name">盐城市大丰区</field>
+        </record>
+
+        <!-- 江苏省连云港市 -->
+        <record id="china_city_222000" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">222000</field>
+            <field name="name">连云港市</field>
+        </record>
+
+        <!-- 连云港市下属区县 -->
+        <record id="china_city_222001" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">222001</field>
+            <field name="name">连云港市连云区</field>
+        </record>
+        <record id="china_city_222002" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">222002</field>
+            <field name="name">连云港市海州区</field>
+        </record>
+        <record id="china_city_222003" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">222003</field>
+            <field name="name">连云港市赣榆区</field>
+        </record>
+
+        <!-- 江苏省淮安市 -->
+        <record id="china_city_223000" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223000</field>
+            <field name="name">淮安市</field>
+        </record>
+
+        <!-- 淮安市下属区县 -->
+        <record id="china_city_223001" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223001</field>
+            <field name="name">淮安市淮安区</field>
+        </record>
+        <record id="china_city_223002" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223002</field>
+            <field name="name">淮安市淮阴区</field>
+        </record>
+        <record id="china_city_223003" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223003</field>
+            <field name="name">淮安市清江浦区</field>
+        </record>
+
+        <!-- 江苏省宿迁市 -->
+        <record id="china_city_223800" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223800</field>
+            <field name="name">宿迁市</field>
+        </record>
+
+        <!-- 宿迁市下属区县 -->
+        <record id="china_city_223801" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223801</field>
+            <field name="name">宿迁市宿城区</field>
+        </record>
+        <record id="china_city_223802" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223802</field>
+            <field name="name">宿迁市宿豫区</field>
+        </record>
+        <record id="china_city_223803" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223803</field>
+            <field name="name">宿迁市沭阳县</field>
+        </record>
+        <!-- 南京市其他区县 -->
+        <record id="china_city_210004" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">210004</field>
+            <field name="name">南京市鼓楼区</field>
+        </record>
+        <record id="china_city_210005" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">210005</field>
+            <field name="name">南京市栖霞区</field>
+        </record>
+        <record id="china_city_210006" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">210006</field>
+            <field name="name">南京市雨花台区</field>
+        </record>
+        <record id="china_city_210007" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">210007</field>
+            <field name="name">南京市江宁区</field>
+        </record>
+        <record id="china_city_210008" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">210008</field>
+            <field name="name">南京市浦口区</field>
+        </record>
+        <record id="china_city_210009" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">210009</field>
+            <field name="name">南京市六合区</field>
+        </record>
+        <record id="china_city_210010" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">210010</field>
+            <field name="name">南京市溧水区</field>
+        </record>
+        <record id="china_city_210011" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">210011</field>
+            <field name="name">南京市高淳区</field>
+        </record>
+
+        <!-- 苏州市其他区县 -->
+        <record id="china_city_215004" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">215004</field>
+            <field name="name">苏州市相城区</field>
+        </record>
+        <record id="china_city_215005" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">215005</field>
+            <field name="name">苏州市吴江区</field>
+        </record>
+        <record id="china_city_215006" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">215006</field>
+            <field name="name">苏州市昆山市</field>
+        </record>
+        <record id="china_city_215007" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">215007</field>
+            <field name="name">苏州市常熟市</field>
+        </record>
+        <record id="china_city_215008" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">215008</field>
+            <field name="name">苏州市张家港市</field>
+        </record>
+        <record id="china_city_215009" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">215009</field>
+            <field name="name">苏州市太仓市</field>
+        </record>
+
+        <!-- 无锡市其他区县 -->
+        <record id="china_city_214004" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">214004</field>
+            <field name="name">无锡市新吴区</field>
+        </record>
+        <record id="china_city_214005" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">214005</field>
+            <field name="name">无锡市滨湖区</field>
+        </record>
+        <record id="china_city_214006" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">214006</field>
+            <field name="name">无锡市江阴市</field>
+        </record>
+        <record id="china_city_214007" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">214007</field>
+            <field name="name">无锡市宜兴市</field>
+        </record>
+
+        <!-- 徐州市其他区县 -->
+        <record id="china_city_221004" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">221004</field>
+            <field name="name">徐州市泉山区</field>
+        </record>
+        <record id="china_city_221005" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">221005</field>
+            <field name="name">徐州市铜山区</field>
+        </record>
+        <record id="china_city_221006" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">221006</field>
+            <field name="name">徐州市丰县</field>
+        </record>
+        <record id="china_city_221007" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">221007</field>
+            <field name="name">徐州市沛县</field>
+        </record>
+        <record id="china_city_221008" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">221008</field>
+            <field name="name">徐州市睢宁县</field>
+        </record>
+        <record id="china_city_221009" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">221009</field>
+            <field name="name">徐州市新沂市</field>
+        </record>
+        <record id="china_city_221010" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">221010</field>
+            <field name="name">徐州市邳州市</field>
+        </record>
+
+        <!-- 常州市其他区县 -->
+        <record id="china_city_213004" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">213004</field>
+            <field name="name">常州市武进区</field>
+        </record>
+        <record id="china_city_213005" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">213005</field>
+            <field name="name">常州市金坛区</field>
+        </record>
+        <record id="china_city_213006" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">213006</field>
+            <field name="name">常州市溧阳市</field>
+        </record>
+        <!-- 南通市其他区县 -->
+        <record id="china_city_226004" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">226004</field>
+            <field name="name">南通市海门区</field>
+        </record>
+        <record id="china_city_226005" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">226005</field>
+            <field name="name">南通市启东市</field>
+        </record>
+        <record id="china_city_226006" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">226006</field>
+            <field name="name">南通市如皋市</field>
+        </record>
+        <record id="china_city_226007" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">226007</field>
+            <field name="name">南通市海安市</field>
+        </record>
+        <record id="china_city_226008" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">226008</field>
+            <field name="name">南通市如东县</field>
+        </record>
+
+        <!-- 扬州市其他区县 -->
+        <record id="china_city_225004" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225004</field>
+            <field name="name">扬州市宝应县</field>
+        </record>
+        <record id="china_city_225005" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225005</field>
+            <field name="name">扬州市高邮市</field>
+        </record>
+        <record id="china_city_225006" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225006</field>
+            <field name="name">扬州市仪征市</field>
+        </record>
+
+        <!-- 镇江市其他区县 -->
+        <record id="china_city_212004" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">212004</field>
+            <field name="name">镇江市丹阳市</field>
+        </record>
+        <record id="china_city_212005" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">212005</field>
+            <field name="name">镇江市扬中市</field>
+        </record>
+        <record id="china_city_212006" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">212006</field>
+            <field name="name">镇江市句容市</field>
+        </record>
+
+        <!-- 泰州市其他区县 -->
+        <record id="china_city_225304" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225304</field>
+            <field name="name">泰州市兴化市</field>
+        </record>
+        <record id="china_city_225305" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225305</field>
+            <field name="name">泰州市靖江市</field>
+        </record>
+        <record id="china_city_225306" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225306</field>
+            <field name="name">泰州市泰兴市</field>
+        </record>
+
+        <!-- 盐城市其他区县 -->
+        <record id="china_city_224004" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">224004</field>
+            <field name="name">盐城市东台市</field>
+        </record>
+        <record id="china_city_224005" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">224005</field>
+            <field name="name">盐城市建湖县</field>
+        </record>
+        <record id="china_city_224006" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">224006</field>
+            <field name="name">盐城市射阳县</field>
+        </record>
+        <record id="china_city_224007" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">224007</field>
+            <field name="name">盐城市阜宁县</field>
+        </record>
+        <record id="china_city_224008" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">224008</field>
+            <field name="name">盐城市滨海县</field>
+        </record>
+        <record id="china_city_224009" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">224009</field>
+            <field name="name">盐城市响水县</field>
+        </record>
+
+        <!-- 连云港市其他区县 -->
+        <record id="china_city_222004" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">222004</field>
+            <field name="name">连云港市东海县</field>
+        </record>
+        <record id="china_city_222005" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">222005</field>
+            <field name="name">连云港市灌云县</field>
+        </record>
+        <record id="china_city_222006" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">222006</field>
+            <field name="name">连云港市灌南县</field>
+        </record>
+
+        <!-- 淮安市其他区县 -->
+        <record id="china_city_223004" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223004</field>
+            <field name="name">淮安市洪泽区</field>
+        </record>
+        <record id="china_city_223005" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223005</field>
+            <field name="name">淮安市涟水县</field>
+        </record>
+        <record id="china_city_223006" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223006</field>
+            <field name="name">淮安市盱眙县</field>
+        </record>
+        <record id="china_city_223007" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223007</field>
+            <field name="name">淮安市金湖县</field>
+        </record>
+
+        <!-- 宿迁市其他区县 -->
+        <record id="china_city_223804" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223804</field>
+            <field name="name">宿迁市泗阳县</field>
+        </record>
+        <record id="china_city_223805" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223805</field>
+            <field name="name">宿迁市泗洪县</field>
+        </record>
+        <!-- 宿迁市其他县级行政区 -->
+        <record id="china_city_223806" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223806</field>
+            <field name="name">宿迁市宿豫经济开发区</field>
+        </record>
+        <record id="china_city_223807" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223807</field>
+            <field name="name">宿迁市苏州宿迁工业园区</field>
+        </record>
+
+        <!-- 南京市开发区 -->
+        <record id="china_city_210012" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">210012</field>
+            <field name="name">南京经济技术开发区</field>
+        </record>
+        <record id="china_city_210013" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">210013</field>
+            <field name="name">南京高新技术产业开发区</field>
+        </record>
+        <record id="china_city_210014" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">210014</field>
+            <field name="name">南京江北新区</field>
+        </record>
+
+        <!-- 苏州市开发区 -->
+        <record id="china_city_215010" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">215010</field>
+            <field name="name">苏州工业园区</field>
+        </record>
+        <record id="china_city_215011" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">215011</field>
+            <field name="name">苏州高新区</field>
+        </record>
+
+        <!-- 无锡市开发区 -->
+        <record id="china_city_214008" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">214008</field>
+            <field name="name">无锡经济开发区</field>
+        </record>
+        <record id="china_city_214009" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">214009</field>
+            <field name="name">无锡高新技术产业开发区</field>
+        </record>
+
+        <!-- 常州市开发区 -->
+        <record id="china_city_213007" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">213007</field>
+            <field name="name">常州经济开发区</field>
+        </record>
+        <record id="china_city_213008" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">213008</field>
+            <field name="name">常州高新技术产业开发区</field>
+        </record>
+
+        <!-- 南通市开发区 -->
+        <record id="china_city_226009" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">226009</field>
+            <field name="name">南通经济技术开发区</field>
+        </record>
+        <record id="china_city_226010" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">226010</field>
+            <field name="name">南通高新技术产业开发区</field>
+        </record>
+
+        <!-- 连云港市开发区 -->
+        <record id="china_city_222007" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">222007</field>
+            <field name="name">连云港经济技术开发区</field>
+        </record>
+        <record id="china_city_222008" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">222008</field>
+            <field name="name">连云港高新技术产业开发区</field>
+        </record>
+
+        <!-- 淮安市开发区 -->
+        <record id="china_city_223008" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223008</field>
+            <field name="name">淮安经济技术开发区</field>
+        </record>
+        <record id="china_city_223009" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223009</field>
+            <field name="name">淮安工业园区</field>
+        </record>
+
+        <!-- 盐城市开发区 -->
+        <record id="china_city_224010" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">224010</field>
+            <field name="name">盐城经济技术开发区</field>
+        </record>
+        <record id="china_city_224011" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">224011</field>
+            <field name="name">盐城高新技术产业开发区</field>
+        </record>
+
+        <!-- 扬州市开发区 -->
+        <record id="china_city_225007" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225007</field>
+            <field name="name">扬州经济技术开发区</field>
+        </record>
+        <record id="china_city_225008" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225008</field>
+            <field name="name">扬州高新技术产业开发区</field>
+        </record>
+
+        <!-- 镇江市开发区 -->
+        <record id="china_city_212007" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">212007</field>
+            <field name="name">镇江经济技术开发区</field>
+        </record>
+        <record id="china_city_212008" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">212008</field>
+            <field name="name">镇江高新技术产业开发区</field>
+        </record>
+
+        <!-- 泰州市开发区 -->
+        <record id="china_city_225307" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225307</field>
+            <field name="name">泰州医药高新技术产业开发区</field>
+        </record>
+        <record id="china_city_225308" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225308</field>
+            <field name="name">泰州经济开发区</field>
+        </record>
+
+        <!-- 徐州市开发区 -->
+        <record id="china_city_221011" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">221011</field>
+            <field name="name">徐州经济技术开发区</field>
+        </record>
+        <record id="china_city_221012" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">221012</field>
+            <field name="name">徐州高新技术产业开发区</field>
+        </record>
+        <!-- 江苏省特殊行政区和其他区域 -->
+        <!-- 南京市其他特殊区域 -->
+        <record id="china_city_210015" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">210015</field>
+            <field name="name">南京紫金山旅游区</field>
+        </record>
+        <record id="china_city_210016" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">210016</field>
+            <field name="name">南京江宁大学城</field>
+        </record>
+
+        <!-- 苏州市其他特殊区域 -->
+        <record id="china_city_215012" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">215012</field>
+            <field name="name">苏州金鸡湖商务区</field>
+        </record>
+        <record id="china_city_215013" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">215013</field>
+            <field name="name">苏州太湖国家旅游度假区</field>
+        </record>
+
+        <!-- 无锡市其他特殊区域 -->
+        <record id="china_city_214010" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">214010</field>
+            <field name="name">无锡太湖新城</field>
+        </record>
+        <record id="china_city_214011" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">214011</field>
+            <field name="name">无锡蠡湖经济开发区</field>
+        </record>
+
+        <!-- 徐州市其他特殊区域 -->
+        <record id="china_city_221013" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">221013</field>
+            <field name="name">徐州淮海经济区</field>
+        </record>
+        <record id="china_city_221014" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">221014</field>
+            <field name="name">徐州潘安湖旅游区</field>
+        </record>
+
+        <!-- 常州市其他特殊区域 -->
+        <record id="china_city_213009" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">213009</field>
+            <field name="name">常州西太湖生态园</field>
+        </record>
+        <record id="china_city_213010" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">213010</field>
+            <field name="name">常州滆湖旅游度假区</field>
+        </record>
+
+        <!-- 南通市其他特殊区域 -->
+        <record id="china_city_226011" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">226011</field>
+            <field name="name">南通通州湾江海联动开发示范区</field>
+        </record>
+        <record id="china_city_226012" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">226012</field>
+            <field name="name">南通狼山旅游度假区</field>
+        </record>
+
+        <!-- 扬州市其他特殊区域 -->
+        <record id="china_city_225009" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225009</field>
+            <field name="name">扬州生态科技新城</field>
+        </record>
+        <record id="china_city_225010" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225010</field>
+            <field name="name">扬州瘦西湖风景区</field>
+        </record>
+
+        <!-- 镇江市其他特殊区域 -->
+        <record id="china_city_212009" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">212009</field>
+            <field name="name">镇江金山旅游区</field>
+        </record>
+        <record id="china_city_212010" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">212010</field>
+            <field name="name">镇江大港新区</field>
+        </record>
+
+        <!-- 泰州市其他特殊区域 -->
+        <record id="china_city_225309" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225309</field>
+            <field name="name">泰州凤凰新城</field>
+        </record>
+        <record id="china_city_225310" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">225310</field>
+            <field name="name">泰州溱湖旅游度假区</field>
+        </record>
+
+        <!-- 盐城市其他特殊区域 -->
+        <record id="china_city_224012" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">224012</field>
+            <field name="name">盐城东台沿海经济区</field>
+        </record>
+        <record id="china_city_224013" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">224013</field>
+            <field name="name">盐城丹顶鹤自然保护区</field>
+        </record>
+
+        <!-- 连云港市其他特殊区域 -->
+        <record id="china_city_222009" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">222009</field>
+            <field name="name">连云港徐圩新区</field>
+        </record>
+        <record id="china_city_222010" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">222010</field>
+            <field name="name">连云港花果山风景区</field>
+        </record>
+
+        <!-- 淮安市其他特殊区域 -->
+        <record id="china_city_223010" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223010</field>
+            <field name="name">淮安生态新城</field>
+        </record>
+        <record id="china_city_223011" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223011</field>
+            <field name="name">淮安里运河文化长廊</field>
+        </record>
+
+        <!-- 宿迁市其他特殊区域 -->
+        <record id="china_city_223808" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223808</field>
+            <field name="name">宿迁湖滨新区</field>
+        </record>
+        <record id="china_city_223809" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">223809</field>
+            <field name="name">宿迁骆马湖旅游度假区</field>
+        </record>
+
+        <!-- 江苏省跨市区域 -->
+        <record id="china_city_230001" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">230001</field>
+            <field name="name">江苏沿海经济带</field>
+        </record>
+        <record id="china_city_230002" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">230002</field>
+            <field name="name">江苏长江经济带</field>
+        </record>
+        <record id="china_city_230003" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">230003</field>
+            <field name="name">苏南国家自主创新示范区</field>
+        </record>
+        <record id="china_city_230004" model="res.city">
+            <field name="state_id" ref="base.state_cn_JS" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">230004</field>
+            <field name="name">江淮生态经济区</field>
+        </record>
+
+    </data>
+</odoo>

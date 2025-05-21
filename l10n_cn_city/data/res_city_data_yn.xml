@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- 云南省 昆明市 -->
+        <record id="china_city_650000" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">650000</field>
+            <field name="name">昆明市</field>
+        </record>
+
+        <!-- 昆明市下属区县 -->
+        <record id="china_city_650100" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">650100</field>
+            <field name="name">昆明市五华区</field>
+        </record>
+
+        <record id="china_city_650200" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">650200</field>
+            <field name="name">昆明市盘龙区</field>
+        </record>
+
+        <record id="china_city_650300" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">650300</field>
+            <field name="name">昆明市官渡区</field>
+        </record>
+
+        <record id="china_city_650400" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">650400</field>
+            <field name="name">昆明市西山区</field>
+        </record>
+
+        <record id="china_city_650500" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">650500</field>
+            <field name="name">昆明市东川区</field>
+        </record>
+
+        <record id="china_city_650600" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">650600</field>
+            <field name="name">昆明市呈贡区</field>
+        </record>
+
+        <record id="china_city_650700" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">650700</field>
+            <field name="name">昆明市晋宁区</field>
+        </record>
+
+        <record id="china_city_650800" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">650800</field>
+            <field name="name">昆明市安宁市</field>
+        </record>
+
+        <record id="china_city_650900" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">650900</field>
+            <field name="name">昆明市富民县</field>
+        </record>
+
+        <record id="china_city_651000" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">651000</field>
+            <field name="name">昆明市宜良县</field>
+        </record>
+
+        <record id="china_city_651100" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">651100</field>
+            <field name="name">昆明市嵩明县</field>
+        </record>
+
+        <record id="china_city_651200" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">651200</field>
+            <field name="name">昆明市石林彝族自治县</field>
+        </record>
+
+        <record id="china_city_651300" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">651300</field>
+            <field name="name">昆明市禄劝彝族苗族自治县</field>
+        </record>
+
+        <record id="china_city_651400" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">651400</field>
+            <field name="name">昆明市寻甸回族彝族自治县</field>
+        </record>
+
+        <!-- 云南省 曲靖市 -->
+        <record id="china_city_655000" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">655000</field>
+            <field name="name">曲靖市</field>
+        </record>
+
+        <!-- 曲靖市下属区县 -->
+        <record id="china_city_655100" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">655100</field>
+            <field name="name">曲靖市麒麟区</field>
+        </record>
+
+        <record id="china_city_655200" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">655200</field>
+            <field name="name">曲靖市沾益区</field>
+        </record>
+
+        <record id="china_city_655300" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">655300</field>
+            <field name="name">曲靖市马龙区</field>
+        </record>
+
+        <record id="china_city_655400" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">655400</field>
+            <field name="name">曲靖市宣威市</field>
+        </record>
+
+        <record id="china_city_655500" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">655500</field>
+            <field name="name">曲靖市富源县</field>
+        </record>
+
+        <record id="china_city_655600" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">655600</field>
+            <field name="name">曲靖市罗平县</field>
+        </record>
+
+        <record id="china_city_655700" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">655700</field>
+            <field name="name">曲靖市师宗县</field>
+        </record>
+
+        <record id="china_city_655800" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">655800</field>
+            <field name="name">曲靖市陆良县</field>
+        </record>
+
+        <record id="china_city_655900" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">655900</field>
+            <field name="name">曲靖市会泽县</field>
+        </record>
+
+        <!-- 云南省 玉溪市 -->
+        <record id="china_city_653100" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">653100</field>
+            <field name="name">玉溪市</field>
+        </record>
+
+        <!-- 玉溪市下属区县 -->
+        <record id="china_city_653101" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">653101</field>
+            <field name="name">玉溪市红塔区</field>
+        </record>
+
+        <record id="china_city_653102" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">653102</field>
+            <field name="name">玉溪市江川区</field>
+        </record>
+
+        <record id="china_city_653103" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">653103</field>
+            <field name="name">玉溪市澄江市</field>
+        </record>
+
+        <record id="china_city_653104" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">653104</field>
+            <field name="name">玉溪市通海县</field>
+        </record>
+
+        <record id="china_city_653105" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">653105</field>
+            <field name="name">玉溪市华宁县</field>
+        </record>
+
+        <record id="china_city_653106" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">653106</field>
+            <field name="name">玉溪市易门县</field>
+        </record>
+
+        <record id="china_city_653107" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">653107</field>
+            <field name="name">玉溪市峨山彝族自治县</field>
+        </record>
+
+        <record id="china_city_653108" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">653108</field>
+            <field name="name">玉溪市新平彝族傣族自治县</field>
+        </record>
+
+        <record id="china_city_653109" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">653109</field>
+            <field name="name">玉溪市元江哈尼族彝族傣族自治县</field>
+        </record>
+
+        <!-- 云南省 保山市 -->
+        <record id="china_city_678000" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">678000</field>
+            <field name="name">保山市</field>
+        </record>
+
+        <!-- 保山市下属区县 -->
+        <record id="china_city_678001" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">678001</field>
+            <field name="name">保山市隆阳区</field>
+        </record>
+
+        <record id="china_city_678002" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">678002</field>
+            <field name="name">保山市腾冲市</field>
+        </record>
+
+        <record id="china_city_678003" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">678003</field>
+            <field name="name">保山市施甸县</field>
+        </record>
+
+        <record id="china_city_678004" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">678004</field>
+            <field name="name">保山市龙陵县</field>
+        </record>
+
+        <record id="china_city_678005" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">678005</field>
+            <field name="name">保山市昌宁县</field>
+        </record>
+
+        <!-- 云南省 昭通市 -->
+        <record id="china_city_657000" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">657000</field>
+            <field name="name">昭通市</field>
+        </record>
+
+        <!-- 昭通市下属区县 -->
+        <record id="china_city_657001" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">657001</field>
+            <field name="name">昭通市昭阳区</field>
+        </record>
+
+        <record id="china_city_657002" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">657002</field>
+            <field name="name">昭通市水富市</field>
+        </record>
+
+        <record id="china_city_657003" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">657003</field>
+            <field name="name">昭通市鲁甸县</field>
+        </record>
+
+        <record id="china_city_657004" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">657004</field>
+            <field name="name">昭通市巧家县</field>
+        </record>
+
+        <record id="china_city_657005" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">657005</field>
+            <field name="name">昭通市盐津县</field>
+        </record>
+
+        <record id="china_city_657006" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">657006</field>
+            <field name="name">昭通市大关县</field>
+        </record>
+
+        <record id="china_city_657007" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">657007</field>
+            <field name="name">昭通市永善县</field>
+        </record>
+
+        <record id="china_city_657008" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">657008</field>
+            <field name="name">昭通市绥江县</field>
+        </record>
+
+        <record id="china_city_657009" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">657009</field>
+            <field name="name">昭通市镇雄县</field>
+        </record>
+
+        <record id="china_city_657010" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">657010</field>
+            <field name="name">昭通市彝良县</field>
+        </record>
+
+        <record id="china_city_657011" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">657011</field>
+            <field name="name">昭通市威信县</field>
+        </record>
+
+        <!-- 云南省 丽江市 -->
+        <record id="china_city_674100" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">674100</field>
+            <field name="name">丽江市</field>
+        </record>
+
+        <!-- 丽江市下属区县 -->
+        <record id="china_city_674101" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">674101</field>
+            <field name="name">丽江市古城区</field>
+        </record>
+
+        <record id="china_city_674102" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">674102</field>
+            <field name="name">丽江市永胜县</field>
+        </record>
+
+        <record id="china_city_674103" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">674103</field>
+            <field name="name">丽江市华坪县</field>
+        </record>
+
+        <record id="china_city_674104" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">674104</field>
+            <field name="name">丽江市玉龙纳西族自治县</field>
+        </record>
+
+        <record id="china_city_674105" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">674105</field>
+            <field name="name">丽江市宁蒗彝族自治县</field>
+        </record>
+
+        <!-- 云南省 普洱市 -->
+        <record id="china_city_665000" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">665000</field>
+            <field name="name">普洱市</field>
+        </record>
+
+        <!-- 普洱市下属区县 -->
+        <record id="china_city_665001" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">665001</field>
+            <field name="name">普洱市思茅区</field>
+        </record>
+
+        <record id="china_city_665002" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">665002</field>
+            <field name="name">普洱市宁洱哈尼族彝族自治县</field>
+        </record>
+
+        <record id="china_city_665003" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">665003</field>
+            <field name="name">普洱市墨江哈尼族自治县</field>
+        </record>
+
+        <!-- 普洱市下属区县(续) -->
+        <record id="china_city_665004" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">665004</field>
+            <field name="name">普洱市景东彝族自治县</field>
+        </record>
+
+        <record id="china_city_665005" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">665005</field>
+            <field name="name">普洱市景谷傣族彝族自治县</field>
+        </record>
+
+        <record id="china_city_665006" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">665006</field>
+            <field name="name">普洱市镇沅彝族哈尼族拉祜族自治县</field>
+        </record>
+
+        <record id="china_city_665007" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">665007</field>
+            <field name="name">普洱市江城哈尼族彝族自治县</field>
+        </record>
+
+        <record id="china_city_665008" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">665008</field>
+            <field name="name">普洱市孟连傣族拉祜族佤族自治县</field>
+        </record>
+
+        <record id="china_city_665009" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">665009</field>
+            <field name="name">普洱市澜沧拉祜族自治县</field>
+        </record>
+
+        <record id="china_city_665010" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">665010</field>
+            <field name="name">普洱市西盟佤族自治县</field>
+        </record>
+
+        <!-- 云南省 临沧市 -->
+        <record id="china_city_677000" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">677000</field>
+            <field name="name">临沧市</field>
+        </record>
+
+        <!-- 临沧市下属区县 -->
+        <record id="china_city_677001" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">677001</field>
+            <field name="name">临沧市临翔区</field>
+        </record>
+
+        <record id="china_city_677002" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">677002</field>
+            <field name="name">临沧市凤庆县</field>
+        </record>
+
+        <record id="china_city_677003" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">677003</field>
+            <field name="name">临沧市云县</field>
+        </record>
+
+        <record id="china_city_677004" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">677004</field>
+            <field name="name">临沧市永德县</field>
+        </record>
+
+        <record id="china_city_677005" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">677005</field>
+            <field name="name">临沧市镇康县</field>
+        </record>
+
+        <record id="china_city_677006" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">677006</field>
+            <field name="name">临沧市双江拉祜族佤族布朗族傣族自治县</field>
+        </record>
+
+        <record id="china_city_677007" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">677007</field>
+            <field name="name">临沧市耿马傣族佤族自治县</field>
+        </record>
+
+        <record id="china_city_677008" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">677008</field>
+            <field name="name">临沧市沧源佤族自治县</field>
+        </record>
+
+        <!-- 云南省 楚雄彝族自治州 -->
+        <record id="china_city_675000" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">675000</field>
+            <field name="name">楚雄彝族自治州</field>
+        </record>
+
+        <!-- 楚雄彝族自治州下属区县 -->
+        <record id="china_city_675001" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">675001</field>
+            <field name="name">楚雄市</field>
+        </record>
+
+        <record id="china_city_675002" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">675002</field>
+            <field name="name">双柏县</field>
+        </record>
+
+        <record id="china_city_675003" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">675003</field>
+            <field name="name">牟定县</field>
+        </record>
+
+        <record id="china_city_675004" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">675004</field>
+            <field name="name">南华县</field>
+        </record>
+
+        <record id="china_city_675005" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">675005</field>
+            <field name="name">姚安县</field>
+        </record>
+
+        <record id="china_city_675006" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">675006</field>
+            <field name="name">大姚县</field>
+        </record>
+
+        <record id="china_city_675007" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">675007</field>
+            <field name="name">永仁县</field>
+        </record>
+
+        <record id="china_city_675008" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">675008</field>
+            <field name="name">元谋县</field>
+        </record>
+
+        <record id="china_city_675009" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">675009</field>
+            <field name="name">武定县</field>
+        </record>
+
+        <record id="china_city_675010" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">675010</field>
+            <field name="name">禄丰市</field>
+        </record>
+
+        <!-- 云南省 红河哈尼族彝族自治州 -->
+        <record id="china_city_661000" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">661000</field>
+            <field name="name">红河哈尼族彝族自治州</field>
+        </record>
+
+        <!-- 红河哈尼族彝族自治州下属区县 -->
+        <record id="china_city_661001" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">661001</field>
+            <field name="name">蒙自市</field>
+        </record>
+
+        <record id="china_city_661002" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">661002</field>
+            <field name="name">个旧市</field>
+        </record>
+
+        <record id="china_city_661003" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">661003</field>
+            <field name="name">开远市</field>
+        </record>
+
+        <record id="china_city_661004" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">661004</field>
+            <field name="name">弥勒市</field>
+        </record>
+
+        <record id="china_city_661005" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">661005</field>
+            <field name="name">建水县</field>
+        </record>
+
+        <record id="china_city_661006" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">661006</field>
+            <field name="name">石屏县</field>
+        </record>
+
+        <record id="china_city_661007" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">661007</field>
+            <field name="name">泸西县</field>
+        </record>
+
+        <record id="china_city_661008" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">661008</field>
+            <field name="name">元阳县</field>
+        </record>
+
+        <record id="china_city_661009" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">661009</field>
+            <field name="name">红河县</field>
+        </record>
+
+        <record id="china_city_661010" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">661010</field>
+            <field name="name">金平苗族瑶族傣族自治县</field>
+        </record>
+
+        <!-- 红河哈尼族彝族自治州下属区县(续) -->
+        <record id="china_city_661011" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">661011</field>
+            <field name="name">绿春县</field>
+        </record>
+
+        <record id="china_city_661012" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">661012</field>
+            <field name="name">河口瑶族自治县</field>
+        </record>
+
+        <record id="china_city_661013" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">661013</field>
+            <field name="name">屏边苗族自治县</field>
+        </record>
+
+        <!-- 云南省 文山壮族苗族自治州 -->
+        <record id="china_city_663000" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">663000</field>
+            <field name="name">文山壮族苗族自治州</field>
+        </record>
+
+        <!-- 文山壮族苗族自治州下属区县 -->
+        <record id="china_city_663001" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">663001</field>
+            <field name="name">文山市</field>
+        </record>
+
+        <record id="china_city_663002" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">663002</field>
+            <field name="name">砚山县</field>
+        </record>
+
+        <record id="china_city_663003" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">663003</field>
+            <field name="name">西畴县</field>
+        </record>
+
+        <record id="china_city_663004" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">663004</field>
+            <field name="name">麻栗坡县</field>
+        </record>
+
+        <record id="china_city_663005" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">663005</field>
+            <field name="name">马关县</field>
+        </record>
+
+        <record id="china_city_663006" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">663006</field>
+            <field name="name">丘北县</field>
+        </record>
+
+        <record id="china_city_663007" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">663007</field>
+            <field name="name">广南县</field>
+        </record>
+
+        <record id="china_city_663008" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">663008</field>
+            <field name="name">富宁县</field>
+        </record>
+
+        <!-- 云南省 西双版纳傣族自治州 -->
+        <record id="china_city_666100" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">666100</field>
+            <field name="name">西双版纳傣族自治州</field>
+        </record>
+
+        <!-- 西双版纳傣族自治州下属区县 -->
+        <record id="china_city_666101" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">666101</field>
+            <field name="name">景洪市</field>
+        </record>
+
+        <record id="china_city_666102" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">666102</field>
+            <field name="name">勐海县</field>
+        </record>
+
+        <record id="china_city_666103" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">666103</field>
+            <field name="name">勐腊县</field>
+        </record>
+
+        <!-- 云南省 大理白族自治州 -->
+        <record id="china_city_671000" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">671000</field>
+            <field name="name">大理白族自治州</field>
+        </record>
+
+        <!-- 大理白族自治州下属区县 -->
+        <record id="china_city_671001" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">671001</field>
+            <field name="name">大理市</field>
+        </record>
+
+        <record id="china_city_671002" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">671002</field>
+            <field name="name">漾濞彝族自治县</field>
+        </record>
+
+        <record id="china_city_671003" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">671003</field>
+            <field name="name">祥云县</field>
+        </record>
+
+        <record id="china_city_671004" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">671004</field>
+            <field name="name">宾川县</field>
+        </record>
+
+        <record id="china_city_671005" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">671005</field>
+            <field name="name">弥渡县</field>
+        </record>
+
+        <record id="china_city_671006" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">671006</field>
+            <field name="name">南涧彝族自治县</field>
+        </record>
+
+        <record id="china_city_671007" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">671007</field>
+            <field name="name">巍山彝族回族自治县</field>
+        </record>
+
+        <record id="china_city_671008" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">671008</field>
+            <field name="name">永平县</field>
+        </record>
+
+        <record id="china_city_671009" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">671009</field>
+            <field name="name">云龙县</field>
+        </record>
+
+        <record id="china_city_671010" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">671010</field>
+            <field name="name">洱源县</field>
+        </record>
+
+        <record id="china_city_671011" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">671011</field>
+            <field name="name">剑川县</field>
+        </record>
+
+        <record id="china_city_671012" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">671012</field>
+            <field name="name">鹤庆县</field>
+        </record>
+
+        <!-- 云南省 德宏傣族景颇族自治州 -->
+        <record id="china_city_678400" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">678400</field>
+            <field name="name">德宏傣族景颇族自治州</field>
+        </record>
+
+        <!-- 德宏傣族景颇族自治州下属区县 -->
+        <record id="china_city_678401" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">678401</field>
+            <field name="name">芒市</field>
+        </record>
+
+        <record id="china_city_678402" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">678402</field>
+            <field name="name">瑞丽市</field>
+        </record>
+
+        <record id="china_city_678403" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">678403</field>
+            <field name="name">梁河县</field>
+        </record>
+
+        <record id="china_city_678404" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">678404</field>
+            <field name="name">盈江县</field>
+        </record>
+
+        <record id="china_city_678405" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">678405</field>
+            <field name="name">陇川县</field>
+        </record>
+
+        <!-- 云南省 怒江傈僳族自治州 -->
+        <record id="china_city_673100" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">673100</field>
+            <field name="name">怒江傈僳族自治州</field>
+        </record>
+
+        <!-- 怒江傈僳族自治州下属区县 -->
+        <record id="china_city_673101" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">673101</field>
+            <field name="name">泸水市</field>
+        </record>
+
+        <record id="china_city_673102" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">673102</field>
+            <field name="name">福贡县</field>
+        </record>
+
+        <!-- 怒江傈僳族自治州下属区县(续) -->
+        <record id="china_city_673103" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">673103</field>
+            <field name="name">贡山独龙族怒族自治县</field>
+        </record>
+
+        <record id="china_city_673104" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">673104</field>
+            <field name="name">兰坪白族普米族自治县</field>
+        </record>
+
+        <!-- 云南省 迪庆藏族自治州 -->
+        <record id="china_city_674400" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">674400</field>
+            <field name="name">迪庆藏族自治州</field>
+        </record>
+
+        <!-- 迪庆藏族自治州下属区县 -->
+        <record id="china_city_674401" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">674401</field>
+            <field name="name">香格里拉市</field>
+        </record>
+
+        <record id="china_city_674402" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">674402</field>
+            <field name="name">德钦县</field>
+        </record>
+
+        <record id="china_city_674403" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">674403</field>
+            <field name="name">维西傈僳族自治县</field>
+        </record>
+
+        <!-- 云南省 临沧市 -->
+        <record id="china_city_677000" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">677000</field>
+            <field name="name">临沧市</field>
+        </record>
+
+        <!-- 云南省 西双版纳傣族自治州 -->
+        <record id="china_city_666100" model="res.city">
+            <field name="state_id" ref="base.state_cn_YN" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">666100</field>
+            <field name="name">西双版纳傣族自治州</field>
+        </record>
+    </data>
+</odoo>

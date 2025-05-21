@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- 合肥市 -->
+        <record id="china_city_230000" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">230000</field>
+            <field name="name">合肥市</field>
+        </record>
+
+        <!-- 合肥市下属区县 -->
+        <record id="china_city_230001" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">230001</field>
+            <field name="name">合肥市瑶海区</field>
+        </record>
+
+        <record id="china_city_230002" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">230002</field>
+            <field name="name">合肥市庐阳区</field>
+        </record>
+
+        <record id="china_city_230003" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">230003</field>
+            <field name="name">合肥市蜀山区</field>
+        </record>
+
+        <record id="china_city_230004" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">230004</field>
+            <field name="name">合肥市包河区</field>
+        </record>
+
+        <record id="china_city_230005" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">230005</field>
+            <field name="name">合肥市长丰县</field>
+        </record>
+
+        <record id="china_city_230006" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">230006</field>
+            <field name="name">合肥市肥东县</field>
+        </record>
+
+        <record id="china_city_230007" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">230007</field>
+            <field name="name">合肥市肥西县</field>
+        </record>
+
+        <record id="china_city_230008" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">230008</field>
+            <field name="name">合肥市庐江县</field>
+        </record>
+
+        <record id="china_city_230009" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">230009</field>
+            <field name="name">合肥市巢湖市</field>
+        </record>
+
+        <!-- 芜湖市 -->
+        <record id="china_city_240000" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">240000</field>
+            <field name="name">芜湖市</field>
+        </record>
+
+        <!-- 芜湖市下属区县 -->
+        <record id="china_city_240001" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">240001</field>
+            <field name="name">芜湖市镜湖区</field>
+        </record>
+
+        <record id="china_city_240002" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">240002</field>
+            <field name="name">芜湖市弋江区</field>
+        </record>
+
+        <record id="china_city_240003" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">240003</field>
+            <field name="name">芜湖市鸠江区</field>
+        </record>
+
+        <record id="china_city_240004" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">240004</field>
+            <field name="name">芜湖市湾沚区</field>
+        </record>
+
+        <record id="china_city_240005" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">240005</field>
+            <field name="name">芜湖市繁昌区</field>
+        </record>
+
+        <record id="china_city_240006" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">240006</field>
+            <field name="name">芜湖市南陵县</field>
+        </record>
+
+        <record id="china_city_240007" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">240007</field>
+            <field name="name">芜湖市无为市</field>
+        </record>
+
+        <!-- 其他安徽省主要城市及其下属区县可以按照同样格式继续添加 -->
+        <!-- 蚌埠市 -->
+        <record id="china_city_233000" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">233000</field>
+            <field name="name">蚌埠市</field>
+        </record>
+
+        <!-- 蚌埠市下属区县 -->
+        <record id="china_city_233001" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">233001</field>
+            <field name="name">蚌埠市龙子湖区</field>
+        </record>
+
+        <record id="china_city_233002" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">233002</field>
+            <field name="name">蚌埠市蚌山区</field>
+        </record>
+
+        <record id="china_city_233003" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">233003</field>
+            <field name="name">蚌埠市禹会区</field>
+        </record>
+
+        <record id="china_city_233004" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">233004</field>
+            <field name="name">蚌埠市淮上区</field>
+        </record>
+
+        <record id="china_city_233005" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">233005</field>
+            <field name="name">蚌埠市怀远县</field>
+        </record>
+
+        <record id="china_city_233006" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">233006</field>
+            <field name="name">蚌埠市五河县</field>
+        </record>
+
+        <record id="china_city_233007" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">233007</field>
+            <field name="name">蚌埠市固镇县</field>
+        </record>
+
+        <!-- 淮南市 -->
+        <record id="china_city_232000" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">232000</field>
+            <field name="name">淮南市</field>
+        </record>
+
+        <!-- 淮南市下属区县 -->
+        <record id="china_city_232001" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">232001</field>
+            <field name="name">淮南市大通区</field>
+        </record>
+
+        <record id="china_city_232002" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">232002</field>
+            <field name="name">淮南市田家庵区</field>
+        </record>
+
+        <record id="china_city_232003" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">232003</field>
+            <field name="name">淮南市谢家集区</field>
+        </record>
+
+        <record id="china_city_232004" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">232004</field>
+            <field name="name">淮南市八公山区</field>
+        </record>
+
+        <record id="china_city_232005" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">232005</field>
+            <field name="name">淮南市潘集区</field>
+        </record>
+
+        <record id="china_city_232006" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">232006</field>
+            <field name="name">淮南市凤台县</field>
+        </record>
+
+        <record id="china_city_232007" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">232007</field>
+            <field name="name">淮南市寿县</field>
+        </record>
+
+        <!-- 马鞍山市 -->
+        <record id="china_city_243000" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">243000</field>
+            <field name="name">马鞍山市</field>
+        </record>
+
+        <!-- 马鞍山市下属区县 -->
+        <record id="china_city_243001" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">243001</field>
+            <field name="name">马鞍山市花山区</field>
+        </record>
+
+        <record id="china_city_243002" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">243002</field>
+            <field name="name">马鞍山市雨山区</field>
+        </record>
+
+        <record id="china_city_243003" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">243003</field>
+            <field name="name">马鞍山市博望区</field>
+        </record>
+
+        <record id="china_city_243004" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">243004</field>
+            <field name="name">马鞍山市当涂县</field>
+        </record>
+
+        <record id="china_city_243005" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">243005</field>
+            <field name="name">马鞍山市含山县</field>
+        </record>
+
+        <record id="china_city_243006" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">243006</field>
+            <field name="name">马鞍山市和县</field>
+        </record>
+
+        <!-- 淮北市 -->
+        <record id="china_city_235000" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">235000</field>
+            <field name="name">淮北市</field>
+        </record>
+
+        <!-- 淮北市下属区县 -->
+        <record id="china_city_235001" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">235001</field>
+            <field name="name">淮北市杜集区</field>
+        </record>
+
+        <record id="china_city_235002" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">235002</field>
+            <field name="name">淮北市相山区</field>
+        </record>
+
+        <record id="china_city_235003" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">235003</field>
+            <field name="name">淮北市烈山区</field>
+        </record>
+
+        <record id="china_city_235004" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">235004</field>
+            <field name="name">淮北市濉溪县</field>
+        </record>
+
+        <!-- 铜陵市 -->
+        <record id="china_city_244000" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">244000</field>
+            <field name="name">铜陵市</field>
+        </record>
+
+        <!-- 铜陵市下属区县 -->
+        <record id="china_city_244001" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">244001</field>
+            <field name="name">铜陵市铜官区</field>
+        </record>
+
+        <record id="china_city_244002" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">244002</field>
+            <field name="name">铜陵市义安区</field>
+        </record>
+
+        <record id="china_city_244003" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">244003</field>
+            <field name="name">铜陵市郊区</field>
+        </record>
+
+        <record id="china_city_244004" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">244004</field>
+            <field name="name">铜陵市枞阳县</field>
+        </record>
+        <!-- 安庆市 -->
+        <record id="china_city_246000" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">246000</field>
+            <field name="name">安庆市</field>
+        </record>
+
+        <!-- 安庆市下属区县 -->
+        <record id="china_city_246001" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">246001</field>
+            <field name="name">安庆市迎江区</field>
+        </record>
+
+        <record id="china_city_246002" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">246002</field>
+            <field name="name">安庆市大观区</field>
+        </record>
+
+        <record id="china_city_246003" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">246003</field>
+            <field name="name">安庆市宜秀区</field>
+        </record>
+
+        <record id="china_city_246004" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">246004</field>
+            <field name="name">安庆市怀宁县</field>
+        </record>
+
+        <record id="china_city_246005" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">246005</field>
+            <field name="name">安庆市潜山市</field>
+        </record>
+
+        <record id="china_city_246006" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">246006</field>
+            <field name="name">安庆市太湖县</field>
+        </record>
+
+        <record id="china_city_246007" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">246007</field>
+            <field name="name">安庆市宿松县</field>
+        </record>
+
+        <record id="china_city_246008" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">246008</field>
+            <field name="name">安庆市望江县</field>
+        </record>
+
+        <record id="china_city_246009" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">246009</field>
+            <field name="name">安庆市岳西县</field>
+        </record>
+
+        <record id="china_city_246010" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">246010</field>
+            <field name="name">安庆市桐城市</field>
+        </record>
+
+        <!-- 黄山市 -->
+        <record id="china_city_245000" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">245000</field>
+            <field name="name">黄山市</field>
+        </record>
+
+        <!-- 黄山市下属区县 -->
+        <record id="china_city_245001" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">245001</field>
+            <field name="name">黄山市屯溪区</field>
+        </record>
+
+        <record id="china_city_245002" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">245002</field>
+            <field name="name">黄山市黄山区</field>
+        </record>
+
+        <record id="china_city_245003" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">245003</field>
+            <field name="name">黄山市徽州区</field>
+        </record>
+
+        <record id="china_city_245004" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">245004</field>
+            <field name="name">黄山市歙县</field>
+        </record>
+
+        <record id="china_city_245005" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">245005</field>
+            <field name="name">黄山市休宁县</field>
+        </record>
+
+        <record id="china_city_245006" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">245006</field>
+            <field name="name">黄山市黟县</field>
+        </record>
+
+        <record id="china_city_245007" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">245007</field>
+            <field name="name">黄山市祁门县</field>
+        </record>
+
+        <!-- 阜阳市 -->
+        <record id="china_city_236000" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">236000</field>
+            <field name="name">阜阳市</field>
+        </record>
+
+        <!-- 阜阳市下属区县 -->
+        <record id="china_city_236001" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">236001</field>
+            <field name="name">阜阳市颍州区</field>
+        </record>
+
+        <record id="china_city_236002" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">236002</field>
+            <field name="name">阜阳市颍东区</field>
+        </record>
+
+        <record id="china_city_236003" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">236003</field>
+            <field name="name">阜阳市颍泉区</field>
+        </record>
+
+        <record id="china_city_236004" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">236004</field>
+            <field name="name">阜阳市临泉县</field>
+        </record>
+
+        <record id="china_city_236005" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">236005</field>
+            <field name="name">阜阳市太和县</field>
+        </record>
+
+        <record id="china_city_236006" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">236006</field>
+            <field name="name">阜阳市阜南县</field>
+        </record>
+
+        <record id="china_city_236007" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">236007</field>
+            <field name="name">阜阳市颍上县</field>
+        </record>
+
+        <record id="china_city_236008" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">236008</field>
+            <field name="name">阜阳市界首市</field>
+        </record>
+
+        <!-- 宿州市 -->
+        <record id="china_city_234000" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">234000</field>
+            <field name="name">宿州市</field>
+        </record>
+
+        <!-- 宿州市下属区县 -->
+        <record id="china_city_234001" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">234001</field>
+            <field name="name">宿州市埇桥区</field>
+        </record>
+
+        <record id="china_city_234002" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">234002</field>
+            <field name="name">宿州市砀山县</field>
+        </record>
+
+        <record id="china_city_234003" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">234003</field>
+            <field name="name">宿州市萧县</field>
+        </record>
+
+        <record id="china_city_234004" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">234004</field>
+            <field name="name">宿州市灵璧县</field>
+        </record>
+
+        <record id="china_city_234005" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">234005</field>
+            <field name="name">宿州市泗县</field>
+        </record>
+        <!-- 滁州市 -->
+        <record id="china_city_239000" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">239000</field>
+            <field name="name">滁州市</field>
+        </record>
+
+        <!-- 滁州市下属区县 -->
+        <record id="china_city_239001" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">239001</field>
+            <field name="name">滁州市琅琊区</field>
+        </record>
+
+        <record id="china_city_239002" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">239002</field>
+            <field name="name">滁州市南谯区</field>
+        </record>
+
+        <record id="china_city_239003" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">239003</field>
+            <field name="name">滁州市来安县</field>
+        </record>
+
+        <record id="china_city_239004" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">239004</field>
+            <field name="name">滁州市全椒县</field>
+        </record>
+
+        <record id="china_city_239005" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">239005</field>
+            <field name="name">滁州市定远县</field>
+        </record>
+
+        <record id="china_city_239006" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">239006</field>
+            <field name="name">滁州市凤阳县</field>
+        </record>
+
+        <record id="china_city_239007" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">239007</field>
+            <field name="name">滁州市天长市</field>
+        </record>
+
+        <record id="china_city_239008" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">239008</field>
+            <field name="name">滁州市明光市</field>
+        </record>
+
+        <!-- 六安市 -->
+        <record id="china_city_237000" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">237000</field>
+            <field name="name">六安市</field>
+        </record>
+
+        <!-- 六安市下属区县 -->
+        <record id="china_city_237001" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">237001</field>
+            <field name="name">六安市金安区</field>
+        </record>
+
+        <record id="china_city_237002" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">237002</field>
+            <field name="name">六安市裕安区</field>
+        </record>
+
+        <record id="china_city_237003" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">237003</field>
+            <field name="name">六安市叶集区</field>
+        </record>
+
+        <record id="china_city_237004" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">237004</field>
+            <field name="name">六安市霍邱县</field>
+        </record>
+
+        <record id="china_city_237005" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">237005</field>
+            <field name="name">六安市舒城县</field>
+        </record>
+
+        <record id="china_city_237006" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">237006</field>
+            <field name="name">六安市金寨县</field>
+        </record>
+
+        <record id="china_city_237007" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">237007</field>
+            <field name="name">六安市霍山县</field>
+        </record>
+
+        <!-- 宣城市 -->
+        <record id="china_city_242000" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">242000</field>
+            <field name="name">宣城市</field>
+        </record>
+
+        <!-- 宣城市下属区县 -->
+        <record id="china_city_242001" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">242001</field>
+            <field name="name">宣城市宣州区</field>
+        </record>
+
+        <record id="china_city_242002" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">242002</field>
+            <field name="name">宣城市郎溪县</field>
+        </record>
+
+        <record id="china_city_242003" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">242003</field>
+            <field name="name">宣城市泾县</field>
+        </record>
+
+        <record id="china_city_242004" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">242004</field>
+            <field name="name">宣城市绩溪县</field>
+        </record>
+
+        <record id="china_city_242005" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">242005</field>
+            <field name="name">宣城市旌德县</field>
+        </record>
+
+        <record id="china_city_242006" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">242006</field>
+            <field name="name">宣城市宁国市</field>
+        </record>
+
+        <record id="china_city_242007" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">242007</field>
+            <field name="name">宣城市广德市</field>
+        </record>
+
+        <!-- 池州市 -->
+        <record id="china_city_247000" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">247000</field>
+            <field name="name">池州市</field>
+        </record>
+
+        <!-- 池州市下属区县 -->
+        <record id="china_city_247001" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">247001</field>
+            <field name="name">池州市贵池区</field>
+        </record>
+
+        <record id="china_city_247002" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">247002</field>
+            <field name="name">池州市东至县</field>
+        </record>
+
+        <record id="china_city_247003" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">247003</field>
+            <field name="name">池州市石台县</field>
+        </record>
+
+        <record id="china_city_247004" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">247004</field>
+            <field name="name">池州市青阳县</field>
+        </record>
+
+        <!-- 亳州市 -->
+        <record id="china_city_236800" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">236800</field>
+            <field name="name">亳州市</field>
+        </record>
+
+        <!-- 亳州市下属区县 -->
+        <record id="china_city_236801" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">236801</field>
+            <field name="name">亳州市谯城区</field>
+        </record>
+
+        <record id="china_city_236802" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">236802</field>
+            <field name="name">亳州市涡阳县</field>
+        </record>
+
+        <record id="china_city_236803" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">236803</field>
+            <field name="name">亳州市蒙城县</field>
+        </record>
+
+        <record id="china_city_236804" model="res.city">
+            <field name="state_id" ref="base.state_cn_AH" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">236804</field>
+            <field name="name">亳州市利辛县</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- 杭州市 -->
+        <record id="china_city_310000" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">310000</field>
+            <field name="name">杭州市</field>
+        </record>
+
+        <!-- 杭州市下属区县 -->
+        <record id="china_city_310001" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">310001</field>
+            <field name="name">杭州市上城区</field>
+        </record>
+
+        <record id="china_city_310002" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">310002</field>
+            <field name="name">杭州市下城区</field>
+        </record>
+
+        <record id="china_city_310003" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">310003</field>
+            <field name="name">杭州市江干区</field>
+        </record>
+
+        <record id="china_city_310004" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">310004</field>
+            <field name="name">杭州市拱墅区</field>
+        </record>
+
+        <record id="china_city_310005" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">310005</field>
+            <field name="name">杭州市西湖区</field>
+        </record>
+
+        <record id="china_city_310006" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">310006</field>
+            <field name="name">杭州市滨江区</field>
+        </record>
+
+        <record id="china_city_311100" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">311100</field>
+            <field name="name">杭州市萧山区</field>
+        </record>
+
+        <record id="china_city_311200" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">311200</field>
+            <field name="name">杭州市余杭区</field>
+        </record>
+
+        <record id="china_city_311400" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">311400</field>
+            <field name="name">杭州市富阳区</field>
+        </record>
+
+        <record id="china_city_311800" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">311800</field>
+            <field name="name">杭州市临安区</field>
+        </record>
+
+        <record id="china_city_311500" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">311500</field>
+            <field name="name">杭州市桐庐县</field>
+        </record>
+
+        <record id="china_city_311300" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">311300</field>
+            <field name="name">杭州市淳安县</field>
+        </record>
+
+        <record id="china_city_311600" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">311600</field>
+            <field name="name">杭州市建德市</field>
+        </record>
+
+        <!-- 宁波市 -->
+        <record id="china_city_315000" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">315000</field>
+            <field name="name">宁波市</field>
+        </record>
+
+        <!-- 宁波市下属区县 -->
+        <record id="china_city_315001" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">315001</field>
+            <field name="name">宁波市海曙区</field>
+        </record>
+
+        <record id="china_city_315002" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">315002</field>
+            <field name="name">宁波市江北区</field>
+        </record>
+
+        <record id="china_city_315003" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">315003</field>
+            <field name="name">宁波市鄞州区</field>
+        </record>
+
+        <record id="china_city_315100" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">315100</field>
+            <field name="name">宁波市镇海区</field>
+        </record>
+
+        <record id="china_city_315200" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">315200</field>
+            <field name="name">宁波市北仑区</field>
+        </record>
+
+        <record id="china_city_315300" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">315300</field>
+            <field name="name">宁波市奉化区</field>
+        </record>
+
+        <record id="china_city_315400" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">315400</field>
+            <field name="name">宁波市余姚市</field>
+        </record>
+
+        <record id="china_city_315600" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">315600</field>
+            <field name="name">宁波市慈溪市</field>
+        </record>
+
+        <record id="china_city_315700" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">315700</field>
+            <field name="name">宁波市象山县</field>
+        </record>
+
+        <record id="china_city_315800" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">315800</field>
+            <field name="name">宁波市宁海县</field>
+        </record>
+
+        <!-- 温州市 -->
+        <record id="china_city_325000" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">325000</field>
+            <field name="name">温州市</field>
+        </record>
+
+        <!-- 温州市下属区县 -->
+        <record id="china_city_325001" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">325001</field>
+            <field name="name">温州市鹿城区</field>
+        </record>
+
+        <record id="china_city_325002" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">325002</field>
+            <field name="name">温州市龙湾区</field>
+        </record>
+
+        <record id="china_city_325003" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">325003</field>
+            <field name="name">温州市瓯海区</field>
+        </record>
+
+        <record id="china_city_325004" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">325004</field>
+            <field name="name">温州市洞头区</field>
+        </record>
+
+        <record id="china_city_325100" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">325100</field>
+            <field name="name">温州市瑞安市</field>
+        </record>
+
+        <record id="china_city_325200" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">325200</field>
+            <field name="name">温州市乐清市</field>
+        </record>
+
+        <record id="china_city_325300" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">325300</field>
+            <field name="name">温州市永嘉县</field>
+        </record>
+
+        <record id="china_city_325400" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">325400</field>
+            <field name="name">温州市平阳县</field>
+        </record>
+
+        <record id="china_city_325500" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">325500</field>
+            <field name="name">温州市苍南县</field>
+        </record>
+
+        <record id="china_city_325600" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">325600</field>
+            <field name="name">温州市文成县</field>
+        </record>
+
+        <record id="china_city_325700" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">325700</field>
+            <field name="name">温州市泰顺县</field>
+        </record>
+
+        <!-- 嘉兴市 -->
+        <record id="china_city_330000" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">330000</field>
+            <field name="name">嘉兴市</field>
+        </record>
+
+        <!-- 嘉兴市下属区县 -->
+        <record id="china_city_330001" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">330001</field>
+            <field name="name">嘉兴市南湖区</field>
+        </record>
+
+        <record id="china_city_330002" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">330002</field>
+            <field name="name">嘉兴市秀洲区</field>
+        </record>
+
+        <record id="china_city_330100" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">330100</field>
+            <field name="name">嘉兴市嘉善县</field>
+        </record>
+
+        <record id="china_city_330200" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">330200</field>
+            <field name="name">嘉兴市海盐县</field>
+        </record>
+
+        <record id="china_city_330300" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">330300</field>
+            <field name="name">嘉兴市海宁市</field>
+        </record>
+
+        <record id="china_city_330400" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">330400</field>
+            <field name="name">嘉兴市平湖市</field>
+        </record>
+
+        <record id="china_city_330500" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">330500</field>
+            <field name="name">嘉兴市桐乡市</field>
+        </record>
+
+        <!-- 湖州市 -->
+        <record id="china_city_335000" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">335000</field>
+            <field name="name">湖州市</field>
+        </record>
+
+        <!-- 湖州市下属区县 -->
+        <record id="china_city_335001" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">335001</field>
+            <field name="name">湖州市吴兴区</field>
+        </record>
+
+        <record id="china_city_335002" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">335002</field>
+            <field name="name">湖州市南浔区</field>
+        </record>
+
+        <record id="china_city_335100" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">335100</field>
+            <field name="name">湖州市德清县</field>
+        </record>
+
+        <record id="china_city_335200" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">335200</field>
+            <field name="name">湖州市长兴县</field>
+        </record>
+
+        <record id="china_city_335300" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">335300</field>
+            <field name="name">湖州市安吉县</field>
+        </record>
+
+        <!-- 绍兴市 -->
+        <record id="china_city_340000" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">340000</field>
+            <field name="name">绍兴市</field>
+        </record>
+
+        <!-- 绍兴市下属区县 -->
+        <record id="china_city_340001" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">340001</field>
+            <field name="name">绍兴市越城区</field>
+        </record>
+
+        <record id="china_city_340002" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">340002</field>
+            <field name="name">绍兴市柯桥区</field>
+        </record>
+
+        <record id="china_city_340003" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">340003</field>
+            <field name="name">绍兴市上虞区</field>
+        </record>
+
+        <record id="china_city_340100" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">340100</field>
+            <field name="name">绍兴市新昌县</field>
+        </record>
+
+        <record id="china_city_340200" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">340200</field>
+            <field name="name">绍兴市诸暨市</field>
+        </record>
+
+        <record id="china_city_340300" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">340300</field>
+            <field name="name">绍兴市嵊州市</field>
+        </record>
+
+        <!-- 金华市 -->
+        <record id="china_city_345000" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">345000</field>
+            <field name="name">金华市</field>
+        </record>
+
+        <!-- 金华市下属区县 -->
+        <record id="china_city_345001" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">345001</field>
+            <field name="name">金华市婺城区</field>
+        </record>
+
+        <record id="china_city_345002" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">345002</field>
+            <field name="name">金华市金东区</field>
+        </record>
+
+        <record id="china_city_345100" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">345100</field>
+            <field name="name">金华市兰溪市</field>
+        </record>
+
+        <record id="china_city_345200" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">345200</field>
+            <field name="name">金华市义乌市</field>
+        </record>
+
+        <record id="china_city_345300" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">345300</field>
+            <field name="name">金华市东阳市</field>
+        </record>
+
+        <record id="china_city_345400" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">345400</field>
+            <field name="name">金华市永康市</field>
+        </record>
+
+        <record id="china_city_345500" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">345500</field>
+            <field name="name">金华市武义县</field>
+        </record>
+
+        <record id="china_city_345600" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">345600</field>
+            <field name="name">金华市浦江县</field>
+        </record>
+
+        <record id="china_city_345700" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">345700</field>
+            <field name="name">金华市磐安县</field>
+        </record>
+
+        <!-- 衢州市 -->
+        <record id="china_city_350000" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350000</field>
+            <field name="name">衢州市</field>
+        </record>
+
+        <!-- 衢州市下属区县 -->
+        <record id="china_city_350001" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350001</field>
+            <field name="name">衢州市柯城区</field>
+        </record>
+
+        <record id="china_city_350002" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350002</field>
+            <field name="name">衢州市衢江区</field>
+        </record>
+
+        <record id="china_city_350100" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350100</field>
+            <field name="name">衢州市常山县</field>
+        </record>
+
+        <record id="china_city_350200" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350200</field>
+            <field name="name">衢州市开化县</field>
+        </record>
+
+        <record id="china_city_350300" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350300</field>
+            <field name="name">衢州市龙游县</field>
+        </record>
+
+        <record id="china_city_350400" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350400</field>
+            <field name="name">衢州市江山市</field>
+        </record>
+
+        <!-- 舟山市 -->
+        <record id="china_city_355000" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">355000</field>
+            <field name="name">舟山市</field>
+        </record>
+
+        <!-- 舟山市下属区县 -->
+        <record id="china_city_355001" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">355001</field>
+            <field name="name">舟山市定海区</field>
+        </record>
+
+        <record id="china_city_355002" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">355002</field>
+            <field name="name">舟山市普陀区</field>
+        </record>
+
+        <record id="china_city_355003" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">355003</field>
+            <field name="name">舟山市岱山县</field>
+        </record>
+
+        <record id="china_city_355004" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">355004</field>
+            <field name="name">舟山市嵊泗县</field>
+        </record>
+
+        <!-- 台州市 -->
+        <record id="china_city_360000" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">360000</field>
+            <field name="name">台州市</field>
+        </record>
+
+        <!-- 台州市下属区县 -->
+        <record id="china_city_360001" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">360001</field>
+            <field name="name">台州市椒江区</field>
+        </record>
+
+        <record id="china_city_360002" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">360002</field>
+            <field name="name">台州市黄岩区</field>
+        </record>
+
+        <record id="china_city_360003" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">360003</field>
+            <field name="name">台州市路桥区</field>
+        </record>
+
+        <record id="china_city_360100" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">360100</field>
+            <field name="name">台州市临海市</field>
+        </record>
+
+        <record id="china_city_360200" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">360200</field>
+            <field name="name">台州市温岭市</field>
+        </record>
+
+        <record id="china_city_360300" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">360300</field>
+            <field name="name">台州市玉环市</field>
+        </record>
+
+        <record id="china_city_360400" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">360400</field>
+            <field name="name">台州市三门县</field>
+        </record>
+
+        <record id="china_city_360500" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">360500</field>
+            <field name="name">台州市天台县</field>
+        </record>
+
+        <record id="china_city_360600" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">360600</field>
+            <field name="name">台州市仙居县</field>
+        </record>
+
+        <!-- 丽水市 -->
+        <record id="china_city_365000" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365000</field>
+            <field name="name">丽水市</field>
+        </record>
+
+        <!-- 丽水市下属区县 -->
+        <record id="china_city_365001" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365001</field>
+            <field name="name">丽水市莲都区</field>
+        </record>
+
+        <record id="china_city_365100" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365100</field>
+            <field name="name">丽水市龙泉市</field>
+        </record>
+
+        <record id="china_city_365200" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365200</field>
+            <field name="name">丽水市青田县</field>
+        </record>
+
+        <record id="china_city_365300" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365300</field>
+            <field name="name">丽水市缙云县</field>
+        </record>
+
+        <record id="china_city_365400" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365400</field>
+            <field name="name">丽水市遂昌县</field>
+        </record>
+
+        <record id="china_city_365500" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365500</field>
+            <field name="name">丽水市松阳县</field>
+        </record>
+
+        <record id="china_city_365600" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365600</field>
+            <field name="name">丽水市云和县</field>
+        </record>
+
+        <record id="china_city_365700" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365700</field>
+            <field name="name">丽水市庆元县</field>
+        </record>
+
+        <record id="china_city_365800" model="res.city">
+            <field name="state_id" ref="base.state_cn_ZJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365800</field>
+            <field name="name">丽水市景宁畲族自治县</field>
+        </record>
+
+    </data>
+</odoo>

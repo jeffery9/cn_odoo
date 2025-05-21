@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- 贵州省 - 贵阳市 -->
+        <record id="china_city_550000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550000</field>
+            <field name="name">贵阳市</field>
+        </record>
+
+        <!-- 贵阳市下属区县 -->
+        <record id="china_city_550001" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550001</field>
+            <field name="name">贵阳市南明区</field>
+        </record>
+
+        <record id="china_city_550002" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550002</field>
+            <field name="name">贵阳市云岩区</field>
+        </record>
+
+        <record id="china_city_550003" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550003</field>
+            <field name="name">贵阳市花溪区</field>
+        </record>
+
+        <!-- 贵州省 - 遵义市 -->
+        <record id="china_city_563000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">563000</field>
+            <field name="name">遵义市</field>
+        </record>
+
+        <!-- 遵义市下属区县 -->
+        <record id="china_city_563001" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">563001</field>
+            <field name="name">遵义市红花岗区</field>
+        </record>
+
+        <record id="china_city_563002" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">563002</field>
+            <field name="name">遵义市汇川区</field>
+        </record>
+
+        <!-- 贵州省 - 安顺市 -->
+        <record id="china_city_561000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">561000</field>
+            <field name="name">安顺市</field>
+        </record>
+
+        <!-- 安顺市下属区县 -->
+        <record id="china_city_561001" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">561001</field>
+            <field name="name">安顺市西秀区</field>
+        </record>
+
+        <record id="china_city_561002" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">561002</field>
+            <field name="name">安顺市平坝区</field>
+        </record>
+
+        <!-- 贵州省 - 毕节市 -->
+        <record id="china_city_551700" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">551700</field>
+            <field name="name">毕节市</field>
+        </record>
+
+        <!-- 毕节市下属区县 -->
+        <record id="china_city_551701" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">551701</field>
+            <field name="name">毕节市七星关区</field>
+        </record>
+
+        <record id="china_city_551702" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">551702</field>
+            <field name="name">大方县</field>
+        </record>
+
+        <record id="china_city_551703" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">551703</field>
+            <field name="name">黔西县</field>
+        </record>
+
+        <record id="china_city_551704" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">551704</field>
+            <field name="name">金沙县</field>
+        </record>
+
+        <!-- 贵州省 - 铜仁市 -->
+        <record id="china_city_554300" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">554300</field>
+            <field name="name">铜仁市</field>
+        </record>
+
+        <!-- 铜仁市下属区县 -->
+        <record id="china_city_554301" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">554301</field>
+            <field name="name">铜仁市碧江区</field>
+        </record>
+
+        <record id="china_city_554302" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">554302</field>
+            <field name="name">铜仁市万山区</field>
+        </record>
+
+        <record id="china_city_554303" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">554303</field>
+            <field name="name">江口县</field>
+        </record>
+
+        <!-- 贵州省 - 黔东南苗族侗族自治州 -->
+        <record id="china_city_556000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">556000</field>
+            <field name="name">黔东南苗族侗族自治州</field>
+        </record>
+
+        <!-- 黔东南苗族侗族自治州下属区县 -->
+        <record id="china_city_556001" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">556001</field>
+            <field name="name">凯里市</field>
+        </record>
+
+        <record id="china_city_556002" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">556002</field>
+            <field name="name">黄平县</field>
+        </record>
+
+        <!-- 贵州省 - 黔南布依族苗族自治州 -->
+        <record id="china_city_558000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">558000</field>
+            <field name="name">黔南布依族苗族自治州</field>
+        </record>
+
+        <!-- 黔南布依族苗族自治州下属区县 -->
+        <record id="china_city_558001" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">558001</field>
+            <field name="name">都匀市</field>
+        </record>
+
+        <record id="china_city_558002" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">558002</field>
+            <field name="name">福泉市</field>
+        </record>
+
+        <!-- 贵州省 - 黔西南布依族苗族自治州 -->
+        <record id="china_city_562400" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">562400</field>
+            <field name="name">黔西南布依族苗族自治州</field>
+        </record>
+
+        <!-- 黔西南布依族苗族自治州下属区县 -->
+        <record id="china_city_562401" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">562401</field>
+            <field name="name">兴义市</field>
+        </record>
+
+        <record id="china_city_562402" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">562402</field>
+            <field name="name">兴仁市</field>
+        </record>
+
+        <!-- 贵州省 - 六盘水市 -->
+        <record id="china_city_553000" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">553000</field>
+            <field name="name">六盘水市</field>
+        </record>
+
+        <!-- 六盘水市下属区县 -->
+        <record id="china_city_553001" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">553001</field>
+            <field name="name">六盘水市钟山区</field>
+        </record>
+
+        <record id="china_city_553002" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">553002</field>
+            <field name="name">六盘水市六枝特区</field>
+        </record>
+
+        <record id="china_city_553003" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">553003</field>
+            <field name="name">水城县</field>
+        </record>
+
+        <!-- 铜仁市下属区县(续) -->
+        <record id="china_city_554304" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">554304</field>
+            <field name="name">玉屏侗族自治县</field>
+        </record>
+
+        <record id="china_city_554305" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">554305</field>
+            <field name="name">石阡县</field>
+        </record>
+
+        <record id="china_city_554306" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">554306</field>
+            <field name="name">思南县</field>
+        </record>
+
+        <record id="china_city_554307" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">554307</field>
+            <field name="name">印江土家族苗族自治县</field>
+        </record>
+
+        <record id="china_city_554308" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">554308</field>
+            <field name="name">德江县</field>
+        </record>
+
+        <record id="china_city_554309" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">554309</field>
+            <field name="name">沿河土家族自治县</field>
+        </record>
+
+        <record id="china_city_554310" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">554310</field>
+            <field name="name">松桃苗族自治县</field>
+        </record>
+
+        <!-- 黔东南苗族侗族自治州下属区县(续) -->
+        <record id="china_city_556003" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">556003</field>
+            <field name="name">施秉县</field>
+        </record>
+
+        <record id="china_city_556004" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">556004</field>
+            <field name="name">三穗县</field>
+        </record>
+
+        <record id="china_city_556005" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">556005</field>
+            <field name="name">镇远县</field>
+        </record>
+
+        <record id="china_city_556006" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">556006</field>
+            <field name="name">岑巩县</field>
+        </record>
+
+        <record id="china_city_556007" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">556007</field>
+            <field name="name">天柱县</field>
+        </record>
+
+        <record id="china_city_556008" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">556008</field>
+            <field name="name">锦屏县</field>
+        </record>
+
+        <record id="china_city_556009" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">556009</field>
+            <field name="name">剑河县</field>
+        </record>
+
+        <record id="china_city_556010" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">556010</field>
+            <field name="name">台江县</field>
+        </record>
+
+        <record id="china_city_556011" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">556011</field>
+            <field name="name">黎平县</field>
+        </record>
+
+        <record id="china_city_556012" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">556012</field>
+            <field name="name">榕江县</field>
+        </record>
+
+        <record id="china_city_556013" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">556013</field>
+            <field name="name">从江县</field>
+        </record>
+
+        <record id="china_city_556014" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">556014</field>
+            <field name="name">雷山县</field>
+        </record>
+
+        <record id="china_city_556015" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">556015</field>
+            <field name="name">麻江县</field>
+        </record>
+
+        <record id="china_city_556016" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">556016</field>
+            <field name="name">丹寨县</field>
+        </record>
+
+        <!-- 黔南布依族苗族自治州下属区县(续) -->
+        <record id="china_city_558003" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">558003</field>
+            <field name="name">荔波县</field>
+        </record>
+
+        <record id="china_city_558004" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">558004</field>
+            <field name="name">贵定县</field>
+        </record>
+
+        <record id="china_city_558005" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">558005</field>
+            <field name="name">瓮安县</field>
+        </record>
+
+        <record id="china_city_558006" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">558006</field>
+            <field name="name">独山县</field>
+        </record>
+
+        <!-- 黔南布依族苗族自治州下属区县(续) -->
+        <record id="china_city_558007" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">558007</field>
+            <field name="name">平塘县</field>
+        </record>
+
+        <record id="china_city_558008" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">558008</field>
+            <field name="name">罗甸县</field>
+        </record>
+
+        <record id="china_city_558009" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">558009</field>
+            <field name="name">长顺县</field>
+        </record>
+
+        <record id="china_city_558010" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">558010</field>
+            <field name="name">龙里县</field>
+        </record>
+
+        <record id="china_city_558011" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">558011</field>
+            <field name="name">惠水县</field>
+        </record>
+
+        <record id="china_city_558012" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">558012</field>
+            <field name="name">三都水族自治县</field>
+        </record>
+
+        <!-- 黔西南布依族苗族自治州下属区县(续) -->
+        <record id="china_city_562403" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">562403</field>
+            <field name="name">普安县</field>
+        </record>
+
+        <record id="china_city_562404" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">562404</field>
+            <field name="name">晴隆县</field>
+        </record>
+
+        <record id="china_city_562405" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">562405</field>
+            <field name="name">贞丰县</field>
+        </record>
+
+        <record id="china_city_562406" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">562406</field>
+            <field name="name">望谟县</field>
+        </record>
+
+        <record id="china_city_562407" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">562407</field>
+            <field name="name">册亨县</field>
+        </record>
+
+        <record id="china_city_562408" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">562408</field>
+            <field name="name">安龙县</field>
+        </record>
+
+        <!-- 六盘水市下属区县(续) -->
+        <record id="china_city_553004" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">553004</field>
+            <field name="name">盘州市</field>
+        </record>
+
+        <!-- 毕节市下属区县(续) -->
+        <record id="china_city_551705" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">551705</field>
+            <field name="name">织金县</field>
+        </record>
+
+        <record id="china_city_551706" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">551706</field>
+            <field name="name">纳雍县</field>
+        </record>
+
+        <record id="china_city_551707" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">551707</field>
+            <field name="name">威宁彝族回族苗族自治县</field>
+        </record>
+
+        <record id="china_city_551708" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">551708</field>
+            <field name="name">赫章县</field>
+        </record>
+
+        <!-- 贵阳市下属区县(续) -->
+        <record id="china_city_550004" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550004</field>
+            <field name="name">贵阳市乌当区</field>
+        </record>
+
+        <record id="china_city_550005" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550005</field>
+            <field name="name">贵阳市白云区</field>
+        </record>
+
+        <record id="china_city_550006" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550006</field>
+            <field name="name">贵阳市观山湖区</field>
+        </record>
+
+        <record id="china_city_550007" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550007</field>
+            <field name="name">开阳县</field>
+        </record>
+
+        <record id="china_city_550008" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550008</field>
+            <field name="name">息烽县</field>
+        </record>
+
+        <record id="china_city_550009" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550009</field>
+            <field name="name">修文县</field>
+        </record>
+
+        <record id="china_city_550010" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550010</field>
+            <field name="name">清镇市</field>
+        </record>
+
+        <!-- 安顺市下属区县(续) -->
+        <record id="china_city_561003" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">561003</field>
+            <field name="name">普定县</field>
+        </record>
+
+        <record id="china_city_561004" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">561004</field>
+            <field name="name">镇宁布依族苗族自治县</field>
+        </record>
+
+        <record id="china_city_561005" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">561005</field>
+            <field name="name">关岭布依族苗族自治县</field>
+        </record>
+
+        <record id="china_city_561006" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">561006</field>
+            <field name="name">紫云苗族布依族自治县</field>
+        </record>
+
+        <!-- 遵义市下属区县(续) -->
+        <record id="china_city_563003" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">563003</field>
+            <field name="name">遵义市播州区</field>
+        </record>
+
+        <record id="china_city_563004" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">563004</field>
+            <field name="name">桐梓县</field>
+        </record>
+
+        <record id="china_city_563005" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">563005</field>
+            <field name="name">绥阳县</field>
+        </record>
+
+        <record id="china_city_563006" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">563006</field>
+            <field name="name">正安县</field>
+        </record>
+
+        <record id="china_city_563007" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">563007</field>
+            <field name="name">道真仡佬族苗族自治县</field>
+        </record>
+
+        <record id="china_city_563008" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">563008</field>
+            <field name="name">务川仡佬族苗族自治县</field>
+        </record>
+
+        <record id="china_city_563009" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">563009</field>
+            <field name="name">凤冈县</field>
+        </record>
+
+        <record id="china_city_563010" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">563010</field>
+            <field name="name">湄潭县</field>
+        </record>
+
+        <record id="china_city_563011" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">563011</field>
+            <field name="name">余庆县</field>
+        </record>
+
+        <record id="china_city_563012" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">563012</field>
+            <field name="name">习水县</field>
+        </record>
+
+        <record id="china_city_563013" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">563013</field>
+            <field name="name">赤水市</field>
+        </record>
+
+        <record id="china_city_563014" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">563014</field>
+            <field name="name">仁怀市</field>
+        </record>
+
+        <!-- 毕节市下属区县(续) -->
+        <record id="china_city_551709" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">551709</field>
+            <field name="name">毕节市百里杜鹃特区</field>
+        </record>
+
+        <!-- 贵州省 - 其他特殊区域 -->
+        <record id="china_city_550100" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550100</field>
+            <field name="name">贵安新区</field>
+        </record>
+
+        <record id="china_city_550101" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550101</field>
+            <field name="name">贵阳综合保税区</field>
+        </record>
+
+        <record id="china_city_550102" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550102</field>
+            <field name="name">贵州双龙航空港经济区</field>
+        </record>
+
+        <!-- 黔东南苗族侗族自治州下属区县(续) -->
+        <record id="china_city_556017" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">556017</field>
+            <field name="name">三江侗族自治县</field>
+        </record>
+
+        <!-- 遵义市下属区县(续) -->
+        <record id="china_city_563015" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">563015</field>
+            <field name="name">遵义经济技术开发区</field>
+        </record>
+
+        <record id="china_city_563016" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">563016</field>
+            <field name="name">遵义新蒲新区</field>
+        </record>
+
+        <!-- 贵阳市下属区县(续) -->
+        <record id="china_city_550011" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550011</field>
+            <field name="name">贵阳经济技术开发区</field>
+        </record>
+
+        <record id="china_city_550012" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550012</field>
+            <field name="name">贵阳高新技术产业开发区</field>
+        </record>
+
+        <record id="china_city_550013" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550013</field>
+            <field name="name">贵阳小河经济开发区</field>
+        </record>
+
+        <!-- 毕节市下属区县(续) -->
+        <record id="china_city_551710" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">551710</field>
+            <field name="name">毕节高新技术产业开发区</field>
+        </record>
+
+        <!-- 铜仁市下属区县(续) -->
+        <record id="china_city_554311" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">554311</field>
+            <field name="name">铜仁高新技术产业开发区</field>
+        </record>
+
+        <!-- 安顺市下属区县(续) -->
+        <record id="china_city_561007" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">561007</field>
+            <field name="name">安顺经济技术开发区</field>
+        </record>
+
+        <!-- 贵州省 - 其他特殊区域(续) -->
+        <record id="china_city_550103" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550103</field>
+            <field name="name">贵州内陆开放型经济试验区</field>
+        </record>
+
+        <record id="china_city_550104" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550104</field>
+            <field name="name">贵州生态文明试验区</field>
+        </record>
+
+        <record id="china_city_550105" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">550105</field>
+            <field name="name">贵州大数据综合试验区</field>
+        </record>
+
+        <!-- 六盘水市下属区县(续) -->
+        <record id="china_city_553005" model="res.city">
+            <field name="state_id" ref="base.state_cn_GZ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">553005</field>
+            <field name="name">六盘水高新技术产业开发区</field>
+        </record>
+    </data>
+</odoo>

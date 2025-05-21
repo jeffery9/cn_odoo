@@ -1,0 +1,1201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- 济南市 -->
+        <record id="china_city_250000" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">250000</field>
+            <field name="name">济南市</field>
+        </record>
+        <!-- 济南市下属区县 -->
+        <record id="china_city_250001" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">250001</field>
+            <field name="name">济南市历下区</field>
+        </record>
+        <record id="china_city_250002" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">250002</field>
+            <field name="name">济南市市中区</field>
+        </record>
+        <record id="china_city_250003" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">250003</field>
+            <field name="name">济南市槐荫区</field>
+        </record>
+
+        <!-- 青岛市 -->
+        <record id="china_city_266000" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">266000</field>
+            <field name="name">青岛市</field>
+        </record>
+        <!-- 青岛市下属区县 -->
+        <record id="china_city_266001" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">266001</field>
+            <field name="name">青岛市市南区</field>
+        </record>
+        <record id="china_city_266002" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">266002</field>
+            <field name="name">青岛市市北区</field>
+        </record>
+        <record id="china_city_266003" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">266003</field>
+            <field name="name">青岛市黄岛区</field>
+        </record>
+
+        <!-- 烟台市 -->
+        <record id="china_city_264000" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264000</field>
+            <field name="name">烟台市</field>
+        </record>
+        <!-- 烟台市下属区县 -->
+        <record id="china_city_264001" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264001</field>
+            <field name="name">烟台市芝罘区</field>
+        </record>
+        <record id="china_city_264002" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264002</field>
+            <field name="name">烟台市福山区</field>
+        </record>
+
+        <!-- 潍坊市 -->
+        <record id="china_city_261000" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">261000</field>
+            <field name="name">潍坊市</field>
+        </record>
+        <!-- 潍坊市下属区县 -->
+        <record id="china_city_261001" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">261001</field>
+            <field name="name">潍坊市奎文区</field>
+        </record>
+        <record id="china_city_261002" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">261002</field>
+            <field name="name">潍坊市寒亭区</field>
+        </record>
+        <!-- 淄博市 -->
+        <record id="china_city_255000" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">255000</field>
+            <field name="name">淄博市</field>
+        </record>
+        <!-- 淄博市下属区县 -->
+        <record id="china_city_255001" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">255001</field>
+            <field name="name">淄博市张店区</field>
+        </record>
+        <record id="china_city_255002" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">255002</field>
+            <field name="name">淄博市博山区</field>
+        </record>
+        <record id="china_city_255003" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">255003</field>
+            <field name="name">淄博市临淄区</field>
+        </record>
+
+        <!-- 枣庄市 -->
+        <record id="china_city_277000" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">277000</field>
+            <field name="name">枣庄市</field>
+        </record>
+        <!-- 枣庄市下属区县 -->
+        <record id="china_city_277001" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">277001</field>
+            <field name="name">枣庄市市中区</field>
+        </record>
+        <record id="china_city_277002" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">277002</field>
+            <field name="name">枣庄市薛城区</field>
+        </record>
+
+        <!-- 东营市 -->
+        <record id="china_city_257000" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">257000</field>
+            <field name="name">东营市</field>
+        </record>
+        <!-- 东营市下属区县 -->
+        <record id="china_city_257001" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">257001</field>
+            <field name="name">东营市东营区</field>
+        </record>
+        <record id="china_city_257002" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">257002</field>
+            <field name="name">东营市河口区</field>
+        </record>
+
+        <!-- 济宁市 -->
+        <record id="china_city_272000" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">272000</field>
+            <field name="name">济宁市</field>
+        </record>
+        <!-- 济宁市下属区县 -->
+        <record id="china_city_272001" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">272001</field>
+            <field name="name">济宁市任城区</field>
+        </record>
+        <record id="china_city_272002" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">272002</field>
+            <field name="name">济宁市兖州区</field>
+        </record>
+        <record id="china_city_272003" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">272003</field>
+            <field name="name">济宁市曲阜市</field>
+        </record>
+
+        <!-- 泰安市 -->
+        <record id="china_city_271000" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">271000</field>
+            <field name="name">泰安市</field>
+        </record>
+        <!-- 泰安市下属区县 -->
+        <record id="china_city_271001" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">271001</field>
+            <field name="name">泰安市泰山区</field>
+        </record>
+        <record id="china_city_271002" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">271002</field>
+            <field name="name">泰安市岱岳区</field>
+        </record>
+
+        <!-- 威海市 -->
+        <record id="china_city_264200" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264200</field>
+            <field name="name">威海市</field>
+        </record>
+        <!-- 威海市下属区县 -->
+        <record id="china_city_264201" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264201</field>
+            <field name="name">威海市环翠区</field>
+        </record>
+        <record id="china_city_264202" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264202</field>
+            <field name="name">威海市文登区</field>
+        </record>
+
+        <!-- 日照市 -->
+        <record id="china_city_276800" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276800</field>
+            <field name="name">日照市</field>
+        </record>
+        <!-- 日照市下属区县 -->
+        <record id="china_city_276801" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276801</field>
+            <field name="name">日照市东港区</field>
+        </record>
+        <record id="china_city_276802" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276802</field>
+            <field name="name">日照市岚山区</field>
+        </record>
+
+        <!-- 临沂市 -->
+        <record id="china_city_276000" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276000</field>
+            <field name="name">临沂市</field>
+        </record>
+        <!-- 临沂市下属区县 -->
+        <record id="china_city_276001" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276001</field>
+            <field name="name">临沂市兰山区</field>
+        </record>
+        <record id="china_city_276002" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276002</field>
+            <field name="name">临沂市罗庄区</field>
+        </record>
+        <record id="china_city_276003" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276003</field>
+            <field name="name">临沂市河东区</field>
+        </record>
+
+        <!-- 德州市 -->
+        <record id="china_city_253000" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">253000</field>
+            <field name="name">德州市</field>
+        </record>
+        <!-- 德州市下属区县 -->
+        <record id="china_city_253001" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">253001</field>
+            <field name="name">德州市德城区</field>
+        </record>
+        <record id="china_city_253002" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">253002</field>
+            <field name="name">德州市陵城区</field>
+        </record>
+
+        <!-- 聊城市 -->
+        <record id="china_city_252000" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">252000</field>
+            <field name="name">聊城市</field>
+        </record>
+        <!-- 聊城市下属区县 -->
+        <record id="china_city_252001" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">252001</field>
+            <field name="name">聊城市东昌府区</field>
+        </record>
+        <record id="china_city_252002" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">252002</field>
+            <field name="name">聊城市茌平区</field>
+        </record>
+
+        <!-- 滨州市 -->
+        <record id="china_city_256600" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">256600</field>
+            <field name="name">滨州市</field>
+        </record>
+        <!-- 滨州市下属区县 -->
+        <record id="china_city_256601" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">256601</field>
+            <field name="name">滨州市滨城区</field>
+        </record>
+        <record id="china_city_256602" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">256602</field>
+            <field name="name">滨州市沾化区</field>
+        </record>
+
+        <!-- 菏泽市 -->
+        <record id="china_city_274000" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">274000</field>
+            <field name="name">菏泽市</field>
+        </record>
+        <!-- 菏泽市下属区县 -->
+        <record id="china_city_274001" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">274001</field>
+            <field name="name">菏泽市牡丹区</field>
+        </record>
+        <record id="china_city_274002" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">274002</field>
+            <field name="name">菏泽市定陶区</field>
+        </record>
+        <record id="china_city_274003" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">274003</field>
+            <field name="name">菏泽市曹县</field>
+        </record>
+        <record id="china_city_274004" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">274004</field>
+            <field name="name">菏泽市单县</field>
+        </record>
+
+        <!-- 莱芜市 -->
+        <record id="china_city_271100" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">271100</field>
+            <field name="name">莱芜市</field>
+        </record>
+        <!-- 莱芜市下属区县 -->
+        <record id="china_city_271101" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">271101</field>
+            <field name="name">莱芜市莱城区</field>
+        </record>
+        <record id="china_city_271102" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">271102</field>
+            <field name="name">莱芜市钢城区</field>
+        </record>
+
+        <!-- 临沂市其他县区 -->
+        <record id="china_city_276004" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276004</field>
+            <field name="name">临沂市沂南县</field>
+        </record>
+        <record id="china_city_276005" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276005</field>
+            <field name="name">临沂市郯城县</field>
+        </record>
+        <record id="china_city_276006" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276006</field>
+            <field name="name">临沂市沂水县</field>
+        </record>
+
+        <!-- 济宁市其他县区 -->
+        <record id="china_city_272004" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">272004</field>
+            <field name="name">济宁市邹城市</field>
+        </record>
+        <record id="china_city_272005" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">272005</field>
+            <field name="name">济宁市微山县</field>
+        </record>
+        <record id="china_city_272006" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">272006</field>
+            <field name="name">济宁市鱼台县</field>
+        </record>
+
+        <!-- 青岛市其他区县 -->
+        <record id="china_city_266004" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">266004</field>
+            <field name="name">青岛市崂山区</field>
+        </record>
+        <record id="china_city_266005" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">266005</field>
+            <field name="name">青岛市李沧区</field>
+        </record>
+        <record id="china_city_266006" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">266006</field>
+            <field name="name">青岛市城阳区</field>
+        </record>
+        <record id="china_city_266007" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">266007</field>
+            <field name="name">青岛市即墨区</field>
+        </record>
+
+        <!-- 烟台市其他区县 -->
+        <record id="china_city_264003" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264003</field>
+            <field name="name">烟台市牟平区</field>
+        </record>
+        <record id="china_city_264004" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264004</field>
+            <field name="name">烟台市莱山区</field>
+        </record>
+        <record id="china_city_264005" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264005</field>
+            <field name="name">烟台市龙口市</field>
+        </record>
+        <record id="china_city_264006" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264006</field>
+            <field name="name">烟台市莱阳市</field>
+        </record>
+
+        <!-- 济南市其他区县 -->
+        <record id="china_city_250004" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">250004</field>
+            <field name="name">济南市天桥区</field>
+        </record>
+        <record id="china_city_250005" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">250005</field>
+            <field name="name">济南市历城区</field>
+        </record>
+        <record id="china_city_250006" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">250006</field>
+            <field name="name">济南市长清区</field>
+        </record>
+        <record id="china_city_250007" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">250007</field>
+            <field name="name">济南市章丘区</field>
+        </record>
+        <!-- 菏泽市其他县区 -->
+        <record id="china_city_274005" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">274005</field>
+            <field name="name">菏泽市成武县</field>
+        </record>
+        <record id="china_city_274006" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">274006</field>
+            <field name="name">菏泽市巨野县</field>
+        </record>
+        <record id="china_city_274007" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">274007</field>
+            <field name="name">菏泽市郓城县</field>
+        </record>
+        <record id="china_city_274008" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">274008</field>
+            <field name="name">菏泽市鄄城县</field>
+        </record>
+        <record id="china_city_274009" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">274009</field>
+            <field name="name">菏泽市东明县</field>
+        </record>
+
+        <!-- 临沂市其他县区 -->
+        <record id="china_city_276007" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276007</field>
+            <field name="name">临沂市兰陵县</field>
+        </record>
+        <record id="china_city_276008" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276008</field>
+            <field name="name">临沂市费县</field>
+        </record>
+        <record id="china_city_276009" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276009</field>
+            <field name="name">临沂市平邑县</field>
+        </record>
+        <record id="china_city_276010" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276010</field>
+            <field name="name">临沂市莒南县</field>
+        </record>
+        <record id="china_city_276011" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276011</field>
+            <field name="name">临沂市蒙阴县</field>
+        </record>
+        <record id="china_city_276012" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276012</field>
+            <field name="name">临沂市临沭县</field>
+        </record>
+
+        <!-- 济宁市其他县区 -->
+        <record id="china_city_272007" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">272007</field>
+            <field name="name">济宁市金乡县</field>
+        </record>
+        <record id="china_city_272008" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">272008</field>
+            <field name="name">济宁市嘉祥县</field>
+        </record>
+        <record id="china_city_272009" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">272009</field>
+            <field name="name">济宁市汶上县</field>
+        </record>
+        <record id="china_city_272010" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">272010</field>
+            <field name="name">济宁市泗水县</field>
+        </record>
+
+        <!-- 德州市其他县区 -->
+        <record id="china_city_253003" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">253003</field>
+            <field name="name">德州市宁津县</field>
+        </record>
+        <record id="china_city_253004" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">253004</field>
+            <field name="name">德州市庆云县</field>
+        </record>
+        <record id="china_city_253005" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">253005</field>
+            <field name="name">德州市临邑县</field>
+        </record>
+        <record id="china_city_253006" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">253006</field>
+            <field name="name">德州市齐河县</field>
+        </record>
+        <record id="china_city_253007" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">253007</field>
+            <field name="name">德州市平原县</field>
+        </record>
+        <record id="china_city_253008" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">253008</field>
+            <field name="name">德州市夏津县</field>
+        </record>
+        <record id="china_city_253009" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">253009</field>
+            <field name="name">德州市武城县</field>
+        </record>
+
+        <!-- 聊城市其他县区 -->
+        <record id="china_city_252003" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">252003</field>
+            <field name="name">聊城市阳谷县</field>
+        </record>
+        <record id="china_city_252004" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">252004</field>
+            <field name="name">聊城市莘县</field>
+        </record>
+        <record id="china_city_252005" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">252005</field>
+            <field name="name">聊城市东阿县</field>
+        </record>
+        <record id="china_city_252006" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">252006</field>
+            <field name="name">聊城市冠县</field>
+        </record>
+        <record id="china_city_252007" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">252007</field>
+            <field name="name">聊城市高唐县</field>
+        </record>
+
+        <!-- 滨州市其他县区 -->
+        <record id="china_city_256603" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">256603</field>
+            <field name="name">滨州市惠民县</field>
+        </record>
+        <record id="china_city_256604" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">256604</field>
+            <field name="name">滨州市阳信县</field>
+        </record>
+        <record id="china_city_256605" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">256605</field>
+            <field name="name">滨州市无棣县</field>
+        </record>
+        <record id="china_city_256606" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">256606</field>
+            <field name="name">滨州市博兴县</field>
+        </record>
+        <record id="china_city_256607" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">256607</field>
+            <field name="name">滨州市邹平市</field>
+        </record>
+
+        <!-- 淄博市其他区县 -->
+        <record id="china_city_255004" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">255004</field>
+            <field name="name">淄博市周村区</field>
+        </record>
+        <record id="china_city_255005" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">255005</field>
+            <field name="name">淄博市淄川区</field>
+        </record>
+        <record id="china_city_255006" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">255006</field>
+            <field name="name">淄博市桓台县</field>
+        </record>
+        <record id="china_city_255007" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">255007</field>
+            <field name="name">淄博市高青县</field>
+        </record>
+        <record id="china_city_255008" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">255008</field>
+            <field name="name">淄博市沂源县</field>
+        </record>
+
+        <!-- 枣庄市其他区县 -->
+        <record id="china_city_277003" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">277003</field>
+            <field name="name">枣庄市峄城区</field>
+        </record>
+        <record id="china_city_277004" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">277004</field>
+            <field name="name">枣庄市台儿庄区</field>
+        </record>
+        <record id="china_city_277005" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">277005</field>
+            <field name="name">枣庄市山亭区</field>
+        </record>
+        <record id="china_city_277006" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">277006</field>
+            <field name="name">枣庄市滕州市</field>
+        </record>
+
+        <!-- 东营市其他区县 -->
+        <record id="china_city_257003" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">257003</field>
+            <field name="name">东营市垦利区</field>
+        </record>
+        <record id="china_city_257004" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">257004</field>
+            <field name="name">东营市利津县</field>
+        </record>
+        <record id="china_city_257005" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">257005</field>
+            <field name="name">东营市广饶县</field>
+        </record>
+
+        <!-- 潍坊市其他区县 -->
+        <record id="china_city_261003" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">261003</field>
+            <field name="name">潍坊市潍城区</field>
+        </record>
+        <record id="china_city_261004" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">261004</field>
+            <field name="name">潍坊市坊子区</field>
+        </record>
+        <record id="china_city_261005" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">261005</field>
+            <field name="name">潍坊市青州市</field>
+        </record>
+        <record id="china_city_261006" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">261006</field>
+            <field name="name">潍坊市诸城市</field>
+        </record>
+        <record id="china_city_261007" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">261007</field>
+            <field name="name">潍坊市寿光市</field>
+        </record>
+        <record id="china_city_261008" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">261008</field>
+            <field name="name">潍坊市安丘市</field>
+        </record>
+        <record id="china_city_261009" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">261009</field>
+            <field name="name">潍坊市高密市</field>
+        </record>
+        <record id="china_city_261010" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">261010</field>
+            <field name="name">潍坊市昌邑市</field>
+        </record>
+        <record id="china_city_261011" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">261011</field>
+            <field name="name">潍坊市临朐县</field>
+        </record>
+        <record id="china_city_261012" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">261012</field>
+            <field name="name">潍坊市昌乐县</field>
+        </record>
+
+        <!-- 威海市其他区县 -->
+        <record id="china_city_264203" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264203</field>
+            <field name="name">威海市荣成市</field>
+        </record>
+        <record id="china_city_264204" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264204</field>
+            <field name="name">威海市乳山市</field>
+        </record>
+
+        <!-- 日照市其他区县 -->
+        <record id="china_city_276803" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276803</field>
+            <field name="name">日照市五莲县</field>
+        </record>
+        <record id="china_city_276804" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276804</field>
+            <field name="name">日照市莒县</field>
+        </record>
+
+        <!-- 青岛市其他区县 -->
+        <record id="china_city_266008" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">266008</field>
+            <field name="name">青岛市胶州市</field>
+        </record>
+        <record id="china_city_266009" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">266009</field>
+            <field name="name">青岛市平度市</field>
+        </record>
+        <record id="china_city_266010" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">266010</field>
+            <field name="name">青岛市莱西市</field>
+        </record>
+
+        <!-- 泰安市其他县区 -->
+        <record id="china_city_271003" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">271003</field>
+            <field name="name">泰安市宁阳县</field>
+        </record>
+        <record id="china_city_271004" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">271004</field>
+            <field name="name">泰安市东平县</field>
+        </record>
+        <record id="china_city_271005" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">271005</field>
+            <field name="name">泰安市新泰市</field>
+        </record>
+        <record id="china_city_271006" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">271006</field>
+            <field name="name">泰安市肥城市</field>
+        </record>
+
+        <!-- 烟台市其他县区 -->
+        <record id="china_city_264007" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264007</field>
+            <field name="name">烟台市蓬莱区</field>
+        </record>
+        <record id="china_city_264008" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264008</field>
+            <field name="name">烟台市招远市</field>
+        </record>
+        <record id="china_city_264009" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264009</field>
+            <field name="name">烟台市栖霞市</field>
+        </record>
+        <record id="china_city_264010" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264010</field>
+            <field name="name">烟台市海阳市</field>
+        </record>
+        <record id="china_city_264011" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264011</field>
+            <field name="name">烟台市长岛县</field>
+        </record>
+
+        <!-- 济南市其他区县 -->
+        <record id="china_city_250008" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">250008</field>
+            <field name="name">济南市莱芜区</field>
+        </record>
+        <record id="china_city_250009" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">250009</field>
+            <field name="name">济南市钢城区</field>
+        </record>
+        <record id="china_city_250010" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">250010</field>
+            <field name="name">济南市平阴县</field>
+        </record>
+        <record id="china_city_250011" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">250011</field>
+            <field name="name">济南市济阳区</field>
+        </record>
+        <record id="china_city_250012" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">250012</field>
+            <field name="name">济南市商河县</field>
+        </record>
+
+        <!-- 青岛市其他区县 -->
+        <record id="china_city_266011" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">266011</field>
+            <field name="name">青岛市西海岸新区</field>
+        </record>
+        <record id="china_city_266012" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">266012</field>
+            <field name="name">青岛市高新区</field>
+        </record>
+
+        <!-- 聊城市其他县区 -->
+        <record id="china_city_252008" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">252008</field>
+            <field name="name">聊城市临清市</field>
+        </record>
+
+        <!-- 潍坊市其他区县 -->
+        <record id="china_city_261013" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">261013</field>
+            <field name="name">潍坊市高新区</field>
+        </record>
+        <record id="china_city_261014" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">261014</field>
+            <field name="name">潍坊市经济开发区</field>
+        </record>
+
+        <!-- 济宁市其他县区 -->
+        <record id="china_city_272011" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">272011</field>
+            <field name="name">济宁市梁山县</field>
+        </record>
+
+        <!-- 临沂市其他区县 -->
+        <record id="china_city_276013" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276013</field>
+            <field name="name">临沂市高新区</field>
+        </record>
+        <record id="china_city_276014" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276014</field>
+            <field name="name">临沂市经济开发区</field>
+        </record>
+
+        <!-- 各市开发区和特殊区域 -->
+        <record id="china_city_250100" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">250100</field>
+            <field name="name">济南市高新区</field>
+        </record>
+        <record id="china_city_250101" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">250101</field>
+            <field name="name">济南市经济开发区</field>
+        </record>
+
+        <record id="china_city_266100" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">266100</field>
+            <field name="name">青岛市蓝谷</field>
+        </record>
+        <record id="china_city_266101" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">266101</field>
+            <field name="name">青岛市保税港区</field>
+        </record>
+
+        <record id="china_city_255100" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">255100</field>
+            <field name="name">淄博市高新区</field>
+        </record>
+
+        <record id="china_city_264100" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264100</field>
+            <field name="name">烟台市开发区</field>
+        </record>
+        <record id="china_city_264101" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264101</field>
+            <field name="name">烟台市高新区</field>
+        </record>
+
+        <record id="china_city_257100" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">257100</field>
+            <field name="name">东营市经济技术开发区</field>
+        </record>
+
+        <record id="china_city_272100" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">272100</field>
+            <field name="name">济宁市高新区</field>
+        </record>
+
+        <record id="china_city_271100" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">271100</field>
+            <field name="name">泰安市高新区</field>
+        </record>
+
+        <record id="china_city_264300" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264300</field>
+            <field name="name">威海市经济技术开发区</field>
+        </record>
+        <record id="china_city_264301" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">264301</field>
+            <field name="name">威海市高新区</field>
+        </record>
+
+        <record id="china_city_276900" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">276900</field>
+            <field name="name">日照市经济技术开发区</field>
+        </record>
+
+        <record id="china_city_253100" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">253100</field>
+            <field name="name">德州市经济技术开发区</field>
+        </record>
+
+        <record id="china_city_252100" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">252100</field>
+            <field name="name">聊城市经济技术开发区</field>
+        </record>
+
+        <record id="china_city_256700" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">256700</field>
+            <field name="name">滨州市经济技术开发区</field>
+        </record>
+
+        <record id="china_city_274100" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">274100</field>
+            <field name="name">菏泽市经济开发区</field>
+        </record>
+
+        <!-- 山东省重点功能区 -->
+        <record id="china_city_250200" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">250200</field>
+            <field name="name">山东半岛蓝色经济区</field>
+        </record>
+        <record id="china_city_250201" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">250201</field>
+            <field name="name">黄河三角洲高效生态经济区</field>
+        </record>
+        <record id="china_city_250202" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">250202</field>
+            <field name="name">山东新旧动能转换综合试验区</field>
+        </record>
+        <record id="china_city_250203" model="res.city">
+            <field name="state_id" ref="base.state_cn_SD" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">250203</field>
+            <field name="name">中国（山东）自由贸易试验区</field>
+        </record>
+    </data>
+</odoo>

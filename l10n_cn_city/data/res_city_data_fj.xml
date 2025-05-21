@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- 福州市 -->
+        <record id="china_city_350000" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350000</field>
+            <field name="name">福州市</field>
+        </record>
+
+        <!-- 福州市下属区县 -->
+        <record id="china_city_350100" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350100</field>
+            <field name="name">福州市鼓楼区</field>
+        </record>
+
+        <record id="china_city_350102" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350102</field>
+            <field name="name">福州市台江区</field>
+        </record>
+
+        <record id="china_city_350103" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350103</field>
+            <field name="name">福州市仓山区</field>
+        </record>
+
+        <record id="china_city_350104" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350104</field>
+            <field name="name">福州市马尾区</field>
+        </record>
+
+        <record id="china_city_350105" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350105</field>
+            <field name="name">福州市晋安区</field>
+        </record>
+
+        <record id="china_city_350111" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350111</field>
+            <field name="name">福州市长乐区</field>
+        </record>
+
+        <record id="china_city_350121" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350121</field>
+            <field name="name">福州市闽侯县</field>
+        </record>
+
+        <record id="china_city_350122" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350122</field>
+            <field name="name">福州市连江县</field>
+        </record>
+
+        <record id="china_city_350123" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350123</field>
+            <field name="name">福州市罗源县</field>
+        </record>
+
+        <record id="china_city_350124" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350124</field>
+            <field name="name">福州市闽清县</field>
+        </record>
+
+        <record id="china_city_350125" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350125</field>
+            <field name="name">福州市永泰县</field>
+        </record>
+
+        <record id="china_city_350128" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350128</field>
+            <field name="name">福州市平潭县</field>
+        </record>
+
+        <!-- 厦门市 -->
+        <record id="china_city_361000" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">361000</field>
+            <field name="name">厦门市</field>
+        </record>
+
+        <!-- 厦门市下属区县 -->
+        <record id="china_city_361001" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">361001</field>
+            <field name="name">厦门市思明区</field>
+        </record>
+
+        <record id="china_city_361002" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">361002</field>
+            <field name="name">厦门市海沧区</field>
+        </record>
+
+        <record id="china_city_361003" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">361003</field>
+            <field name="name">厦门市湖里区</field>
+        </record>
+
+        <record id="china_city_361004" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">361004</field>
+            <field name="name">厦门市集美区</field>
+        </record>
+
+        <record id="china_city_361005" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">361005</field>
+            <field name="name">厦门市同安区</field>
+        </record>
+
+        <record id="china_city_361006" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">361006</field>
+            <field name="name">厦门市翔安区</field>
+        </record>
+
+        <!-- 泉州市 -->
+        <record id="china_city_362000" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">362000</field>
+            <field name="name">泉州市</field>
+        </record>
+
+        <!-- 泉州市下属区县 -->
+        <record id="china_city_362001" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">362001</field>
+            <field name="name">泉州市鲤城区</field>
+        </record>
+
+        <record id="china_city_362002" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">362002</field>
+            <field name="name">泉州市丰泽区</field>
+        </record>
+
+        <record id="china_city_362003" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">362003</field>
+            <field name="name">泉州市洛江区</field>
+        </record>
+
+        <record id="china_city_362004" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">362004</field>
+            <field name="name">泉州市泉港区</field>
+        </record>
+
+        <record id="china_city_362021" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">362021</field>
+            <field name="name">泉州市惠安县</field>
+        </record>
+
+        <record id="china_city_362022" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">362022</field>
+            <field name="name">泉州市安溪县</field>
+        </record>
+
+        <record id="china_city_362023" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">362023</field>
+            <field name="name">泉州市永春县</field>
+        </record>
+
+        <record id="china_city_362024" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">362024</field>
+            <field name="name">泉州市德化县</field>
+        </record>
+
+        <record id="china_city_362025" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">362025</field>
+            <field name="name">泉州市金门县</field>
+        </record>
+
+        <record id="china_city_362081" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">362081</field>
+            <field name="name">泉州市石狮市</field>
+        </record>
+
+        <record id="china_city_362082" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">362082</field>
+            <field name="name">泉州市晋江市</field>
+        </record>
+
+        <record id="china_city_362083" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">362083</field>
+            <field name="name">泉州市南安市</field>
+        </record>
+
+        <!-- 莆田市 -->
+        <record id="china_city_351100" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">351100</field>
+            <field name="name">莆田市</field>
+        </record>
+
+        <!-- 莆田市下属区县 -->
+        <record id="china_city_351102" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">351102</field>
+            <field name="name">莆田市城厢区</field>
+        </record>
+
+        <record id="china_city_351103" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">351103</field>
+            <field name="name">莆田市涵江区</field>
+        </record>
+
+        <record id="china_city_351104" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">351104</field>
+            <field name="name">莆田市荔城区</field>
+        </record>
+
+        <record id="china_city_351105" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">351105</field>
+            <field name="name">莆田市秀屿区</field>
+        </record>
+
+        <record id="china_city_351121" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">351121</field>
+            <field name="name">莆田市仙游县</field>
+        </record>
+
+        <!-- 三明市 -->
+        <record id="china_city_365000" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365000</field>
+            <field name="name">三明市</field>
+        </record>
+
+        <!-- 三明市下属区县 -->
+        <record id="china_city_365001" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365001</field>
+            <field name="name">三明市梅列区</field>
+        </record>
+
+        <record id="china_city_365002" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365002</field>
+            <field name="name">三明市三元区</field>
+        </record>
+
+        <record id="china_city_365021" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365021</field>
+            <field name="name">三明市明溪县</field>
+        </record>
+
+        <record id="china_city_365022" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365022</field>
+            <field name="name">三明市清流县</field>
+        </record>
+
+        <record id="china_city_365023" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365023</field>
+            <field name="name">三明市宁化县</field>
+        </record>
+
+        <record id="china_city_365024" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365024</field>
+            <field name="name">三明市大田县</field>
+        </record>
+
+        <record id="china_city_365025" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365025</field>
+            <field name="name">三明市尤溪县</field>
+        </record>
+
+        <record id="china_city_365026" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365026</field>
+            <field name="name">三明市沙县</field>
+        </record>
+
+        <record id="china_city_365027" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365027</field>
+            <field name="name">三明市将乐县</field>
+        </record>
+
+        <record id="china_city_365028" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365028</field>
+            <field name="name">三明市泰宁县</field>
+        </record>
+
+        <record id="china_city_365029" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365029</field>
+            <field name="name">三明市建宁县</field>
+        </record>
+
+        <record id="china_city_365081" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">365081</field>
+            <field name="name">三明市永安市</field>
+        </record>
+
+        <!-- 漳州市 -->
+        <record id="china_city_363000" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">363000</field>
+            <field name="name">漳州市</field>
+        </record>
+
+        <!-- 漳州市下属区县 -->
+        <record id="china_city_363001" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">363001</field>
+            <field name="name">漳州市芗城区</field>
+        </record>
+
+        <record id="china_city_363002" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">363002</field>
+            <field name="name">漳州市龙文区</field>
+        </record>
+
+        <record id="china_city_363021" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">363021</field>
+            <field name="name">漳州市云霄县</field>
+        </record>
+
+        <record id="china_city_363022" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">363022</field>
+            <field name="name">漳州市漳浦县</field>
+        </record>
+
+        <record id="china_city_363023" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">363023</field>
+            <field name="name">漳州市诏安县</field>
+        </record>
+
+        <record id="china_city_363024" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">363024</field>
+            <field name="name">漳州市长泰县</field>
+        </record>
+
+        <record id="china_city_363025" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">363025</field>
+            <field name="name">漳州市东山县</field>
+        </record>
+
+        <record id="china_city_363026" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">363026</field>
+            <field name="name">漳州市南靖县</field>
+        </record>
+
+        <record id="china_city_363027" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">363027</field>
+            <field name="name">漳州市平和县</field>
+        </record>
+
+        <record id="china_city_363028" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">363028</field>
+            <field name="name">漳州市华安县</field>
+        </record>
+
+        <record id="china_city_363081" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">363081</field>
+            <field name="name">漳州市龙海市</field>
+        </record>
+
+        <!-- 南平市 -->
+        <record id="china_city_353000" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">353000</field>
+            <field name="name">南平市</field>
+        </record>
+
+        <!-- 南平市下属区县 -->
+        <record id="china_city_353001" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">353001</field>
+            <field name="name">南平市延平区</field>
+        </record>
+
+        <record id="china_city_353002" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">353002</field>
+            <field name="name">南平市建阳区</field>
+        </record>
+
+        <record id="china_city_353021" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">353021</field>
+            <field name="name">南平市顺昌县</field>
+        </record>
+
+        <record id="china_city_353022" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">353022</field>
+            <field name="name">南平市浦城县</field>
+        </record>
+
+        <record id="china_city_353023" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">353023</field>
+            <field name="name">南平市光泽县</field>
+        </record>
+
+        <record id="china_city_353024" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">353024</field>
+            <field name="name">南平市松溪县</field>
+        </record>
+
+        <record id="china_city_353025" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">353025</field>
+            <field name="name">南平市政和县</field>
+        </record>
+
+        <!-- 南平市(续) -->
+        <record id="china_city_353082" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">353082</field>
+            <field name="name">南平市建瓯市</field>
+        </record>
+
+        <record id="china_city_353083" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">353083</field>
+            <field name="name">南平市武夷山市</field>
+        </record>
+
+        <!-- 龙岩市 -->
+        <record id="china_city_364000" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">364000</field>
+            <field name="name">龙岩市</field>
+        </record>
+
+        <!-- 龙岩市下属区县 -->
+        <record id="china_city_364001" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">364001</field>
+            <field name="name">龙岩市新罗区</field>
+        </record>
+
+        <record id="china_city_364002" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">364002</field>
+            <field name="name">龙岩市永定区</field>
+        </record>
+
+        <record id="china_city_364021" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">364021</field>
+            <field name="name">龙岩市长汀县</field>
+        </record>
+
+        <record id="china_city_364022" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">364022</field>
+            <field name="name">龙岩市上杭县</field>
+        </record>
+
+        <record id="china_city_364023" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">364023</field>
+            <field name="name">龙岩市武平县</field>
+        </record>
+
+        <record id="china_city_364024" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">364024</field>
+            <field name="name">龙岩市连城县</field>
+        </record>
+
+        <record id="china_city_364081" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">364081</field>
+            <field name="name">龙岩市漳平市</field>
+        </record>
+
+        <!-- 宁德市 -->
+        <record id="china_city_352100" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">352100</field>
+            <field name="name">宁德市</field>
+        </record>
+
+        <!-- 宁德市下属区县 -->
+        <record id="china_city_352101" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">352101</field>
+            <field name="name">宁德市蕉城区</field>
+        </record>
+
+        <record id="china_city_352121" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">352121</field>
+            <field name="name">宁德市霞浦县</field>
+        </record>
+
+        <record id="china_city_352122" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">352122</field>
+            <field name="name">宁德市古田县</field>
+        </record>
+
+        <record id="china_city_352123" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">352123</field>
+            <field name="name">宁德市屏南县</field>
+        </record>
+
+        <record id="china_city_352124" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">352124</field>
+            <field name="name">宁德市寿宁县</field>
+        </record>
+
+        <record id="china_city_352125" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">352125</field>
+            <field name="name">宁德市周宁县</field>
+        </record>
+
+        <record id="china_city_352126" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">352126</field>
+            <field name="name">宁德市柘荣县</field>
+        </record>
+
+        <record id="china_city_352181" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">352181</field>
+            <field name="name">宁德市福安市</field>
+        </record>
+
+        <record id="china_city_352182" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">352182</field>
+            <field name="name">宁德市福鼎市</field>
+        </record>
+
+        <!-- 平潭综合实验区 -->
+        <record id="china_city_350128" model="res.city">
+            <field name="state_id" ref="base.state_cn_FJ" />
+            <field name="country_id" ref="base.cn" />
+            <field name="zipcode">350128</field>
+            <field name="name">平潭综合实验区</field>
+        </record>
+
+    </data>
+</odoo>
