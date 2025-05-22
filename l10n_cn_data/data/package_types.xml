@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<odoo>  
+    <!-- 中国本地化常用包装类型 -->  
+    <record id="package_type_carton_small" model="stock.package.type">  
+        <field name="name">小纸箱</field>  
+        <field name="height">20</field>  
+        <field name="width">30</field>  
+        <field name="packaging_length">40</field>  
+        <field name="max_weight">10</field>  
+    </record>  
+  
+    <record id="package_type_carton_medium" model="stock.package.type">  
+        <field name="name">中纸箱</field>  
+        <field name="height">40</field>  
+        <field name="width">50</field>  
+        <field name="packaging_length">60</field>  
+        <field name="max_weight">25</field>  
+    </record>  
+  
+    <record id="package_type_carton_large" model="stock.package.type">  
+        <field name="name">大纸箱</field>  
+        <field name="height">60</field>  
+        <field name="width">80</field>  
+        <field name="packaging_length">100</field>  
+        <field name="max_weight">50</field>  
+    </record>  
+  
+    <record id="package_type_pallet_standard" model="stock.package.type">  
+        <field name="name">标准托盘</field>  
+        <field name="height">15</field>  
+        <field name="width">100</field>  
+        <field name="packaging_length">120</field>  
+        <field name="max_weight">1000</field>  
+    </record>  
+  
+    <record id="package_type_pallet_euro" model="stock.package.type">  
+        <field name="name">欧标托盘</field>  
+        <field name="height">15</field>  
+        <field name="width">80</field>  
+        <field name="packaging_length">120</field>  
+        <field name="max_weight">800</field>  
+    </record>  
+  
+    <record id="package_type_container_small" model="stock.package.type">  
+        <field name="name">小型集装箱</field>  
+        <field name="height">259</field>  
+        <field name="width">243</field>  
+        <field name="packaging_length">605</field>  
+        <field name="max_weight">10000</field>  
+    </record>  
+  
+    <record id="package_type_container_standard" model="stock.package.type">  
+        <field name="name">标准集装箱</field>  
+        <field name="height">259</field>  
+        <field name="width">243</field>  
+        <field name="packaging_length">1219</field>  
+        <field name="max_weight">30000</field>  
+    </record>  
+  
+    <record id="package_type_plastic_bag" model="stock.package.type">  
+        <field name="name">塑料袋</field>  
+        <field name="height">5</field>  
+        <field name="width">30</field>  
+        <field name="packaging_length">40</field>  
+        <field name="max_weight">5</field>  
+    </record>  
+  
+    <record id="package_type_wooden_crate" model="stock.package.type">  
+        <field name="name">木箱</field>  
+        <field name="height">50</field>  
+        <field name="width">60</field>  
+        <field name="packaging_length">80</field>  
+        <field name="max_weight">200</field>  
+    </record>  
+  
+    <record id="package_type_bubble_wrap" model="stock.package.type">  
+        <field name="name">气泡包装</field>  
+        <field name="height">1</field>  
+        <field name="width">100</field>  
+        <field name="packaging_length">100</field>  
+        <field name="max_weight">1</field>  
+    </record>  
+</odoo>

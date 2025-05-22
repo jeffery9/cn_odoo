@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<odoo>  
+    <!-- 中国本地化仓储类别 - 按使用频率和大小分类 -->  
+    <record id="storage_category_high_freq_large" model="stock.storage.category">  
+        <field name="name">高频率 - 大型</field>  
+        <field name="allow_new_product" eval="True"/>  
+        <field name="max_weight">3000.00</field>  
+    </record>  
+  
+    <record id="storage_category_high_freq_small" model="stock.storage.category">  
+        <field name="name">高频率 - 小型</field>  
+        <field name="allow_new_product" eval="True"/>  
+        <field name="max_weight">200.00</field>  
+    </record>  
+  
+    <record id="storage_category_medium_freq_large" model="stock.storage.category">  
+        <field name="name">中频率 - 大型</field>  
+        <field name="allow_new_product" eval="True"/>  
+        <field name="max_weight">3000.00</field>  
+    </record>  
+  
+    <record id="storage_category_medium_freq_small" model="stock.storage.category">  
+        <field name="name">中频率 - 小型</field>  
+        <field name="allow_new_product" eval="True"/>  
+        <field name="max_weight">200.00</field>  
+    </record>  
+  
+    <record id="storage_category_low_freq_large" model="stock.storage.category">  
+        <field name="name">低频率 - 大型</field>  
+        <field name="allow_new_product" eval="True"/>  
+        <field name="max_weight">3000.00</field>  
+    </record>  
+  
+    <record id="storage_category_low_freq_small" model="stock.storage.category">  
+        <field name="name">低频率 - 小型</field>  
+        <field name="allow_new_product" eval="True"/>  
+        <field name="max_weight">200.00</field>  
+    </record>  
+</odoo>

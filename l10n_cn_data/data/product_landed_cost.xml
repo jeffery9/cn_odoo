@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<odoo>  
+    <!-- 中国本地化进口成本服务产品 -->  
+    <record id="product_landed_cost" model="product.product">  
+        <field name="name">到岸成本</field>  
+        <field name="type">service</field>  
+        <field name="categ_id" ref="product_category_landed_cost"/>  
+        <field name="list_price">0.0</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="available_in_pos">False</field>  
+        <field name="purchase_ok">True</field>  
+        <field name="sale_ok">False</field>  
+    </record>  
+  
+    <record id="product_international_freight" model="product.product">  
+        <field name="name">国际运费 (International Freight)</field>  
+        <field name="type">service</field>  
+        <field name="categ_id" ref="product_category_international_freight"/>  
+        <field name="list_price">0.0</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="available_in_pos">False</field>  
+        <field name="purchase_ok">True</field>  
+        <field name="sale_ok">False</field>  
+    </record>  
+  
+    <record id="product_domestic_freight" model="product.product">  
+        <field name="name">国内运费 (Domestic Freight)</field>  
+        <field name="type">service</field>  
+        <field name="categ_id" ref="product_category_domestic_freight"/>  
+        <field name="list_price">0.0</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="available_in_pos">False</field>  
+        <field name="purchase_ok">True</field>  
+        <field name="sale_ok">False</field>  
+    </record>  
+  
+    <record id="product_insurance" model="product.product">  
+        <field name="name">保险费 (Insurance)</field>  
+        <field name="type">service</field>  
+        <field name="categ_id" ref="product_category_insurance"/>  
+        <field name="list_price">0.0</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="available_in_pos">False</field>  
+        <field name="purchase_ok">True</field>  
+        <field name="sale_ok">False</field>  
+    </record>  
+  
+    <record id="product_customs_duty" model="product.product">  
+        <field name="name">关税 (Customs Duty)</field>  
+        <field name="type">service</field>  
+        <field name="categ_id" ref="product_category_customs_duty"/>  
+        <field name="list_price">0.0</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="available_in_pos">False</field>  
+        <field name="purchase_ok">True</field>  
+        <field name="sale_ok">False</field>  
+    </record>  
+  
+    <record id="product_vat" model="product.product">  
+        <field name="name">增值税 (VAT)</field>  
+        <field name="type">service</field>  
+        <field name="categ_id" ref="product_category_vat"/>  
+        <field name="list_price">0.0</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="available_in_pos">False</field>  
+        <field name="purchase_ok">True</field>  
+        <field name="sale_ok">False</field>  
+    </record>  
+  
+    <record id="product_customs_clearance" model="product.product">  
+        <field name="name">清关费用 (Customs Clearance Fee)</field>  
+        <field name="type">service</field>  
+        <field name="categ_id" ref="product_category_customs_clearance"/>  
+        <field name="list_price">0.0</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="available_in_pos">False</field>  
+        <field name="purchase_ok">True</field>  
+        <field name="sale_ok">False</field>  
+    </record>  
+  
+    <record id="product_inspection" model="product.product">  
+        <field name="name">检验检疫费 (Inspection Fee)</field>  
+        <field name="type">service</field>  
+        <field name="categ_id" ref="product_category_inspection"/>  
+        <field name="list_price">0.0</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="available_in_pos">False</field>  
+        <field name="purchase_ok">True</field>  
+        <field name="sale_ok">False</field>  
+    </record>  
+  
+    <record id="product_port_handling" model="product.product">  
+        <field name="name">港口装卸费 (Port Handling Fee)</field>  
+        <field name="type">service</field>  
+        <field name="categ_id" ref="product_category_port_handling"/>  
+        <field name="list_price">0.0</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="available_in_pos">False</field>  
+        <field name="purchase_ok">True</field>  
+        <field name="sale_ok">False</field>  
+    </record>  
+  
+    <record id="product_storage" model="product.product">  
+        <field name="name">仓储费 (Storage Fee)</field>  
+        <field name="type">service</field>  
+        <field name="categ_id" ref="product_category_storage"/>  
+        <field name="list_price">0.0</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="available_in_pos">False</field>  
+        <field name="purchase_ok">True</field>  
+        <field name="sale_ok">False</field>  
+    </record>  
+  
+    <record id="product_agency" model="product.product">  
+        <field name="name">代理费 (Agency Fee)</field>  
+        <field name="type">service</field>  
+        <field name="categ_id" ref="product_category_agency"/>  
+        <field name="list_price">0.0</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="available_in_pos">False</field>  
+        <field name="purchase_ok">True</field>  
+        <field name="sale_ok">False</field>  
+    </record>  
+  
+    <record id="product_other_expenses" model="product.product">  
+        <field name="name">其他费用 (Other Expenses)</field>  
+        <field name="type">service</field>  
+        <field name="categ_id" ref="product_category_other_expenses"/>  
+        <field name="list_price">0.0</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="available_in_pos">False</field>  
+        <field name="purchase_ok">True</field>  
+        <field name="sale_ok">False</field>  
+    </record>  
+</odoo>

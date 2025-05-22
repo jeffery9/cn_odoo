@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<odoo>  
+    <!-- 中国本地常用度量单位 -->  
+      
+    <!-- 重量单位 -->  
+    <record id="product_uom_jin" model="uom.uom">  
+        <field name="name">斤</field>  
+        <field name="category_id" ref="uom.product_uom_categ_kgm"/>  
+        <field name="uom_type">smaller</field>  
+        <field name="factor">2</field>  
+        <field name="rounding">0.001</field>  
+    </record>  
+      
+    <record id="product_uom_liang" model="uom.uom">  
+        <field name="name">两</field>  
+        <field name="category_id" ref="uom.product_uom_categ_kgm"/>  
+        <field name="uom_type">smaller</field>  
+        <field name="factor">20</field>  
+        <field name="rounding">0.001</field>  
+    </record>  
+      
+    <!-- 长度单位 -->  
+    <record id="product_uom_chi" model="uom.uom">  
+        <field name="name">尺</field>  
+        <field name="category_id" ref="uom.product_uom_categ_length"/>  
+        <field name="uom_type">smaller</field>  
+        <field name="factor">3</field>  
+        <field name="rounding">0.01</field>  
+    </record>  
+      
+    <record id="product_uom_cun" model="uom.uom">  
+        <field name="name">寸</field>  
+        <field name="category_id" ref="uom.product_uom_categ_length"/>  
+        <field name="uom_type">smaller</field>  
+        <field name="factor">30</field>  
+        <field name="rounding">0.01</field>  
+    </record>  
+      
+    <!-- 面积单位 -->  
+    <record id="product_uom_mu" model="uom.uom">  
+        <field name="name">亩</field>  
+        <field name="category_id" ref="uom.product_uom_categ_surface"/>  
+        <field name="uom_type">bigger</field>  
+        <field name="factor_inv">666.67</field>  
+        <field name="rounding">0.01</field>  
+    </record>  
+
+    <!-- 公顷 (Hectare) -->  
+    <record id="product_uom_hectare" model="uom.uom">  
+        <field name="name">公顷</field>  
+        <field name="category_id" ref="uom.product_uom_categ_surface"/>  
+        <field name="uom_type">bigger</field>  
+        <field name="factor_inv">10000</field>  
+        <field name="rounding">0.0001</field>  
+    </record>  
+      
+    <!-- 平方呎 (Square Feet) - 香港常用 -->  
+    <record id="product_uom_square_feet" model="uom.uom">  
+        <field name="name">平方呎</field>  
+        <field name="category_id" ref="uom.product_uom_categ_surface"/>  
+        <field name="uom_type">smaller</field>  
+        <field name="factor">10.7639</field>  
+        <field name="rounding">0.01</field>  
+    </record>  
+      
+    <!-- 坪 (Ping) - 台湾常用 -->  
+    <record id="product_uom_ping" model="uom.uom">  
+        <field name="name">坪</field>  
+        <field name="category_id" ref="uom.product_uom_categ_surface"/>  
+        <field name="uom_type">bigger</field>  
+        <field name="factor_inv">3.3058</field>  
+        <field name="rounding">0.01</field>  
+    </record>  
+      
+    <!-- 体积单位 -->  
+    <record id="product_uom_sheng" model="uom.uom">  
+        <field name="name">升</field>  
+        <field name="category_id" ref="uom.product_uom_categ_vol"/>  
+        <field name="uom_type">reference</field>  
+        <field name="factor">1</field>  
+        <field name="rounding">0.001</field>  
+    </record>  
+      
+    <record id="product_uom_dou" model="uom.uom">  
+        <field name="name">斗</field>  
+        <field name="category_id" ref="uom.product_uom_categ_vol"/>  
+        <field name="uom_type">bigger</field>  
+        <field name="factor_inv">10</field>  
+        <field name="rounding">0.001</field>  
+    </record>  
+      
+    <!-- 包装单位 -->  
+    <record id="product_uom_jian" model="uom.uom">  
+        <field name="name">件12</field>  
+        <field name="category_id" ref="uom.product_uom_categ_unit"/>  
+        <field name="uom_type">bigger</field>  
+        <field name="factor_inv">12</field>  
+        <field name="rounding">0.01</field>  
+    </record>  
+      
+    <record id="product_uom_dai" model="uom.uom">  
+        <field name="name">袋</field>  
+        <field name="category_id" ref="uom.product_uom_categ_unit"/>  
+        <field name="uom_type">bigger</field>  
+        <field name="factor_inv">1</field>  
+        <field name="rounding">0.01</field>  
+    </record>  
+      
+    <record id="product_uom_xiang" model="uom.uom">  
+        <field name="name">箱24</field>  
+        <field name="category_id" ref="uom.product_uom_categ_unit"/>  
+        <field name="uom_type">bigger</field>  
+        <field name="factor_inv">24</field>  
+        <field name="rounding">0.01</field>  
+    </record>  
+      
+    <record id="product_uom_tiao" model="uom.uom">  
+        <field name="name">条10</field>  
+        <field name="category_id" ref="uom.product_uom_categ_unit"/>  
+        <field name="uom_type">bigger</field>  
+        <field name="factor_inv">10</field>  
+        <field name="rounding">0.01</field>  
+    </record>  
+
+    <!-- 中药常用度量单位 -->  
+      
+    <!-- 重量单位 -->  
+    <record id="product_uom_qian" model="uom.uom">  
+        <field name="name">钱</field>  
+        <field name="category_id" ref="uom.product_uom_categ_kgm"/>  
+        <field name="uom_type">smaller</field>  
+        <field name="factor">100</field>  
+        <field name="rounding">0.001</field>  
+    </record>  
+      
+    <record id="product_uom_fen" model="uom.uom">  
+        <field name="name">分</field>  
+        <field name="category_id" ref="uom.product_uom_categ_kgm"/>  
+        <field name="uom_type">smaller</field>  
+        <field name="factor">1000</field>  
+        <field name="rounding">0.001</field>  
+    </record>  
+      
+    <record id="product_uom_li" model="uom.uom">  
+        <field name="name">厘</field>  
+        <field name="category_id" ref="uom.product_uom_categ_kgm"/>  
+        <field name="uom_type">smaller</field>  
+        <field name="factor">10000</field>  
+        <field name="rounding">0.0001</field>  
+    </record>  
+      
+    <!-- 剂量单位 -->  
+    <record id="product_uom_cheng" model="uom.uom">  
+        <field name="name">成</field>  
+        <field name="category_id" ref="uom.product_uom_categ_unit"/>  
+        <field name="uom_type">reference</field>  
+        <field name="factor">1</field>  
+        <field name="rounding">1</field>  
+    </record>  
+      
+    <record id="product_uom_fu" model="uom.uom">  
+        <field name="name">服</field>  
+        <field name="category_id" ref="uom.product_uom_categ_unit"/>  
+        <field name="uom_type">reference</field>  
+        <field name="factor">1</field>  
+        <field name="rounding">1</field>  
+    </record>  
+      
+    <record id="product_uom_dai" model="uom.uom">  
+        <field name="name">袋</field>  
+        <field name="category_id" ref="uom.product_uom_categ_unit"/>  
+        <field name="uom_type">reference</field>  
+        <field name="factor">1</field>  
+        <field name="rounding">1</field>  
+    </record>  
+
+</odoo>

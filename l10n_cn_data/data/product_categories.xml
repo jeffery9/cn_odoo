@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<odoo>  
+    <!-- 中国本地化常用产品类别 -->  
+    <record id="product_category_raw_material" model="product.category">  
+        <field name="name">原材料类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+  
+    <record id="product_category_semi_finished" model="product.category">  
+        <field name="name">半成品类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+  
+    <record id="product_category_finished" model="product.category">  
+        <field name="name">产成品类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+  
+    <record id="product_category_goods" model="product.category">  
+        <field name="name">商品类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+  
+    <record id="product_category_consumables" model="product.category">  
+        <field name="name">低值易耗品类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+  
+    <record id="product_category_packaging" model="product.category">  
+        <field name="name">包装物类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+  
+    <record id="product_category_service" model="product.category">  
+        <field name="name">服务类</field>  
+        <field name="property_cost_method">standard</field>  
+    </record>  
+  
+    <record id="product_category_fixed_assets" model="product.category">  
+        <field name="name">固定资产类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+  
+    <record id="product_category_office_supplies" model="product.category">  
+        <field name="name">办公用品类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+  
+    <record id="product_category_others" model="product.category">  
+        <field name="name">其他类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+</odoo>

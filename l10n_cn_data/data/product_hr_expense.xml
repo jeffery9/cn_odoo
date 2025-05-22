@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<odoo>  
+    <!-- 中国本地化常用费用报销产品 -->  
+    <record id="expense_product_travel" model="product.product">  
+        <field name="name">差旅费</field>  
+        <field name="description">包括交通费、住宿费等出差相关费用</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="type">service</field>  
+        <field name="uom_id" ref="uom.product_uom_unit"/>  
+        <field name="uom_po_id" ref="uom.product_uom_unit"/>  
+        <field name="default_code">TRAVEL</field>  
+        <field name="can_be_expensed" eval="True"/>  
+        <field name="sale_ok" eval="False"/>  
+        <field name="purchase_ok" eval="False"/>  
+        <field name="categ_id" ref="product.cat_expense"/>
+    </record>  
+  
+    <record id="expense_product_transportation" model="product.product">  
+        <field name="name">交通费</field>  
+        <field name="description">包括出租车费、公共交通费、网约车费等</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="type">service</field>  
+        <field name="uom_id" ref="uom.product_uom_km"/>  
+        <field name="uom_po_id" ref="uom.product_uom_km"/>  
+        <field name="default_code">TRANS</field>  
+        <field name="can_be_expensed" eval="True"/>  
+        <field name="sale_ok" eval="False"/>  
+        <field name="purchase_ok" eval="False"/>  
+        <field name="categ_id" ref="product.cat_expense"/>
+    </record>  
+  
+    <record id="expense_product_accommodation" model="product.product">  
+        <field name="name">住宿费</field>  
+        <field name="description">出差期间的酒店住宿费用</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="type">service</field>  
+        <field name="uom_id" ref="uom.product_uom_day"/>  
+        <field name="uom_po_id" ref="uom.product_uom_day"/>  
+        <field name="default_code">ACCOM</field>  
+        <field name="can_be_expensed" eval="True"/>  
+        <field name="sale_ok" eval="False"/>  
+        <field name="purchase_ok" eval="False"/>  
+        <field name="categ_id" ref="product.cat_expense"/>
+    </record>  
+  
+    <record id="expense_product_meals" model="product.product">  
+        <field name="name">餐饮费</field>  
+        <field name="description">工作餐、加班餐等餐饮费用</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="type">service</field>  
+        <field name="uom_id" ref="uom.product_uom_unit"/>  
+        <field name="uom_po_id" ref="uom.product_uom_unit"/>  
+        <field name="default_code">MEAL</field>  
+        <field name="can_be_expensed" eval="True"/>  
+        <field name="sale_ok" eval="False"/>  
+        <field name="purchase_ok" eval="False"/> 
+        <field name="categ_id" ref="product.cat_expense"/> 
+    </record>  
+  
+    <record id="expense_product_communication" model="product.product">  
+        <field name="name">通讯费</field>  
+        <field name="description">电话费、网络费等通讯相关费用</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="type">service</field>  
+        <field name="uom_id" ref="uom.product_uom_unit"/>  
+        <field name="uom_po_id" ref="uom.product_uom_unit"/>  
+        <field name="default_code">COMM</field>  
+        <field name="can_be_expensed" eval="True"/>  
+        <field name="sale_ok" eval="False"/>  
+        <field name="purchase_ok" eval="False"/>  
+        <field name="categ_id" ref="product.cat_expense"/>
+    </record>  
+  
+    <record id="expense_product_office_supplies" model="product.product">  
+        <field name="name">办公用品</field>  
+        <field name="description">文具、纸张等办公耗材</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="type">service</field>  
+        <field name="uom_id" ref="uom.product_uom_unit"/>  
+        <field name="uom_po_id" ref="uom.product_uom_unit"/>  
+        <field name="default_code">OFFICE</field>  
+        <field name="can_be_expensed" eval="True"/>  
+        <field name="sale_ok" eval="False"/>  
+        <field name="purchase_ok" eval="False"/>  
+        <field name="categ_id" ref="product.cat_expense"/>
+    </record>  
+  
+    <record id="expense_product_entertainment" model="product.product">  
+        <field name="name">业务招待费</field>  
+        <field name="description">客户招待、商务宴请等费用</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="type">service</field>  
+        <field name="uom_id" ref="uom.product_uom_unit"/>  
+        <field name="uom_po_id" ref="uom.product_uom_unit"/>  
+        <field name="default_code">ENTER</field>  
+        <field name="can_be_expensed" eval="True"/>  
+        <field name="sale_ok" eval="False"/>  
+        <field name="purchase_ok" eval="False"/>  
+        <field name="categ_id" ref="product.cat_expense"/>
+    </record>  
+  
+    <record id="expense_product_other" model="product.product">  
+        <field name="name">其他费用</field>  
+        <field name="description">未归类的其他报销费用</field>  
+        <field name="standard_price">0.0</field>  
+        <field name="type">service</field>  
+        <field name="uom_id" ref="uom.product_uom_unit"/>  
+        <field name="uom_po_id" ref="uom.product_uom_unit"/>  
+        <field name="default_code">OTHER</field>  
+        <field name="can_be_expensed" eval="True"/>  
+        <field name="sale_ok" eval="False"/>  
+        <field name="purchase_ok" eval="False"/>  
+        <field name="categ_id" ref="product.cat_expense"/>
+    </record>  
+</odoo>

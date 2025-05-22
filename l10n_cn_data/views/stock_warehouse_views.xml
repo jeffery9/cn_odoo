@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<odoo>  
+    <record id="view_warehouse_inherited_initialize_locations" model="ir.ui.view">  
+        <field name="name">stock.warehouse.form.inherited.initialize.locations</field>  
+        <field name="model">stock.warehouse</field>  
+        <field name="inherit_id" ref="stock.view_warehouse"/>  
+        <field name="arch" type="xml">  
+            <xpath expr="//header" position="inside">  
+                <button name="action_initialize_locations"   
+                        string="初始化库位"   
+                        type="object"   
+                        class="oe_highlight"   
+                        attrs="{'invisible': [('has_initialized_locations', '=', True)]}"  
+                        data-hotkey="i"/>  
+            </xpath>  
+            <xpath expr="//sheet" position="inside">  
+                <field name="has_initialized_locations" invisible="1"/>  
+            </xpath>  
+        </field>  
+    </record>  
+</odoo>
