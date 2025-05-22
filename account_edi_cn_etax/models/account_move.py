@@ -1,4 +1,6 @@
+import base64
 import re
+from werkzeug.urls import url_encode
 
 from collections import defaultdict
 from markupsafe import Markup
@@ -145,4 +147,155 @@ class AccountMove(models.Model):
             'city': result[1],
             'district': result[2],
             'detail': result[3]
+        }
+
+    def export_cn_etax_to_csv_attachment(self):  
+        """导出中国电子发票数据为CSV并存储为附件"""  
+        self.ensure_one()  
+        
+        if self.move_type != 'out_invoice':  
+            raise UserError(_("只有销售发票可以导出到CSV"))  
+        
+        # 准备CSV表头和数据  
+        header = ["开票日期", "购方名称", "购方税号", "购方地址电话", "购方开户行及账号",   
+                "商品名称", "规格型号", "单位", "数量", "单价", "金额", "税率", "税额", "合计金额", "备注"]  
+        rows = []  
+        
+        # 获取发票基本信息  
+        invoice_date = self.invoice_date.strftime('%Y%m%d')  
+        buyer_name = self.partner_id.name  
+        buyer_vat = self.partner_id.vat or ''  
+        buyer_address = (self.partner_id.street or '') + (self.partner_id.street2 or '')  
+        buyer_phone = self.partner_id.phone or ''  
+        buyer_address_phone = f"{buyer_address} {buyer_phone}"  
+        buyer_bank = self.partner_id.bank_ids and self.partner_id.bank_ids[0].bank_name or ''  
+        buyer_account = self.partner_id.bank_ids and self.partner_id.bank_ids[0].acc_number or ''  
+        buyer_bank_account = f"{buyer_bank} {buyer_account}"  
+        
+        # 处理每个发票行  
+        for line in self.invoice_line_ids:  
+            if line.display_type or not line.product_id:  
+                continue  
+                
+            product_name = line.product_id.name  
+            spec = line.name  
+            unit = line.product_uom_id.name  
+            quantity = str(line.quantity)  
+            price = str(line.price_unit)  
+            amount = str(line.price_subtotal)  
+            tax_rate = line.tax_ids and f"{line.tax_ids[0].amount}%" or "0%"  
+            tax_amount = str(line.price_total - line.price_subtotal)  
+            total_amount = str(line.price_total)  
+            note = self.narration or f"合同编号：{self.name}"  
+            
+            row = [invoice_date, buyer_name, buyer_vat, buyer_address_phone, buyer_bank_account,  
+                product_name, spec, unit, quantity, price, amount, tax_rate, tax_amount, total_amount, note]  
+            rows.append(row)  
+        
+        # 如果没有行，至少添加一个空行  
+        if not rows:  
+            empty_row = [invoice_date, buyer_name, buyer_vat, buyer_address_phone, buyer_bank_account,  
+                        "", "", "", "", "", "", "", "", "", ""]  
+            rows.append(empty_row)  
+        
+        # 生成CSV内容  
+        import io  
+        import csv  
+        csv_file = io.StringIO()  
+        writer = csv.writer(csv_file)  
+        writer.writerow(header)  
+        writer.writerows(rows)  
+        
+        # 创建附件  
+        filename = f"{self.name.replace('/', '_')}_cn_etax.csv"  
+        attachment = self.env['ir.attachment'].create({  
+            'name': filename,  
+            'datas': base64.b64encode(csv_file.getvalue().encode('utf-8')),  
+            'res_model': self._name,  
+            'res_id': self.id,  
+            'mimetype': 'text/csv',  
+        })  
+        
+        # 返回下载链接  
+        params = url_encode({  
+            'model': self._name,  
+            'id': self.id,  
+            'filename': filename,  
+            'download': True,  
+        })  
+        
+        return {  
+            'type': 'ir.actions.act_url',  
+            'url': f'/web/content/{attachment.id}?{params}',  
+            'target': 'new',  
+        }
+
+    def generate_cn_etax_export_xml(self):  
+        """生成用于中国电子发票开票系统的XML数据"""  
+        export_data = self.generate_cn_etax_export_data()  
+        
+        # 创建XML根元素  
+        root = etree.Element('EInvoice')  
+        
+        # 添加基本元素  
+        etree.SubElement(root, 'EIid').text = export_data['EInvoice']['EIid']  
+        etree.SubElement(root, 'EInvoiceTag').text = export_data['EInvoice']['EInvoiceTag']  
+        etree.SubElement(root, 'InIssuType').text = export_data['EInvoice']['InIssuType']  
+        
+        # 添加卖方信息  
+        seller = etree.SubElement(root, 'SellerInformation')  
+        for key, value in export_data['EInvoice']['SellerInformation'].items():  
+            etree.SubElement(seller, key).text = value  
+        
+        # 添加买方信息  
+        buyer = etree.SubElement(root, 'BuyerInformation')  
+        for key, value in export_data['EInvoice']['BuyerInformation'].items():  
+            etree.SubElement(buyer, key).text = value  
+        
+        # 添加基本信息  
+        basic = etree.SubElement(root, 'BasicInformation')  
+        for key, value in export_data['EInvoice']['BasicInformation'].items():  
+            etree.SubElement(basic, key).text = value  
+        
+        # 添加发票项目信息  
+        for item_data in export_data['EInvoice']['IssuItemInformation']:  
+            item = etree.SubElement(root, 'IssuItemInformation')  
+            for key, value in item_data.items():  
+                etree.SubElement(item, key).text = value  
+        
+        # 返回格式化的XML字符串  
+        return etree.tostring(root, pretty_print=True, encoding='UTF-8', xml_declaration=True)
+
+    def download_cn_etax_export_xml(self):  
+        """下载中国电子发票系统XML文件，使用Odoo附件机制"""  
+        self.ensure_one()  
+        
+        if self.move_type != 'out_invoice':  
+            raise UserError(_("只有销售发票可以导出到中国电子发票系统"))  
+        
+        # 生成XML内容  
+        xml_content = self.generate_cn_etax_export_xml()  
+        
+        # 创建附件  
+        filename = f"{self.name.replace('/', '_')}_cn_etax.xml"  
+        attachment = self.env['ir.attachment'].create({  
+            'name': filename,  
+            'datas': base64.b64encode(xml_content),  
+            'res_model': self._name,  
+            'res_id': self.id,  
+            'mimetype': 'application/xml',  
+        })  
+        
+        # 返回下载链接  
+        params = url_encode({  
+            'model': self._name,  
+            'id': self.id,  
+            'filename': filename,  
+            'download': True,  
+        })  
+        
+        return {  
+            'type': 'ir.actions.act_url',  
+            'url': f'/web/content/{attachment.id}?{params}',  
+            'target': 'new',  
         }
