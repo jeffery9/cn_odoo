@@ -1,0 +1,9 @@
+id,name,country_id/id,auto_apply,vat_required,foreign_vat,sequence,note  
+fiscal_position_cn_general_taxpayer,中国境内一般纳税人,base.cn,TRUE,TRUE,FALSE,10,适用于中国境内一般纳税人，按标准增值税税率计税  
+fiscal_position_cn_small_taxpayer,中国境内小规模纳税人,base.cn,FALSE,TRUE,FALSE,20,适用于小规模纳税人，按3%征收率计税  
+fiscal_position_cn_export,出口贸易,base.cn,FALSE,FALSE,FALSE,30,适用于出口贸易，享受出口退税政策  
+fiscal_position_cn_cross_border,跨境电商,base.cn,FALSE,TRUE,FALSE,40,适用于跨境电商业务，享受综合税率优惠  
+fiscal_position_cn_bonded_zone,保税区业务,base.cn,FALSE,FALSE,FALSE,50,适用于保税区内业务，享受保税政策  
+fiscal_position_hk,香港特别行政区,base.hk,TRUE,FALSE,TRUE,60,适用于香港地区业务往来  
+fiscal_position_mo,澳门特别行政区,base.mo,TRUE,FALSE,TRUE,70,适用于澳门地区业务往来  
+fiscal_position_tw,台湾地区,base.tw,TRUE,FALSE,TRUE,80,适用于台湾地区业务往来
