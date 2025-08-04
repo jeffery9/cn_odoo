@@ -26,39 +26,45 @@ class FinancialReportController(http.Controller):
         report_model = request.env['report.financial_report_viewer.financial_report']
         return report_model._get_report_data(report_obj, options)
 
-    @http.route('/financial_reports/pdf/<string:report_type>', type='http', auth='user')
-    def export_pdf(self, report_type, **kwargs):
+        @http.route('/financial_reports/pdf/<int:report_id>', type='http', auth='user')
+    def export_pdf(self, report_id, **kwargs):
         self._check_access()
+        report_obj = request.env['account.report'].browse(report_id)
+        if not report_obj.exists():
+            raise http.request.not_found()
+
         options = {
-            'date_from': kwargs.get('date_from'),
-            'date_to': kwargs.get('date_to'),
+            'periods': json.loads(kwargs.get('periods', '[]')),
         }
-        report_model = request.env['report.financial_report_viewer.financial_report']
-        report_data = report_model._get_report_data(report_type, options)
+        report_model = request.env['report.financial_reports.financial_report']
+        report_data = report_model._get_report_data(report_obj, options)
         
-        report_action = request.env.ref('financial_report_viewer.action_report_financial_statement')
+        report_action = request.env.ref('financial_reports.action_report_financial_statement')
         pdf_content, content_type = report_action._render_qweb_pdf(request.env.company.ids, data=report_data)
         
         pdf_http_headers = [
             ('Content-Type', content_type),
             ('Content-Length', len(pdf_content)),
-            ('Content-Disposition', f'attachment; filename={report_type}.pdf;')
+            ('Content-Disposition', f'attachment; filename={report_obj.name}.pdf;')
         ]
         return request.make_response(pdf_content, headers=pdf_http_headers)
 
-    @http.route('/financial_reports/excel/<string:report_type>', type='http', auth='user')
-    def export_excel(self, report_type, **kwargs):
+        @http.route('/financial_reports/excel/<int:report_id>', type='http', auth='user')
+    def export_excel(self, report_id, **kwargs):
         self._check_access()
+        report_obj = request.env['account.report'].browse(report_id)
+        if not report_obj.exists():
+            raise http.request.not_found()
+
         options = {
-            'date_from': kwargs.get('date_from'),
-            'date_to': kwargs.get('date_to'),
+            'periods': json.loads(kwargs.get('periods', '[]')),
         }
-        report_model = request.env['report.financial_report_viewer.financial_report']
-        report_data = report_model._get_report_data(report_type, options)
+        report_model = request.env['report.financial_reports.financial_report']
+        report_data = report_model._get_report_data(report_obj, options)
 
         output = io.BytesIO()
         workbook = xlsxwriter.Workbook(output, {'in_memory': True})
-        worksheet = workbook.add_worksheet(report_type)
+        worksheet = workbook.add_worksheet(report_obj.name)
 
         report_model._write_excel_data(worksheet, report_data)
 
@@ -68,6 +74,6 @@ class FinancialReportController(http.Controller):
         excel_http_headers = [
             ('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'),
             ('Content-Length', len(output.getvalue())),
-            ('Content-Disposition', f'attachment; filename={report_type}.xlsx;')
+            ('Content-Disposition', f'attachment; filename={report_obj.name}.xlsx;')
         ]
         return request.make_response(output.getvalue(), headers=excel_http_headers)

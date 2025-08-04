@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
-        <function model="report.financial_report_viewer.financial_report" name="_create_report_menu_entries"/>
+        <function model="report.financial_reports.financial_report" name="_create_report_menu_entries"/>
     </data>
 </odoo>

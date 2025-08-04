@@ -1,4 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Part of Odoo. See LICENSE file for full copyright and licensing details. -->
 <odoo>
+    <data noupdate="1">
+        <record id="account_financial_report_cash_flow" model="account.report">
+            <field name="name">Cash Flow Statement</field>
+            <field name="report_type">cash_flow</field>
+            <field name="sequence">30</field>
+            <field name="line_ids" eval="[(6, 0, [
+                ref('account_financial_report_cash_flow_operating_activities'),
+                ref('account_financial_report_cash_flow_investing_activities'),
+                ref('account_financial_report_cash_flow_financing_activities'),
+                ref('account_financial_report_cash_flow_net_change'),
+            ])]"/>
+        </record>
+
+        <!-- Cash Flow from Operating Activities -->
+        <record id="account_financial_report_cash_flow_operating_activities" model="account.report.line">
+            <field name="report_id" ref="account_financial_report_cash_flow"/>
+            <field name="name">Cash Flow from Operating Activities</field>
+            <field name="sequence">10</field>
+            <field name="level">0</field>
+            <field name="children_ids" eval="[(6, 0, [
+                ref('account_financial_report_cash_flow_cash_from_customers'),
+                ref('account_financial_report_cash_flow_cash_paid_suppliers_employees'),
+            ])]"/>
+        </record>
+
+        <record id="account_financial_report_cash_flow_cash_from_customers" model="account.report.line">
+            <field name="report_id" ref="account_financial_report_cash_flow"/>
+            <field name="name">Cash from Customers</field>
+            <field name="sequence">10</field>
+            <field name="level">1</field>
+            <field name="parent_id" ref="account_financial_report_cash_flow_operating_activities"/>
+            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_cash_flow_operating_inflow_expr')])]"/>
+        </record>
+        <record id="account_financial_report_cash_flow_operating_inflow_expr" model="account.report.expression">
+            <field name="report_line_id" ref="account_financial_report_cash_flow_cash_from_customers"/>
+            <field name="name">Operating Inflow</field>
+            <field name="expression_type">aggregation</field>
+            <field name="sub_expression_ids" eval="[(6, 0, [ref('account_financial_report_cash_flow_operating_inflow_accounts_expr')])]"/>
+        </record>
+        <record id="account_financial_report_cash_flow_operating_inflow_accounts_expr" model="account.report.expression">
+            <field name="report_line_id" ref="account_financial_report_cash_flow_operating_inflow_expr"/>
+            <field name="name">Operating Inflow Accounts</field>
+            <field name="expression_type">account_type</field>
+            <field name="account_type">asset_receivable</field>
+        </record>
+
+        <record id="account_financial_report_cash_flow_cash_paid_suppliers_employees" model="account.report.line">
+            <field name="report_id" ref="account_financial_report_cash_flow"/>
+            <field name="name">Cash Paid to Suppliers and Employees</field>
+            <field name="sequence">20</field>
+            <field name="level">1</field>
+            <field name="parent_id" ref="account_financial_report_cash_flow_operating_activities"/>
+            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_cash_flow_operating_outflow_expr')])]"/>
+        </record>
+        <record id="account_financial_report_cash_flow_operating_outflow_expr" model="account.report.expression">
+            <field name="report_line_id" ref="account_financial_report_cash_flow_cash_paid_suppliers_employees"/>
+            <field name="name">Operating Outflow</field>
+            <field name="expression_type">aggregation</field>
+            <field name="sub_expression_ids" eval="[(6, 0, [ref('account_financial_report_cash_flow_operating_outflow_accounts_expr')])]"/>
+        </record>
+        <record id="account_financial_report_cash_flow_operating_outflow_accounts_expr" model="account.report.expression">
+            <field name="report_line_id" ref="account_financial_report_cash_flow_operating_outflow_expr"/>
+            <field name="name">Operating Outflow Accounts</field>
+            <field name="expression_type">account_type</field>
+            <field name="account_type">liability_payable</field>
+        </record>
+
+        <!-- Cash Flow from Investing Activities -->
+        <record id="account_financial_report_cash_flow_investing_activities" model="account.report.line">
+            <field name="report_id" ref="account_financial_report_cash_flow"/>
+            <field name="name">Cash Flow from Investing Activities</field>
+            <field name="sequence">20</field>
+            <field name="level">0</field>
+            <field name="children_ids" eval="[(6, 0, [
+                ref('account_financial_report_cash_flow_purchase_ppe'),
+            ])]"/>
+        </record>
+
+        <record id="account_financial_report_cash_flow_purchase_ppe" model="account.report.line">
+            <field name="report_id" ref="account_financial_report_cash_flow"/>
+            <field name="name">Purchase of Property, Plant and Equipment</field>
+            <field name="sequence">10</field>
+            <field name="level">1</field>
+            <field name="parent_id" ref="account_financial_report_cash_flow_investing_activities"/>
+            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_cash_flow_investing_outflow_expr')])]"/>
+        </record>
+        <record id="account_financial_report_cash_flow_investing_outflow_expr" model="account.report.expression">
+            <field name="report_line_id" ref="account_financial_report_cash_flow_purchase_ppe"/>
+            <field name="name">Investing Outflow</field>
+            <field name="expression_type">aggregation</field>
+            <field name="sub_expression_ids" eval="[(6, 0, [ref('account_financial_report_cash_flow_fixed_assets_expr')])]"/>
+        </record>
+        <record id="account_financial_report_cash_flow_fixed_assets_expr" model="account.report.expression">
+            <field name="report_line_id" ref="account_financial_report_cash_flow_investing_outflow_expr"/>
+            <field name="name">Fixed Assets</field>
+            <field name="expression_type">account_type</field>
+            <field name="account_type">asset_fixed</field>
+        </record>
+
+        <!-- Cash Flow from Financing Activities -->
+        <record id="account_financial_report_cash_flow_financing_activities" model="account.report.line">
+            <field name="report_id" ref="account_financial_report_cash_flow"/>
+            <field name="name">Cash Flow from Financing Activities</field>
+            <field name="sequence">30</field>
+            <field name="level">0</field>
+            <field name="children_ids" eval="[(6, 0, [
+                ref('account_financial_report_cash_flow_proceeds_borrowings'),
+            ])]"/>
+        </record>
+
+        <record id="account_financial_report_cash_flow_proceeds_borrowings" model="account.report.line">
+            <field name="report_id" ref="account_financial_report_cash_flow"/>
+            <field name="name">Proceeds from Borrowings</field>
+            <field name="sequence">10</field>
+            <field name="level">1</field>
+            <field name="parent_id" ref="account_financial_report_cash_flow_financing_activities"/>
+            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_cash_flow_financing_inflow_expr')])]"/>
+        </record>
+        <record id="account_financial_report_cash_flow_financing_inflow_expr" model="account.report.expression">
+            <field name="report_line_id" ref="account_financial_report_cash_flow_proceeds_borrowings"/>
+            <field name="name">Financing Inflow</field>
+            <field name="expression_type">aggregation</field>
+            <field name="sub_expression_ids" eval="[(6, 0, [ref('account_financial_report_cash_flow_long_term_debt_expr')])]"/>
+        </record>
+        <record id="account_financial_report_cash_flow_long_term_debt_expr" model="account.report.expression">
+            <field name="report_line_id" ref="account_financial_report_cash_flow_financing_inflow_expr"/>
+            <field name="name">Long Term Debt</field>
+            <field name="expression_type">account_type</field>
+            <field name="account_type">liability_non_current</field>
+        </record>
+
+        <!-- Net Increase (Decrease) in Cash and Cash Equivalents -->
+        <record id="account_financial_report_cash_flow_net_change" model="account.report.line">
+            <field name="report_id" ref="account_financial_report_cash_flow"/>
+            <field name="name">Net Increase (Decrease) in Cash and Cash Equivalents</field>
+            <field name="sequence">40</field>
+            <field name="level">0</field>
+            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_cash_flow_net_change_expr')])]"/>
+        </record>
+        <record id="account_financial_report_cash_flow_net_change_expr" model="account.report.expression">
+            <field name="report_line_id" ref="account_financial_report_cash_flow_net_change"/>
+            <field name="name">Net Change</field>
+            <field name="expression_type">formula</field>
+            <field name="formula">balance = env.ref("financial_reports.account_financial_report_cash_flow").line_ids.filtered(lambda l: l.name == "Cash Flow from Operating Activities").balances[0] + env.ref("financial_reports.account_financial_report_cash_flow").line_ids.filtered(lambda l: l.name == "Cash Flow from Investing Activities").balances[0] + env.ref("financial_reports.account_financial_report_cash_flow").line_ids.filtered(lambda l: l.name == "Cash Flow from Financing Activities").balances[0]</field>
+        </record>
+    </data>
 </odoo>
