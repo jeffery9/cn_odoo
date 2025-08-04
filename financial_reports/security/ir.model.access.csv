@@ -1,0 +1,15 @@
+id,name,model_id,group_id,perm_read,perm_write,perm_create,perm_unlink
+access_account_report_manager,account.report.manager,model_account_report,account.group_account_manager,1,1,1,1
+access_account_report_line_manager,account.report.line.manager,model_account_report_line,account.group_account_manager,1,1,1,1
+access_account_report_expression_manager,account.report.expression.manager,model_account_report_expression,account.group_account_manager,1,1,1,1
+access_account_report_user,account.report.user,model_account_report,account.group_account_user,1,0,0,0
+access_account_report_line_user,account.report.line.user,model_account_report_line,account.group_account_user,1,0,0,0
+access_account_report_expression_user,account.report.expression.user,model_account_report_expression,account.group_account_user,1,0,0,0
+access_account_cashflow_category_manager,account.cashflow.category.manager,model_account_cashflow_category,account.group_account_manager,1,1,1,1
+access_account_cashflow_category_user,account.cashflow.category.user,model_account_cashflow_category,account.group_account_user,1,0,0,0
+access_ir_actions_client_manager,ir.actions.client.manager,model_ir_actions_client,account.group_account_manager,1,1,1,1
+access_ir_ui_menu_manager,ir.ui.menu.manager,model_ir_ui_menu,account.group_account_manager,1,1,1,1
+access_account_move_line_user,account.move.line.user,model_account_move_line,account.group_account_user,1,0,0,0
+access_account_account_user,account.account.user,model_account_account,account.group_account_user,1,0,0,0
+access_account_account_group_user,account.account.group.user,model_account_account_group,account.group_account_user,1,0,0,0
+access_res_company_user,res.company.user,model_res_company,account.group_account_user,1,0,0,0

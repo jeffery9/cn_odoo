@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+    <!-- Report Line Template -->
+    <t t-name="financial_report_viewer.ReportLineComponent" owl="1">
+        <tr t-att-class="line.action_ids[0] ? 'o_row_clickable' : ''">
+            <td>
+                <span t-att-style="'padding-left: ' + (20 * (line.get('level', 0))) + 'px;'">
+                    <i t-if="line.children &amp;&amp; line.children.length > 0" 
+                       class="fa me-2" 
+                       t-att-class="state.isFolded ? 'fa-caret-right' : 'fa-caret-down'" 
+                       t-on-click.stop="toggleFold"/>
+                    <t t-esc="line.name"/>
+                </span>
+            </td>
+            <t t-foreach="line.balances" t-as="balance" t-key="$index">
+                <td class="text-end" t-on-click="() => props.onLineClick(line.action_ids[$index])">
+                    <t t-esc="balance"/>
+                </td>
+            </t>
+        </tr>
+        <t t-if="!state.isFolded">
+            <t t-foreach="line.children" t-as="child_line" t-key="child_line.name">
+                <ReportLineComponent line="child_line" onLineClick="props.onLineClick"/>
+            </t>
+        </t>
+    </t>
+
+    <!-- Main Report Viewer Template -->
+    <t t-name="financial_report_viewer.FinancialReportViewer" owl="1">
+        <div class="o_financial_report_viewer">
+            <div class="o_control_panel d-flex justify-content-between p-3">
+                <h1><t t-esc="state.title"/></h1>
+                <div class="o_cp_right d-flex">
+                    <div class="o_cp_item ms-3">
+                        <button class="btn btn-primary" t-on-click="exportPDF">Export PDF</button>
+                        <button class="btn btn-secondary" t-on-click="exportExcel">Export Excel</button>
+                    </div>
+                    <div class="o_cp_item ms-3">
+                        <button class="btn btn-info" t-on-click="addPeriod">Add Period</button>
+                    </div>
+                    <div class="o_cp_item ms-3 d-flex flex-column">
+                        <t t-foreach="state.periods" t-as="period" t-key="period.id">
+                            <div class="d-flex align-items-center mb-1">
+                                <label class="me-2">From:</label>
+                                <input type="date" class="o_input me-2" t-on-change="(ev) => onPeriodDateChange(period.id, 'date_from', ev.target.value)" t-att-value="period.date_from"/>
+                                <label class="me-2">To:</label>
+                                <input type="date" class="o_input me-2" t-on-change="(ev) => onPeriodDateChange(period.id, 'date_to', ev.target.value)" t-att-value="period.date_to"/>
+                                <button class="btn btn-danger btn-sm" t-on-click="() => removePeriod(period.id)">X</button>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+            </div>
+            <div class="o_content">
+                <table class="o_list_view table table-sm table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <t t-foreach="state.columns" t-as="column" t-key="column">
+                                <th class="text-end"><t t-esc="column"/></th>
+                            </t>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="state.lines" t-as="line" t-key="line.name">
+                            <ReportLineComponent line="line" onLineClick="onLineClick"/>
+                        </t>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </t>
+
+</templates>

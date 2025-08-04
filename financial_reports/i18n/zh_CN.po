@@ -1,0 +1,119 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* financial_reports
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0
+"
+"Report-Msgid-Bugs-To: 
+"
+"POT-Creation-Date: 2025-08-05 00:00+0000
+"
+"PO-Revision-Date: 2025-08-05 00:00+0000
+"
+"Last-Translator: Odoo Translation Team <noreply@odoo.com>
+"
+"Language-Team: Chinese (Simplified) (https://www.transifex.com/odoo/teams/23907/zh_CN/)
+"
+"MIME-Version: 1.0
+"
+"Content-Type: text/plain; charset=UTF-8
+"
+"Content-Transfer-Encoding: 8bit
+"
+"X-Generator: Odoo
+"
+"X-Last-synced-with-source: 2025-08-05 00:00+0000
+"
+"Language: zh_CN
+"
+"X-Crowdin-Project: Odoo
+"
+"X-Crowdin-Language: zh-CN
+"
+"X-Crowdin-File: /financial_reports/i18n/financial_report_viewer.pot
+"
+
+#. module: financial_reports
+#: model:ir.ui.menu,name:financial_report_viewer.menu_financial_report_viewer
+msgid "Financial Reports"
+msgstr "财务报告"
+
+#. module: financial_reports
+#: model:ir.actions.client,name:financial_report_viewer.action_financial_report_viewer
+msgid "Financial Report Viewer"
+msgstr "财务报告查看器"
+
+#. module: financial_reports
+#: model:ir.ui.menu,name:financial_report_viewer.menu_account_report_config
+msgid "Financial Reports Configuration"
+msgstr "财务报告配置"
+
+#. module: financial_reports
+#: model:ir.actions.act_window,name:financial_report_viewer.action_account_report_config
+msgid "Financial Reports Configuration"
+msgstr "财务报告配置"
+
+#. module: financial_reports
+#: model:ir.ui.view,arch_base:financial_report_viewer.view_account_report_form
+msgid "Preview"
+msgstr "预览"
+
+#. module: financial_reports
+#: model:ir.ui.view,arch_base:financial_report_viewer.view_account_report_form
+msgid "Report Lines"
+msgstr "报告行"
+
+#. module: financial_reports
+#: model:ir.ui.view,arch_base:financial_report_viewer.view_account_report_form
+msgid "Expressions"
+msgstr "表达式"
+
+#. module: financial_reports
+#: model:ir.actions.act_window,help:financial_report_viewer.action_account_report_config
+msgid "Define your custom financial reports here."
+msgstr "在此处定义您的自定义财务报告。"
+
+#. module: financial_reports
+#: code:addons/financial_report_viewer/controllers/main.py:0
+#, python-format
+msgid "You don't have access rights to this document."
+msgstr "您没有访问此文档的权限。"
+
+#. module: financial_reports
+#: code:addons/financial_report_viewer/models/financial_report.py:0
+#, python-format
+msgid "Error evaluating formula for expression %s: %s"
+msgstr "评估表达式 %s 的公式时出错: %s"
+
+#. module: financial_reports
+#: code:addons/financial_report_viewer/static/src/xml/templates.xml:0
+msgid "Export PDF"
+msgstr "导出PDF"
+
+#. module: financial_reports
+#: code:addons/financial_report_viewer/static/src/xml/templates.xml:0
+msgid "Export Excel"
+msgstr "导出Excel"
+
+#. module: financial_reports
+#: code:addons/financial_report_viewer/static/src/xml/templates.xml:0
+msgid "Add Period"
+msgstr "添加期间"
+
+#. module: financial_reports
+#: code:addons/financial_report_viewer/static/src/xml/templates.xml:0
+msgid "Name"
+msgstr "名称"
+
+#. module: financial_reports
+#: code:addons/financial_report_viewer/static/src/xml/templates.xml:0
+msgid "From:"
+msgstr "从:"
+
+#. module: financial_reports
+#: code:addons/financial_report_viewer/static/src/xml/templates.xml:0
+msgid "To:"
+msgstr "到:"

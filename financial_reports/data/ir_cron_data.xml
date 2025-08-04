@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- This function will be called upon module installation or update -->
+        <function model="account.move.line" name="_create_financial_report_index"/>
+    </data>
+</odoo>

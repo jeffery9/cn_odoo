@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem 
+        id="menu_financial_report_viewer"
+        name="Financial Reports"
+        parent="account.menu_finance_reports"
+        action="financial_reports.action_financial_report_viewer"
+        sequence="100"/>
+</odoo>

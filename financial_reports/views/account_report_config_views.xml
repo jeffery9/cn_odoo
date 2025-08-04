@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tree View for account.report -->
+    <record id="view_account_report_tree" model="ir.ui.view">
+        <field name="name">account.report.tree</field>
+        <field name="model">account.report</field>
+        <field name="arch" type="xml">
+            <tree string="Financial Reports">
+                <field name="name"/>
+                <field name="report_type"/>
+                <field name="sequence"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View for account.report -->
+    <record id="view_account_report_form" model="ir.ui.view">
+        <field name="name">account.report.form</field>
+        <field name="model">account.report</field>
+        <field name="arch" type="xml">
+            <form string="Financial Report">
+                <header>
+                    <button name="%(financial_reports.action_financial_report_viewer)d"
+                            string="Preview"
+                            type="action"
+                            context="{'default_report_id': active_id}"
+                            class="oe_highlight"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="report_type"/>
+                            <field name="sequence"/>
+                        </group>
+                        <group>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Report Lines">
+                            <field name="line_ids">
+                                <tree editable="bottom">
+                                    <field name="name"/>
+                                    <field name="sequence"/>
+                                    <field name="level"/>
+                                    <field name="action_id"/>
+                                </tree>
+                                <form>
+                                    <sheet>
+                                        <group>
+                                            <field name="name"/>
+                                            <field name="sequence"/>
+                                            <field name="level"/>
+                                            <field name="action_id"/>
+                                        </group>
+                                        <notebook>
+                                            <page string="Expressions">
+                                                <field name="expression_ids">
+                                                    <tree editable="bottom">
+                                                        <field name="name"/>
+                                                        <field name="expression_type"/>
+                                                        <field name="account_id" attrs="{'invisible': [('expression_type', '!=', 'account')]}"/>
+                                                        <field name="account_type" attrs="{'invisible': [('expression_type', '!=', 'account_type')]}"/>
+                                                        <field name="account_group_id" attrs="{'invisible': [('expression_type', '!=', 'account_group')]}"/>
+                                                        <field name="tax_tag_ids" widget="many2many_tags" attrs="{'invisible': [('expression_type', '!=', 'tax_tags')]}"/>
+                                                        <field name="analytic_account_id" attrs="{'invisible': [('expression_type', '!=', 'analytic_account')]}"/>
+                                                        <field name="analytic_plan_id" attrs="{'invisible': [('expression_type', '!=', 'analytic_plan')]}"/>
+                                                        <field name="formula" attrs="{'invisible': [('expression_type', '!=', 'formula')]}"/>
+                                                    </tree>
+                                                    <form>
+                                                        <sheet>
+                                                            <group>
+                                                                <field name="name"/>
+                                                                <field name="expression_type"/>
+                                                                <field name="account_id" attrs="{'invisible': [('expression_type', '!=', 'account')]}"/>
+                                                                <field name="account_type" attrs="{'invisible': [('expression_type', '!=', 'account_type')]}"/>
+                                                                <field name="account_group_id" attrs="{'invisible': [('expression_type', '!=', 'account_group')]}"/>
+                                                                <field name="tax_tag_ids" widget="many2many_tags" attrs="{'invisible': [('expression_type', '!=', 'tax_tags')]}"/>
+                                                                <field name="analytic_account_id" attrs="{'invisible': [('expression_type', '!=', 'analytic_account')]}"/>
+                                                                <field name="analytic_plan_id" attrs="{'invisible': [('expression_type', '!=', 'analytic_plan')]}"/>
+                                                                <field name="formula" attrs="{'invisible': [('expression_type', '!=', 'formula')]}"/>
+                                                            </group>
+                                                        </sheet>
+                                                    </form>
+                                                </field>
+                                            </page>
+                                        </notebook>
+                                    </sheet>
+                                </form>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action for account.report -->
+    <record id="action_account_report_config" model="ir.actions.act_window">
+        <field name="name">Financial Reports Configuration</field>
+        <field name="res_model">account.report</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Define your custom financial reports here.
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Item for account.report -->
+    <menuitem
+        id="menu_account_report_config"
+        name="Financial Reports"
+        parent="account.menu_finance_configuration"
+        action="action_account_report_config"
+        sequence="10"/>
+
+    <!-- Tree View for account.cashflow.category -->
+    <record id="view_account_cashflow_category_tree" model="ir.ui.view">
+        <field name="name">account.cashflow.category.tree</field>
+        <field name="model">account.cashflow.category</field>
+        <field name="arch" type="xml">
+            <tree string="Cash Flow Categories">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="activity_type"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View for account.cashflow.category -->
+    <record id="view_account_cashflow_category_form" model="ir.ui.view">
+        <field name="name">account.cashflow.category.form</field>
+        <field name="model">account.cashflow.category</field>
+        <field name="arch" type="xml">
+            <form string="Cash Flow Category">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                            <field name="activity_type"/>
+                        </group>
+                        <group>
+                            <field name="account_ids" widget="many2many_tags"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action for account.cashflow.category -->
+    <record id="action_account_cashflow_category" model="ir.actions.act_window">
+        <field name="name">Cash Flow Categories</field>
+        <field name="res_model">account.cashflow.category</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Define categories for cash flow activities.
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Item for account.cashflow.category -->
+    <menuitem
+        id="menu_account_cashflow_category"
+        name="Cash Flow Categories"
+        parent="account.menu_finance_configuration"
+        action="action_account_cashflow_category"
+        sequence="15"/>
+</odoo>
