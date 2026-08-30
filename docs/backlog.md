@@ -34,6 +34,8 @@
 | US-6.6 | `cn_payroll_core/features/attendance_settings.feature` | 中国法定公休规则与 Odoo 资源日历叶自动同步 | YES — Holiday compliance | `cn_payroll_core` |
 | US-6.7 | `cn_payroll_core/features/attendance_pay.feature` | 12小时工作制、7天排班及三档次国家规定加班审计 | YES — Overtime compliance | `cn_payroll_core` |
 | US-8.1 | `cn_payroll_core/features/accounting_integration.feature` | 生成并结平薪资会计凭证过账 | YES — Financial integrity | `cn_payroll_core` |
+| US-3.2 | `mi_connector/features/government_bridge.feature` | 异步申报医保在保申报状态与网关状态查询 | YES — Asynchronous submission | `mi_connector` |
+| US-3.2 | `mi_connector/features/government_bridge.feature` | 导出月度在保数据到国家局/社保局统一标准 Excel 模板 | YES — Bulk-import speed | `mi_connector` |
 
 ---
 
@@ -105,6 +107,8 @@
 | US-10.8 | `cn_payroll_outsourcing/features/outsourcing_settlement.feature` | 女职工“三期”特保解雇/归档强力拦截校验 | YES — Maternity lock | `cn_payroll_outsourcing` |
 | US-11.1 | `financial_reports/features/statement_analysis.feature` | 生成基础财务报表与多期间同比环比比较 | YES — Financial view | `financial_reports` |
 | US-11.2 | `financial_reports/features/statement_analysis.feature` | 自定义新型财务管理报表零代码生成与下钻 | YES — Dynamic analysis | `financial_reports` |
+| US-3.2 | `mi_connector/features/government_bridge.feature` | 异步申报医保在保申报状态与网关状态查询 | YES — Asynchronous submission | `mi_connector` |
+| US-3.2 | `mi_connector/features/government_bridge.feature` | 导出月度在保数据到国家局/社保局统一标准 Excel 模板 | YES — Bulk-import speed | `mi_connector` |
 
 ---
 
