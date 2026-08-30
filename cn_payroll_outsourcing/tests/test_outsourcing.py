@@ -7,6 +7,10 @@ class TestOutsourcing(TransactionCase):
         self.agency = self.env['res.partner'].create({'name': 'Logistics Agency', 'supplier_rank': 1})
         self.employee = self.env['hr.employee'].create({'name': 'Outsourced Worker'})
         
+        # Create 20 formal employees to satisfy the 10% labor dispatch ratio limit (1 / 21 = 4.76% <= 10.0%)
+        for i in range(20):
+            self.env['hr.employee'].create({'name': f'Formal Employee {i}'})
+        
         # 1. Mock Attendance Summary
         self.summary = self.env['cn.attendance.summary'].create({
             'employee_id': self.employee.id,
@@ -375,5 +379,45 @@ class TestOutsourcing(TransactionCase):
             self.env['cn.outsourcing.assignment'].create({
                 'contract_id': contract_a.id,
                 'employee_id': employee_local.id,
+                'date_start': '2026-03-01',
+            })
+
+    def test_dispatch_ratio_10_percent_compliance_blocking(self):
+        """Verify that trying to register too many outsourced workers exceeding the 10% workforce limit is blocked"""
+        from odoo.exceptions import ValidationError
+
+        # Clean slate: delete existing assignments
+        self.env['cn.outsourcing.assignment'].search([]).unlink()
+        
+        # Let's count current formal employees: we have 20 + 1 (self.employee or other) = 21.
+        # Let's create a contract
+        contract = self.env['cn.outsourcing.contract'].create({
+            'name': 'Ratio Test Contract',
+            'agency_id': self.agency.id,
+            'contract_type': 'service_rate',
+        })
+        
+        # We can successfully create 1st outsourced worker (1 / 22 = 4.5% <= 10.0%)
+        worker1 = self.env['hr.employee'].create({'name': 'Outsourced 1'})
+        self.env['cn.outsourcing.assignment'].create({
+            'contract_id': contract.id,
+            'employee_id': worker1.id,
+            'date_start': '2026-03-01',
+        })
+
+        # We can successfully create 2nd outsourced worker (2 / 23 = 8.7% <= 10.0%)
+        worker2 = self.env['hr.employee'].create({'name': 'Outsourced 2'})
+        self.env['cn.outsourcing.assignment'].create({
+            'contract_id': contract.id,
+            'employee_id': worker2.id,
+            'date_start': '2026-03-01',
+        })
+
+        # Registering a 3rd outsourced worker pushes ratio to (3 / 24 = 12.5% > 10.0%) -> MUST BE BLOCKED!
+        worker3 = self.env['hr.employee'].create({'name': 'Outsourced 3'})
+        with self.assertRaises(ValidationError):
+            self.env['cn.outsourcing.assignment'].create({
+                'contract_id': contract.id,
+                'employee_id': worker3.id,
                 'date_start': '2026-03-01',
             })

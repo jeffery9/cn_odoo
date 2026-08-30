@@ -32,6 +32,7 @@ class HrEmployee(models.Model):
 
     experience_years = fields.Integer(default=0, string='Experience Years')
     skills_description = fields.Text(string='Skills Description')
+    is_disabled = fields.Boolean(default=False, string='Has Disability Certification')
 
 
 class CnAttendanceSummaryInherit(models.Model):

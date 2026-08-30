@@ -797,6 +797,45 @@ class TestPayrollCore(TransactionCase):
         self.assertEqual(policy_b.id, global_policy.id)
         self.assertEqual(policy_b.standard_check_in, 9.0)
 
+    def test_minimum_wage_supplement_calculation(self):
+        """Verify that falling below minimum wage dynamically generates correct supplement"""
+        employee = self.env['hr.employee'].create({'name': 'Low Wage Worker'})
+        
+        # 1. Create structure with MINIMUM_WAGE_MAKEUP item
+        item_basic = self.env['cn.salary.item'].create({
+            'name': 'Basic Wage', 'code': 'BASIC', 'item_type': 'fixed'
+        })
+        item_makeup = self.env['cn.salary.item'].create({
+            'name': 'Minimum Wage Supplement', 'code': 'MAKEUP', 'item_type': 'earning',
+            'python_code': 'result = MINIMUM_WAGE_MAKEUP'
+        })
+        item_net = self.env['cn.salary.item'].create({
+            'name': 'Net Pay', 'code': 'NET', 'item_type': 'fixed',
+            'python_code': 'result = BASIC + MAKEUP'
+        })
+        struct = self.env['cn.salary.structure'].create({
+            'name': 'Minimum Wage Guard Structure',
+            'item_ids': [(4, item_basic.id), (4, item_makeup.id), (4, item_net.id)],
+        })
+
+        # Base wage = 2000.0, below default 2690.0 minimum wage limit
+        payslip = self.env['cn.payslip'].create({
+            'employee_id': employee.id,
+            'structure_id': struct.id,
+            'period': '2024-03',
+            'base_wage_amount': 2000.0,
+            'local_minimum_wage': 2690.0,
+        })
+        
+        payslip.action_compute_sheet()
+        
+        makeup_line = payslip.line_ids.filtered(lambda l: l.code == 'MAKEUP')
+        # Makeup = 2690 - 2000 = 690.0 RMB
+        self.assertEqual(makeup_line.amount, 690.0)
+        
+        net_line = payslip.line_ids.filtered(lambda l: l.code == 'NET')
+        self.assertEqual(net_line.amount, 2690.0)
+
 
 
 

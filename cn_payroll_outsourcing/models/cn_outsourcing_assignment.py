@@ -75,3 +75,27 @@ class CnOutsourcingAssignment(models.Model):
                         f"Compliance Violation: Worker {employee.name} is on the Enterprise Blacklist! "
                         f"Reason: {blacklist_rec.reason}. Assignment is strictly rejected."
                     )
+
+            # 4. Check 10% Labor Dispatch workforce ratio limit under Chinese Labor Law
+            active_assignments_count = self.env['cn.outsourcing.assignment'].search_count([
+                ('date_start', '<=', fields.Date.today()),
+                '|', ('date_end', '=', False), ('date_end', '>=', fields.Date.today())
+            ])
+            active_outsourced_ids = self.env['cn.outsourcing.assignment'].search([
+                ('date_start', '<=', fields.Date.today()),
+                '|', ('date_end', '=', False), ('date_end', '>=', fields.Date.today())
+            ]).mapped('employee_id.id')
+            
+            total_formal = self.env['hr.employee'].search_count([
+                ('id', 'not in', active_outsourced_ids)
+            ])
+            
+            total_workforce = total_formal + active_assignments_count
+            if total_workforce > 0:
+                ratio = (active_assignments_count / total_workforce) * 100.0
+                if ratio > 10.0:
+                    raise ValidationError(
+                        f"Compliance Breach: Total labor dispatch workforce ratio is {ratio:.2f}%, "
+                        f"which exceeds the Chinese Labor Law mandatory legal limit of 10.00%. "
+                        f"Assignment of worker {employee.name} is blocked to avoid audit fines."
+                    )

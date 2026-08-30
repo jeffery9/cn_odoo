@@ -129,3 +129,82 @@ class TestPayrollTax(TransactionCase):
         })
         eval_ctx_taxable = payslip_taxable._get_eval_context()
         self.assertEqual(eval_ctx_taxable.get('IIT_AMOUNT'), 28770.0)
+
+    def test_non_resident_individual_monthly_tax_calculation(self):
+        """Verify non-resident individual monthly tax calculations on isolated single-month progressive brackets"""
+        struct = self.env['cn.salary.structure'].create({
+            'name': 'Standard Structure',
+            'item_ids': [],
+        })
+        
+        # Non-resident worker
+        foreign_employee = self.env['hr.employee'].create({
+            'name': 'John Expat',
+            'resident_status': 'non_resident',
+        })
+        
+        # Monthly wage = 25000.0. Exemption = 5000.0. Taxable = 20000.0.
+        # 20000.0 falls into 12000~25000 bracket: rate 20%, quick deduction 1410.
+        # Tax = 20000 * 20% - 1410 = 4000 - 1410 = 2590.0 RMB.
+        payslip = self.env['cn.payslip'].create({
+            'employee_id': foreign_employee.id,
+            'structure_id': struct.id,
+            'period': '2024-03',
+            'base_wage_amount': 25000.0,
+        })
+        eval_ctx = payslip._get_eval_context()
+        self.assertEqual(eval_ctx.get('IIT_AMOUNT'), 2590.0)
+
+    def test_disability_security_levy_monthly_accrual(self):
+        """Verify Disability Security Fund (残保金) monthly compute projections based on corporate staffing metrics"""
+        struct = self.env['cn.salary.structure'].create({
+            'name': 'Standard Structure',
+            'item_ids': [],
+        })
+        
+        # 1. Create 100 employees in this company (Self.employee is Company A, let's make sure company_id is matched)
+        company_id = self.env.company.id
+        self.employee.company_id = company_id
+        
+        # Create 99 more employees in company A
+        for i in range(99):
+            self.env['hr.employee'].create({
+                'name': f'Worker A-{i}',
+                'company_id': company_id,
+            })
+            
+        # Total workforce = 100. Disabled employees count = 0.
+        # PRC Target = 100 * 1.5% = 1.5. Deficit = 1.5.
+        # Monthly base wage projection = 10000.0.
+        # Estimated levy = 1.5 * 10000.0 = 15000.0.
+        payslip_deficit = self.env['cn.payslip'].create({
+            'employee_id': self.employee.id,
+            'structure_id': struct.id,
+            'period': '2024-03',
+            'base_wage_amount': 10000.0,
+        })
+        payslip_deficit._compute_disability_levy()
+        self.assertEqual(payslip_deficit.estimated_disability_security_levy, 15000.0)
+        
+        # 2. If we hire 2 disabled workers (disabled_count = 2)
+        # Disabled count (2) > Target (1.5) -> deficit = 0.
+        # Estimated levy = 0.0
+        self.env['hr.employee'].create({
+            'name': 'Disabled Worker 1',
+            'company_id': company_id,
+            'is_disabled': True,
+        })
+        self.env['hr.employee'].create({
+            'name': 'Disabled Worker 2',
+            'company_id': company_id,
+            'is_disabled': True,
+        })
+        
+        payslip_compliant = self.env['cn.payslip'].create({
+            'employee_id': self.employee.id,
+            'structure_id': struct.id,
+            'period': '2024-03',
+            'base_wage_amount': 10000.0,
+        })
+        payslip_compliant._compute_disability_levy()
+        self.assertEqual(payslip_compliant.estimated_disability_security_levy, 0.0)

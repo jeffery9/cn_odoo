@@ -12,6 +12,7 @@ class CnPayslip(models.Model):
     structure_id = fields.Many2one('cn.salary.structure', required=True, tracking=True)
     period = fields.Char(required=True, tracking=True, help="Format: YYYY-MM")
     base_wage_amount = fields.Float(string="Base Wage", required=True)
+    local_minimum_wage = fields.Float(string='Local Monthly Minimum Wage', default=2690.0)
     
     line_ids = fields.One2many('cn.payslip.line', 'slip_id', string='Salary Lines', cascade='delete')
     state = fields.Selection([
@@ -41,6 +42,10 @@ class CnPayslip(models.Model):
         sihf_personal = enrollment.amount_employee if enrollment else 0.0
         sihf_employer = enrollment.amount_employer if enrollment else 0.0
 
+        # Compute pre-makeup net pay (base wage minus personal SIHF)
+        pre_net = self.base_wage_amount - sihf_personal
+        makeup = max(0.0, self.local_minimum_wage - pre_net)
+
         return {
             'BASIC': self.base_wage_amount,
             'late_minutes': late_minutes,
@@ -49,6 +54,7 @@ class CnPayslip(models.Model):
             'absent_days': absent_days,
             'SIHF_PERSONAL': sihf_personal,
             'SIHF_EMPLOYER': sihf_employer,
+            'MINIMUM_WAGE_MAKEUP': makeup,
             'result': 0.0,
         }
 
