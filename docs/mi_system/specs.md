@@ -343,3 +343,73 @@ To provide external labor agencies with secure access to check their active cont
 
 *   **Multi-Tenant Query Scoping:** Under `OutsourcingPortal` (`CustomerPortal` subclass), all controller lookups automatically resolve `request.env.user.partner_id`. It scopes contracts and settlements strictly to the logged-in partner's ID or its parent agency ID, enforcing strict multi-tenant boundary isolation.
 
+---
+
+## 8. PRC Advanced & Ultimate Legal Compliance Engines
+
+To guarantee bulletproof legal defense under Chinese tax laws, labor contract laws, and social welfare rules, the system integrates active validation sentries and computation engines:
+
+### 8.1. Minimum Wage Earning Supplement Engine
+- **Model Field:** `local_minimum_wage` (`Float` on `cn.payslip`, default=2,690.00 RMB).
+- **Core Formula:**
+  $$\text{MINIMUM\_WAGE\_MAKEUP} = \max(0.0, \text{local\_minimum\_wage} - \text{Net Pre-wage})$$
+- **Behavior:** The calculated supplement is dynamically injected as a deduction/wage offset variable in safe_eval, guaranteeing that no employee's cash pre-withholding net falls below the statutory city minimum wage.
+
+### 8.2. Non-Resident Individual Monthly Taxation Model
+- **Model Selection:** `resident_status` on `hr.employee` (`['resident', 'non_resident']`).
+- **Behavior:** Non-resident expats bypass the cumulative YTD tax engine. Their individual income tax is evaluated strictly per-month on isolated progressive brackets with a flat 5,000.00 RMB standard deduction.
+
+### 8.3. Labor Dispatch 10% Ratio Cap Sentry
+- **Model Validation:** `@api.constrains` in `cn.outsourcing.assignment`.
+- **Constraint:** Block creation of new active assignments if the total headcount of active outsourced workers exceeds 10% of the company's entire workforce (Active Employees + Active Dispatched Workers):
+  $$\text{Ratio} = \frac{\text{Outsourced Count}}{\text{Formal Employees} + \text{Outsourced Count}} \le 10\%$$
+
+### 8.4. Disability Employment Security Fund (残保金) Monthly Pre-accounting Accrual
+- **Model Field:** `is_disabled` (`Boolean` on `hr.employee`) and `estimated_disability_security_levy` (`Float` on `cn.payslip`).
+- **Core Formula:**
+  $$\text{Monthly Accrual} = \max(0.0, \text{Total Employees} \times 1.5\% - \text{Disabled Employees Count}) \times \text{Current Base Wage}$$
+
+### 8.5. PRC 7 Special Additional Tax Deductions Validation
+- **Model Fields:** Individual monthly tax deduction inputs on `cn.payslip` (`deduction_child_education`, `deduction_continuing_education`, `deduction_housing_loan`, `deduction_housing_rent`, `deduction_elderly_care`, `deduction_infant_care`).
+- **Core Constraints:**
+  - **Mutual Exclusion:** `deduction_housing_loan` and `deduction_housing_rent` cannot be claimed simultaneously.
+  - **Statutory Limits:** Each item has an active constraint validating it against standard statutory monthly ceilings.
+
+### 8.6. Statutory Overtime 36-Hour Monthly Limit Warning
+- **Model Fields:** `overtime_status` (`Selection: ['normal', 'warning']`) and `total_overtime_hours` on `cn.attendance.summary`.
+- **Behavior:** Triggers a `'warning'` flag and logs alerts if total combined overtime (weekday, weekend, holiday) exceeds 36.0 hours within a billing period.
+
+### 8.7. Probation Term & Salary Audit Sentry
+- **Model Fields:** `contract_term_months`, `probation_term_months`, `wage_regular`, `wage_probation` on `hr.employee`.
+- **Core Constraints:**
+  - Enforces statutory probation term maximum boundaries based on contractual term length.
+  - Enforces that `wage_probation` must be at least 80% of `wage_regular`.
+
+### 8.8. Female Employee "Three Periods" Dismissal Prevention Sentry
+- **Model Selection:** `female_protection_state` on `hr.employee` (`['none', 'pregnancy', 'maternity', 'lactation']`).
+- **Behavior:** Overrides `write` to block archiving/deactivating (`active = False`) any female employee currently in Pregnancy, Maternity, or Lactation states.
+
+---
+
+## 9. Dynamic & Custom Financial Report Engine
+
+A fully metadata-driven financial report viewer supporting Balance Sheet, Income Statement, Cash Flow Statement, and arbitrary user-defined custom financial reports.
+
+### 9.1. Core Abstract Modeling
+- `account.report`: Represents report metadata headers.
+- `account.report.line`: Tree hierarchy nodes representing rows (using `parent_id` recursive child lists).
+- `account.report.expression`: Evaluation lines defining how values are computed.
+
+### 9.2. Polymorphic Valuation Engine
+Evaluates report formulas and rules at run-time:
+- **Account Direct (`account`)**: Directly queries matching account move line balances.
+- **Account Type (`account_type`)**: Aggregates balances by native account type codes.
+- **Aggregation (`aggregation`)**: Intersects and sums multiple child rows.
+- **Formula (`formula`)**: Sandboxed python execution via `safe_eval` with strict execution boundaries.
+- **Analytic Plan & Account (`analytic_account`/`analytic_plan`)**: Direct management accounting cost center analysis.
+
+### 9.3. High-Fidelity Exports
+- **Excel Matrix Engine**: Built with `xlsxwriter`, generating multi-period data arrays, keeping indentation levels matching the visual hierarchy tree.
+- **PDF QWeb Template**: Dynamic, mobile-responsive, print-ready financial tabular designs.
+
+

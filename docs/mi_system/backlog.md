@@ -95,4 +95,36 @@
 | US-9.2 | `cn_payroll_outsourcing/features/outsourcing_settlement.feature` | 灵活派驻时间轴重叠自动切割与过滤计算 | YES — Transfer correctness | `cn_payroll_outsourcing` |
 | US-9.3 | `cn_payroll_outsourcing/features/outsourcing_settlement.feature` | 快速补员与批量向导导入工人自动建档 | YES — Rapid backfill | `cn_payroll_outsourcing` |
 | US-9.4 | `cn_payroll_outsourcing/features/outsourcing_settlement.feature` | 外部劳务商 Portal 安全隔离与数据检索 | YES — Vendor self-service | `cn_payroll_outsourcing` |
+| US-10.1 | `cn_payroll_core/features/attendance_pay.feature` | 实发最低工资补差兜底计算验证 | YES — Low wage compliance | `cn_payroll_core` |
+| US-10.2 | `cn_payroll_tax/features/cumulative_tax.feature` | 非居民个人单月独立起征点计税计算 | YES — Expat compliance | `cn_payroll_tax` |
+| US-10.3 | `cn_payroll_outsourcing/features/outsourcing_settlement.feature` | 劳务派遣用工比例10%红线拦截限制 | YES — Ratio compliance | `cn_payroll_outsourcing` |
+| US-10.4 | `cn_payroll_tax/features/cumulative_tax.feature` | 残疾人就业保障金月度预提预估计算 | YES — Accrual planning | `cn_payroll_tax` |
+| US-10.5 | `cn_payroll_tax/features/cumulative_tax.feature` | 7大专项附加扣除限额检查与房贷房租互斥校验 | YES — Deductions audits | `cn_payroll_tax` |
+| US-10.6 | `cn_payroll_core/features/attendance_pay.feature` | 36小时加班法定上限预警标记生成 | YES — Overtime audit | `cn_payroll_core` |
+| US-10.7 | `cn_payroll_outsourcing/features/outsourcing_settlement.feature` | 试用期劳动合同期长限制与80%薪资交叉审计 | YES — Terms audit | `cn_payroll_outsourcing` |
+| US-10.8 | `cn_payroll_outsourcing/features/outsourcing_settlement.feature` | 女职工“三期”特保解雇/归档强力拦截校验 | YES — Maternity lock | `cn_payroll_outsourcing` |
+| US-11.1 | `financial_reports/features/statement_analysis.feature` | 生成基础财务报表与多期间同比环比比较 | YES — Financial view | `financial_reports` |
+| US-11.2 | `financial_reports/features/statement_analysis.feature` | 自定义新型财务管理报表零代码生成与下钻 | YES — Dynamic analysis | `financial_reports` |
+
+---
+
+### 4. Advanced Compliance & Dynamic Financial Report Backlog (`cn_payroll_core`, `cn_payroll_tax`, `financial_reports`)
+
+| ID | Type | Title | Priority | Odoo Ver | Depends-on | Size | Cross-Module? | Pain Point |
+|----|------|-------|----------|----------|------------|------|---------------|------------|
+| **EP-10** | **Epic** | **高阶劳动与个税合规性拦截体系** | **Must** | **17** | — | **L** | **yes** | — |
+| US-10.1 | Story | As a compliance manager, I want lower-bound minimum wage earnings supplements automatically calculated so that we are protected from wage audits | Must | 17 | EP-6 | S | no | YES |
+| US-10.2 | Story | As a tax specialist, I want non-resident individuals taxed on single-month brackets with 5000 RMB exemption so that expat calculations are compliant | Must | 17 | EP-7 | S | no | YES |
+| US-10.3 | Story | As an HR director, I want the active dispatched workers ratio capped at 10% under server-side constraints so that we prevent administrative compliance penalties | Must | 17 | EP-9 | M | no | YES |
+| US-10.4 | Story | As a CFO, I want the system to calculate monthly pre-accounting disability security fund (残保金) accruals so that fiscal risk is visible | Must | 17 | EP-7 | S | no | NO |
+| US-10.5 | Story | As a tax auditor, I want monthly special additional tax deductions audited against 7-project statutory ceilings and housing rental/loan mutual exclusions so that we avoid incorrect tax withholdings | Must | 17 | EP-7 | M | no | YES |
+| US-10.6 | Story | As an HR specialist, I want a warning generated when any employee's monthly overtime exceeds the 36-hour legal ceiling so that overtime risk is mitigated | Must | 17 | EP-6 | S | no | YES |
+| US-10.7 | Story | As an auditor, I want probation periods and salaries checked against contract terms and 80% thresholds before employee contracts are saved | Must | 17 | EP-9 | M | no | YES |
+| US-10.8 | Story | As a legal officer, I want Odoo to prevent dismissing or archiving female employees currently in pregnancy, leave, or lactation phases so that we avoid wrongful termination lawsuits | Must | 17 | EP-9 | S | no | YES |
+| **EP-11** | **Epic** | **动态自定义多维财务报表引擎** | **Must** | **17** | — | **L** | **yes** | — |
+| US-11.1 | Story | As a CFO, I want standard Balance Sheet, Income Statement, and Cash Flow tables computed and comparative dates aligned so that periods are assessed | Must | 17 | EP-8 | M | yes (account) | YES |
+| US-11.2 | Story | As a management accountant, I want to configure any custom financial reports with dynamic hierarchical tree-lines and custom formulas (safe_eval) so that specialized internal reports are generated | Must | 17 | EP-11 | L | yes (account) | YES |
+| US-11.3 | Story | As a management accountant, I want to export multi-period reports to Excel and PDF formats preserving parent-child row indentations so that stakeholder reviews are clean | Must | 17 | EP-11 | M | no | YES |
+| US-11.4 | Story | As an auditor, I want click-based drilldowns from summary lines directly opening native Odoo account move line list views so that detailed line-audits are rapid | Must | 17 | EP-11 | S | yes (account) | YES |
+
 
