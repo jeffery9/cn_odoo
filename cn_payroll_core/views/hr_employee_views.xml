@@ -9,6 +9,7 @@
                 <group string="Attendance &amp; Payroll Policies" name="payroll_policies">
                     <field name="attendance_settings_id" options="{'no_create': True}"/>
                     <field name="resolved_attendance_settings_id"/>
+                    <field name="structure_id" options="{'no_create': True}"/>
                 </group>
             </xpath>
         </field>

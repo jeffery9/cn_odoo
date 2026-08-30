@@ -23,6 +23,11 @@ class CnPayslip(models.Model):
     ], default='draft', required=True, tracking=True)
     move_id = fields.Many2one('account.move', string='Journal Entry', readonly=True, copy=False)
 
+    @api.onchange('employee_id')
+    def _onchange_employee_id(self):
+        if self.employee_id and self.employee_id.structure_id:
+            self.structure_id = self.employee_id.structure_id
+
     def _get_eval_context(self):
         # Locate attendance summary for variables
         summary = self.env['cn.attendance.summary'].search([

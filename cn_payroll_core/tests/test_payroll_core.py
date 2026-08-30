@@ -982,6 +982,27 @@ class TestPayrollCore(TransactionCase):
         self.assertEqual(summary_warning.total_overtime_hours, 40.0)
         self.assertEqual(summary_warning.overtime_status, 'warning')
 
+    def test_employee_salary_structure_defaulting(self):
+        """Verify that a payslip automatically defaults structure_id from its employee's configuration"""
+        structure = self.env['cn.salary.structure'].create({
+            'name': 'Custom Employee Structure',
+            'item_ids': [(4, self.item_basic.id)],
+        })
+        employee = self.env['hr.employee'].create({
+            'name': 'Structured Employee',
+            'structure_id': structure.id,
+        })
+        # Create a new payslip
+        payslip = self.env['cn.payslip'].new({
+            'employee_id': employee.id,
+            'period': '2024-03',
+            'base_wage_amount': 8000.0,
+        })
+        # Trigger onchange
+        payslip._onchange_employee_id()
+        self.assertEqual(payslip.structure_id.id, structure.id)
+
+
 
 
 
