@@ -4,55 +4,50 @@
     <record id="account_payment_term_30days" model="account.payment.term">  
         <field name="name">30天</field>  
         <field name="note">发票日期后30天内付款</field>  
-        <field name="line_ids" eval="[(0, 0, {  
+        <field name="line_ids" eval="[(5, 0, 0), (0, 0, {  
             'value': 'percent',  
             'value_amount': 100.0,  
             'nb_days': 30,  
-            'sequence': 10,  
         })]"/>  
     </record>  
   
     <record id="account_payment_term_45days" model="account.payment.term">  
         <field name="name">45天</field>  
         <field name="note">发票日期后45天内付款</field>  
-        <field name="line_ids" eval="[(0, 0, {  
+        <field name="line_ids" eval="[(5, 0, 0), (0, 0, {  
             'value': 'percent',  
             'value_amount': 100.0,  
             'nb_days': 45,  
-            'sequence': 10,  
         })]"/>  
     </record>  
   
     <record id="account_payment_term_60days" model="account.payment.term">  
         <field name="name">60天</field>  
         <field name="note">发票日期后60天内付款</field>  
-        <field name="line_ids" eval="[(0, 0, {  
+        <field name="line_ids" eval="[(5, 0, 0), (0, 0, {  
             'value': 'percent',  
             'value_amount': 100.0,  
             'nb_days': 60,  
-            'sequence': 10,  
         })]"/>  
     </record>  
   
     <record id="account_payment_term_90days" model="account.payment.term">  
         <field name="name">90天</field>  
         <field name="note">发票日期后90天内付款</field>  
-        <field name="line_ids" eval="[(0, 0, {  
+        <field name="line_ids" eval="[(5, 0, 0), (0, 0, {  
             'value': 'percent',  
             'value_amount': 100.0,  
             'nb_days': 90,  
-            'sequence': 10,  
         })]"/>  
     </record>  
   
     <record id="account_payment_term_120days" model="account.payment.term">  
         <field name="name">120天</field>  
         <field name="note">发票日期后120天内付款</field>  
-        <field name="line_ids" eval="[(0, 0, {  
+        <field name="line_ids" eval="[(5, 0, 0), (0, 0, {  
             'value': 'percent',  
             'value_amount': 100.0,  
             'nb_days': 120,  
-            'sequence': 10,  
         })]"/>  
     </record>  
 </odoo>

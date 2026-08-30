@@ -6,6 +6,9 @@ class TestMICore(TransactionCase):
     def setUp(self):
         super().setUp()
         self.state_bj = self.env['res.country.state'].search([], limit=1)
+        self.employee_test = self.env['hr.employee'].create({
+            'name': 'Test',
+        })
         self.policy_1 = self.env['mi.policy'].create({
             'name': 'Beijing Policy 2023',
             'region_id': self.state_bj.id,
@@ -103,7 +106,7 @@ class TestMICore(TransactionCase):
         results = import_wizard.execute_import(
             ['employee_id', 'policy_id', 'base_amount', 'start_date'],
             ['employee_id', 'policy_id', 'base_amount', 'start_date'],
-            {'headers': True},
+            {'headers': True, 'quoting': '"', 'separator': ',', 'has_headers': True},
             dryrun=True
         )
         messages = results.get('messages', [])
@@ -214,12 +217,12 @@ class TestMICore(TransactionCase):
             'res_model': 'mi.enrollment',
             'file': b"employee_id,policy_id,base_amount,start_date,line_ids/insurance_type_group,line_ids/base_amount\nTest,Beijing Full SIHF Import 2024,6000.0,2024-07-01,housing_fund,4000.0",
             'file_name': 'test.csv',
-            'file_type': 'csv'
+            'file_type': 'text/csv'
         })
         results = import_wizard.execute_import(
             ['employee_id', 'policy_id', 'base_amount', 'start_date', 'line_ids/insurance_type_group', 'line_ids/base_amount'],
             ['employee_id', 'policy_id', 'base_amount', 'start_date', 'line_ids/insurance_type_group', 'line_ids/base_amount'],
-            {'headers': True},
+            {'headers': True, 'quoting': '"', 'separator': ',', 'has_headers': True},
             dryrun=True
         )
         messages = results.get('messages', [])

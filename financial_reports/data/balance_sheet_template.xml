@@ -5,11 +5,6 @@
             <field name="name">Balance Sheet</field>
             <field name="report_type">balance_sheet</field>
             <field name="sequence">10</field>
-            <field name="line_ids" eval="[(6, 0, [
-                ref('account_financial_report_balance_sheet_assets'),
-                ref('account_financial_report_balance_sheet_liabilities'),
-                ref('account_financial_report_balance_sheet_equity'),
-            ])]"/>
         </record>
 
         <!-- Assets -->
@@ -18,10 +13,6 @@
             <field name="name">Assets</field>
             <field name="sequence">10</field>
             <field name="level">0</field>
-            <field name="children_ids" eval="[(6, 0, [
-                ref('account_financial_report_balance_sheet_current_assets'),
-                ref('account_financial_report_balance_sheet_non_current_assets'),
-            ])]"/>
         </record>
 
         <record id="account_financial_report_balance_sheet_current_assets" model="account.report.line">
@@ -30,11 +21,6 @@
             <field name="sequence">10</field>
             <field name="level">1</field>
             <field name="parent_id" ref="account_financial_report_balance_sheet_assets"/>
-            <field name="children_ids" eval="[(6, 0, [
-                ref('account_financial_report_balance_sheet_cash_equivalents'),
-                ref('account_financial_report_balance_sheet_accounts_receivable'),
-                ref('account_financial_report_balance_sheet_other_current_assets'),
-            ])]"/>
         </record>
 
         <record id="account_financial_report_balance_sheet_cash_equivalents" model="account.report.line">
@@ -43,7 +29,6 @@
             <field name="sequence">10</field>
             <field name="level">2</field>
             <field name="parent_id" ref="account_financial_report_balance_sheet_current_assets"/>
-            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_balance_sheet_cash_expr')])]"/>
         </record>
         <record id="account_financial_report_balance_sheet_cash_expr" model="account.report.expression">
             <field name="report_line_id" ref="account_financial_report_balance_sheet_cash_equivalents"/>
@@ -58,7 +43,6 @@
             <field name="sequence">20</field>
             <field name="level">2</field>
             <field name="parent_id" ref="account_financial_report_balance_sheet_current_assets"/>
-            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_balance_sheet_receivable_expr')])]"/>
         </record>
         <record id="account_financial_report_balance_sheet_receivable_expr" model="account.report.expression">
             <field name="report_line_id" ref="account_financial_report_balance_sheet_accounts_receivable"/>
@@ -73,7 +57,6 @@
             <field name="sequence">30</field>
             <field name="level">2</field>
             <field name="parent_id" ref="account_financial_report_balance_sheet_current_assets"/>
-            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_balance_sheet_other_current_assets_expr')])]"/>
         </record>
         <record id="account_financial_report_balance_sheet_other_current_assets_expr" model="account.report.expression">
             <field name="report_line_id" ref="account_financial_report_balance_sheet_other_current_assets"/>
@@ -88,7 +71,6 @@
             <field name="sequence">20</field>
             <field name="level">1</field>
             <field name="parent_id" ref="account_financial_report_balance_sheet_assets"/>
-            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_balance_sheet_non_current_assets_expr')])]"/>
         </record>
         <record id="account_financial_report_balance_sheet_non_current_assets_expr" model="account.report.expression">
             <field name="report_line_id" ref="account_financial_report_balance_sheet_non_current_assets"/>
@@ -103,10 +85,6 @@
             <field name="name">Liabilities</field>
             <field name="sequence">20</field>
             <field name="level">0</field>
-            <field name="children_ids" eval="[(6, 0, [
-                ref('account_financial_report_balance_sheet_current_liabilities'),
-                ref('account_financial_report_balance_sheet_non_current_liabilities'),
-            ])]"/>
         </record>
 
         <record id="account_financial_report_balance_sheet_current_liabilities" model="account.report.line">
@@ -115,10 +93,6 @@
             <field name="sequence">10</field>
             <field name="level">1</field>
             <field name="parent_id" ref="account_financial_report_balance_sheet_liabilities"/>
-            <field name="children_ids" eval="[(6, 0, [
-                ref('account_financial_report_balance_sheet_accounts_payable'),
-                ref('account_financial_report_balance_sheet_other_current_liabilities'),
-            ])]"/>
         </record>
 
         <record id="account_financial_report_balance_sheet_accounts_payable" model="account.report.line">
@@ -127,7 +101,6 @@
             <field name="sequence">10</field>
             <field name="level">2</field>
             <field name="parent_id" ref="account_financial_report_balance_sheet_current_liabilities"/>
-            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_balance_sheet_payable_expr')])]"/>
         </record>
         <record id="account_financial_report_balance_sheet_payable_expr" model="account.report.expression">
             <field name="report_line_id" ref="account_financial_report_balance_sheet_accounts_payable"/>
@@ -142,7 +115,6 @@
             <field name="sequence">20</field>
             <field name="level">2</field>
             <field name="parent_id" ref="account_financial_report_balance_sheet_current_liabilities"/>
-            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_balance_sheet_other_current_liabilities_expr')])]"/>
         </record>
         <record id="account_financial_report_balance_sheet_other_current_liabilities_expr" model="account.report.expression">
             <field name="report_line_id" ref="account_financial_report_balance_sheet_other_current_liabilities"/>
@@ -157,7 +129,6 @@
             <field name="sequence">20</field>
             <field name="level">1</field>
             <field name="parent_id" ref="account_financial_report_balance_sheet_liabilities"/>
-            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_balance_sheet_non_current_liabilities_expr')])]"/>
         </record>
         <record id="account_financial_report_balance_sheet_non_current_liabilities_expr" model="account.report.expression">
             <field name="report_line_id" ref="account_financial_report_balance_sheet_non_current_liabilities"/>
@@ -172,10 +143,6 @@
             <field name="name">Equity</field>
             <field name="sequence">30</field>
             <field name="level">0</field>
-            <field name="children_ids" eval="[(6, 0, [
-                ref('account_financial_report_balance_sheet_owners_equity'),
-                ref('account_financial_report_balance_sheet_retained_earnings'),
-            ])]"/>
         </record>
 
         <record id="account_financial_report_balance_sheet_owners_equity" model="account.report.line">
@@ -184,7 +151,6 @@
             <field name="sequence">10</field>
             <field name="level">1</field>
             <field name="parent_id" ref="account_financial_report_balance_sheet_equity"/>
-            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_balance_sheet_equity_expr')])]"/>
         </record>
         <record id="account_financial_report_balance_sheet_equity_expr" model="account.report.expression">
             <field name="report_line_id" ref="account_financial_report_balance_sheet_owners_equity"/>
@@ -199,7 +165,6 @@
             <field name="sequence">20</field>
             <field name="level">1</field>
             <field name="parent_id" ref="account_financial_report_balance_sheet_equity"/>
-            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_balance_sheet_retained_earnings_expr')])]"/>
         </record>
         <record id="account_financial_report_balance_sheet_retained_earnings_expr" model="account.report.expression">
             <field name="report_line_id" ref="account_financial_report_balance_sheet_retained_earnings"/>

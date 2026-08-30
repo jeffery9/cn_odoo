@@ -22,7 +22,7 @@
     <!-- 长度单位 -->  
     <record id="product_uom_chi" model="uom.uom">  
         <field name="name">尺</field>  
-        <field name="category_id" ref="uom.product_uom_categ_length"/>  
+        <field name="category_id" ref="uom.uom_categ_length"/>  
         <field name="uom_type">smaller</field>  
         <field name="factor">3</field>  
         <field name="rounding">0.01</field>  
@@ -30,7 +30,7 @@
       
     <record id="product_uom_cun" model="uom.uom">  
         <field name="name">寸</field>  
-        <field name="category_id" ref="uom.product_uom_categ_length"/>  
+        <field name="category_id" ref="uom.uom_categ_length"/>  
         <field name="uom_type">smaller</field>  
         <field name="factor">30</field>  
         <field name="rounding">0.01</field>  
@@ -39,7 +39,7 @@
     <!-- 面积单位 -->  
     <record id="product_uom_mu" model="uom.uom">  
         <field name="name">亩</field>  
-        <field name="category_id" ref="uom.product_uom_categ_surface"/>  
+        <field name="category_id" ref="uom.uom_categ_surface"/>  
         <field name="uom_type">bigger</field>  
         <field name="factor_inv">666.67</field>  
         <field name="rounding">0.01</field>  
@@ -48,7 +48,7 @@
     <!-- 公顷 (Hectare) -->  
     <record id="product_uom_hectare" model="uom.uom">  
         <field name="name">公顷</field>  
-        <field name="category_id" ref="uom.product_uom_categ_surface"/>  
+        <field name="category_id" ref="uom.uom_categ_surface"/>  
         <field name="uom_type">bigger</field>  
         <field name="factor_inv">10000</field>  
         <field name="rounding">0.0001</field>  
@@ -57,7 +57,7 @@
     <!-- 平方呎 (Square Feet) - 香港常用 -->  
     <record id="product_uom_square_feet" model="uom.uom">  
         <field name="name">平方呎</field>  
-        <field name="category_id" ref="uom.product_uom_categ_surface"/>  
+        <field name="category_id" ref="uom.uom_categ_surface"/>  
         <field name="uom_type">smaller</field>  
         <field name="factor">10.7639</field>  
         <field name="rounding">0.01</field>  
@@ -66,7 +66,7 @@
     <!-- 坪 (Ping) - 台湾常用 -->  
     <record id="product_uom_ping" model="uom.uom">  
         <field name="name">坪</field>  
-        <field name="category_id" ref="uom.product_uom_categ_surface"/>  
+        <field name="category_id" ref="uom.uom_categ_surface"/>  
         <field name="uom_type">bigger</field>  
         <field name="factor_inv">3.3058</field>  
         <field name="rounding">0.01</field>  
@@ -76,7 +76,7 @@
     <record id="product_uom_sheng" model="uom.uom">  
         <field name="name">升</field>  
         <field name="category_id" ref="uom.product_uom_categ_vol"/>  
-        <field name="uom_type">reference</field>  
+        <field name="uom_type">smaller</field>  
         <field name="factor">1</field>  
         <field name="rounding">0.001</field>  
     </record>  
@@ -153,7 +153,7 @@
     <record id="product_uom_cheng" model="uom.uom">  
         <field name="name">成</field>  
         <field name="category_id" ref="uom.product_uom_categ_unit"/>  
-        <field name="uom_type">reference</field>  
+        <field name="uom_type">smaller</field>  
         <field name="factor">1</field>  
         <field name="rounding">1</field>  
     </record>  
@@ -161,15 +161,15 @@
     <record id="product_uom_fu" model="uom.uom">  
         <field name="name">服</field>  
         <field name="category_id" ref="uom.product_uom_categ_unit"/>  
-        <field name="uom_type">reference</field>  
+        <field name="uom_type">smaller</field>  
         <field name="factor">1</field>  
         <field name="rounding">1</field>  
     </record>  
       
-    <record id="product_uom_dai" model="uom.uom">  
+    <record id="product_uom_dai_herb" model="uom.uom">  
         <field name="name">袋</field>  
         <field name="category_id" ref="uom.product_uom_categ_unit"/>  
-        <field name="uom_type">reference</field>  
+        <field name="uom_type">smaller</field>  
         <field name="factor">1</field>  
         <field name="rounding">1</field>  
     </record>  

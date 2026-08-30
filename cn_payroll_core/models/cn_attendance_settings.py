@@ -63,6 +63,8 @@ class CnAttendanceSettings(models.Model):
 
     def _sync_to_resource_calendar(self):
         self.ensure_one()
+        self.env.flush_all()
+        self.env.invalidate_all()
         
         # Resolve all scoped employees directly or recursively under assigned departments
         direct_employees = self.env['hr.employee'].search([('attendance_settings_id', '=', self.id)])
@@ -92,10 +94,10 @@ class CnAttendanceSettings(models.Model):
                 sorted_lines = day_lines.sorted(key=lambda l: l.hour_from)
                 
                 # Set first line's start hour to standard_check_in
-                sorted_lines[0].hour_from = self.standard_check_in
+                sorted_lines[0].write({'hour_from': self.standard_check_in})
                 
                 # Set last line's end hour to standard_check_out
-                sorted_lines[-1].hour_to = self.standard_check_out
+                sorted_lines[-1].write({'hour_to': self.standard_check_out})
 
 
 class HrEmployee(models.Model):
@@ -155,6 +157,8 @@ class CnAttendanceHolidayRule(models.Model):
 
     def _sync_to_resource_calendar_leave(self):
         self.ensure_one()
+        self.env.flush_all()
+        self.env.invalidate_all()
         if self.holiday_type != 'holiday':
             self._remove_resource_calendar_leave()
             return

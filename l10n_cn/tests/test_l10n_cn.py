@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
+from odoo.tests import tagged
 from odoo.tests.common import TransactionCase
 
+@tagged('post_install', '-at_install')
 class TestL10nCnTemplates(TransactionCase):
     def test_specialized_coa_inheritance_and_fpos_support(self):
         """Validate that all 5 specialized Chinese CoAs exist and inherit standard 'cn' to enjoy native taxes and fpos"""

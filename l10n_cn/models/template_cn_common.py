@@ -1,10 +1,47 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
-from odoo import models, _
+from odoo import models, api, _
 from odoo.addons.account.models.chart_template import template
 
 
 class AccountChartTemplate(models.AbstractModel):
     _inherit = 'account.chart.template'
+
+    @api.model
+    def _get_chart_template_mapping(self):
+        mapping = super()._get_chart_template_mapping()
+        mapping.update({
+            'cn_npo': {
+                'name': _('Non-Profit Organization (民间非营利组织)'),
+                'module': 'l10n_cn',
+                'parent': 'cn',
+                'country_id': 'base.cn',
+            },
+            'cn_gov': {
+                'name': _('Government & Public Institutions (政府会计制度)'),
+                'module': 'l10n_cn',
+                'parent': 'cn',
+                'country_id': 'base.cn',
+            },
+            'cn_construction': {
+                'name': _('Construction Industry (建筑施工企业)'),
+                'module': 'l10n_cn',
+                'parent': 'cn',
+                'country_id': 'base.cn',
+            },
+            'cn_agri': {
+                'name': _('Agriculture (农业企业)'),
+                'module': 'l10n_cn',
+                'parent': 'cn',
+                'country_id': 'base.cn',
+            },
+            'cn_finance': {
+                'name': _('Financial Institutions (金融企业)'),
+                'module': 'l10n_cn',
+                'parent': 'cn',
+                'country_id': 'base.cn',
+            },
+        })
+        return mapping
 
     @template('cn_common')
     def _get_cn_common_template_data(self):

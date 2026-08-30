@@ -7,7 +7,7 @@
         'base',
         'hr',
         'hr_attendance',
-        'hr_leave',
+        'hr_holidays',
         'mail',
         'mi_core',
     ],

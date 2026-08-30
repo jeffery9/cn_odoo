@@ -35,8 +35,8 @@
         'data/product_landed_cost.xml',  
         'data/product_hr_expense.xml',  
         'data/storage_categories.xml',
-        'data/package_types.xml'
-        'data/uom.xml'
+        'data/package_types.xml',
+        'data/uom.xml',
     ],  
     'demo': [],  
     'installable': True,  

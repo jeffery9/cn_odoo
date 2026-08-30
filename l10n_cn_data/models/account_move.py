@@ -8,6 +8,12 @@ import calendar
 class AccountMove(models.Model):  
     _inherit = 'account.move'  
       
+    invoice_currency_rate = fields.Float(  
+        string='Invoice Currency Rate',  
+        digits=(12, 6),  
+        default=1.0,  
+    )
+
     inverse_currency_rate = fields.Float(  
         string='Inverse Currency Rate',  
         compute='_compute_inverse_currency_rate',  

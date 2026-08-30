@@ -5,13 +5,6 @@
             <field name="name">Profit and Loss</field>
             <field name="report_type">income_statement</field>
             <field name="sequence">20</field>
-            <field name="line_ids" eval="[(6, 0, [
-                ref('account_financial_report_income_statement_revenue'),
-                ref('account_financial_report_income_statement_cost_of_revenue'),
-                ref('account_financial_report_income_statement_gross_profit'),
-                ref('account_financial_report_income_statement_operating_expenses'),
-                ref('account_financial_report_income_statement_net_income'),
-            ])]"/>
         </record>
 
         <!-- Revenue -->
@@ -20,10 +13,6 @@
             <field name="name">Revenue</field>
             <field name="sequence">10</field>
             <field name="level">0</field>
-            <field name="children_ids" eval="[(6, 0, [
-                ref('account_financial_report_income_statement_sales_revenue'),
-                ref('account_financial_report_income_statement_other_income'),
-            ])]"/>
         </record>
 
         <record id="account_financial_report_income_statement_sales_revenue" model="account.report.line">
@@ -32,7 +21,6 @@
             <field name="sequence">10</field>
             <field name="level">1</field>
             <field name="parent_id" ref="account_financial_report_income_statement_revenue"/>
-            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_income_statement_income_expr')])]"/>
         </record>
         <record id="account_financial_report_income_statement_income_expr" model="account.report.expression">
             <field name="report_line_id" ref="account_financial_report_income_statement_sales_revenue"/>
@@ -47,7 +35,6 @@
             <field name="sequence">20</field>
             <field name="level">1</field>
             <field name="parent_id" ref="account_financial_report_income_statement_revenue"/>
-            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_income_statement_other_income_expr')])]"/>
         </record>
         <record id="account_financial_report_income_statement_other_income_expr" model="account.report.expression">
             <field name="report_line_id" ref="account_financial_report_income_statement_other_income"/>
@@ -62,7 +49,6 @@
             <field name="name">Cost of Revenue</field>
             <field name="sequence">20</field>
             <field name="level">0</field>
-            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_income_statement_direct_cost_expr')])]"/>
         </record>
         <record id="account_financial_report_income_statement_direct_cost_expr" model="account.report.expression">
             <field name="report_line_id" ref="account_financial_report_income_statement_cost_of_revenue"/>
@@ -77,7 +63,6 @@
             <field name="name">Gross Profit</field>
             <field name="sequence">30</field>
             <field name="level">0</field>
-            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_income_statement_gross_profit_expr')])]"/>
         </record>
         <record id="account_financial_report_income_statement_gross_profit_expr" model="account.report.expression">
             <field name="report_line_id" ref="account_financial_report_income_statement_gross_profit"/>
@@ -92,10 +77,6 @@
             <field name="name">Operating Expenses</field>
             <field name="sequence">40</field>
             <field name="level">0</field>
-            <field name="children_ids" eval="[(6, 0, [
-                ref('account_financial_report_income_statement_expenses'),
-                ref('account_financial_report_income_statement_depreciation'),
-            ])]"/>
         </record>
 
         <record id="account_financial_report_income_statement_expenses" model="account.report.line">
@@ -104,7 +85,6 @@
             <field name="sequence">10</field>
             <field name="level">1</field>
             <field name="parent_id" ref="account_financial_report_income_statement_operating_expenses"/>
-            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_income_statement_expenses_expr')])]"/>
         </record>
         <record id="account_financial_report_income_statement_expenses_expr" model="account.report.expression">
             <field name="report_line_id" ref="account_financial_report_income_statement_expenses"/>
@@ -119,7 +99,6 @@
             <field name="sequence">20</field>
             <field name="level">1</field>
             <field name="parent_id" ref="account_financial_report_income_statement_operating_expenses"/>
-            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_income_statement_depreciation_expr')])]"/>
         </record>
         <record id="account_financial_report_income_statement_depreciation_expr" model="account.report.expression">
             <field name="report_line_id" ref="account_financial_report_income_statement_depreciation"/>
@@ -134,7 +113,6 @@
             <field name="name">Net Income</field>
             <field name="sequence">50</field>
             <field name="level">0</field>
-            <field name="expression_ids" eval="[(6, 0, [ref('account_financial_report_income_statement_net_income_expr')])]"/>
         </record>
         <record id="account_financial_report_income_statement_net_income_expr" model="account.report.expression">
             <field name="report_line_id" ref="account_financial_report_income_statement_net_income"/>

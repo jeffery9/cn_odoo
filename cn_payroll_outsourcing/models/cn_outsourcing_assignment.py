@@ -11,7 +11,7 @@ class CnOutsourcingAssignment(models.Model):
     date_start = fields.Date(required=True, string='Start Date', default=fields.Date.today)
     date_end = fields.Date(string='End Date')
 
-    company_id = fields.Many2one('res.company', string='Company', required=True, store=True, related='contract_id.company_id', readonly=True)
+    company_id = fields.Many2one('res.company', string='Company', store=True, related='contract_id.company_id', readonly=True)
 
     @api.constrains('date_start', 'date_end')
     def _check_dates(self):
@@ -77,6 +77,7 @@ class CnOutsourcingAssignment(models.Model):
                     )
 
             # 4. Check 10% Labor Dispatch workforce ratio limit under Chinese Labor Law
+            self.env['cn.outsourcing.assignment'].flush_model()
             active_assignments_count = self.env['cn.outsourcing.assignment'].search_count([
                 ('date_start', '<=', fields.Date.today()),
                 '|', ('date_end', '=', False), ('date_end', '>=', fields.Date.today())

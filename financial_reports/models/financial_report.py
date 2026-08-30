@@ -176,9 +176,9 @@ class FinancialReport(models.AbstractModel):
             'domain': domain,
         }
 
-    def _write_excel_data(self, worksheet, data):
+    def _write_excel_data(self, workbook, worksheet, data):
         # Header
-        header_format = worksheet.get_workbook().add_format({'bold': True, 'bg_color': '#f2f2f2'})
+        header_format = workbook.add_format({'bold': True, 'bg_color': '#f2f2f2'})
         worksheet.write(0, 0, 'Name', header_format)
         
         col = 1
@@ -190,11 +190,11 @@ class FinancialReport(models.AbstractModel):
         # Write lines
         row = 1
         for line in data['lines']:
-            self._write_excel_line(worksheet, row, line)
+            self._write_excel_line(workbook, worksheet, row, line)
             row += 1 # Simplified row increment
 
-    def _write_excel_line(self, worksheet, row, line):
-        indent_format = worksheet.get_workbook().add_format()
+    def _write_excel_line(self, workbook, worksheet, row, line):
+        indent_format = workbook.add_format()
         indent_format.set_indent(line.get('level', 0))
         worksheet.write(row, 0, line['name'], indent_format)
         
@@ -224,7 +224,7 @@ class FinancialReport(models.AbstractModel):
             menu_vals = {
                 'name': report.name,
                 'parent_id': menu_parent_id,
-                'action': action_xml_id,
+                'action': f'ir.actions.client,{action_record.id}',
                 'sequence': report.sequence or 10,
             }
             self.env['ir.ui.menu']._load_records([{ 'xml_id': menu_xml_id, 'values': menu_vals }])

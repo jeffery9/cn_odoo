@@ -50,4 +50,65 @@
         <field name="name">其他类</field>  
         <field name="property_cost_method">average</field>  
     </record>  
+
+    <!-- Landed Cost Categories -->
+    <record id="product_category_landed_cost" model="product.category">  
+        <field name="name">到岸成本类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+
+    <record id="product_category_international_freight" model="product.category">  
+        <field name="name">国际运费类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+
+    <record id="product_category_domestic_freight" model="product.category">  
+        <field name="name">国内运费类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+
+    <record id="product_category_insurance" model="product.category">  
+        <field name="name">保险费类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+
+    <record id="product_category_customs_duty" model="product.category">  
+        <field name="name">关税类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+
+    <record id="product_category_vat" model="product.category">  
+        <field name="name">进口增值税类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+
+    <record id="product_category_customs_clearance" model="product.category">  
+        <field name="name">清关费用类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+
+    <record id="product_category_inspection" model="product.category">  
+        <field name="name">检验检疫费类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+
+    <record id="product_category_port_handling" model="product.category">  
+        <field name="name">港口装卸费类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+
+    <record id="product_category_storage" model="product.category">  
+        <field name="name">仓储费类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+
+    <record id="product_category_agency" model="product.category">  
+        <field name="name">代理费类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
+
+    <record id="product_category_other_expenses" model="product.category">  
+        <field name="name">其他费用类</field>  
+        <field name="property_cost_method">average</field>  
+    </record>  
 </odoo>

@@ -34,6 +34,29 @@ class TestPayrollTax(TransactionCase):
             'hire_date': '2024-01-01',
         })
         
+        # Setup mi policy and enrollment to supply SIHF_PERSONAL
+        state_bj = self.env['res.country.state'].search([], limit=1)
+        policy = self.env['mi.policy'].create({
+            'name': 'Beijing Tax Test Policy',
+            'region_id': state_bj.id,
+            'date_start': '2024-01-01',
+        })
+        self.env['mi.policy.line'].create({
+            'policy_id': policy.id,
+            'insurance_type': 'pension',
+            'base_min': 0.0,
+            'base_max': 99999.0,
+            'rate_employer': 0.0,
+            'rate_employee': 11.0,  # 20000.0 * 11.0% = 2200.0
+        })
+        enrollment = self.env['mi.enrollment'].create({
+            'employee_id': employee.id,
+            'policy_id': policy.id,
+            'base_amount': 20000.0,
+            'state': 'enrolled',
+            'start_date': '2024-01-01',
+        })
+        
         # Setup items
         item_basic = self.env['cn.salary.item'].create({
             'name': 'Basic Wage', 'code': 'BASIC', 'item_type': 'fixed'
@@ -177,6 +200,10 @@ class TestPayrollTax(TransactionCase):
         # PRC Target = 100 * 1.5% = 1.5. Deficit = 1.5.
         # Monthly base wage projection = 10000.0.
         # Estimated levy = 1.5 * 10000.0 = 15000.0.
+        # Total workforce is calculated dynamically to be independent of other test cases
+        total_employees = self.env['hr.employee'].search_count([('company_id', '=', company_id)])
+        expected_levy = total_employees * 0.015 * 10000.0
+        
         payslip_deficit = self.env['cn.payslip'].create({
             'employee_id': self.employee.id,
             'structure_id': struct.id,
@@ -184,7 +211,7 @@ class TestPayrollTax(TransactionCase):
             'base_wage_amount': 10000.0,
         })
         payslip_deficit._compute_disability_levy()
-        self.assertEqual(payslip_deficit.estimated_disability_security_levy, 15000.0)
+        self.assertEqual(payslip_deficit.estimated_disability_security_levy, expected_levy)
         
         # 2. If we hire 2 disabled workers (disabled_count = 2)
         # Disabled count (2) > Target (1.5) -> deficit = 0.

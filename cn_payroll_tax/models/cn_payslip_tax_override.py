@@ -7,7 +7,7 @@ class HrEmployeeInherit(models.Model):
     resident_status = fields.Selection([
         ('resident', 'Resident Individual'),
         ('non_resident', 'Non-Resident Individual')
-    ], default='resident', string='Resident Status', required=True)
+    ], default='resident', string='Resident Status')
 
 
 class CnPayslip(models.Model):

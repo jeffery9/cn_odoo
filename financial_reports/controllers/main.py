@@ -26,7 +26,7 @@ class FinancialReportController(http.Controller):
         report_model = request.env['report.financial_report_viewer.financial_report']
         return report_model._get_report_data(report_obj, options)
 
-        @http.route('/financial_reports/pdf/<int:report_id>', type='http', auth='user')
+    @http.route('/financial_reports/pdf/<int:report_id>', type='http', auth='user')
     def export_pdf(self, report_id, **kwargs):
         self._check_access()
         report_obj = request.env['account.report'].browse(report_id)
@@ -49,7 +49,7 @@ class FinancialReportController(http.Controller):
         ]
         return request.make_response(pdf_content, headers=pdf_http_headers)
 
-        @http.route('/financial_reports/excel/<int:report_id>', type='http', auth='user')
+    @http.route('/financial_reports/excel/<int:report_id>', type='http', auth='user')
     def export_excel(self, report_id, **kwargs):
         self._check_access()
         report_obj = request.env['account.report'].browse(report_id)
@@ -66,7 +66,7 @@ class FinancialReportController(http.Controller):
         workbook = xlsxwriter.Workbook(output, {'in_memory': True})
         worksheet = workbook.add_worksheet(report_obj.name)
 
-        report_model._write_excel_data(worksheet, report_data)
+        report_model._write_excel_data(workbook, worksheet, report_data)
 
         workbook.close()
         output.seek(0)

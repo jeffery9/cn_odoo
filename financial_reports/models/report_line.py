@@ -1,2 +1,7 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
+from odoo import models, fields
+
+class AccountReportLine(models.Model):
+    _inherit = 'account.report.line'
+
+    level = fields.Integer(string='Level', default=0)

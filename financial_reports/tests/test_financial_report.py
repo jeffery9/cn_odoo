@@ -10,12 +10,12 @@ class TestFinancialReport(TransactionCase):
         # 1. Setup sample accounts
         self.account_cash = self.env['account.account'].create({
             'name': 'Cash in Hand',
-            'code': '1001_test',
+            'code': '1001.test',
             'account_type': 'asset_cash',
         })
         self.account_revenue = self.env['account.account'].create({
             'name': 'Sales Revenue',
-            'code': '6001_test',
+            'code': '6001.test',
             'account_type': 'income',
         })
 
@@ -180,7 +180,7 @@ class TestFinancialReport(TransactionCase):
         worksheet = workbook.add_worksheet('Test Report')
 
         # Run excel writer and ensure no crash occurs
-        self.report_model._write_excel_data(worksheet, report_data)
+        self.report_model._write_excel_data(workbook, worksheet, report_data)
         workbook.close()
         
         # Verify content generated

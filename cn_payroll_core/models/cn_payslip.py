@@ -9,6 +9,7 @@ class CnPayslip(models.Model):
     _description = 'Employee Payslip'
 
     employee_id = fields.Many2one('hr.employee', required=True, tracking=True)
+    company_id = fields.Many2one('res.company', string='Company', related='employee_id.company_id', store=True, readonly=True)
     structure_id = fields.Many2one('cn.salary.structure', required=True, tracking=True)
     period = fields.Char(required=True, tracking=True, help="Format: YYYY-MM")
     base_wage_amount = fields.Float(string="Base Wage", required=True)
