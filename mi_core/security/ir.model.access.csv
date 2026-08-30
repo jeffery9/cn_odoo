@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mi_policy,mi.policy,model_mi_policy,base.group_user,1,1,1,1
+access_mi_policy_line,mi.policy.line,model_mi_policy_line,base.group_user,1,1,1,1
+access_mi_enrollment,mi.enrollment,model_mi_enrollment,base.group_user,1,1,1,1
+access_mi_enrollment_line,mi.enrollment.line,model_mi_enrollment_line,base.group_user,1,1,1,1
+
+
