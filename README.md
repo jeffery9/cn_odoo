@@ -91,3 +91,4 @@ odoo-bin --addons-path="/path/to/odoo/addons,/Users/jeffery/containers/odoo17/ad
 
 *   **Maintained by:** Odoo Localization & Compliance Core Team.
 *   **License:** Distributed under the AGPL-3 License. See [LICENSE](LICENSE) for more information.
+*   **Contributor License Agreement (CLA):** All external contributions to this project require the contributor to accept and sign our [Contributor License Agreement](CLA.md), which assigns all copyright ownership to the original author (**jeffery9**) to allow for commercial relicensing and enterprise distribution. By submitting a Pull Request, you automatically agree to the CLA.
