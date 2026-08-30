@@ -14,7 +14,7 @@
 
 The repository is built following a strict **one-way downward dependency flow** to limit architectural coupling and keep modules highly maintainable:
 
-*   **Financial & Master Data Core:** `l10n_cn` (CoA & Chinese numbers conversion), `l10n_cn_city` (provincial/regional directories), `l10n_cn_data` (preconfigured logistics/costing templates), and `l10n_cn_tax` (VAT Tax Catalog taxonomy).
+*   **Financial & Master Data Core:** `l10n_cn` (Includes 7 distinct Chart of Accounts mapping all PRC standards: Small Business, Large Business, Government & Public Institutions, Non-Profit Organizations, Financial Institutions, Agriculture, and Construction), `l10n_cn_city` (provincial/regional directories), `l10n_cn_data` (preconfigured logistics/costing templates), and `l10n_cn_tax` (VAT Tax Catalog taxonomy).
 *   **Electronic Invoicing (数电发票):** `account_edi_cn_etax` (Full XML parser decoding incoming Chinese government E-Invoices).
 *   **Social Security & Housing Fund (五险一金):** `mi_core` (Multi-base calculation engine), `mi_compliance` (risk scanners with 0.05% daily late penalty calculations), and `mi_connector` (queue-based, async, SHA-256 signed external government API gateway).
 *   **Attendance & Payroll Core:** `cn_payroll_core` (hierarchical department-tree policy resolution, overtime accounting, and balanced journal entries) and `cn_payroll_tax` (progressive 7-bracket Individual Income Tax pre-withholding engine with Year-to-Date tax ledgers, year-end bonuses, and severance pay schedules).
