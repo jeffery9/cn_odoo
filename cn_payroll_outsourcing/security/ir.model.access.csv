@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_cn_outsourcing_contract_manager,cn.outsourcing.contract.manager,model_cn_outsourcing_contract,base.group_user,1,1,1,1
+access_cn_outsourcing_settlement_manager,cn.outsourcing.settlement.manager,model_cn_outsourcing_settlement,base.group_user,1,1,1,1
+access_cn_outsourcing_settlement_line_manager,cn.outsourcing.settlement_line.manager,model_cn_outsourcing_settlement_line,base.group_user,1,1,1,1
+access_cn_outsourcing_assignment_manager,cn.outsourcing.assignment.manager,model_cn_outsourcing_assignment,base.group_user,1,1,1,1
+access_cn_outsourcing_backfill_wizard_manager,cn.outsourcing.backfill_wizard.manager,model_cn_outsourcing_backfill_wizard,base.group_user,1,1,1,1
+access_cn_outsourcing_blacklist_manager,cn.outsourcing.blacklist.manager,model_cn_outsourcing_blacklist,base.group_user,1,1,1,1

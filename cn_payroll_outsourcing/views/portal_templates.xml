@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Add to Portal Home -->
+    <template id="portal_my_home_outsourcing" inherit_id="portal.portal_my_home" priority="40">
+        <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
+            <t t-call="portal.portal_docs_entry">
+                <t t-set="title">Outsourcing Contracts</t>
+                <t t-set="url" t-value="'/my/outsourcing/contracts'"/>
+                <t t-set="placeholder_count" t-value="'outsourcing_contract_count'"/>
+            </t>
+            <t t-call="portal.portal_docs_entry">
+                <t t-set="title">Monthly Settlements</t>
+                <t t-set="url" t-value="'/my/outsourcing/settlements'"/>
+                <t t-set="placeholder_count" t-value="'outsourcing_settlement_count'"/>
+            </t>
+        </xpath>
+    </template>
+
+    <!-- List Contracts -->
+    <template id="portal_my_contracts" name="My Outsourcing Contracts">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Contracts</t>
+            </t>
+            <t t-if="not contracts">
+                <p>There are currently no outsourcing contracts for your account.</p>
+            </t>
+            <t t-if="contracts">
+                <div class="table-responsive">
+                    <table class="table table-hover bg-white text-left">
+                        <thead>
+                            <tr class="active">
+                                <th>Name</th>
+                                <th>Billing Mode</th>
+                                <th>VAT Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="contracts" t-as="contract">
+                                <td><span t-field="contract.name"/></td>
+                                <td><span t-field="contract.contract_type"/></td>
+                                <td><span t-field="contract.vat_rate"/></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+
+    <!-- List Settlements -->
+    <template id="portal_my_settlements" name="My Monthly Settlements">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Settlements</t>
+            </t>
+            <t t-if="not settlements">
+                <p>There are currently no monthly settlements for your account.</p>
+            </t>
+            <t t-if="settlements">
+                <div class="table-responsive">
+                    <table class="table table-hover bg-white text-left">
+                        <thead>
+                            <tr class="active">
+                                <th>Reference</th>
+                                <th>Period</th>
+                                <th>Subtotal</th>
+                                <th>VAT</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="settlements" t-as="settlement">
+                                <td><span t-field="settlement.name"/></td>
+                                <td><span t-field="settlement.period"/></td>
+                                <td><span t-field="settlement.subtotal_amount"/></td>
+                                <td><span t-field="settlement.vat_amount"/></td>
+                                <td><span t-field="settlement.total_amount"/></td>
+                                <td><span t-field="settlement.state"/></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

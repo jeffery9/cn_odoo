@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Multi-Company Rules -->
+        <record id="cn_outsourcing_contract_company_rule" model="ir.rule">
+            <name>Outsourcing Contract Multi-Company Rule</name>
+            <model_id ref="model_cn_outsourcing_contract"/>
+            <global eval="True"/>
+            <domain_force>['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</domain_force>
+        </record>
+
+        <record id="cn_outsourcing_assignment_company_rule" model="ir.rule">
+            <name>Outsourcing Assignment Multi-Company Rule</name>
+            <model_id ref="model_cn_outsourcing_assignment"/>
+            <global eval="True"/>
+            <domain_force>['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</domain_force>
+        </record>
+
+        <record id="cn_outsourcing_settlement_company_rule" model="ir.rule">
+            <name>Outsourcing Settlement Multi-Company Rule</name>
+            <model_id ref="model_cn_outsourcing_settlement"/>
+            <global eval="True"/>
+            <domain_force>['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</domain_force>
+        </record>
+
+        <record id="cn_outsourcing_blacklist_company_rule" model="ir.rule">
+            <name>Outsourcing Blacklist Multi-Company Rule</name>
+            <model_id ref="model_cn_outsourcing_blacklist"/>
+            <global eval="True"/>
+            <domain_force>['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</domain_force>
+        </record>
+    </data>
+</odoo>
