@@ -103,7 +103,7 @@
                         </div>
                         <div class="col-4">
                             <strong>Salesperson:</strong>
-                            <span t-esc="o.invoice_user_id.name"/>
+                            <span t-if="o.invoice_user_id" t-esc="o.invoice_user_id.name"/>
                         </div>
                     </div>
                 </div>
