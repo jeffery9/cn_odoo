@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_cn_salary_item,cn.salary.item,model_cn_salary_item,base.group_user,1,1,1,1
+access_cn_salary_structure,cn.salary.structure,model_cn_salary_structure,base.group_user,1,1,1,1
+access_cn_attendance_summary,cn.attendance.summary,model_cn_attendance_summary,base.group_user,1,1,1,1
+access_cn_attendance_settings,cn.attendance.settings,model_cn_attendance_settings,base.group_user,1,1,1,1
+access_cn_attendance_holiday_rule,cn.attendance.holiday.rule,model_cn_attendance_holiday_rule,base.group_user,1,1,1,1
+access_cn_attendance_adjustment,cn.attendance.adjustment,model_cn_attendance_adjustment,base.group_user,1,1,1,1
+access_cn_payslip,cn.payslip,model_cn_payslip,base.group_user,1,1,1,1
+access_cn_payslip_line,cn.payslip.line,model_cn_payslip_line,base.group_user,1,1,1,1
