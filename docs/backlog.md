@@ -109,6 +109,9 @@
 | US-10.8 | `cn_payroll_outsourcing/features/outsourcing_settlement.feature` | 女职工“三期”特保解雇/归档强力拦截校验 | YES — Maternity lock | `cn_payroll_outsourcing` |
 | US-11.1 | `financial_reports/features/statement_analysis.feature` | 生成基础财务报表与多期间同比环比比较 | YES — Financial view | `financial_reports` |
 | US-11.2 | `financial_reports/features/statement_analysis.feature` | 自定义新型财务管理报表零代码生成与下钻 | YES — Dynamic analysis | `financial_reports` |
+| US-11.3 | `financial_reports/features/statement_analysis.feature` | 中国企业现金流量表直接法核算与现金流量分配 | YES — Cash flow extraction | `financial_reports` |
+| US-11.4 | `financial_reports/features/statement_analysis.feature` | 中国式利润表双栏对比（本月数与本年累计数） | YES — Multi-period CAS | `financial_reports` |
+| US-11.5 | `financial_reports/features/statement_analysis.feature` | 集团多公司财务数据绝对隔离与交叉查询 | YES — Multi-company isolation | `financial_reports` |
 | US-3.2 | `mi_connector/features/government_bridge.feature` | 异步申报医保在保申报状态与网关状态查询 | YES — Asynchronous submission | `mi_connector` |
 | US-3.2 | `mi_connector/features/government_bridge.feature` | 导出月度在保数据到国家局/社保局统一标准 Excel 模板 | YES — Bulk-import speed | `mi_connector` |
 | US-12.1 | `l10n_cn/features/accounting_localization.feature` | 成功初始化和加载不同行业特化的中国会计科目表 (CoA) | YES — Fiscal compliance | `l10n_cn` |
