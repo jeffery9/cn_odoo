@@ -9,5 +9,5 @@ class AccountChartTemplate(models.AbstractModel):
     def _get_cn_finance_template_data(self):
         return {
             'name': _('Financial Institutions (金融企业)'),
-            'parent': 'cn_common',
+            'parent': 'cn',
         }

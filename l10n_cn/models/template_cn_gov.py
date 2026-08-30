@@ -9,5 +9,5 @@ class AccountChartTemplate(models.AbstractModel):
     def _get_cn_gov_template_data(self):
         return {
             'name': _('Government & Public Institutions (政府会计制度)'),
-            'parent': 'cn_common',
+            'parent': 'cn',
         }

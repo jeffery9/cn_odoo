@@ -9,5 +9,5 @@ class AccountChartTemplate(models.AbstractModel):
     def _get_cn_npo_template_data(self):
         return {
             'name': _('Non-Profit Organization (民间非营利组织)'),
-            'parent': 'cn_common',
+            'parent': 'cn',
         }

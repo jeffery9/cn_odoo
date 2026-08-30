@@ -9,5 +9,5 @@ class AccountChartTemplate(models.AbstractModel):
     def _get_cn_construction_template_data(self):
         return {
             'name': _('Construction Industry (建筑施工企业)'),
-            'parent': 'cn_common',
+            'parent': 'cn',
         }

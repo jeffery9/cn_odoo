@@ -9,5 +9,5 @@ class AccountChartTemplate(models.AbstractModel):
     def _get_cn_agri_template_data(self):
         return {
             'name': _('Agriculture (农业企业)'),
-            'parent': 'cn_common',
+            'parent': 'cn',
         }
