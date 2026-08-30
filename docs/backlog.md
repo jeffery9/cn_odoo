@@ -36,6 +36,8 @@
 | US-8.1 | `cn_payroll_core/features/accounting_integration.feature` | 生成并结平薪资会计凭证过账 | YES — Financial integrity | `cn_payroll_core` |
 | US-3.2 | `mi_connector/features/government_bridge.feature` | 异步申报医保在保申报状态与网关状态查询 | YES — Asynchronous submission | `mi_connector` |
 | US-3.2 | `mi_connector/features/government_bridge.feature` | 导出月度在保数据到国家局/社保局统一标准 Excel 模板 | YES — Bulk-import speed | `mi_connector` |
+| US-12.1 | `l10n_cn/features/accounting_localization.feature` | 成功初始化和加载不同行业特化的中国会计科目表 (CoA) | YES — Fiscal compliance | `l10n_cn` |
+| US-12.2 | `l10n_cn/features/accounting_localization.feature` | 自动生成并导出符合中国审计规范的 landscape 记账凭证 PDF | YES — Voucher legality | `l10n_cn` |
 
 ---
 
@@ -109,6 +111,8 @@
 | US-11.2 | `financial_reports/features/statement_analysis.feature` | 自定义新型财务管理报表零代码生成与下钻 | YES — Dynamic analysis | `financial_reports` |
 | US-3.2 | `mi_connector/features/government_bridge.feature` | 异步申报医保在保申报状态与网关状态查询 | YES — Asynchronous submission | `mi_connector` |
 | US-3.2 | `mi_connector/features/government_bridge.feature` | 导出月度在保数据到国家局/社保局统一标准 Excel 模板 | YES — Bulk-import speed | `mi_connector` |
+| US-12.1 | `l10n_cn/features/accounting_localization.feature` | 成功初始化和加载不同行业特化的中国会计科目表 (CoA) | YES — Fiscal compliance | `l10n_cn` |
+| US-12.2 | `l10n_cn/features/accounting_localization.feature` | 自动生成并导出符合中国审计规范的 landscape 记账凭证 PDF | YES — Voucher legality | `l10n_cn` |
 
 ---
 
