@@ -38,6 +38,9 @@
 | US-3.2 | `mi_connector/features/government_bridge.feature` | 导出月度在保数据到国家局/社保局统一标准 Excel 模板 | YES — Bulk-import speed | `mi_connector` |
 | US-12.1 | `l10n_cn/features/accounting_localization.feature` | 成功初始化和加载不同行业特化的中国会计科目表 (CoA) | YES — Fiscal compliance | `l10n_cn` |
 | US-12.2 | `l10n_cn/features/accounting_localization.feature` | 自动生成并导出符合中国审计规范的 landscape 记账凭证 PDF | YES — Voucher legality | `l10n_cn` |
+| US-12.4 | `l10n_cn_tax/features/china_vat_compliance.feature` | 金税系统数电发票增值税率与免税商品分类匹配 | YES — Golden Tax match | `l10n_cn_tax` |
+| US-12.5 | `l10n_cn_tax/features/china_vat_compliance.feature` | 进项税额勾选确认与抵扣链条审计 | YES — Input VAT trace | `l10n_cn_tax` |
+| US-12.6 | `l10n_cn_tax/features/china_vat_compliance.feature` | 增值税加计抵减计算与会计分录自动生成 | YES — Super Deduction | `l10n_cn_tax` |
 
 ---
 
@@ -116,6 +119,9 @@
 | US-3.2 | `mi_connector/features/government_bridge.feature` | 导出月度在保数据到国家局/社保局统一标准 Excel 模板 | YES — Bulk-import speed | `mi_connector` |
 | US-12.1 | `l10n_cn/features/accounting_localization.feature` | 成功初始化和加载不同行业特化的中国会计科目表 (CoA) | YES — Fiscal compliance | `l10n_cn` |
 | US-12.2 | `l10n_cn/features/accounting_localization.feature` | 自动生成并导出符合中国审计规范的 landscape 记账凭证 PDF | YES — Voucher legality | `l10n_cn` |
+| US-12.4 | `l10n_cn_tax/features/china_vat_compliance.feature` | 金税系统数电发票增值税率与免税商品分类匹配 | YES — Golden Tax match | `l10n_cn_tax` |
+| US-12.5 | `l10n_cn_tax/features/china_vat_compliance.feature` | 进项税额勾选确认与抵扣链条审计 | YES — Input VAT trace | `l10n_cn_tax` |
+| US-12.6 | `l10n_cn_tax/features/china_vat_compliance.feature` | 增值税加计抵减计算与会计分录自动生成 | YES — Super Deduction | `l10n_cn_tax` |
 
 ---
 
@@ -141,6 +147,9 @@
 | US-12.1 | Story | As a finance manager, I want localized Chinese Charts of Accounts (CoA) matching standard Enterprise, Government, NPO, Construction, Agriculture, and Finance rules so that bookkeeping complies with regulatory audits | Must | 17 | EP-8 | M | yes (l10n_cn) | YES |
 | US-12.2 | Story | As a bookkeeper, I want native 记账凭证 (Accounting Voucher) PDF layouts with professional signature rows (制单, 审核, 记账, 出纳) so that paper voucher filing is statutory audit-ready | Must | 17 | EP-12 | M | yes (l10n_cn) | YES |
 | US-12.3 | Story | As an accountant, I want custom Cash Flow Categories configured on journal entries so that cash flow statements automatically and dynamically reconcile direct cash activities | Should | 17 | EP-11 | S | yes (financial_reports) | YES |
+| US-12.4 | Story | As a billing specialist, I want output invoice products automatically matched with Chinese Tax Catalog codes so that digital Golden Tax invoice JSON/XML exports are seamless | Must | 17 | EP-8 | S | yes (l10n_cn_tax) | YES |
+| US-12.5 | Story | As a tax accountant, I want to track input VAT deduction states (勾选认证) and automatically post tax reclassifications so that our ledger matches tax bureau data | Must | 17 | EP-8 | S | yes (l10n_cn_tax) | YES |
+| US-12.6 | Story | As a tax accountant, I want the system to calculate Chinese VAT Super Deductions (加计抵减) and generate期末结转 accounting entries so that tax declarations are compliant | Should | 17 | EP-8 | S | yes (l10n_cn_tax) | YES |
 
 
 
