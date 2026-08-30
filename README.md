@@ -2,7 +2,7 @@
 
 [![Odoo Version](https://img.shields.io/badge/Odoo-17.0%20CE%20%2F%20EE-purple.svg)](https://www.odoo.com)
 [![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org)
-[![Licence](https://img.shields.io/badge/Licence-LGPL--3-blue.svg)](LICENSE)
+[![Licence](https://img.shields.io/badge/Licence-AGPL--3-blue.svg)](LICENSE)
 [![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)]()
 [![Compliance](https://img.shields.io/badge/PRC%20Compliance-100%25-brightgreen.svg)]()
 
@@ -90,4 +90,4 @@ odoo-bin --addons-path="/path/to/odoo/addons,/Users/jeffery/containers/odoo17/ad
 ## 👥 Contributors & Legal Notice
 
 *   **Maintained by:** Odoo Localization & Compliance Core Team.
-*   **License:** Distributed under the LGPL-3 License. See [LICENSE](LICENSE) for more information.
+*   **License:** Distributed under the AGPL-3 License. See [LICENSE](LICENSE) for more information.
