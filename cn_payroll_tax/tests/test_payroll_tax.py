@@ -208,3 +208,54 @@ class TestPayrollTax(TransactionCase):
         })
         payslip_compliant._compute_disability_levy()
         self.assertEqual(payslip_compliant.estimated_disability_security_levy, 0.0)
+
+    def test_special_additional_deductions_limit_and_exclusion_checks(self):
+        """Verify statutory limits and mutual exclusion rules (housing rent vs housing loan) are transactionally checked"""
+        from odoo.exceptions import ValidationError
+        struct = self.env['cn.salary.structure'].create({
+            'name': 'Standard Structure',
+            'item_ids': [],
+        })
+
+        # 1. Verification of Cap Breach (Children Education > 2000)
+        with self.assertRaises(ValidationError):
+            self.env['cn.payslip'].create({
+                'employee_id': self.employee.id,
+                'structure_id': struct.id,
+                'period': '2024-03',
+                'base_wage_amount': 10000.0,
+                'deduction_child_education': 2500.0, # Exceeds 2000!
+            })
+
+        # 2. Verification of Cap Breach (Continuing Education > 400)
+        with self.assertRaises(ValidationError):
+            self.env['cn.payslip'].create({
+                'employee_id': self.employee.id,
+                'structure_id': struct.id,
+                'period': '2024-03',
+                'base_wage_amount': 10000.0,
+                'deduction_continuing_education': 500.0, # Exceeds 400!
+            })
+
+        # 3. Verification of Mutual Exclusion (Housing Rent + Housing Loan Interest simultaneously claimed)
+        with self.assertRaises(ValidationError):
+            self.env['cn.payslip'].create({
+                'employee_id': self.employee.id,
+                'structure_id': struct.id,
+                'period': '2024-03',
+                'base_wage_amount': 10000.0,
+                'deduction_housing_loan': 1000.0,
+                'deduction_housing_rent': 1500.0, # Both claimed!
+            })
+
+        # 4. Valid Deduction Setup Summing up correctly
+        valid_payslip = self.env['cn.payslip'].create({
+            'employee_id': self.employee.id,
+            'structure_id': struct.id,
+            'period': '2024-03',
+            'base_wage_amount': 10000.0,
+            'deduction_child_education': 2000.0,
+            'deduction_housing_loan': 1000.0,
+            'deduction_elderly_care': 3000.0,
+        })
+        self.assertEqual(valid_payslip.special_additional_deduction, 6000.0)

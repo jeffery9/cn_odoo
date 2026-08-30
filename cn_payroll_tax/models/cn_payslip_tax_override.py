@@ -13,7 +13,19 @@ class HrEmployeeInherit(models.Model):
 class CnPayslip(models.Model):
     _inherit = 'cn.payslip'
 
-    special_additional_deduction = fields.Float(string="Special Additional Deduction", default=0.0)
+    deduction_child_education = fields.Float(string="Children Education Deduction", default=0.0)
+    deduction_continuing_education = fields.Float(string="Continuing Education Deduction", default=0.0)
+    deduction_housing_loan = fields.Float(string="Housing Loan Interest Deduction", default=0.0)
+    deduction_housing_rent = fields.Float(string="Housing Rent Deduction", default=0.0)
+    deduction_elderly_care = fields.Float(string="Supporting the Elderly Deduction", default=0.0)
+    deduction_infant_care = fields.Float(string="Under 3 Infant Care Deduction", default=0.0)
+
+    special_additional_deduction = fields.Float(
+        compute='_compute_total_special_additional_deduction',
+        store=True,
+        string="Total Special Additional Deduction"
+    )
+
     cumulative_paid_before = fields.Float(string="Cumulative Paid IIT Before", default=0.0)
 
     payslip_type = fields.Selection([
@@ -57,6 +69,50 @@ class CnPayslip(models.Model):
             
             # Monthly levy = deficit * company monthly average wage (using current base wage as projection)
             rec.estimated_disability_security_levy = round(deficit * rec.base_wage_amount, 2)
+
+    @api.depends(
+        'deduction_child_education', 'deduction_continuing_education',
+        'deduction_housing_loan', 'deduction_housing_rent',
+        'deduction_elderly_care', 'deduction_infant_care'
+    )
+    def _compute_total_special_additional_deduction(self):
+        for rec in self:
+            rec.special_additional_deduction = (
+                rec.deduction_child_education + rec.deduction_continuing_education +
+                rec.deduction_housing_loan + rec.deduction_housing_rent +
+                rec.deduction_elderly_care + rec.deduction_infant_care
+            )
+
+    @api.constrains(
+        'deduction_child_education', 'deduction_continuing_education',
+        'deduction_housing_loan', 'deduction_housing_rent',
+        'deduction_elderly_care', 'deduction_infant_care'
+    )
+    def _check_special_deduction_limits(self):
+        from odoo.exceptions import ValidationError
+        for rec in self:
+            # 1. Mutual Exclusion: Housing rent and loan interest cannot both be claimed
+            if rec.deduction_housing_loan > 0.0 and rec.deduction_housing_rent > 0.0:
+                raise ValidationError(
+                    "Compliance Error: Housing Loan Interest and Housing Rent "
+                    "deductions cannot be claimed simultaneously under PRC Individual Income Tax Law."
+                )
+            
+            # 2. Limit Cap Verification
+            limits = {
+                'Children Education': (rec.deduction_child_education, 2000.0),
+                'Continuing Education': (rec.deduction_continuing_education, 400.0),
+                'Housing Loan Interest': (rec.deduction_housing_loan, 1000.0),
+                'Housing Rent': (rec.deduction_housing_rent, 1500.0),
+                'Supporting the Elderly': (rec.deduction_elderly_care, 3000.0),
+                'Under 3 Infant Care': (rec.deduction_infant_care, 2000.0),
+            }
+            for name, (val, cap) in limits.items():
+                if val > cap:
+                    raise ValidationError(
+                        f"Compliance Error: {name} deduction of {val} RMB exceeds "
+                        f"the maximum statutory monthly limit of {cap} RMB under PRC Tax Law."
+                    )
 
     def _calculate_monthly_bracket_tax(self, total_bonus):
         m_amount = total_bonus / 12.0
@@ -111,20 +167,6 @@ class CnPayslip(models.Model):
         elif self.resident_status == 'non_resident':
             # Non-residents are taxed individually per-month using 5,000 standard deduction
             taxable_income = max(0.0, self.base_wage_amount - 5000.0)
-            # Reuses standard monthly progressive brackets (same table as bonus quotient)
-            # Note: monthly tax table has brackets on taxable income directly:
-            # Let's compute with standard monthly bracket formula (using divide by 12 quotient,
-            # but wait, the monthly table for non-residents is:
-            # 0~3000: 3%, 3000~12000: 10% - 210.
-            # This is the exact same math as _calculate_monthly_bracket_tax(taxable_income * 12)!
-            # Wait, our _calculate_monthly_bracket_tax divides by 12, so if we pass total = taxable_income * 12,
-            # it divides it by 12 back to taxable_income and multiplies the total by rate!
-            # Let's check:round((taxable_income * 12) * rate - quick_ded, 2)
-            # Actually, standard monthly tax for a single month of taxable_income is:
-            # Tax = taxable_income * Rate - Quick Deduction.
-            # So if we define a clean _calculate_non_resident_monthly_tax(taxable_income):
-            # It's even cleaner and 100% direct! Let's write that helper method:
-            # Let's implement it directly in python:
             iit_amount = self._calculate_non_resident_monthly_tax(taxable_income)
         else:
             # Regular Salary (Cumulative YTD Pre-withholding)

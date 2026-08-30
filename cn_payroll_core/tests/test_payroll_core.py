@@ -836,6 +836,33 @@ class TestPayrollCore(TransactionCase):
         net_line = payslip.line_ids.filtered(lambda l: l.code == 'NET')
         self.assertEqual(net_line.amount, 2690.0)
 
+    def test_monthly_overtime_36_hour_limit_audit_warning(self):
+        """Verify that monthly overtime hours over 36 trigger statutory warning flag"""
+        employee = self.env['hr.employee'].create({'name': 'Hardworking Worker'})
+        
+        # 1. Under limit (20 hours)
+        summary_normal = self.env['cn.attendance.summary'].create({
+            'employee_id': employee.id,
+            'period': '2024-03',
+            'overtime_weekday_hours': 10.0,
+            'overtime_weekend_hours': 10.0,
+        })
+        summary_normal._compute_total_overtime()
+        self.assertEqual(summary_normal.total_overtime_hours, 20.0)
+        self.assertEqual(summary_normal.overtime_status, 'normal')
+
+        # 2. Over limit (40 hours)
+        summary_warning = self.env['cn.attendance.summary'].create({
+            'employee_id': employee.id,
+            'period': '2024-04',
+            'overtime_weekday_hours': 20.0,
+            'overtime_weekend_hours': 15.0,
+            'overtime_holiday_hours': 5.0,
+        })
+        summary_warning._compute_total_overtime()
+        self.assertEqual(summary_warning.total_overtime_hours, 40.0)
+        self.assertEqual(summary_warning.overtime_status, 'warning')
+
 
 
 

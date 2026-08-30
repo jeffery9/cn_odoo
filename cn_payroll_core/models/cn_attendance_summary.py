@@ -19,6 +19,24 @@ class CnAttendanceSummary(models.Model):
     overtime_weekend_hours = fields.Float(string='Weekend Overtime Hours (周末加班)', default=0.0)
     overtime_holiday_hours = fields.Float(string='Holiday Overtime Hours (节日加班)', default=0.0)
 
+    overtime_status = fields.Selection([
+        ('normal', 'Normal'),
+        ('warning', 'Exceeds Statutory 36-Hour Limit')
+    ], default='normal', string='Statutory Overtime Compliance')
+
+    total_overtime_hours = fields.Float(compute='_compute_total_overtime', string='Total Overtime Hours', store=True)
+
+    @api.depends('overtime_weekday_hours', 'overtime_weekend_hours', 'overtime_holiday_hours')
+    def _compute_total_overtime(self):
+        for rec in self:
+            rec.total_overtime_hours = (
+                rec.overtime_weekday_hours + rec.overtime_weekend_hours + rec.overtime_holiday_hours
+            )
+            if rec.total_overtime_hours > 36.0:
+                rec.overtime_status = 'warning'
+            else:
+                rec.overtime_status = 'normal'
+
     _sql_constraints = [
         ('emp_period_unique', 'unique(employee_id, period)', 'Employee summary already exists for this period!')
     ]

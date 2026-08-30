@@ -421,3 +421,62 @@ class TestOutsourcing(TransactionCase):
                 'employee_id': worker3.id,
                 'date_start': '2026-03-01',
             })
+
+    def test_probation_period_compliance_validation(self):
+        """Verify statutory probation duration caps and 80% minimum salary constraints are strictly validated"""
+        from odoo.exceptions import ValidationError
+
+        # 1. 1-year contract allowing max 2 months probation. Setting 3 months MUST FAIL.
+        with self.assertRaises(ValidationError):
+            self.env['hr.employee'].create({
+                'name': 'Probation Worker 1',
+                'contract_term_months': 12,
+                'probation_term_months': 3, # Illegal! Cap is 2 months for 12 months term.
+            })
+
+        # 2. Under 3 months contract allowing 0 probation. Setting 1 month MUST FAIL.
+        with self.assertRaises(ValidationError):
+            self.env['hr.employee'].create({
+                'name': 'Probation Worker 2',
+                'contract_term_months': 2,
+                'probation_term_months': 1, # Illegal! No probation for contracts under 3 months.
+            })
+
+        # 3. Probation wage is less than 80% of regular wage. MUST FAIL.
+        with self.assertRaises(ValidationError):
+            self.env['hr.employee'].create({
+                'name': 'Probation Worker 3',
+                'contract_term_months': 36,
+                'probation_term_months': 6,
+                'wage_regular': 10000.0,
+                'wage_probation': 7000.0, # Illegal! 7000 < 80% * 10000.
+            })
+
+        # 4. Correct setup. MUST PASS.
+        valid_worker = self.env['hr.employee'].create({
+            'name': 'Valid Probation Worker',
+            'contract_term_months': 36,
+            'probation_term_months': 6,
+            'wage_regular': 10000.0,
+            'wage_probation': 8500.0, # Valid (8500 >= 8000)
+        })
+        self.assertTrue(valid_worker)
+
+    def test_female_worker_three_periods_dismissal_blocking(self):
+        """Verify that any attempt to dismiss or archive active female workers under Preg/Mat/Lac protection is blocked"""
+        from odoo.exceptions import ValidationError
+
+        # Create active pregnant employee
+        protected_worker = self.env['hr.employee'].create({
+            'name': 'Pregnant Worker A',
+            'female_protection_state': 'pregnancy',
+        })
+
+        # Archiving her contract (setting active = False) MUST BE TRANSACTIONALLY BLOCKED!
+        with self.assertRaises(ValidationError):
+            protected_worker.write({'active': False})
+
+        # Turning off pregnancy state allows normal dismissal
+        protected_worker.female_protection_state = 'none'
+        protected_worker.write({'active': False})
+        self.assertFalse(protected_worker.active)
