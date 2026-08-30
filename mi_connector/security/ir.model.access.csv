@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_mi_api_log,mi.api.log,model_mi_api_log,base.group_user,1,1,1,1
+access_mi_enrollment_export_wizard,mi.enrollment.export.wizard,model_mi_enrollment_export_wizard,base.group_user,1,1,1,1

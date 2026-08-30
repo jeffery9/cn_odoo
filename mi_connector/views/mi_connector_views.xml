@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Main Menu -->
+        <menuitem id="menu_mi_root" name="Medical Insurance" sequence="50" web_icon="mi_core,static/description/icon.png"/>
+        <menuitem id="menu_mi_operations" name="Operations" parent="menu_mi_root" sequence="10"/>
+        <menuitem id="menu_mi_config" name="Configuration" parent="menu_mi_root" sequence="100"/>
+
+        <!-- mi.policy View Definitions -->
+        <record id="view_mi_policy_tree" model="ir.ui.view">
+            <field name="name">mi.policy.tree</field>
+            <field name="model">mi.policy</field>
+            <field name="arch" type="xml">
+                <tree string="Medical Insurance Policies">
+                    <field name="name"/>
+                    <field name="region_id"/>
+                    <field name="date_start"/>
+                    <field name="state" widget="badge"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_mi_policy_form" model="ir.ui.view">
+            <field name="name">mi.policy.form</field>
+            <field name="model">mi.policy</field>
+            <field name="arch" type="xml">
+                <form string="Medical Insurance Policy">
+                    <header>
+                        <button name="action_sync_policy_bases" string="Sync Base Matrix" type="object" class="oe_highlight" invisible="state == 'expired'"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,active,expired"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="region_id"/>
+                            </group>
+                            <group>
+                                <field name="date_start"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Policy Lines" name="lines">
+                                <field name="line_ids">
+                                    <tree editable="bottom">
+                                        <field name="insurance_type"/>
+                                        <field name="base_min"/>
+                                        <field name="base_max"/>
+                                        <field name="rate_employer"/>
+                                        <field name="rate_employee"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_mi_policy" model="ir.actions.act_window">
+            <field name="name">Medical Insurance Policies</field>
+            <field name="res_model">mi.policy</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_mi_policy" name="Policies" parent="menu_mi_config" action="action_mi_policy" sequence="10"/>
+
+        <!-- mi.enrollment View Definitions -->
+        <record id="view_mi_enrollment_tree" model="ir.ui.view">
+            <field name="name">mi.enrollment.tree</field>
+            <field name="model">mi.enrollment</field>
+            <field name="arch" type="xml">
+                <tree string="Medical Insurance Enrollments">
+                    <field name="employee_id"/>
+                    <field name="policy_id"/>
+                    <field name="base_amount"/>
+                    <field name="declaration_state" widget="badge" decoration-info="declaration_state == 'submitting'" decoration-success="declaration_state == 'enrolled'" decoration-danger="declaration_state == 'rejected'"/>
+                    <field name="state" widget="badge"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_mi_enrollment_form" model="ir.ui.view">
+            <field name="name">mi.enrollment.form</field>
+            <field name="model">mi.enrollment</field>
+            <field name="arch" type="xml">
+                <form string="Medical Insurance Enrollment">
+                    <header>
+                        <button name="action_submit_declaration" string="Declare to SSB" type="object" class="oe_highlight" invisible="state != 'pending' or declaration_state == 'enrolled'"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,pending,enrolled,terminated"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="employee_id"/>
+                                <field name="policy_id"/>
+                                <field name="base_amount"/>
+                            </group>
+                            <group>
+                                <field name="start_date"/>
+                                <field name="end_date"/>
+                                <field name="declaration_state"/>
+                                <field name="declaration_receipt_id"/>
+                            </group>
+                        </group>
+                        <group>
+                            <group string="Contribution Shares">
+                                <field name="amount_employer"/>
+                                <field name="amount_employee"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Customized Base Lines" name="custom_lines">
+                                <field name="line_ids">
+                                    <tree editable="bottom">
+                                        <field name="insurance_type_group"/>
+                                        <field name="base_amount"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_mi_enrollment" model="ir.actions.act_window">
+            <field name="name">Medical Insurance Enrollments</field>
+            <field name="res_model">mi.enrollment</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_mi_enrollment" name="Enrollments" parent="menu_mi_operations" action="action_mi_enrollment" sequence="10"/>
+
+        <!-- mi.api.log View Definitions -->
+        <record id="view_mi_api_log_tree" model="ir.ui.view">
+            <field name="name">mi.api.log.tree</field>
+            <field name="model">mi.api.log</field>
+            <field name="arch" type="xml">
+                <tree string="API Transaction Logs" create="false" edit="false">
+                    <field name="name"/>
+                    <field name="res_model"/>
+                    <field name="res_id"/>
+                    <field name="state" widget="badge" decoration-success="state == 'success'" decoration-info="state == 'pending'" decoration-danger="state == 'failed'"/>
+                    <field name="write_date" string="Timestamp"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_mi_api_log_form" model="ir.ui.view">
+            <field name="name">mi.api.log.form</field>
+            <field name="model">mi.api.log</field>
+            <field name="arch" type="xml">
+                <form string="API Transaction Log" create="false" edit="false">
+                    <header>
+                        <field name="state" widget="statusbar" statusbar_visible="pending,success,failed"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" readonly="1"/>
+                                <field name="res_model" readonly="1"/>
+                                <field name="res_id" readonly="1"/>
+                            </group>
+                            <group>
+                                <field name="write_date" string="Timestamp" readonly="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Request Payload" name="request">
+                                <field name="request_data" widget="ace" options="{'mode': 'json'}" readonly="1"/>
+                            </page>
+                            <page string="Response Payload" name="response">
+                                <field name="response_data" widget="ace" options="{'mode': 'json'}" readonly="1"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_mi_api_log_search" model="ir.ui.view">
+            <field name="name">mi.api.log.search</field>
+            <field name="model">mi.api.log</field>
+            <field name="arch" type="xml">
+                <search string="Search API Logs">
+                    <field name="name"/>
+                    <field name="res_model"/>
+                    <filter string="Pending" name="pending" domain="[('state', '=', 'pending')]"/>
+                    <filter string="Success" name="success" domain="[('state', '=', 'success')]"/>
+                    <filter string="Failed" name="failed" domain="[('state', '=', 'failed')]"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Associated Model" name="group_by_model" context="{'group_by': 'res_model'}"/>
+                        <filter string="State" name="group_by_state" context="{'group_by': 'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_mi_api_log" model="ir.actions.act_window">
+            <field name="name">API Transaction Logs</field>
+            <field name="res_model">mi.api.log</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_mi_api_log_search"/>
+        </record>
+
+        <menuitem id="menu_mi_api_log" name="API Transaction Logs" parent="menu_mi_operations" action="action_mi_api_log" sequence="20"/>
+
+    </data>
+</odoo>

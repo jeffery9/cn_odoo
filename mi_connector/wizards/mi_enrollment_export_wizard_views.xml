@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_mi_enrollment_export_wizard_form" model="ir.ui.view">
+            <field name="name">mi.enrollment.export.wizard.form</field>
+            <field name="model">mi.enrollment.export.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Export Unified Enrollment Sheet">
+                    <sheet>
+                        <field name="export_status" invisible="1"/>
+                        <group invisible="export_status == 'done'">
+                            <group>
+                                <field name="period" placeholder="e.g. 2026-08"/>
+                                <field name="state"/>
+                            </group>
+                            <group>
+                                <p class="text-muted">
+                                    This tool exports selected monthly employee enrollments into the unified Chinese Social Security Bureau (SSB) Excel bulk-import format.
+                                    The downloaded sheet can be uploaded directly to the local Municipal Portal for batch processing.
+                                </p>
+                            </group>
+                        </group>
+                        
+                        <group invisible="export_status != 'done'">
+                            <div class="alert alert-success text-center" role="alert">
+                                <strong>Success!</strong> The Unified SSB Enrollment export has been generated successfully.
+                            </div>
+                            <group>
+                                <field name="file_name" invisible="1"/>
+                                <field name="file_data" filename="file_name" string="Download Link" readonly="1"/>
+                            </group>
+                        </group>
+                        
+                        <footer>
+                            <button name="action_export_excel" string="Generate Export File" type="object" class="oe_highlight" invisible="export_status == 'done'"/>
+                            <button string="Cancel" class="btn-secondary" special="cancel" invisible="export_status == 'done'"/>
+                            <button string="Close" class="btn-primary" special="cancel" invisible="export_status != 'done'"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_mi_enrollment_export_wizard" model="ir.actions.act_window">
+            <field name="name">Export Unified SSB Sheet</field>
+            <field name="res_model">mi.enrollment.export.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <!-- Menu link inside Medical Insurance Operations -->
+        <menuitem id="menu_mi_enrollment_export_wizard" name="Export SSB Batch Sheet" parent="menu_mi_operations" action="action_mi_enrollment_export_wizard" sequence="30"/>
+    </data>
+</odoo>
