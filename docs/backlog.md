@@ -126,5 +126,10 @@
 | US-11.2 | Story | As a management accountant, I want to configure any custom financial reports with dynamic hierarchical tree-lines and custom formulas (safe_eval) so that specialized internal reports are generated | Must | 17 | EP-11 | L | yes (account) | YES |
 | US-11.3 | Story | As a management accountant, I want to export multi-period reports to Excel and PDF formats preserving parent-child row indentations so that stakeholder reviews are clean | Must | 17 | EP-11 | M | no | YES |
 | US-11.4 | Story | As an auditor, I want click-based drilldowns from summary lines directly opening native Odoo account move line list views so that detailed line-audits are rapid | Must | 17 | EP-11 | S | yes (account) | YES |
+| **EP-12** | **Epic** | **中国地方政府与行业会计科目表本地化及凭证管理** | **Must** | **17** | — | **M** | **yes** | — |
+| US-12.1 | Story | As a finance manager, I want localized Chinese Charts of Accounts (CoA) matching standard Enterprise, Government, NPO, Construction, Agriculture, and Finance rules so that bookkeeping complies with regulatory audits | Must | 17 | EP-8 | M | yes (l10n_cn) | YES |
+| US-12.2 | Story | As a bookkeeper, I want native 记账凭证 (Accounting Voucher) PDF layouts with professional signature rows (制单, 审核, 记账, 出纳) so that paper voucher filing is statutory audit-ready | Must | 17 | EP-12 | M | yes (l10n_cn) | YES |
+| US-12.3 | Story | As an accountant, I want custom Cash Flow Categories configured on journal entries so that cash flow statements automatically and dynamically reconcile direct cash activities | Should | 17 | EP-11 | S | yes (financial_reports) | YES |
+
 
 

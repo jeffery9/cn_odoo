@@ -412,4 +412,35 @@ Evaluates report formulas and rules at run-time:
 - **Excel Matrix Engine**: Built with `xlsxwriter`, generating multi-period data arrays, keeping indentation levels matching the visual hierarchy tree.
 - **PDF QWeb Template**: Dynamic, mobile-responsive, print-ready financial tabular designs.
 
+---
+
+## 10. PRC Chinese Accounting Localization Specifications (中国会计本地化规范)
+
+To ensure full statutory compliance under the Ministry of Finance (MoF) of the People's Republic of China, the system implements native accounting localizations, compliant report generation, and voucher audit-trail management.
+
+### 10.1. Standardized Chinese Charts of Accounts (中国会计科目表体系)
+Supports native Odoo 17 charts of accounts tailored to the specific regulatory requirements of different economic sectors:
+- **Standard Enterprise CoA (企业一般会计准则科目表)**: Configures standard unified account code lists (`1001` Cash, `1002` Bank, `2211` Accrued Payroll, `2221` Taxes, etc.).
+- **Non-Governmental Non-Profit Organization CoA (民间非营利组织会计制度)**: Localized for NPOs under specialized MoF reporting rules.
+- **Government Accounting CoA (政府会计准则)**: Complies with government budget and financial ledger dual-track accounting.
+- **Construction & Real Estate CoA (施工建设与房地产会计制度)**: Includes specialized project-level cost tracking codes.
+- **Agricultural Cooperatives CoA (农业合作社会计制度)**: Structured for agricultural collective asset accounting.
+- **Financial & Securities Institutions CoA (金融证券机构会计制度)**: Standardized for complex financial asset and liability valuations.
+
+### 10.2. CAS-Compliant Financial Reporting Engine (中国企业财务报表)
+- **Balance Sheet (资产负债表)**: Standardized CAS (Chinese Accounting Standards) format classifying assets, liabilities, and owners' equity with native account type aggregation.
+- **Income Statement (利润表)**: Displays operating revenues, sales taxes, and period expenses in a standard progressive multi-step layout.
+- **Cash Flow Statement (现金流量表)**: Utilizing custom cash flow categories (`account.cashflow.category`) configured on journal items to automatically distinguish operating, investing, and financing cash flows.
+
+### 10.3. Localized Accounting Voucher Printing (记账凭证本地化打印)
+- **Standard Layout**: Generates professional PDF 记账凭证 (Accounting Voucher) templates formatted in landscape dual-voucher or single-voucher A4/half-A4 layouts.
+- **Audit Signature Sentry**: Embeds dedicated rows for statutory sign-offs ensuring full internal control tracking:
+  - `制单人` (Prepared By - Auto-resolved from the Odoo creator user).
+  - `审核人` (Approved By - Auto-resolved from the post/validation auditor).
+  - `记账人` (Bookkeeper - Standard financial roles).
+  - `出纳人` (Cashier - Cash/Bank moves validator).
+  - `单位负责人` (Authorized Enterprise Representative).
+- **Balanced Integrity**: Ensures debit-credit balance checks across multi-currency operations and invoice exchange rate overrides.
+
+
 
