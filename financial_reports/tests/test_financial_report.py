@@ -116,3 +116,72 @@ class TestFinancialReport(TransactionCase):
         self.assertEqual(action['res_model'], 'account.move.line')
         self.assertEqual(action['view_mode'], 'list,form')
         self.assertIn(('account_id', '=', self.account_cash.id), action['domain'])
+
+    def test_multi_period_comparison(self):
+        """Validate multi-period comparative datasets generate parallel balance columns accurately"""
+        # Create posted entries in multiple periods
+        journal = self.env['account.journal'].search([('type', '=', 'general')], limit=1)
+        if not journal:
+            journal = self.env['account.journal'].create({
+                'name': 'General Journal',
+                'code': 'GEN',
+                'type': 'general',
+            })
+
+        # Entry for Period 1 (Jan 2024) - Cash 3000
+        move1 = self.env['account.move'].create({
+            'journal_id': journal.id,
+            'date': '2024-01-15',
+            'line_ids': [
+                (0, 0, {'account_id': self.account_cash.id, 'name': 'P1', 'debit': 3000.0, 'credit': 0.0}),
+                (0, 0, {'account_id': self.account_revenue.id, 'name': 'P1_offset', 'debit': 0.0, 'credit': 3000.0}),
+            ]
+        })
+        move1.action_post()
+
+        # Entry for Period 2 (Feb 2024) - Cash 4000 (total cumulative 7000 as of Feb 28)
+        move2 = self.env['account.move'].create({
+            'journal_id': journal.id,
+            'date': '2024-02-15',
+            'line_ids': [
+                (0, 0, {'account_id': self.account_cash.id, 'name': 'P2', 'debit': 4000.0, 'credit': 0.0}),
+                (0, 0, {'account_id': self.account_revenue.id, 'name': 'P2_offset', 'debit': 0.0, 'credit': 4000.0}),
+            ]
+        })
+        move2.action_post()
+
+        # Query with 2 comparison periods
+        periods = [
+            {'date_from': '2024-01-01', 'date_to': '2024-01-31'},
+            {'date_from': '2024-01-01', 'date_to': '2024-02-28'}
+        ]
+        options = {'periods': periods}
+        
+        report_data = self.report_model._get_report_data(self.report, options)
+        self.assertEqual(len(report_data['columns']), 2)
+        
+        cash_line = next(l for l in report_data['lines'] if l['name'] == 'Cash Position')
+        # Balance in Period 1 = 3000.0
+        self.assertEqual(cash_line['balances'][0], 3000.0)
+        # Balance in Period 2 (cumulative as of Feb 28) = 7000.0
+        self.assertEqual(cash_line['balances'][1], 7000.0)
+
+    def test_excel_matrix_export_payload(self):
+        """Validate Excel data exporter generates matrix structures without crash"""
+        import io
+        import xlsxwriter
+        
+        periods = [{'date_from': '2024-01-01', 'date_to': '2024-01-31'}]
+        options = {'periods': periods}
+        report_data = self.report_model._get_report_data(self.report, options)
+
+        output = io.BytesIO()
+        workbook = xlsxwriter.Workbook(output, {'in_memory': True})
+        worksheet = workbook.add_worksheet('Test Report')
+
+        # Run excel writer and ensure no crash occurs
+        self.report_model._write_excel_data(worksheet, report_data)
+        workbook.close()
+        
+        # Verify content generated
+        self.assertTrue(len(output.getvalue()) > 0)
