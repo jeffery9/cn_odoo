@@ -75,3 +75,57 @@ class TestPayrollTax(TransactionCase):
         
         net_line = payslip.line_ids.filtered(lambda l: l.code == 'NET')
         self.assertEqual(net_line.amount, 17176.0) # 20000 - 2200 - 624 = 17176.0
+
+    def test_year_end_bonus_separate_tax_calculation(self):
+        """Verify standard Chinese Year-end Bonus separate tax algorithm and brackets"""
+        # Create year-end bonus slip of 60000.0 RMB
+        struct = self.env['cn.salary.structure'].create({
+            'name': 'Bonus Structure',
+            'item_ids': [],
+        })
+        payslip = self.env['cn.payslip'].create({
+            'employee_id': self.employee.id,
+            'structure_id': struct.id,
+            'period': '2024-12',
+            'base_wage_amount': 60000.0,
+            'payslip_type': 'bonus',
+        })
+        eval_ctx = payslip._get_eval_context()
+        # 60000 / 12 = 5000 quotient. Falls into 10% rate, 210 quick deduction.
+        # Tax = 60000 * 10% - 210 = 5790.0
+        self.assertEqual(eval_ctx.get('IIT_AMOUNT'), 5790.0)
+
+    def test_severance_pay_exemption_and_taxation(self):
+        """Verify PRC Labor Contract severance exemption thresholds (3x local avg) and 3-year amortization tax lookup"""
+        struct = self.env['cn.salary.structure'].create({
+            'name': 'Severance Structure',
+            'item_ids': [],
+        })
+        
+        # 1. Under exemption threshold (250,000 <= 300,000 limit)
+        payslip_exempt = self.env['cn.payslip'].create({
+            'employee_id': self.employee.id,
+            'structure_id': struct.id,
+            'period': '2024-03',
+            'base_wage_amount': 250000.0,
+            'payslip_type': 'severance',
+            'severance_exemption_limit': 300000.0,
+        })
+        eval_ctx_exempt = payslip_exempt._get_eval_context()
+        self.assertEqual(eval_ctx_exempt.get('IIT_AMOUNT'), 0.0)
+        
+        # 2. Exceeds exemption threshold (440,000 > 300,000 limit)
+        # Taxable excess = 140000.0
+        # 140000 / 3 = 46666.67 quotient. Falls into 30% rate, 4410 quick deduction.
+        # Tax part = 46666.67 * 30% - 4410 = 14000.00 - 4410 = 9590.00.
+        # Total Tax = 9590.00 * 3 = 28770.0
+        payslip_taxable = self.env['cn.payslip'].create({
+            'employee_id': self.employee.id,
+            'structure_id': struct.id,
+            'period': '2024-03',
+            'base_wage_amount': 440000.0,
+            'payslip_type': 'severance',
+            'severance_exemption_limit': 300000.0,
+        })
+        eval_ctx_taxable = payslip_taxable._get_eval_context()
+        self.assertEqual(eval_ctx_taxable.get('IIT_AMOUNT'), 28770.0)
