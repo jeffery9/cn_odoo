@@ -59,31 +59,40 @@
                     <h3 class="text-center mb-3 text-primary font-weight-bold">
                         财务指标流动与利益分配透视 (Sankey Diagram)
                     </h3>
-                    <div class="d-flex justify-content-center">
-                        <svg width="900" height="450" class="border bg-light rounded" style="font-family: inherit;">
-                            <!-- Render flow links -->
-                            <g>
-                                <t t-foreach="getSankeyData().links" t-as="link" t-key="link.path">
-                                    <path t-att-d="link.path" t-att-fill="link.color" class="o_sankey_link" style="transition: fill 0.2s, opacity 0.2s; opacity: 0.85;">
-                                        <title><t t-esc="link.label"/>: <t t-esc="link.value"/> 元</title>
-                                    </path>
-                                </t>
-                            </g>
-                            <!-- Render nodes -->
-                            <g>
-                                <t t-foreach="getSankeyData().nodes" t-as="node" t-key="node.id">
-                                    <rect t-att-x="node.x" t-att-y="node.y" t-att-width="node.w" t-att-height="node.h" t-att-fill="node.color" rx="4" class="o_sankey_node" style="stroke: #fff; stroke-width: 1px;"/>
-                                    <!-- Node labels -->
-                                    <text t-att-x="node.x &lt; 400 ? (node.x - 12) : (node.x + node.w + 12)" 
-                                          t-att-y="node.y + node.h / 2 + 4" 
-                                          t-att-text-anchor="node.x &lt; 400 ? 'end' : 'start'" 
-                                          font-size="11" font-weight="bold" fill="#333">
-                                        <t t-esc="node.label"/> (<t t-esc="node.formattedValue"/>)
-                                    </text>
-                                </t>
-                            </g>
-                        </svg>
-                    </div>
+                    <t t-if="getSankeyData().hasData">
+                        <div class="d-flex justify-content-center">
+                            <svg width="900" height="450" class="border bg-light rounded" style="font-family: inherit;">
+                                <!-- Render flow links -->
+                                <g>
+                                    <t t-foreach="getSankeyData().links" t-as="link" t-key="link.path">
+                                        <path t-att-d="link.path" t-att-fill="link.color" class="o_sankey_link" style="transition: fill 0.2s, opacity 0.2s; opacity: 0.85;">
+                                            <title><t t-esc="link.label"/>: <t t-esc="link.value"/> 元</title>
+                                        </path>
+                                    </t>
+                                </g>
+                                <!-- Render nodes -->
+                                <g>
+                                    <t t-foreach="getSankeyData().nodes" t-as="node" t-key="node.id">
+                                        <rect t-att-x="node.x" t-att-y="node.y" t-att-width="node.w" t-att-height="node.h" t-att-fill="node.color" rx="4" class="o_sankey_node" style="stroke: #fff; stroke-width: 1px;"/>
+                                        <!-- Node labels -->
+                                        <text t-att-x="node.x &lt; 400 ? (node.x - 12) : (node.x + node.w + 12)" 
+                                              t-att-y="node.y + node.h / 2 + 4" 
+                                              t-att-text-anchor="node.x &lt; 400 ? 'end' : 'start'" 
+                                              font-size="11" font-weight="bold" fill="#333">
+                                            <t t-esc="node.label"/> (<t t-esc="node.formattedValue"/>)
+                                        </text>
+                                    </t>
+                                </g>
+                            </svg>
+                        </div>
+                    </t>
+                    <t t-else="">
+                        <div class="alert alert-info text-center p-5 m-3" role="alert">
+                            <i class="fa fa-info-circle fa-2x mb-3 text-muted"></i>
+                            <div><strong>暂无当期账务发生额！</strong></div>
+                            <p class="text-muted mt-2">系统当前账期下无营业收入、成本或期间费用发生额。请选择有账务过账记录的会计期间，以展示动态桑基流向分析。</p>
+                        </div>
+                    </t>
                 </div>
 
                 <table class="o_list_view table table-sm table-hover">

@@ -120,15 +120,20 @@ class FinancialReportViewer extends Component {
             return defaultVal;
         };
 
-        const revenue = findVal(["营业收入", "收入", "Revenue", "Income"], 120000.0);
-        const cogs = Math.abs(findVal(["营业成本", "主营业务成本", "COGS", "Cost"], 60000.0));
-        const selling = Math.abs(findVal(["销售费用", "Selling"], 12000.0));
-        const admin = Math.abs(findVal(["管理费用", "Admin"], 10000.0));
-        const rnd = Math.abs(findVal(["研发费用", "R&D", "RD"], 8000.0));
-        const tax = Math.abs(findVal(["所得税", "Tax"], 4000.0));
+        const revenue = findVal(["营业收入", "收入", "Revenue", "Income"], 0.0);
+        const cogs = Math.abs(findVal(["营业成本", "主营业务成本", "COGS", "Cost"], 0.0));
+        const selling = Math.abs(findVal(["销售费用", "Selling"], 0.0));
+        const admin = Math.abs(findVal(["管理费用", "Admin"], 0.0));
+        const rnd = Math.abs(findVal(["研发费用", "R&D", "RD"], 0.0));
+        const tax = Math.abs(findVal(["所得税", "Tax"], 0.0));
         const netProfit = findVal(["净利润", "Net Profit"], revenue - cogs - selling - admin - rnd - tax);
 
         const grossProfit = Math.max(0, revenue - cogs);
+        
+        const hasData = revenue > 0.0 || cogs > 0.0 || selling > 0.0 || admin > 0.0 || rnd > 0.0 || tax > 0.0;
+        if (!hasData) {
+            return { nodes: [], links: [], hasData: false };
+        }
 
         // Dimensions
         const W = 900;
@@ -231,7 +236,7 @@ class FinancialReportViewer extends Component {
             formattedValue: n.value.toLocaleString('zh-CN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
         }));
 
-        return { nodes, links };
+        return { nodes, links, hasData: true };
     }
 
     exportPDF() {
