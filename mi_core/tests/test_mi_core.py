@@ -228,4 +228,83 @@ class TestMICore(TransactionCase):
         messages = results.get('messages', [])
         self.assertTrue(any("below policy lower limit" in m.get('message', '') and "housing_fund" in m.get('message', '') for m in messages))
 
+    def test_base_import_override_edge_cases(self):
+        """Validate all sub-line base ceiling validations, duplicate checking, and relation resolution in base_import_override"""
+        state_bj = self.env['res.country.state'].search([], limit=1)
+        policy_full = self.env['mi.policy'].create({
+            'name': 'Beijing Edge Case Import 2024',
+            'region_id': state_bj.id,
+            'date_start': '2024-08-01',
+        })
+        self.env['mi.policy.line'].create({
+            'policy_id': policy_full.id,
+            'insurance_type': 'housing_fund',
+            'base_min': 5000.0,
+            'base_max': 30000.0,
+            'rate_employer': 12.0,
+            'rate_employee': 12.0,
+        })
+        
+        # 1. Sub-line housing_fund over upper limit (40000.0 > 30000)
+        import_wizard_over = self.env['base_import.import'].create({
+            'res_model': 'mi.enrollment',
+            'file': b"employee_id,policy_id,base_amount,start_date,line_ids/insurance_type_group,line_ids/base_amount\nTest,Beijing Edge Case Import 2024,6000.0,2024-08-01,housing_fund,40000.0",
+            'file_name': 'test.csv',
+            'file_type': 'text/csv'
+        })
+        results_over = import_wizard_over.execute_import(
+            ['employee_id', 'policy_id', 'base_amount', 'start_date', 'line_ids/insurance_type_group', 'line_ids/base_amount'],
+            ['employee_id', 'policy_id', 'base_amount', 'start_date', 'line_ids/insurance_type_group', 'line_ids/base_amount'],
+            {'headers': True, 'quoting': '"', 'separator': ',', 'has_headers': True},
+            dryrun=True
+        )
+        self.assertTrue(any("above policy upper limit" in m.get('message', '') for m in results_over.get('messages', [])))
+
+        # 2. Duplicate active enrollment warning
+        emp_dup = self.env['hr.employee'].create({'name': 'Duplicate Import Worker'})
+        self.env['mi.enrollment'].create({
+            'employee_id': emp_dup.id,
+            'policy_id': policy_full.id,
+            'base_amount': 6000.0,
+            'start_date': '2024-08-01',
+            'state': 'enrolled',
+        })
+        import_wizard_dup = self.env['base_import.import'].create({
+            'res_model': 'mi.enrollment',
+            'file': f"employee_id,policy_id,base_amount,start_date,state\nDuplicate Import Worker,Beijing Edge Case Import 2024,6000.0,2024-08-01,enrolled".encode('utf-8'),
+            'file_name': 'test.csv',
+            'file_type': 'text/csv'
+        })
+        results_dup = import_wizard_dup.execute_import(
+            ['employee_id', 'policy_id', 'base_amount', 'start_date', 'state'],
+            ['employee_id', 'policy_id', 'base_amount', 'start_date', 'state'],
+            {'headers': True, 'quoting': '"', 'separator': ',', 'has_headers': True},
+            dryrun=True
+        )
+        self.assertTrue(any("already has an active or pending enrollment record" in m.get('message', '') for m in results_dup.get('messages', [])))
+
+        # 3. Test duplicate in same file
+        emp_file_dup = self.env['hr.employee'].create({'name': 'File Dup Worker'})
+        import_wizard_file_dup = self.env['base_import.import'].create({
+            'res_model': 'mi.enrollment',
+            'file': f"employee_id,policy_id,base_amount,start_date,state\nFile Dup Worker,Beijing Edge Case Import 2024,6000.0,2024-08-01,enrolled\nFile Dup Worker,Beijing Edge Case Import 2024,6000.0,2024-08-01,enrolled".encode('utf-8'),
+            'file_name': 'test.csv',
+            'file_type': 'text/csv'
+        })
+        results_file_dup = import_wizard_file_dup.execute_import(
+            ['employee_id', 'policy_id', 'base_amount', 'start_date', 'state'],
+            ['employee_id', 'policy_id', 'base_amount', 'start_date', 'state'],
+            {'headers': True, 'quoting': '"', 'separator': ',', 'has_headers': True},
+            dryrun=True
+        )
+        self.assertTrue(any("already has an active or pending enrollment record in this import file" in m.get('message', '') for m in results_file_dup.get('messages', [])))
+
+        # 4. _resolve_relation with empty, integer, xml id, etc.
+        Import_model = self.env['base_import.import']
+        self.assertFalse(Import_model._resolve_relation('hr.employee', ''))
+        self.assertEqual(Import_model._resolve_relation('hr.employee', emp_dup.id).id, emp_dup.id)
+        self.assertEqual(Import_model._resolve_relation('hr.employee', f" {emp_dup.id} ").id, emp_dup.id)
+        self.assertFalse(Import_model._resolve_relation('hr.employee', 999999))
+
+
 

@@ -286,3 +286,93 @@ class TestPayrollTax(TransactionCase):
             'deduction_elderly_care': 3000.0,
         })
         self.assertEqual(valid_payslip.special_additional_deduction, 6000.0)
+
+    def test_payroll_tax_all_brackets(self):
+        """Verify standard Chinese tax bracket rates (3%, 10%, 20%, 25%, 30%, 35%, 45%) and corresponding quick deductions"""
+        struct = self.env['cn.salary.structure'].create({
+            'name': 'All Brackets Structure',
+            'item_ids': [],
+        })
+
+        # We will manually invoke _calculate_monthly_bracket_tax and _calculate_severance_tax on the CnPayslip model
+        payslip_obj = self.env['cn.payslip'].new({
+            'employee_id': self.employee.id,
+            'structure_id': struct.id,
+        })
+
+        # Test Bonus Brackets:
+        # Bracket 1 (<= 3000): 20000 -> 20000 * 3% - 0 = 600.00
+        self.assertEqual(payslip_obj._calculate_monthly_bracket_tax(20000.0), 600.00)
+        # Bracket 2 (<= 12000): 60000 -> 60000 * 10% - 210 = 5790.00
+        self.assertEqual(payslip_obj._calculate_monthly_bracket_tax(60000.0), 5790.00)
+        # Bracket 3 (<= 25000): 180000 -> 180000 * 20% - 1410 = 34590.00
+        self.assertEqual(payslip_obj._calculate_monthly_bracket_tax(180000.0), 34590.00)
+        # Bracket 4 (<= 35000): 360000 -> 360000 * 25% - 2660 = 87340.00
+        self.assertEqual(payslip_obj._calculate_monthly_bracket_tax(360000.0), 87340.00)
+        # Bracket 5 (<= 55000): 540000 -> 540000 * 30% - 4410 = 157590.00
+        self.assertEqual(payslip_obj._calculate_monthly_bracket_tax(540000.0), 157590.00)
+        # Bracket 6 (<= 80000): 780000 -> 780000 * 35% - 7160 = 265840.00
+        self.assertEqual(payslip_obj._calculate_monthly_bracket_tax(780000.0), 265840.00)
+        # Bracket 7 (> 80000): 1200000 -> 1200000 * 45% - 15160 = 524840.00
+        self.assertEqual(payslip_obj._calculate_monthly_bracket_tax(1200000.0), 524840.00)
+
+        # Test Severance Tax Brackets:
+        # Bracket 1 (<= 3000): excess 6000, avg 2000 -> 2000 * 3% - 0 = 60. Total = 180.00
+        self.assertEqual(payslip_obj._calculate_severance_tax(6000.0, 0.0), 180.00)
+        # Bracket 2 (<= 12000): excess 18000, avg 6000 -> 6000 * 10% - 210 = 390. Total = 1170.00
+        self.assertEqual(payslip_obj._calculate_severance_tax(18000.0, 0.0), 1170.00)
+        # Bracket 3 (<= 25000): excess 54000, avg 18000 -> 18000 * 20% - 1410 = 2190. Total = 6570.00
+        self.assertEqual(payslip_obj._calculate_severance_tax(54000.0, 0.0), 6570.00)
+        # Bracket 4 (<= 35000): excess 90000, avg 30000 -> 30000 * 25% - 2660 = 4840. Total = 14520.00
+        self.assertEqual(payslip_obj._calculate_severance_tax(90000.0, 0.0), 14520.00)
+        # Bracket 5 (<= 55000): excess 162000, avg 54000 -> 54000 * 30% - 4410 = 11790. Total = 35370.00
+        self.assertEqual(payslip_obj._calculate_severance_tax(162000.0, 0.0), 35370.00)
+        # Bracket 6 (<= 80000): excess 234000, avg 78000 -> 78000 * 35% - 7160 = 20140. Total = 60420.00
+        self.assertEqual(payslip_obj._calculate_severance_tax(234000.0, 0.0), 60420.00)
+        # Bracket 7 (> 80000): excess 360000, avg 120000 -> 120000 * 45% - 15160 = 38840. Total = 116520.00
+        self.assertEqual(payslip_obj._calculate_severance_tax(360000.0, 0.0), 116520.00)
+
+    def test_ytd_taxable_brackets_and_zero(self):
+        """Verify that YTD record handles zero or negative taxable income and executes all annualized brackets"""
+        ytd_ledger = self.env['cn.tax.ytd.record'].create({
+            'employee_id': self.employee.id,
+            'year': 2024,
+        })
+        
+        # 1. Zero taxable income (base income = 5000)
+        # YTD Taxable = 5000 - 5000 = 0.0
+        tax_amount_zero = ytd_ledger.compute_monthly_iit(
+            month=1,
+            current_income=5000.0,
+            current_sihf=0.0,
+            current_special_add=0.0,
+            cumulative_paid_before=0.0
+        )
+        self.assertEqual(tax_amount_zero, 0.0)
+
+        # 2. Test high brackets for YTD progressive calculations:
+        # Bracket 2 (> 36000): taxable 50000 -> 50000 * 10% - 2520 = 2480.0
+        # For month = 1, standard exempt = 5000. To get 50000 taxable: income = 55000
+        self.assertEqual(ytd_ledger.compute_monthly_iit(1, 55000.0, 0, 0, 0), 2480.0)
+
+        # Bracket 3 (> 144000): taxable 200000 -> 200000 * 20% - 16920 = 23080.0
+        # income = 205000
+        self.assertEqual(ytd_ledger.compute_monthly_iit(1, 205000.0, 0, 0, 0), 23080.0)
+
+        # Bracket 4 (> 300000): taxable 350000 -> 350000 * 25% - 31920 = 55580.0
+        # income = 355000
+        self.assertEqual(ytd_ledger.compute_monthly_iit(1, 355000.0, 0, 0, 0), 55580.0)
+
+        # Bracket 5 (> 420000): taxable 500000 -> 500000 * 30% - 52920 = 97080.0
+        # income = 505000
+        self.assertEqual(ytd_ledger.compute_monthly_iit(1, 505000.0, 0, 0, 0), 97080.0)
+
+        # Bracket 6 (> 660000): taxable 800000 -> 800000 * 35% - 85920 = 194080.0
+        # income = 805000
+        self.assertEqual(ytd_ledger.compute_monthly_iit(1, 805000.0, 0, 0, 0), 194080.0)
+
+        # Bracket 7 (> 960000): taxable 1500000 -> 1500000 * 45% - 181920 = 493080.0
+        # income = 1505000
+        self.assertEqual(ytd_ledger.compute_monthly_iit(1, 1505000.0, 0, 0, 0), 493080.0)
+
+

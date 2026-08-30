@@ -1002,6 +1002,71 @@ class TestPayrollCore(TransactionCase):
         payslip._onchange_employee_id()
         self.assertEqual(payslip.structure_id.id, structure.id)
 
+    def test_attendance_adjustment_execution(self):
+        """Verify that attendance adjustments can be executed and cancelled cleanly, modifying associated holiday rules"""
+        # Create a settings group
+        settings = self.env['cn.attendance.settings'].create({
+            'name': 'Test Adjustment Group',
+            'standard_check_in': '09:00',
+            'standard_check_out': '18:00',
+        })
+        
+        # 1. Swapped workday adjustment
+        adj_swap = self.env['cn.attendance.adjustment'].create({
+            'name': 'National Holiday Swap 2024',
+            'settings_ids': [(4, settings.id)],
+            'adjustment_type': 'swap_workday',
+            'date': '2024-05-04',
+        })
+        self.assertEqual(adj_swap.state, 'draft')
+        
+        # Execute it
+        adj_swap.action_execute_adjustment()
+        self.assertEqual(adj_swap.state, 'executed')
+        
+        # Check that a workday holiday rule was created for this settings group
+        rules_swap = self.env['cn.attendance.holiday.rule'].search([
+            ('settings_id', '=', settings.id),
+            ('date', '=', '2024-05-04')
+        ])
+        self.assertTrue(rules_swap)
+        self.assertEqual(rules_swap.holiday_type, 'workday')
+        
+        # Executing again does nothing
+        adj_swap.action_execute_adjustment()
+        self.assertEqual(adj_swap.state, 'executed')
+        
+        # Cancel it
+        adj_swap.action_cancel_adjustment()
+        self.assertEqual(adj_swap.state, 'cancelled')
+        
+        # Rules should be unlinked
+        rules_swap_cancelled = self.env['cn.attendance.holiday.rule'].search([
+            ('settings_id', '=', settings.id),
+            ('date', '=', '2024-05-04')
+        ])
+        self.assertFalse(rules_swap_cancelled)
+
+        # 2. Temporary Leave adjustment
+        adj_leave = self.env['cn.attendance.adjustment'].create({
+            'name': 'Company Team Building 2024',
+            'settings_ids': [(4, settings.id)],
+            'adjustment_type': 'temp_leave',
+            'date': '2024-06-15',
+        })
+        adj_leave.action_execute_adjustment()
+        rules_leave = self.env['cn.attendance.holiday.rule'].search([
+            ('settings_id', '=', settings.id),
+            ('date', '=', '2024-06-15')
+        ])
+        self.assertTrue(rules_leave)
+        self.assertEqual(rules_leave.holiday_type, 'holiday')
+        
+        # Cancel it
+        adj_leave.action_cancel_adjustment()
+        self.assertEqual(adj_leave.state, 'cancelled')
+
+
 
 
 
