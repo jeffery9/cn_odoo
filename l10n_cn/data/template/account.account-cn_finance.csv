@@ -1,0 +1,5 @@
+"id","name","code","account_type","reconcile","name@zh_CN"
+"l10n_cn_finance_101100","Deposits with Central Bank","101100","asset_cash","False","存放中央银行款项"
+"l10n_cn_finance_102100","Deposits with Banks","102100","asset_cash","False","存放同业"
+"l10n_cn_finance_130300","Loans","130300","asset_receivable","False","贷款"
+"l10n_cn_finance_201100","Deposits from Banks","201100","liability_payable","False","同业存放"

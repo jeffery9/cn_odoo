@@ -1,0 +1,6 @@
+"id","name","code","account_type","reconcile","name@zh_CN"
+"l10n_cn_npo_310100","Unrestricted Net Assets","310100","equity","False","非限定性净资产"
+"l10n_cn_npo_310200","Restricted Net Assets","310200","equity","False","限定性净资产"
+"l10n_cn_npo_410100","Membership Dues Income","410100","income","False","会费收入"
+"l10n_cn_npo_420100","Donation Income","420100","income","False","捐赠收入"
+"l10n_cn_npo_510100","Business Activity Cost","510100","expense","False","业务活动成本"

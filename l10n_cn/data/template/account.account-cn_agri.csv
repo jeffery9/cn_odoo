@@ -1,0 +1,4 @@
+"id","name","code","account_type","reconcile","name@zh_CN"
+"l10n_cn_agri_142100","Consumable Biological Assets","142100","asset_current","False","消耗性生物资产"
+"l10n_cn_agri_162100","Productive Biological Assets","162100","asset_fixed","False","生产性生物资产"
+"l10n_cn_agri_162200","Accumulated Depreciation of Biological Assets","162200","expense_depreciation","False","生产性生物资产累计折旧"

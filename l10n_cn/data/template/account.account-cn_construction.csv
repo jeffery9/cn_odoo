@@ -1,0 +1,5 @@
+"id","name","code","account_type","reconcile","name@zh_CN"
+"l10n_cn_construction_540100","Engineering Construction","540100","expense_direct_cost","False","工程施工"
+"l10n_cn_construction_540200","Engineering Settlement","540200","income","False","工程结算"
+"l10n_cn_construction_540300","Mechanical Operation","540300","expense_direct_cost","False","机械作业"
+"l10n_cn_construction_220500","Contract Liability","220500","liability_payable","False","合同负债"

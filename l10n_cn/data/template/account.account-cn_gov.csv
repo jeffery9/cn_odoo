@@ -1,0 +1,5 @@
+"id","name","code","account_type","reconcile","name@zh_CN"
+"l10n_cn_gov_101100","Zero-balance Account Quota","101100","asset_current","False","零余额账户用款额度"
+"l10n_cn_gov_400100","Financial Appropriation Income","400100","income","False","财政拨款收入"
+"l10n_cn_gov_800100","Fund Balance","800100","equity","False","资金结存"
+"l10n_cn_gov_810100","Financial Appropriation Balance","810100","equity","False","财政拨款结余"
