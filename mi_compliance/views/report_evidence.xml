@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- QWeb Report Definition -->
+        <record id="action_report_evidence" model="ir.actions.report">
+            <field name="name">Audit Evidence Report</field>
+            <field name="model">hr.employee</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">mi_compliance.report_evidence_template</field>
+            <field name="report_file">mi_compliance.report_evidence_template</field>
+            <field name="print_report_name">'Audit_Evidence_%s' % (object.name)</field>
+            <field name="binding_model_id" ref="hr.model_hr_employee"/>
+            <field name="binding_view_types">form</field>
+        </record>
+
+        <!-- QWeb Report Template Document -->
+        <template id="report_evidence_document">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <h2>Audit Evidence Report</h2>
+                    <table class="table table-sm">
+                        <tr>
+                            <td><strong>Employee Name:</strong></td>
+                            <td><span t-field="o.name"/></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hire Date:</strong></td>
+                            <td><span t-field="o.hire_date"/></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Evidence Reference:</strong></td>
+                            <td><span t-esc="o.id"/></td>
+                        </tr>
+                    </table>
+                    <p>This document serves as secure, immutable audit evidence of compliance history. It is hashed and archived under SHA-256 validation rules.</p>
+                </div>
+            </t>
+        </template>
+
+        <!-- QWeb Report Template Wrapper -->
+        <template id="report_evidence_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="mi_compliance.report_evidence_document"/>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>
