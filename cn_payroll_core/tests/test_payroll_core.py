@@ -1007,8 +1007,8 @@ class TestPayrollCore(TransactionCase):
         # Create a settings group
         settings = self.env['cn.attendance.settings'].create({
             'name': 'Test Adjustment Group',
-            'standard_check_in': '09:00',
-            'standard_check_out': '18:00',
+            'standard_check_in': 9.0,
+            'standard_check_out': 18.0,
         })
         
         # 1. Swapped workday adjustment

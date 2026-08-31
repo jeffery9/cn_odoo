@@ -234,7 +234,7 @@ class TestMICore(TransactionCase):
         policy_full = self.env['mi.policy'].create({
             'name': 'Beijing Edge Case Import 2024',
             'region_id': state_bj.id,
-            'date_start': '2024-08-01',
+            'date_start': '2024-09-01', # Shifted to prevent constraint violation
         })
         self.env['mi.policy.line'].create({
             'policy_id': policy_full.id,
@@ -248,7 +248,7 @@ class TestMICore(TransactionCase):
         # 1. Sub-line housing_fund over upper limit (40000.0 > 30000)
         import_wizard_over = self.env['base_import.import'].create({
             'res_model': 'mi.enrollment',
-            'file': b"employee_id,policy_id,base_amount,start_date,line_ids/insurance_type_group,line_ids/base_amount\nTest,Beijing Edge Case Import 2024,6000.0,2024-08-01,housing_fund,40000.0",
+            'file': b"employee_id,policy_id,base_amount,start_date,line_ids/insurance_type_group,line_ids/base_amount\nTest,Beijing Edge Case Import 2024,6000.0,2024-09-01,housing_fund,40000.0",
             'file_name': 'test.csv',
             'file_type': 'text/csv'
         })
@@ -266,12 +266,12 @@ class TestMICore(TransactionCase):
             'employee_id': emp_dup.id,
             'policy_id': policy_full.id,
             'base_amount': 6000.0,
-            'start_date': '2024-08-01',
+            'start_date': '2024-09-01',
             'state': 'enrolled',
         })
         import_wizard_dup = self.env['base_import.import'].create({
             'res_model': 'mi.enrollment',
-            'file': f"employee_id,policy_id,base_amount,start_date,state\nDuplicate Import Worker,Beijing Edge Case Import 2024,6000.0,2024-08-01,enrolled".encode('utf-8'),
+            'file': f"employee_id,policy_id,base_amount,start_date,state\nDuplicate Import Worker,Beijing Edge Case Import 2024,6000.0,2024-09-01,enrolled".encode('utf-8'),
             'file_name': 'test.csv',
             'file_type': 'text/csv'
         })
@@ -287,7 +287,7 @@ class TestMICore(TransactionCase):
         emp_file_dup = self.env['hr.employee'].create({'name': 'File Dup Worker'})
         import_wizard_file_dup = self.env['base_import.import'].create({
             'res_model': 'mi.enrollment',
-            'file': f"employee_id,policy_id,base_amount,start_date,state\nFile Dup Worker,Beijing Edge Case Import 2024,6000.0,2024-08-01,enrolled\nFile Dup Worker,Beijing Edge Case Import 2024,6000.0,2024-08-01,enrolled".encode('utf-8'),
+            'file': f"employee_id,policy_id,base_amount,start_date,state\nFile Dup Worker,Beijing Edge Case Import 2024,6000.0,2024-09-01,enrolled\nFile Dup Worker,Beijing Edge Case Import 2024,6000.0,2024-09-01,enrolled".encode('utf-8'),
             'file_name': 'test.csv',
             'file_type': 'text/csv'
         })

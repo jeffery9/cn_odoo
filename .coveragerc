@@ -1,0 +1,30 @@
+[run]
+branch = True
+source =
+    /mnt/extra-addons/cn_odoo
+
+omit =
+    *__init__.py
+    *__manifest__.py
+    */tests/*
+    */account_edi_cn_etax/*
+
+[report]
+show_missing = True
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if self.debug:
+    if __name__ == .__main__.:
+    raise NotImplementedError
+    raise AssertionError
+    raise ValidationError
+    raise UserError
+    _logger.warning
+    _logger.error
+    _logger.info
+    except Exception as e:
+    except Exception:
+    except ImportError:
+    pass
+    continue
